@@ -1,2 +1,49 @@
-# dota2_reminder
-DotaReminder is an interactive reference guide and knowledge trainer for Dota 2: heroes, items, mechanics, timings, tests, and quizzes.
+# DotaReminder
+
+DotaReminder — интерактивный справочник и тренажёр знаний Dota 2: герои, предметы, механики, тайминги, тесты и мини-игры.
+
+## Текущий статус
+
+Сейчас в разработке техническая основа проекта. Экран в `src/app/App.tsx` — временная заглушка, а не утверждённый дизайн.
+
+## Стек
+
+- React 19 + TypeScript.
+- Vite 8 для dev-сервера и статической production-сборки.
+- Обычный CSS без UI-фреймворка.
+- Без обязательного backend, базы данных и регистрации.
+
+## Требования
+
+- Node.js 20.19+ (рекомендуется актуальная LTS-версия).
+- npm 10+.
+
+## Запуск
+
+```bash
+npm install
+npm run dev
+```
+
+## Проверки
+
+```bash
+npm run typecheck
+npm run build
+npm run check:size
+npm run verify
+```
+
+`npm run verify` проверяет TypeScript, собирает production-версию и контролирует стартовый бюджет размера сборки.
+
+## Основная структура
+
+- `src/app` — оболочка приложения.
+- `src/data` — форматы и обработанные игровые данные.
+- `src/features` — независимые функции и тренировочные режимы.
+- `src/shared` — общие стили, компоненты и утилиты.
+- `public/assets` — статические ресурсы, которым не нужен импорт через TypeScript.
+- `scripts` — проверки и инструменты обслуживания.
+- `docs` — архитектурные и эксплуатационные документы.
+
+План разработки находится в [ROADMAP.md](ROADMAP.md), правила работы — в [AGENTS.md](AGENTS.md), бюджеты производительности — в [docs/PERFORMANCE.md](docs/PERFORMANCE.md).
