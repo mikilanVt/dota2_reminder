@@ -4,12 +4,14 @@ type SectionId = 'home' | 'map' | 'heroes' | 'items' | 'knowledge' | 'updates';
 type ModeId = 'tests' | 'quiz' | 'fill' | 'guess' | 'mixed';
 type TopicId = 'items' | 'heroes' | 'map';
 
-const sections: Array<{id: SectionId; label: string; topbar: string}> = [
-  {id: 'map', label: 'КАРТА', topbar: '/assets/topbar_map.webp'},
-  {id: 'heroes', label: 'ГЕРОИ', topbar: '/assets/topbar_heroes.webp'},
-  {id: 'items', label: 'ПРЕДМЕТЫ', topbar: '/assets/topbar_items.webp'},
-  {id: 'knowledge', label: 'БАЗА ЗНАНИЙ', topbar: '/assets/topbar_bazaznaniy.webp'},
-  {id: 'updates', label: 'ОБНОВЛЕНИЯ', topbar: '/assets/topbar_updates.webp'}
+const asset = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`;
+
+const sections: Array<{id: SectionId; label: string}> = [
+  {id: 'map', label: 'КАРТА'},
+  {id: 'heroes', label: 'ГЕРОИ'},
+  {id: 'items', label: 'ПРЕДМЕТЫ'},
+  {id: 'knowledge', label: 'БАЗА ЗНАНИЙ'},
+  {id: 'updates', label: 'ОБНОВЛЕНИЯ'}
 ];
 
 const modes: Array<{id: ModeId; label: string}> = [
@@ -21,18 +23,18 @@ const modes: Array<{id: ModeId; label: string}> = [
 ];
 
 const topics: Array<{id: TopicId; label: string; image: string}> = [
-  {id: 'items', label: 'ПРЕДМЕТЫ', image: '/assets/game_mode_items.webp'},
-  {id: 'heroes', label: 'ГЕРОИ', image: '/assets/game_mode_heroes.webp'},
-  {id: 'map', label: 'КАРТА', image: '/assets/game_mode_map.webp'}
+  {id: 'items', label: 'ПРЕДМЕТЫ', image: asset('game_mode_items.webp')},
+  {id: 'heroes', label: 'ГЕРОИ', image: asset('game_mode_heroes.webp')},
+  {id: 'map', label: 'КАРТА', image: asset('game_mode_map.webp')}
 ];
 
 const topbarBySection: Record<SectionId, string> = {
-  home: '/assets/topbar_home.webp',
-  map: '/assets/topbar_map.webp',
-  heroes: '/assets/topbar_heroes.webp',
-  items: '/assets/topbar_items.webp',
-  knowledge: '/assets/topbar_bazaznaniy.webp',
-  updates: '/assets/topbar_updates.webp'
+  home: asset('topbar_home.webp'),
+  map: asset('topbar_map.webp'),
+  heroes: asset('topbar_heroes.webp'),
+  items: asset('topbar_items.webp'),
+  knowledge: asset('topbar_bazaznaniy.webp'),
+  updates: asset('topbar_updates.webp')
 };
 
 export function App() {
@@ -60,7 +62,12 @@ export function App() {
   }
 
   return (
-    <div className="app-shell">
+    <div
+      className="app-shell"
+      style={{
+        backgroundImage: `linear-gradient(rgba(3, 8, 14, 0.06), rgba(3, 8, 14, 0.2)), url(${asset('background.webp')})`
+      }}
+    >
       <header
         className="topbar"
         style={{backgroundImage: `url(${topbarBySection[activeSection]})`}}
@@ -90,7 +97,7 @@ export function App() {
         <main className="home-screen">
           <section className="mode-picker" aria-label="Выбор режима тренировки">
             <div className="mode-preview" aria-hidden="true">
-              <img src="/assets/main_home_picture.webp" alt="" />
+              <img src={asset('main_home_picture.webp')} alt="" />
             </div>
 
             <div className="mode-list">
