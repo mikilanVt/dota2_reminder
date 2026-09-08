@@ -1,3 +1,7 @@
+html {
+  scrollbar-gutter: stable;
+}
+
 .app-shell {
   min-height: 100vh;
   background-position: center top;
@@ -7,23 +11,54 @@
 }
 
 .topbar {
+  --bar-height: clamp(60px, 3.75vw, 76px);
   position: sticky;
   top: 0;
   z-index: 100;
-  height: 56px;
-  overflow: hidden;
+  height: var(--bar-height);
+  margin-bottom: calc(-1 * var(--bar-height));
+  background: transparent;
+  isolation: isolate;
+}
+
+.topbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: calc(100vw * 0.0854167);
+  min-height: 132px;
+  pointer-events: none;
+  background-image: var(--topbar-image);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: transparent;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.28);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 37%,
+    rgba(0, 0, 0, 0.96) 39%,
+    rgba(0, 0, 0, 0.62) 42%,
+    transparent 45%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 37%,
+    rgba(0, 0, 0, 0.96) 39%,
+    rgba(0, 0, 0, 0.62) 42%,
+    transparent 45%
+  );
 }
 
 .home-button {
   position: absolute;
-  inset: 0 auto 0 0;
-  width: clamp(250px, 17.4vw, 335px);
-  height: 56px;
+  top: 0;
+  left: 0;
+  width: 21.63%;
+  height: 100%;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -32,38 +67,29 @@
 .nav {
   position: absolute;
   top: 0;
-  left: clamp(260px, 17.5vw, 315px);
-  height: 56px;
-  display: flex;
+  left: 21.63%;
+  width: 53.91%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 21.56% 18.21% 17.93% 19.11% 23.19%;
   align-items: stretch;
   overflow: visible;
-  scrollbar-width: none;
-}
-
-.nav::-webkit-scrollbar {
-  display: none;
 }
 
 .nav-link {
-  flex: 0 0 auto;
-  height: 56px;
-  padding: 0 6px;
+  min-width: 0;
+  height: 100%;
+  padding: 0 4px 5px;
   border: 0;
   background: transparent;
   color: rgba(213, 218, 222, 0.72);
   cursor: pointer;
-  font-size: clamp(13px, 1.15vw, 20px);
+  font-size: clamp(13px, 1.05vw, 20px);
   font-weight: 700;
   letter-spacing: 0.005em;
   text-shadow: 0 2px 3px #000;
   white-space: nowrap;
 }
-
-.nav-link:nth-child(1) { width: 140px; }
-.nav-link:nth-child(2) { width: 145px; }
-.nav-link:nth-child(3) { width: 155px; }
-.nav-link:nth-child(4) { width: 180px; }
-.nav-link:nth-child(5) { width: 165px; }
 
 .nav-link:hover,
 .nav-link:focus-visible,
@@ -72,8 +98,8 @@
 }
 
 .home-screen {
-  min-height: calc(100vh - 56px);
-  padding: 0 14px 48px;
+  min-height: 100vh;
+  padding: var(--bar-height, 76px) 14px 48px;
 }
 
 .mode-picker {
@@ -187,13 +213,14 @@
 
 .topic-art {
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
+  left: -20%;
   z-index: -2;
-  width: 100%;
+  width: 120%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.01);
   filter: saturate(0.95) contrast(1.08) brightness(0.82);
 }
 
@@ -265,72 +292,54 @@
 }
 
 .section-placeholder {
-  min-height: calc(100vh - 56px);
+  min-height: 100vh;
   display: grid;
   place-items: center;
-  padding: 40px;
+  padding: var(--bar-height, 76px) 40px 40px;
   color: rgba(255, 255, 255, 0.22);
   font-size: clamp(28px, 5vw, 70px);
   font-weight: 800;
   letter-spacing: 0.12em;
 }
 
-@media (max-width: 1050px) {
-  .topbar {
-    height: 52px;
-    background-size: auto 145px;
-    background-position: top left;
-  }
-
-  .home-button {
-    width: 210px;
-    height: 52px;
-  }
-
-  .nav {
-    left: 210px;
-    height: 52px;
-  }
-
-  .nav-link {
-    height: 52px;
-    font-size: 14px;
-  }
-
-  .nav-link:nth-child(1) { width: 112px; }
-  .nav-link:nth-child(2) { width: 116px; }
-  .nav-link:nth-child(3) { width: 124px; }
-  .nav-link:nth-child(4) { width: 145px; }
-  .nav-link:nth-child(5) { width: 132px; }
-}
-
 @media (max-width: 760px) {
   .topbar {
-    height: 48px;
-    background-size: auto 132px;
+    --bar-height: 52px;
+  }
+
+  .topbar::before {
+    width: auto;
+    min-width: 100%;
+    height: 132px;
     background-position: top left;
+    background-size: auto 132px;
   }
 
   .home-button {
-    width: 82px;
-    height: 48px;
+    width: 84px;
   }
 
   .nav {
-    left: 82px;
-    height: 48px;
+    left: 84px;
+    width: calc(100% - 84px);
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-link {
-    width: auto !important;
-    height: 48px;
-    padding: 0 10px;
+    flex: 0 0 auto;
+    min-width: auto;
+    padding: 0 10px 3px;
     font-size: 11px;
   }
 
   .home-screen {
-    min-height: calc(100vh - 48px);
-    padding: 0 8px 26px;
+    padding: 52px 8px 26px;
   }
 
   .mode-picker {
@@ -361,6 +370,11 @@
     min-height: 132px;
     gap: 14px;
     padding: 0 15px;
+  }
+
+  .topic-art {
+    left: -16%;
+    width: 116%;
   }
 
   .topic-check {
