@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, type CSSProperties} from 'react';
 
 type SectionId = 'home' | 'map' | 'heroes' | 'items' | 'knowledge' | 'updates';
 type ModeId = 'tests' | 'quiz' | 'fill' | 'guess' | 'mixed';
@@ -70,7 +70,7 @@ export function App() {
     >
       <header
         className="topbar"
-        style={{backgroundImage: `url(${topbarBySection[activeSection]})`}}
+        style={{'--topbar-image': `url(${topbarBySection[activeSection]})`} as CSSProperties}
       >
         <button
           className="home-button"
