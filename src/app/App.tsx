@@ -29,12 +29,12 @@ const topics: Array<{id: TopicId; label: string; image: string}> = [
 ];
 
 const topbarBySection: Record<SectionId, string> = {
-  home: asset('topbar_home.webp'),
-  map: asset('topbar_map.webp'),
-  heroes: asset('topbar_heroes.webp'),
-  items: asset('topbar_items.webp'),
-  knowledge: asset('topbar_bazaznaniy.webp'),
-  updates: asset('topbar_updates.webp')
+  home: asset('topbar_home.png'),
+  map: asset('topbar_map.png'),
+  heroes: asset('topbar_heroes.png'),
+  items: asset('topbar_items.png'),
+  knowledge: asset('topbar_bazaznaniy.png'),
+  updates: asset('topbar_updates.png')
 };
 
 export function App() {
@@ -122,9 +122,9 @@ export function App() {
                             type="button"
                             aria-pressed={checked}
                             key={topic.id}
-                            style={{backgroundImage: `url(${topic.image})`}}
                             onClick={() => toggleTopic(topic.id)}
                           >
+                            <img className="topic-art" src={topic.image} alt="" decoding="async" />
                             <span className="topic-check" aria-hidden="true" />
                             <span className="topic-label">{topic.label}</span>
                           </button>
@@ -136,7 +136,13 @@ export function App() {
               ))}
             </div>
 
-            <button className="find-game-button" type="button">
+            <button
+              className="find-game-button"
+              type="button"
+              style={{
+                backgroundImage: `linear-gradient(180deg, rgba(255,255,255,.08), rgba(0,0,0,.08)), url(${asset('background_play_button.webp')})`
+              }}
+            >
               НАЙТИ ИГРУ
             </button>
           </section>
