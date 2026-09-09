@@ -6,12 +6,13 @@ type TopicId = 'items' | 'heroes' | 'map';
 
 const asset = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`;
 
-const sections: Array<{id: SectionId; label: string}> = [
-  {id: 'map', label: 'КАРТА'},
-  {id: 'heroes', label: 'ГЕРОИ'},
-  {id: 'items', label: 'ПРЕДМЕТЫ'},
-  {id: 'knowledge', label: 'БАЗА ЗНАНИЙ'},
-  {id: 'updates', label: 'ОБНОВЛЕНИЯ'}
+// Tab edges in the original 3840px-wide topbar artwork, including its slant.
+const sections: Array<{id: SectionId; label: string; start: number}> = [
+  {id: 'map', label: 'КАРТА', start: 752},
+  {id: 'heroes', label: 'ГЕРОИ', start: 1081},
+  {id: 'items', label: 'ПРЕДМЕТЫ', start: 1411},
+  {id: 'knowledge', label: 'БАЗА ЗНАНИЙ', start: 1741},
+  {id: 'updates', label: 'ОБНОВЛЕНИЯ', start: 2071}
 ];
 
 const modes: Array<{id: ModeId; label: string}> = [
@@ -29,12 +30,12 @@ const topics: Array<{id: TopicId; label: string; image: string}> = [
 ];
 
 const topbarBySection: Record<SectionId, string> = {
-  home: asset('topbar_home.png'),
-  map: asset('topbar_map.png'),
-  heroes: asset('topbar_heroes.png'),
-  items: asset('topbar_items.png'),
-  knowledge: asset('topbar_bazaznaniy.png'),
-  updates: asset('topbar_updates.png')
+  home: asset('topbar_home.webp'),
+  map: asset('topbar_map.webp'),
+  heroes: asset('topbar_heroes.webp'),
+  items: asset('topbar_items.webp'),
+  knowledge: asset('topbar_bazaznaniy.webp'),
+  updates: asset('topbar_updates.webp')
 };
 
 export function App() {
@@ -68,36 +69,47 @@ export function App() {
         backgroundImage: `linear-gradient(rgba(3, 8, 14, 0.06), rgba(3, 8, 14, 0.2)), url(${asset('background.webp')})`
       }}
     >
-      <header
-        className="topbar"
-        style={{'--topbar-image': `url(${topbarBySection[activeSection]})`} as CSSProperties}
-      >
-        <button
-          className="home-button"
-          type="button"
-          aria-label="ГЛАВНАЯ"
-          title="ГЛАВНАЯ"
-          onClick={() => setActiveSection('home')}
-        />
-        <nav className="nav" aria-label="Основная навигация">
-          {sections.map((section) => (
-            <button
-              className={`nav-link${activeSection === section.id ? ' is-active' : ''}`}
-              type="button"
-              key={section.id}
-              onClick={() => setActiveSection(section.id)}
-            >
-              {section.label}
-            </button>
-          ))}
-        </nav>
+      <header className="topbar">
+        <div className="topbar-frame">
+          <img
+            className="topbar-art"
+            src={topbarBySection[activeSection]}
+            width="3840"
+            height="328"
+            alt=""
+            aria-hidden="true"
+            draggable={false}
+          />
+          <button
+            className="home-button"
+            type="button"
+            aria-label="ГЛАВНАЯ"
+            aria-current={activeSection === 'home' ? 'page' : undefined}
+            title="ГЛАВНАЯ"
+            onClick={() => setActiveSection('home')}
+          />
+          <nav className="nav" aria-label="Основная навигация">
+            {sections.map((section) => (
+              <button
+                className={`nav-link${activeSection === section.id ? ' is-active' : ''}`}
+                style={{'--tab-start': section.start} as CSSProperties}
+                type="button"
+                key={section.id}
+                aria-current={activeSection === section.id ? 'page' : undefined}
+                onClick={() => setActiveSection(section.id)}
+              >
+                {section.label}
+              </button>
+            ))}
+          </nav>
+        </div>
       </header>
 
       {activeSection === 'home' ? (
         <main className="home-screen">
           <section className="mode-picker" aria-label="Выбор режима тренировки">
             <div className="mode-preview" aria-hidden="true">
-              <img src={asset('main_home_picture.webp')} alt="" />
+              <img src={asset('main_home_picture.webp')} width="2048" height="1451" alt="" />
             </div>
 
             <div className="mode-list">
