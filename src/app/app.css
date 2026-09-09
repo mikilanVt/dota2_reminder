@@ -342,6 +342,27 @@ body {
   line-height: 1.5;
 }
 
+.home-progress-button {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  min-height: 56px;
+  margin-top: 16px;
+  padding: 12px 18px;
+  border: 1px solid #636563;
+  background: #1b252ddd;
+  color: #d9d2c3;
+  font-size: .9375rem;
+  font-weight: 650;
+  letter-spacing: .08em;
+  cursor: pointer;
+}
+.home-progress-button span {display: block; margin-top: 5px; font-size: .8125rem; font-weight: 400; letter-spacing: normal; color: #aeb9c2;}
+.home-progress-button:hover:not(:disabled) {background: #2a363fee;}
+.home-progress-button:focus-visible {outline: 2px solid #f4c98c; outline-offset: 3px;}
+.home-progress-button:disabled {opacity: .6; cursor: wait;}
+
 .section-placeholder {
   min-height: 100vh;
   display: grid;

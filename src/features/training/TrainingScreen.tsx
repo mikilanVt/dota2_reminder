@@ -1,18 +1,19 @@
-import {useEffect, useRef, useState, type FormEvent} from 'react';
-import type {TopicId} from '../../data/types';
+import {useEffect, useRef, type FormEvent} from 'react';
 import {starterItems} from '../../data/starter-items';
-import {createSession, formatValue, missedQuestionIds, reduceSession, type TrainingAction} from './engine';
+import {formatValue, missedQuestionIds, type TrainingAction, type TrainingSession} from './engine';
 import './training.css';
 
 export interface TrainingScreenProps {
-  topics: readonly TopicId[];
+  session: TrainingSession;
+  repeatingMistakes: boolean;
+  notice: string;
+  onAction: (action: TrainingAction) => void;
+  onRestart: (onlyMistakes: boolean) => void;
+  onProgress: () => void;
   onExit: () => void;
 }
 
-export function TrainingScreen({topics, onExit}: TrainingScreenProps) {
-  const [session, setSession] = useState(() => createSession(starterItems, topics));
-  const [round, setRound] = useState(0);
-  const [repeatingMistakes, setRepeatingMistakes] = useState(false);
+export function TrainingScreen({session, repeatingMistakes, notice, onAction, onRestart, onProgress, onExit}: TrainingScreenProps) {
   const heading = useRef<HTMLHeadingElement>(null);
   const feedback = useRef<HTMLDivElement>(null);
   const finished = session.phase === 'finished';
@@ -27,21 +28,11 @@ export function TrainingScreen({topics, onExit}: TrainingScreenProps) {
       window.scrollTo(0, 0);
       heading.current?.focus({preventScroll: true});
     }
-  }, [session.index, session.phase, round]);
-
-  function dispatch(action: TrainingAction) {
-    setSession(current => reduceSession(current, action));
-  }
-
-  function restart(onlyMistakes: boolean) {
-    setSession(createSession(starterItems, topics, onlyMistakes ? {questionIds: mistakes} : {}));
-    setRepeatingMistakes(onlyMistakes);
-    setRound(current => current + 1);
-  }
+  }, [session.index, session.phase, session.questions]);
 
   function checkAnswer(event: FormEvent) {
     event.preventDefault();
-    dispatch({type: 'check'});
+    onAction({type: 'check'});
   }
 
   return (
@@ -52,8 +43,14 @@ export function TrainingScreen({topics, onExit}: TrainingScreenProps) {
             <p className="training-eyebrow">{repeatingMistakes ? 'ПОВТОР ОШИБОК' : 'ТЕСТЫ'} / ПРЕДМЕТЫ</p>
             <p className="training-patch">Патч {starterItems.patch}</p>
           </div>
-          <button className="training-back" type="button" onClick={onExit}>В меню</button>
+          <div className="training-header-buttons">
+            <button className="training-back" type="button" onClick={onProgress}>Мой прогресс</button>
+            <button className="training-back" type="button" onClick={onExit}>В меню</button>
+          </div>
         </header>
+        <p className={`training-save-status${notice ? ' has-warning' : ''}`} role="status">
+          {notice || (finished ? 'Результат сохранён в этом браузере.' : 'Сохраняется в этом браузере. Можно выйти и продолжить позже.')}
+        </p>
 
         {finished ? (
           <div className="training-results">
@@ -80,8 +77,8 @@ export function TrainingScreen({topics, onExit}: TrainingScreenProps) {
                   </div>
                 ) : <p className="training-correct">Все ответы верные.</p>}
                 <div className="training-actions">
-                  {mistakes.length > 0 && <button className="training-primary" type="button" onClick={() => restart(true)}>Повторить ошибки</button>}
-                  <button className={mistakes.length ? 'training-secondary' : 'training-primary'} type="button" onClick={() => restart(false)}>Новый тест</button>
+                  {mistakes.length > 0 && <button className="training-primary" type="button" onClick={() => onRestart(true)}>Повторить ошибки</button>}
+                  <button className={mistakes.length ? 'training-secondary' : 'training-primary'} type="button" onClick={() => onRestart(false)}>Новый тест</button>
                 </div>
               </>
             ) : <p>Для выбранных тем пока нет проверенных вопросов.</p>}
@@ -110,7 +107,7 @@ export function TrainingScreen({topics, onExit}: TrainingScreenProps) {
                     : selected ? ' is-selected' : '';
                   return (
                     <label key={option.id} className={`training-option${answerClass}`}>
-                      <input type="radio" name={`answer-${question.id}`} value={option.id} checked={selected} onChange={() => dispatch({type: 'select', optionId: option.id})} />
+                      <input type="radio" name={`answer-${question.id}`} value={option.id} checked={selected} onChange={() => onAction({type: 'select', optionId: option.id})} />
                       <span className="training-option-number" aria-hidden="true">{index + 1}</span>
                       <span>{option.label}</span>
                       {reviewing && option.id === question.correctOptionId && <span className="training-option-status">Верный ответ</span>}
@@ -134,7 +131,7 @@ export function TrainingScreen({topics, onExit}: TrainingScreenProps) {
                     <p>Проверено {question.fact.verification.checkedAt} для патча <a href={`https://www.dota2.com/patches/${starterItems.patch}`} target="_blank" rel="noreferrer">{starterItems.patch}</a>.</p>
                   </details>
                 </div>
-                <button className="training-primary" type="button" onClick={() => dispatch({type: 'next'})}>
+                <button className="training-primary" type="button" onClick={() => onAction({type: 'next'})}>
                   {session.index + 1 === session.questions.length ? 'Посмотреть результат' : 'Следующий вопрос'}
                 </button>
               </>
