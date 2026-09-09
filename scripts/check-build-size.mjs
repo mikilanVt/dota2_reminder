@@ -1,8 +1,9 @@
 import {gzipSync} from 'node:zlib';
 import {readdir, readFile, stat} from 'node:fs/promises';
 import {join, relative} from 'node:path';
+import {fileURLToPath} from 'node:url';
 
-const DIST_DIR = new URL('../dist/', import.meta.url);
+const DIST_DIR = fileURLToPath(new URL('../dist/', import.meta.url));
 const JS_GZIP_LIMIT = 150 * 1024;
 const TOTAL_GZIP_LIMIT = 1024 * 1024;
 
@@ -30,7 +31,7 @@ for (const file of files) {
   const gzipBytes = gzipSync(content, {level: 9}).byteLength;
   totalGzipBytes += gzipBytes;
   if (file.endsWith('.js')) jsGzipBytes += gzipBytes;
-  console.log(`${relative(DIST_DIR.pathname, file)}: ${info.size} B raw / ${gzipBytes} B gzip`);
+  console.log(`${relative(DIST_DIR, file)}: ${info.size} B raw / ${gzipBytes} B gzip`);
 }
 
 console.log(`JavaScript gzip total: ${jsGzipBytes} B / limit ${JS_GZIP_LIMIT} B`);

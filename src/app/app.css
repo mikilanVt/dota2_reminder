@@ -1,6 +1,6 @@
 html {
-  overflow-y: scroll;
-  scrollbar-gutter: stable both-edges;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -16,48 +16,69 @@ body {
 }
 
 .topbar {
-  --bar-height: clamp(54px, 3.1vw, 64px);
+  --art-width: 100cqw;
+  --art-offset: 0px;
+  container-type: inline-size;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  height: var(--bar-height);
   background: transparent;
   pointer-events: none;
 }
 
-.topbar::before {
-  content: '';
+.topbar-frame {
+  position: relative;
+  width: 100%;
+  height: calc(var(--art-width) * 148 / 3840);
+  overflow: hidden;
+}
+
+.topbar-art {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--bar-height);
-  z-index: -1;
+  left: var(--art-offset);
+  width: var(--art-width);
+  max-width: none;
+  height: auto;
+  display: block;
   pointer-events: none;
-  background-image: var(--topbar-image);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  /* The source contains opaque black below the panel, even in its PNG version.
+     Follow the panel's outline, including the lower logo, to expose the page
+     background without cropping the logo or blending away the dark texture. */
+  clip-path: polygon(
+    0 0, 100% 0, 100% 37.2%,
+    19.79% 37.2%, 19.66% 40.25%, 18.91% 40.25%, 18.8% 44.82%,
+    11.35% 44.82%, 11.2% 40.25%, 10.38% 40.25%, 10.29% 37.2%,
+    0 37.2%
+  );
 }
 
 .home-button {
   position: absolute;
   top: 0;
-  left: 0;
+  left: calc(var(--art-offset) + var(--art-width) * 420 / 3840);
   z-index: 2;
-  width: 20%;
+  width: calc(var(--art-width) * 332 / 3840);
   height: 100%;
   border: 0;
   background: transparent;
   cursor: pointer;
   pointer-events: auto;
+  clip-path: polygon(0 0, 100% 0, 91% 100%, 5% 100%);
+}
+
+.home-button:focus-visible {
+  outline: none;
+  background: rgba(255, 167, 81, 0.1);
+  box-shadow: inset 0 -4px #ffbc72;
 }
 
 .nav {
   position: absolute;
-  inset: 0;
+  inset: 0 0 auto;
+  height: calc(var(--art-width) * 122 / 3840);
   z-index: 3;
   pointer-events: none;
 }
@@ -65,46 +86,32 @@ body {
 .nav-link {
   position: absolute;
   top: 0;
+  left: calc(var(--art-offset) + var(--art-width) * var(--tab-start) / 3840);
+  width: calc(var(--art-width) * 368 / 3840);
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 4px 3px;
+  padding: 0 12px 3px;
   border: 0;
   background: transparent;
   color: rgba(213, 218, 222, 0.72);
   cursor: pointer;
   pointer-events: auto;
-  font-size: clamp(13px, 1.05vw, 20px);
+  font-size: clamp(0.875rem, 1.05vw, 1.25rem);
   font-weight: 700;
   letter-spacing: 0.005em;
   text-shadow: 0 2px 3px #000;
   white-space: nowrap;
+  clip-path: polygon(10.87% 0, 100% 0, 89.13% 100%, 0 100%);
 }
 
-.nav-link:nth-child(1) {
-  left: 20%;
-  width: 8.4%;
-}
-
-.nav-link:nth-child(2) {
-  left: 28.4%;
-  width: 11.9%;
-}
-
-.nav-link:nth-child(3) {
-  left: 40.3%;
-  width: 11.3%;
-}
-
-.nav-link:nth-child(4) {
-  left: 51.6%;
-  width: 8.7%;
-}
-
-.nav-link:nth-child(5) {
-  left: 60.3%;
-  width: 13.4%;
+.nav-link:focus-visible {
+  outline: none;
+  background: rgba(255, 255, 255, 0.06);
+  text-decoration: underline;
+  text-decoration-color: #ffbc72;
+  text-underline-offset: 6px;
 }
 
 .nav-link:hover,
@@ -119,15 +126,26 @@ body {
 }
 
 .mode-picker {
+  --preview-height: clamp(300px, 38vh, 360px);
+  --preview-overlap: 44px;
+  --mode-row-height: 58px;
+  --mode-gap: 7px;
+  position: relative;
+  isolation: isolate;
   width: min(92vw, 540px);
   margin: 0 auto;
+  padding-top: calc(var(--preview-height) - var(--preview-overlap));
 }
 
 .mode-preview {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
   width: 100%;
-  height: clamp(300px, 38vh, 360px);
+  /* Extend the artwork beneath all five collapsed rows. Expanding a topic
+     panel must not rescale the artwork or move the first mode button. */
+  height: calc(var(--preview-height) - var(--preview-overlap) + 5 * var(--mode-row-height) + 4 * var(--mode-gap));
   margin: 0 auto;
   overflow: hidden;
   border: 0;
@@ -150,7 +168,7 @@ body {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: 38% top;
 }
 
 .mode-list {
@@ -158,8 +176,8 @@ body {
   z-index: 2;
   width: 100%;
   display: grid;
-  gap: 7px;
-  margin: -44px auto 0;
+  gap: var(--mode-gap);
+  margin: 0 auto;
 }
 
 .mode-block {
@@ -167,7 +185,7 @@ body {
 }
 
 .mode-button {
-  min-height: 58px;
+  min-height: var(--mode-row-height);
   padding: 0 22px;
   border: 1px solid rgba(0, 0, 0, 0.84);
   background:
@@ -280,6 +298,8 @@ body {
 }
 
 .find-game-button {
+  position: relative;
+  z-index: 2;
   width: 100%;
   min-height: 66px;
   display: block;
@@ -316,61 +336,45 @@ body {
   letter-spacing: 0.12em;
 }
 
-@media (max-width: 760px) {
+/* Keep the artwork and its hit areas on the same scale on narrow screens.
+   Scroll only the topbar and remove the unused area before the logo. */
+@media (max-width: 1180px) {
   .topbar {
-    --bar-height: 50px;
-  }
-
-  .topbar::before {
-    background-position: top left;
-    background-size: auto 132px;
-  }
-
-  .home-button {
-    width: 84px;
-  }
-
-  .nav {
-    left: 84px;
-    right: 0;
-    display: flex;
+    --art-width: 92rem;
+    --art-offset: calc(var(--art-width) * -420 / 3840);
     overflow-x: auto;
     scrollbar-width: none;
     pointer-events: auto;
   }
 
-  .nav::-webkit-scrollbar {
+  .topbar::-webkit-scrollbar {
     display: none;
   }
 
-  .nav-link {
-    position: static;
-    flex: 0 0 auto;
-    width: auto !important;
-    min-width: auto;
-    padding: 0 10px 3px;
-    font-size: 11px;
+  .topbar-frame {
+    width: calc(var(--art-width) * 2024 / 3840);
+    min-width: 100%;
   }
 
+  .nav-link {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 760px) {
   .home-screen {
     padding: 0 8px 26px;
   }
 
   .mode-picker {
+    --preview-height: 300px;
+    --preview-overlap: 34px;
+    --mode-row-height: 52px;
+    --mode-gap: 6px;
     width: min(96vw, 540px);
   }
 
-  .mode-preview {
-    height: 300px;
-  }
-
-  .mode-list {
-    gap: 6px;
-    margin-top: -34px;
-  }
-
   .mode-button {
-    min-height: 52px;
     padding: 0 16px;
     font-size: 15px;
     letter-spacing: 0.09em;
