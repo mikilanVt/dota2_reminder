@@ -130,6 +130,7 @@ body {
   --preview-overlap: 44px;
   --mode-row-height: 58px;
   --mode-gap: 7px;
+  --find-game-gap: 18px;
   position: relative;
   isolation: isolate;
   width: min(92vw, 540px);
@@ -145,7 +146,7 @@ body {
   width: 100%;
   /* Extend the artwork beneath all five collapsed rows. Expanding a topic
      panel must not rescale the artwork or move the first mode button. */
-  height: calc(var(--preview-height) - var(--preview-overlap) + 5 * var(--mode-row-height) + 4 * var(--mode-gap));
+  height: calc(var(--preview-height) - var(--preview-overlap) + 5 * var(--mode-row-height) + 4 * var(--mode-gap) + var(--find-game-gap));
   margin: 0 auto;
   overflow: hidden;
   border: 0;
@@ -303,7 +304,7 @@ body {
   width: 100%;
   min-height: 66px;
   display: block;
-  margin: 18px auto 0;
+  margin: var(--find-game-gap) auto 0;
   border: 1px solid #4c8451;
   background-position: center;
   background-repeat: no-repeat;
@@ -323,6 +324,22 @@ body {
 .find-game-button:hover,
 .find-game-button:focus-visible {
   filter: brightness(1.08);
+}
+
+.find-game-button:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
+.start-notice {
+  position: relative;
+  z-index: 2;
+  padding: 14px 18px;
+  border: 1px solid #7a6851;
+  background: #171e26;
+  color: #e4d6be;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .section-placeholder {
@@ -371,6 +388,7 @@ body {
     --preview-overlap: 34px;
     --mode-row-height: 52px;
     --mode-gap: 6px;
+    --find-game-gap: 16px;
     width: min(96vw, 540px);
   }
 
@@ -406,7 +424,6 @@ body {
 
   .find-game-button {
     min-height: 60px;
-    margin-top: 16px;
     font-size: 21px;
   }
 }

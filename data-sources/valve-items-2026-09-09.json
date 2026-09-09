@@ -1,0 +1,260 @@
+{
+  "retrieved_at": "2026-09-09",
+  "patch_context": "7.41e",
+  "patch_source": "https://www.dota2.com/patches/7.41e",
+  "selection": "Only numeric fields used to review the starter item set; unused response fields are not stored. Hashes refer to the full downloaded responses.",
+  "items": [
+    {
+      "source_url": "https://www.dota2.com/datafeed/itemdata?language=english&item_id=237",
+      "response_sha256": "c08459a5e589862330de0694fc96b2b423fe81a84c43603f1c7e9db8e14a2dc5",
+      "item": {
+        "id": 237,
+        "name": "item_faerie_fire",
+        "item_cost": 65,
+        "item_initial_charges": 1,
+        "special_values": [
+          {
+            "name": "bonus_damage",
+            "values_float": [
+              2
+            ]
+          },
+          {
+            "name": "hp_restore",
+            "values_float": [
+              85
+            ]
+          },
+          {
+            "name": "AbilityCooldown",
+            "values_float": [
+              5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://www.dota2.com/datafeed/itemdata?language=english&item_id=16",
+      "response_sha256": "1ba4507e519a9be61ab6946002dffdf1ce11c6fdb6baf6ed2181886be97a4e16",
+      "item": {
+        "id": 16,
+        "name": "item_branches",
+        "item_cost": 55,
+        "item_initial_charges": 0,
+        "special_values": [
+          {
+            "name": "bonus_all_stats",
+            "values_float": [
+              1
+            ]
+          },
+          {
+            "name": "tree_duration",
+            "values_float": [
+              20
+            ]
+          },
+          {
+            "name": "AbilityCastRange",
+            "values_float": [
+              400
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://www.dota2.com/datafeed/itemdata?language=english&item_id=38",
+      "response_sha256": "d4e599ed97277931d8bf35f27645b36e676ca6fdbdbb20acab64826ca4d9dcff",
+      "item": {
+        "id": 38,
+        "name": "item_clarity",
+        "item_cost": 60,
+        "item_initial_charges": 1,
+        "special_values": [
+          {
+            "name": "mana_regen",
+            "values_float": [
+              6
+            ]
+          },
+          {
+            "name": "buff_duration",
+            "values_float": [
+              25
+            ]
+          },
+          {
+            "name": "AbilityCastRange",
+            "values_float": [
+              250
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://www.dota2.com/datafeed/itemdata?language=english&item_id=216",
+      "response_sha256": "f90985a2627a24373150bac9880fc463898493172013712fe58c3e6c03f9d04d",
+      "item": {
+        "id": 216,
+        "name": "item_enchanted_mango",
+        "item_cost": 65,
+        "item_initial_charges": 1,
+        "special_values": [
+          {
+            "name": "hp_regen",
+            "values_float": [
+              0.4
+            ]
+          },
+          {
+            "name": "replenish_amount",
+            "values_float": [
+              100
+            ]
+          },
+          {
+            "name": "AbilityCastRange",
+            "values_float": [
+              400
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://www.dota2.com/datafeed/itemdata?language=english&item_id=39",
+      "response_sha256": "6301798df672b922a4ad1afd7119dae8705b76350f03eeda65e87dfefa7730cf",
+      "item": {
+        "id": 39,
+        "name": "item_flask",
+        "item_cost": 100,
+        "item_initial_charges": 1,
+        "special_values": [
+          {
+            "name": "buff_duration",
+            "values_float": [
+              13
+            ]
+          },
+          {
+            "name": "health_regen",
+            "values_float": [
+              30
+            ]
+          },
+          {
+            "name": "break_on_hero_damage",
+            "values_float": [
+              1
+            ]
+          },
+          {
+            "name": "AbilityCastRange",
+            "values_float": [
+              250
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://www.dota2.com/datafeed/itemdata?language=english&item_id=41",
+      "response_sha256": "000ee3a16ee3092243533ce8ac6ec203c7d256595a77bc70e75f98790acf0fd9",
+      "item": {
+        "id": 41,
+        "name": "item_bottle",
+        "item_cost": 675,
+        "item_initial_charges": 3,
+        "special_values": [
+          {
+            "name": "health_restore",
+            "values_float": [
+              110
+            ]
+          },
+          {
+            "name": "mana_restore",
+            "values_float": [
+              60
+            ]
+          },
+          {
+            "name": "restore_time",
+            "values_float": [
+              2.7
+            ]
+          },
+          {
+            "name": "max_charges",
+            "values_float": [
+              3
+            ]
+          },
+          {
+            "name": "break_on_hero_damage",
+            "values_float": [
+              1
+            ]
+          },
+          {
+            "name": "rune_expire_time",
+            "values_float": [
+              90
+            ]
+          },
+          {
+            "name": "AbilityCastRange",
+            "values_float": [
+              350
+            ]
+          },
+          {
+            "name": "AbilityCooldown",
+            "values_float": [
+              0.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source_url": "https://www.dota2.com/datafeed/itemdata?language=english&item_id=44",
+      "response_sha256": "eb96dd136a84ff9ed36cd56c23d0641d257140b5817bd7d0a0a06460758e4c59",
+      "item": {
+        "id": 44,
+        "name": "item_tango",
+        "item_cost": 90,
+        "item_initial_charges": 3,
+        "special_values": [
+          {
+            "name": "health_regen",
+            "values_float": [
+              7
+            ]
+          },
+          {
+            "name": "buff_duration",
+            "values_float": [
+              16
+            ]
+          },
+          {
+            "name": "tooltip_charges",
+            "values_float": [
+              3
+            ]
+          },
+          {
+            "name": "AbilityCastRange",
+            "values_float": [
+              165
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

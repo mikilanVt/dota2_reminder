@@ -1,8 +1,9 @@
-import {useState, type CSSProperties} from 'react';
+import {useRef, useState, type ComponentType, type CSSProperties} from 'react';
+import type {TopicId} from '../data/types';
+import type {TrainingScreenProps} from '../features/training/TrainingScreen';
 
 type SectionId = 'home' | 'map' | 'heroes' | 'items' | 'knowledge' | 'updates';
 type ModeId = 'tests' | 'quiz' | 'fill' | 'guess' | 'mixed';
-type TopicId = 'items' | 'heroes' | 'map';
 
 const asset = (name: string) => `${import.meta.env.BASE_URL}assets/${name}`;
 
@@ -42,8 +43,61 @@ export function App() {
   const [activeSection, setActiveSection] = useState<SectionId>('home');
   const [selectedMode, setSelectedMode] = useState<ModeId | null>(null);
   const [selectedTopics, setSelectedTopics] = useState<TopicId[]>([]);
+  const [TrainingScreen, setTrainingScreen] = useState<ComponentType<TrainingScreenProps> | null>(null);
+  const [trainingOpen, setTrainingOpen] = useState(false);
+  const [loadingTraining, setLoadingTraining] = useState(false);
+  const [startNotice, setStartNotice] = useState('');
+  const launchVersion = useRef(0);
+
+  function clearLaunch() {
+    launchVersion.current++;
+    setLoadingTraining(false);
+    setStartNotice('');
+  }
+
+  function navigate(section: SectionId) {
+    clearLaunch();
+    setTrainingOpen(false);
+    setActiveSection(section);
+    window.scrollTo(0, 0);
+  }
+
+  async function startTraining() {
+    if (!selectedMode) {
+      setStartNotice('Сначала выбери режим «Тесты» и тему «Предметы».');
+      return;
+    }
+    if (selectedMode !== 'tests') {
+      setStartNotice('Этот режим ещё готовится. Сейчас можно пройти «Тесты» по предметам.');
+      return;
+    }
+    if (selectedTopics.length !== 1 || selectedTopics[0] !== 'items') {
+      setStartNotice('В первом наборе готовы предметы. Выбери только «Предметы» — вопросы по героям и карте добавим позже.');
+      return;
+    }
+    setStartNotice('');
+    if (TrainingScreen) {
+      setTrainingOpen(true);
+      return;
+    }
+    const version = ++launchVersion.current;
+    setLoadingTraining(true);
+    try {
+      // Load both the game and its question bank only after the player starts.
+      const module = await import('../features/training/TrainingScreen');
+      if (version !== launchVersion.current) return;
+      setTrainingScreen(() => module.TrainingScreen);
+      setTrainingOpen(true);
+    } catch {
+      if (version === launchVersion.current)
+        setStartNotice('Не удалось открыть тест. Проверь соединение и нажми «Найти игру» ещё раз.');
+    } finally {
+      if (version === launchVersion.current) setLoadingTraining(false);
+    }
+  }
 
   function selectMode(modeId: ModeId) {
+    clearLaunch();
     if (selectedMode === modeId) {
       setSelectedMode(null);
       setSelectedTopics([]);
@@ -55,6 +109,7 @@ export function App() {
   }
 
   function toggleTopic(topicId: TopicId) {
+    clearLaunch();
     setSelectedTopics((current) =>
       current.includes(topicId)
         ? current.filter((id) => id !== topicId)
@@ -86,7 +141,7 @@ export function App() {
             aria-label="ГЛАВНАЯ"
             aria-current={activeSection === 'home' ? 'page' : undefined}
             title="ГЛАВНАЯ"
-            onClick={() => setActiveSection('home')}
+            onClick={() => navigate('home')}
           />
           <nav className="nav" aria-label="Основная навигация">
             {sections.map((section) => (
@@ -96,7 +151,7 @@ export function App() {
                 type="button"
                 key={section.id}
                 aria-current={activeSection === section.id ? 'page' : undefined}
-                onClick={() => setActiveSection(section.id)}
+                onClick={() => navigate(section.id)}
               >
                 {section.label}
               </button>
@@ -105,7 +160,9 @@ export function App() {
         </div>
       </header>
 
-      {activeSection === 'home' ? (
+      {activeSection === 'home' ? trainingOpen && TrainingScreen ? (
+        <TrainingScreen topics={selectedTopics} onExit={() => navigate('home')} />
+      ) : (
         <main className="home-screen">
           <section className="mode-picker" aria-label="Выбор режима тренировки">
             <div className="mode-preview" aria-hidden="true">
@@ -151,12 +208,17 @@ export function App() {
             <button
               className="find-game-button"
               type="button"
+              onClick={startTraining}
+              disabled={loadingTraining}
+              aria-busy={loadingTraining}
+              aria-describedby={startNotice ? 'start-notice' : undefined}
               style={{
                 backgroundImage: `linear-gradient(180deg, rgba(255,255,255,.08), rgba(0,0,0,.08)), url(${asset('background_play_button.webp')})`
               }}
             >
-              НАЙТИ ИГРУ
+              {loadingTraining ? 'ОТКРЫВАЕМ ТЕСТ…' : 'НАЙТИ ИГРУ'}
             </button>
+            {startNotice && <p className="start-notice" id="start-notice" role="status">{startNotice}</p>}
           </section>
         </main>
       ) : (
