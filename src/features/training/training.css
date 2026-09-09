@@ -155,10 +155,13 @@
   color: #d0d5d6;
 }
 .training-back {padding: 8px 16px; font-size: .875rem;}
+.training-header-buttons {display: flex; flex-wrap: wrap; gap: 10px;}
+.training-save-status {margin: -10px 0 24px; font-size: .8125rem; color: #b3c2bb;}
+.training-save-status.has-warning {padding: 12px 16px; border-left: 3px solid #b19a75; background: #10191f; color: #ded1b8;}
 .training-primary:hover:not(:disabled),
-.training-secondary:hover,
+.training-secondary:hover:not(:disabled),
 .training-back:hover {filter: brightness(1.15);}
-.training-primary:disabled {opacity: .45; cursor: default;}
+.training-panel button:disabled {opacity: .45; cursor: default;}
 .training-panel button:focus-visible,
 .training-panel summary:focus-visible,
 .training-panel a:focus-visible,

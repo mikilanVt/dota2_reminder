@@ -1,6 +1,6 @@
 import {useRef, useState, type ComponentType, type CSSProperties} from 'react';
 import type {TopicId} from '../data/types';
-import type {TrainingScreenProps} from '../features/training/TrainingScreen';
+import type {TrainingHubProps} from '../features/training/TrainingHub';
 
 type SectionId = 'home' | 'map' | 'heroes' | 'items' | 'knowledge' | 'updates';
 type ModeId = 'tests' | 'quiz' | 'fill' | 'guess' | 'mixed';
@@ -43,7 +43,8 @@ export function App() {
   const [activeSection, setActiveSection] = useState<SectionId>('home');
   const [selectedMode, setSelectedMode] = useState<ModeId | null>(null);
   const [selectedTopics, setSelectedTopics] = useState<TopicId[]>([]);
-  const [TrainingScreen, setTrainingScreen] = useState<ComponentType<TrainingScreenProps> | null>(null);
+  const [TrainingHub, setTrainingHub] = useState<ComponentType<TrainingHubProps> | null>(null);
+  const [trainingEntry, setTrainingEntry] = useState<TrainingHubProps['entry']>('play');
   const [trainingOpen, setTrainingOpen] = useState(false);
   const [loadingTraining, setLoadingTraining] = useState(false);
   const [startNotice, setStartNotice] = useState('');
@@ -75,8 +76,13 @@ export function App() {
       setStartNotice('В первом наборе готовы предметы. Выбери только «Предметы» — вопросы по героям и карте добавим позже.');
       return;
     }
+    await openTraining('play');
+  }
+
+  async function openTraining(entry: TrainingHubProps['entry']) {
     setStartNotice('');
-    if (TrainingScreen) {
+    setTrainingEntry(entry);
+    if (TrainingHub) {
       setTrainingOpen(true);
       return;
     }
@@ -84,13 +90,13 @@ export function App() {
     setLoadingTraining(true);
     try {
       // Load both the game and its question bank only after the player starts.
-      const module = await import('../features/training/TrainingScreen');
+      const module = await import('../features/training/TrainingHub');
       if (version !== launchVersion.current) return;
-      setTrainingScreen(() => module.TrainingScreen);
+      setTrainingHub(() => module.TrainingHub);
       setTrainingOpen(true);
     } catch {
       if (version === launchVersion.current)
-        setStartNotice('Не удалось открыть тест. Проверь соединение и нажми «Найти игру» ещё раз.');
+        setStartNotice('Не удалось открыть тренировку. Проверь соединение и попробуй ещё раз.');
     } finally {
       if (version === launchVersion.current) setLoadingTraining(false);
     }
@@ -160,8 +166,8 @@ export function App() {
         </div>
       </header>
 
-      {activeSection === 'home' ? trainingOpen && TrainingScreen ? (
-        <TrainingScreen topics={selectedTopics} onExit={() => navigate('home')} />
+      {activeSection === 'home' ? trainingOpen && TrainingHub ? (
+        <TrainingHub topics={selectedTopics} entry={trainingEntry} onExit={() => navigate('home')} />
       ) : (
         <main className="home-screen">
           <section className="mode-picker" aria-label="Выбор режима тренировки">
@@ -216,9 +222,13 @@ export function App() {
                 backgroundImage: `linear-gradient(180deg, rgba(255,255,255,.08), rgba(0,0,0,.08)), url(${asset('background_play_button.webp')})`
               }}
             >
-              {loadingTraining ? 'ОТКРЫВАЕМ ТЕСТ…' : 'НАЙТИ ИГРУ'}
+              {loadingTraining ? trainingEntry === 'progress' ? 'ОТКРЫВАЕМ ПРОГРЕСС…' : 'ОТКРЫВАЕМ ТЕСТ…' : 'НАЙТИ ИГРУ'}
             </button>
             {startNotice && <p className="start-notice" id="start-notice" role="status">{startNotice}</p>}
+            <button className="home-progress-button" type="button" disabled={loadingTraining} onClick={() => openTraining('progress')}>
+              МОЙ ПРОГРЕСС
+              <span>Результаты и продолжение теста</span>
+            </button>
           </section>
         </main>
       ) : (

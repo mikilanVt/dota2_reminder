@@ -1,0 +1,42 @@
+.progress-notice {
+  margin: 18px 0;
+  padding: 14px 18px;
+  border-left: 3px solid #b19a75;
+  background: #10191f;
+  color: #ded1b8;
+}
+.progress-draft {
+  margin: 28px 0;
+  padding: 22px;
+  border: 1px solid #637b70;
+  background: linear-gradient(120deg, #274139, #152b29);
+}
+.progress-draft h2 {margin-top: 0; color: #d4e7d7;}
+.progress-stats {display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 30px;}
+.progress-stats div {padding: 18px 10px; border-top: 1px solid #7e715c; background: #131c2399; text-align: center;}
+.progress-stats strong {display: block; font-size: clamp(1.5rem, 3vw, 2rem); color: #e1d5bb;}
+.progress-stats span {display: block; font-size: .875rem; color: #adbabe;}
+.progress-caption {font-size: .8125rem; color: #a9b6bd;}
+.progress-history, .progress-transfer {margin-top: 36px;}
+.progress-history-row {border-top: 1px solid #ffffff24;}
+.progress-history-row summary {display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 17px 0;}
+.progress-history-row summary::before {content: '+'; color: #ccb890; width: 14px; flex: 0 0 14px;}
+.progress-history-row[open] summary::before {content: '−';}
+.progress-history-row summary span {flex: 1;}
+.progress-history-row summary small {display: block; color: #aab6be; margin-top: 3px;}
+.progress-history-row summary strong {color: #ddd1b8; white-space: nowrap;}
+.progress-review {padding: 0 0 24px;}
+.progress-mistake {margin: 12px 0 20px; padding: 0 0 0 16px; border-left: 2px solid #936b59; color: #bac6ce;}
+.progress-mistake p {margin: 8px 0;}
+.progress-mistake strong {color: #dde3e5;}
+.progress-more {margin-top: 18px;}
+.progress-transfer {padding-top: 16px; border-top: 1px solid #ffffff24;}
+.progress-clear {display: inline-block; min-height: 44px; margin-top: 24px; padding: 8px 0; border: 0; background: none; color: #d6aaa0; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; font-size: .875rem;}
+.progress-clear-confirm {margin-top: 24px; padding: 18px; background: #432e2a99; border: 1px solid #87635a;}
+.progress-danger {border-color: #b08678; color: #f0c7b9;}
+@media (max-width: 480px) {
+  .progress-stats {gap: 6px;}
+  .progress-stats div {padding: 12px 6px;}
+  .progress-stats span {font-size: .75rem;}
+  .progress-draft {padding: 18px 14px;}
+}

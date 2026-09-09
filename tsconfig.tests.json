@@ -5,5 +5,5 @@
     "rootDir": "./src",
     "outDir": "./.test-build"
   },
-  "include": ["src/data/**/*.ts", "src/features/training/engine.ts"]
+  "include": ["src/data/**/*.ts", "src/features/training/engine.ts", "src/features/progress/model.ts", "src/features/progress/storage.ts"]
 }
