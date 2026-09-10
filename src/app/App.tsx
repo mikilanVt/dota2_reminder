@@ -44,6 +44,8 @@ export function App() {
   const [selectedMode, setSelectedMode] = useState<ModeId | null>(null);
   const [selectedTopics, setSelectedTopics] = useState<TopicId[]>([]);
   const [TrainingHub, setTrainingHub] = useState<ComponentType<TrainingHubProps> | null>(null);
+  const [ItemsScreen, setItemsScreen] = useState<ComponentType | null>(null);
+  const [itemsFailed, setItemsFailed] = useState(false);
   const [trainingEntry, setTrainingEntry] = useState<TrainingHubProps['entry']>('play');
   const [trainingOpen, setTrainingOpen] = useState(false);
   const [loadingTraining, setLoadingTraining] = useState(false);
@@ -56,11 +58,18 @@ export function App() {
     setStartNotice('');
   }
 
-  function navigate(section: SectionId) {
+  async function navigate(section: SectionId) {
     clearLaunch();
     setTrainingOpen(false);
     setActiveSection(section);
     window.scrollTo(0, 0);
+    if (section === 'items' && !ItemsScreen) {
+      setItemsFailed(false);
+      try {
+        const module = await import('../features/items/ItemsScreen');
+        setItemsScreen(() => module.ItemsScreen);
+      } catch {setItemsFailed(true);}
+    }
   }
 
   async function startTraining() {
@@ -230,6 +239,11 @@ export function App() {
               <span>Результаты и продолжение теста</span>
             </button>
           </section>
+        </main>
+      ) : activeSection === 'items' ? ItemsScreen ? <ItemsScreen /> : (
+        <main className="section-loading" role="status">
+          <p>{itemsFailed ? 'Не удалось открыть предметы. Проверь соединение и попробуй снова.' : 'Открываем магазин…'}</p>
+          {itemsFailed && <button type="button" onClick={() => navigate('items')}>Попробовать снова</button>}
         </main>
       ) : (
         <main className="section-placeholder">
