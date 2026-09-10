@@ -5,6 +5,7 @@ export interface ShopItem {
   englishName: string;
   group: string;
   icon: string;
+  recipe?: {components: readonly number[]; variants?: readonly (readonly number[])[]; scroll?: number};
 }
 
 export interface ShopGroup {
@@ -13,6 +14,7 @@ export interface ShopGroup {
   column: 'basic' | 'upgrades' | 'neutral';
   items: readonly ShopItem[];
   tier?: number;
+  unlockTime?: string;
 }
 
 export interface ItemDescription {
@@ -22,7 +24,9 @@ export interface ItemDescription {
   description: string;
   notes: readonly string[];
   lore: string;
-  stats: readonly {label: string; value: string}[];
+  stats: readonly {label: string; value: string; sign: string; penalty: boolean}[];
+  properties: readonly {label: string; value: string; kind?: string}[];
+  abilities: readonly {title: string; description: string; kind: 'active' | 'passive' | 'use'; range: readonly number[]; mana: readonly number[]; cooldown: readonly number[]; channel: readonly number[]}[];
   mana: readonly number[];
   cooldown: readonly number[];
   channel: readonly number[];

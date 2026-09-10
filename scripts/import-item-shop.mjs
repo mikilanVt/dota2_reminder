@@ -11,7 +11,7 @@ if (cacheDate && (!/^\d{4}-\d{2}-\d{2}$/.test(cacheDate) || cacheDate > date)) t
 const output = `${root}public/assets/item-shop`;
 const source = `${root}tmp/item-shop-${date}`;
 const catalog = JSON.parse(await readFile(`${root}src/data/item-shop-catalog.json`, 'utf8'));
-const input = [...new Map(catalog.groups.flatMap(group => group.items).map(item => [item.id, item])).values()];
+const input = [...new Map([...catalog.groups.flatMap(group => group.items), ...(catalog.extras ?? [])].map(item => [item.id, item])).values()];
 await mkdir(`${output}/details`, {recursive: true});
 await mkdir(source, {recursive: true});
 const manifest = [];

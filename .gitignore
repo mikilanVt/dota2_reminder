@@ -2,6 +2,7 @@ node_modules/
 dist/
 .test-build/
 tmp/item-shop-*/
+tmp/item-detail-research/
 .vite/
 coverage/
 *.log
