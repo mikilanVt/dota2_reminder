@@ -109,6 +109,32 @@
     ]
   },
   {
+    "id": "special",
+    "title": "ОСОБЫЕ ПРЕДМЕТЫ",
+    "column": "basic",
+    "items": [
+      "aegis",
+      "cheese",
+      "refresher_shard",
+      "ultimate_scepter_roshan",
+      "aghanims_shard_roshan",
+      "roshans_banner",
+      "famango",
+      "great_famango",
+      "greater_famango",
+      "royale_with_cheese",
+      "ward_dispenser",
+      "tango_single",
+      "black_grimoire",
+      "grisgris",
+      "eldwurms_edda",
+      "foragers_health",
+      "foragers_stats",
+      "foragers_mana",
+      "tidehunter_fish"
+    ]
+  },
+  {
     "id": "accessories",
     "title": "АКСЕССУАРЫ",
     "column": "upgrades",
@@ -126,6 +152,7 @@
       "mask_of_madness",
       "oblivion_staff",
       "travel_boots",
+      "travel_boots_2",
       "hand_of_midas",
       "moon_shard",
       "soul_booster"
@@ -172,6 +199,7 @@
       "meteor_hammer",
       "dagon",
       "ultimate_scepter",
+      "ultimate_scepter_2",
       "crellas_crozier",
       "octarine_core",
       "orchid",
@@ -276,7 +304,8 @@
       "stonefeather_satchel",
       "possessed_mask",
       "foragers_kit"
-    ]
+    ],
+    "unlockTime": "0:00"
   },
   {
     "id": "neutral-2",
@@ -293,7 +322,8 @@
       "crippling_crossbow",
       "medallion_of_courage",
       "seeds_of_serenity"
-    ]
+    ],
+    "unlockTime": "15:00"
   },
   {
     "id": "neutral-3",
@@ -310,7 +340,8 @@
       "spellslinger",
       "stormcrafter",
       "partisans_brand"
-    ]
+    ],
+    "unlockTime": "25:00"
   },
   {
     "id": "neutral-4",
@@ -327,7 +358,8 @@
       "enchanters_bauble",
       "prophets_pendulum",
       "conjurers_catalyst"
-    ]
+    ],
+    "unlockTime": "35:00"
   },
   {
     "id": "neutral-5",
@@ -345,7 +377,8 @@
       "divine_regalia",
       "harmonizer",
       "heavy_blade"
-    ]
+    ],
+    "unlockTime": "60:00"
   },
   {
     "id": "enhancements",

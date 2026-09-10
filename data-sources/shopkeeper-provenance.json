@@ -1,0 +1,32 @@
+{
+  "selected_asset": "public/assets/item-shop/shopkeeper.webp",
+  "source_url": "https://liquipedia.net/commons/images/d/d9/Shopkeeper_Lore.jpeg",
+  "source_page": "https://liquipedia.net/dota2/The_Shopkeeper",
+  "source_dimensions": [
+    820,
+    1300
+  ],
+  "source_bytes": 233125,
+  "output_dimensions": [
+    265,
+    420
+  ],
+  "output_bytes": 42890,
+  "sha256": "de3c8993125ed0dba2996cd643a3d1769d32249bc6c8a75982983ef0b15047ab",
+  "transforms": [
+    "Lanczos resize to 420 px height",
+    "WebP encoding at quality 88"
+  ],
+  "content_changes": "None. Original image content, colors and background retained; no AI-generated output is selected.",
+  "reference_match": "Visually matches the supplied shop UI reference: same Secret Shop keeper, green robe, red garment, basket, birdcage staff, sandals and pointing gesture. Reference displays artwork horizontally mirrored.",
+  "implementation_notes": [
+    "Use CSS scaleX(-1) to match reference orientation.",
+    "Forest background is retained; parent plans CSS edge masking.",
+    "RGB image; no alpha transparency."
+  ],
+  "provenance_limitations": [
+    "Image downloaded from Liquipedia, not directly from a Valve CDN. The exact artwork visually matches the provided reference.",
+    "No licensing claim is made by this metadata."
+  ],
+  "downloaded_on": "2026-09-10"
+}

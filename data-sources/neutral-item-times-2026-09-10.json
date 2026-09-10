@@ -1,0 +1,24 @@
+{
+  "patch": "7.41e",
+  "verifiedAt": "2026-09-10",
+  "mode": "standard",
+  "times": [
+    0,
+    15,
+    25,
+    35,
+    60
+  ],
+  "unit": "minutes",
+  "sources": [
+    {
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.41&language=russian",
+      "sha256": "53f4f9c1c084caaf12c99e9c9e66c184bcdc169e6b05f86580140b29fe1d6c5a",
+      "note": "Tier 1 unlock changed from 5:00 to 0:00 in 7.41."
+    },
+    {
+      "reference": "eccddc6d-eebc-4e27-b0ef-cfaaa2f51938.png",
+      "note": "Owner-supplied current client shop screenshot: 0:00+, 15:00+, 25:00+, 35:00+, 60:00+. These are access times, not a guarantee that an artifact drops automatically."
+    }
+  ]
+}
