@@ -3,7 +3,7 @@ name: Deploy DotaReminder to GitHub Pages
 on:
   push:
     branches:
-      - codex/project-foundation
+      - main
   workflow_dispatch:
 
 permissions:
