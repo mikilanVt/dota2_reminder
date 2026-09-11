@@ -1,0 +1,48 @@
+{
+  "retrievedAt": "2026-09-10",
+  "source": "https://www.dota2.com/public/javascript/dota_react/main.js?v=qA3udhsb6x_S&l=english&_cdn=fastly",
+  "sha256": "94d20398f1d64218352b726aaf92ae559a4a6eec27e27927f1cbca70d2820f0b",
+  "description": "Decoded from the official Dota website ability tooltip renderer; zero-valued optional properties are omitted.",
+  "behavior": {
+    "passive": 2,
+    "noTarget": 4,
+    "unitTarget": 8,
+    "pointTarget": 16,
+    "area": 32,
+    "channelled": 128,
+    "toggle": 512,
+    "autocast": 4096,
+    "aura": 65536
+  },
+  "damage": {
+    "1": "physical",
+    "2": "magical",
+    "4": "pure",
+    "8": "hpRemoval"
+  },
+  "immunity": {
+    "1": "yes",
+    "2": "no",
+    "3": "yes",
+    "4": "no",
+    "5": "alliesYesEnemiesNo"
+  },
+  "dispellable": {
+    "1": "strongOnly",
+    "2": "yes",
+    "3": "no"
+  },
+  "targets": {
+    "team": {
+      "1": "allies",
+      "2": "enemies",
+      "3": "both"
+    },
+    "type": {
+      "hero": 1,
+      "basic": 2,
+      "building": 4,
+      "tree": 64
+    }
+  }
+}

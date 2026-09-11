@@ -1,0 +1,453 @@
+html {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.topbar {
+  --art-width: 100cqw;
+  --art-offset: 0px;
+  container-type: inline-size;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent;
+  pointer-events: none;
+}
+
+.topbar-frame {
+  position: relative;
+  width: 100%;
+  height: calc(var(--art-width) * 148 / 3840);
+  overflow: hidden;
+}
+
+.topbar-art {
+  position: absolute;
+  top: 0;
+  left: var(--art-offset);
+  width: var(--art-width);
+  max-width: none;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  /* The source contains opaque black below the panel, even in its PNG version.
+     Follow the panel's outline, including the lower logo, to expose the page
+     background without cropping the logo or blending away the dark texture. */
+  clip-path: polygon(
+    0 0, 100% 0, 100% 37.2%,
+    19.79% 37.2%, 19.66% 40.25%, 18.91% 40.25%, 18.8% 44.82%,
+    11.35% 44.82%, 11.2% 40.25%, 10.38% 40.25%, 10.29% 37.2%,
+    0 37.2%
+  );
+}
+
+.home-button {
+  position: absolute;
+  top: 0;
+  left: calc(var(--art-offset) + var(--art-width) * 420 / 3840);
+  z-index: 2;
+  width: calc(var(--art-width) * 332 / 3840);
+  height: 100%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  clip-path: polygon(0 0, 100% 0, 91% 100%, 5% 100%);
+}
+
+.home-button:focus-visible {
+  outline: none;
+  background: rgba(255, 167, 81, 0.1);
+  box-shadow: inset 0 -4px #ffbc72;
+}
+
+.nav {
+  position: absolute;
+  inset: 0 0 auto;
+  height: calc(var(--art-width) * 122 / 3840);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.nav-link {
+  position: absolute;
+  top: 0;
+  left: calc(var(--art-offset) + var(--art-width) * var(--tab-start) / 3840);
+  width: calc(var(--art-width) * 368 / 3840);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px 3px;
+  border: 0;
+  background: transparent;
+  color: rgba(213, 218, 222, 0.72);
+  cursor: pointer;
+  pointer-events: auto;
+  font-size: clamp(0.875rem, 1.05vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  text-shadow: 0 2px 3px #000;
+  white-space: nowrap;
+  clip-path: polygon(10.87% 0, 100% 0, 89.13% 100%, 0 100%);
+}
+
+.nav-link:focus-visible {
+  outline: none;
+  background: rgba(255, 255, 255, 0.06);
+  text-decoration: underline;
+  text-decoration-color: #ffbc72;
+  text-underline-offset: 6px;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link.is-active {
+  color: #fff;
+}
+
+.home-screen {
+  min-height: 100vh;
+  padding: 0 14px 48px;
+}
+
+.mode-picker {
+  --preview-height: clamp(300px, 38vh, 360px);
+  --preview-overlap: 44px;
+  --mode-row-height: 58px;
+  --mode-gap: 7px;
+  --find-game-gap: 18px;
+  position: relative;
+  isolation: isolate;
+  width: min(92vw, 540px);
+  margin: 0 auto;
+  padding-top: calc(var(--preview-height) - var(--preview-overlap));
+}
+
+.mode-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  /* Extend the artwork beneath all five collapsed rows. Expanding a topic
+     panel must not rescale the artwork or move the first mode button. */
+  height: calc(var(--preview-height) - var(--preview-overlap) + 5 * var(--mode-row-height) + 4 * var(--mode-gap) + var(--find-game-gap));
+  margin: 0 auto;
+  overflow: hidden;
+  border: 0;
+  background: #030608;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
+}
+
+.mode-preview::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent 58%, rgba(3, 7, 12, 0.18) 78%, rgba(3, 7, 12, 0.66) 100%),
+    linear-gradient(90deg, rgba(3, 7, 12, 0.06), transparent 24%, transparent 76%, rgba(3, 7, 12, 0.06));
+}
+
+.mode-preview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 38% top;
+}
+
+.mode-list {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: grid;
+  gap: var(--mode-gap);
+  margin: 0 auto;
+}
+
+.mode-block {
+  display: grid;
+}
+
+.mode-button {
+  min-height: var(--mode-row-height);
+  padding: 0 22px;
+  border: 1px solid rgba(0, 0, 0, 0.84);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035), transparent 55%),
+    rgba(45, 50, 53, 0.96);
+  color: rgba(220, 221, 221, 0.6);
+  cursor: pointer;
+  text-align: left;
+  font-size: clamp(17px, 1.35vw, 21px);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.95);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.18);
+  transition: filter 120ms ease, background 120ms ease, color 120ms ease;
+}
+
+.mode-button:hover,
+.mode-button:focus-visible {
+  filter: brightness(1.12);
+}
+
+.mode-button.is-selected {
+  border-left: 7px solid #c4fbff;
+  padding-left: 16px;
+  background:
+    linear-gradient(90deg, rgba(198, 244, 248, 0.12), transparent 52%),
+    rgba(101, 112, 119, 0.98);
+  color: #fff;
+}
+
+.topic-panel {
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.92);
+  border-top: 0;
+  background: #080b0d;
+}
+
+.topic-option {
+  position: relative;
+  width: 100%;
+  min-height: 164px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 22px;
+  overflow: hidden;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.82);
+  background: #080b0d;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+  isolation: isolate;
+}
+
+.topic-option:last-child {
+  border-bottom: 0;
+}
+
+.topic-art {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 90% center;
+  filter: saturate(0.95) contrast(1.08) brightness(0.82);
+}
+
+.topic-option::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(3, 6, 8, 0.72) 0%, rgba(3, 6, 8, 0.38) 34%, rgba(3, 6, 8, 0.08) 76%, rgba(3, 6, 8, 0.01) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(0, 0, 0, 0.025));
+}
+
+.topic-option:hover::before,
+.topic-option:focus-visible::before {
+  background:
+    linear-gradient(90deg, rgba(10, 15, 18, 0.64) 0%, rgba(10, 15, 18, 0.28) 34%, rgba(3, 6, 8, 0.04) 76%, transparent 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.01));
+}
+
+.topic-check {
+  width: 27px;
+  height: 27px;
+  flex: 0 0 27px;
+  border: 3px solid #1b2224;
+  background: rgba(4, 7, 8, 0.92);
+  box-shadow: 0 0 0 2px #050708;
+}
+
+.topic-option.is-checked .topic-check {
+  border-color: #c3f5f7;
+  background: #c3f5f7;
+  box-shadow:
+    0 0 0 2px #050708,
+    0 0 9px rgba(139, 181, 255, 0.95);
+}
+
+.topic-label {
+  font-size: clamp(18px, 1.55vw, 22px);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 4px #000;
+}
+
+.find-game-button {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 66px;
+  display: block;
+  margin: var(--find-game-gap) auto 0;
+  border: 1px solid #4c8451;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  cursor: pointer;
+  font-size: clamp(22px, 2.1vw, 30px);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.9);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.14),
+    0 0 7px rgba(90, 128, 255, 0.4),
+    0 6px 15px rgba(0, 0, 0, 0.32);
+}
+
+.find-game-button:hover,
+.find-game-button:focus-visible {
+  filter: brightness(1.08);
+}
+
+.find-game-button:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
+.start-notice {
+  position: relative;
+  z-index: 2;
+  padding: 14px 18px;
+  border: 1px solid #7a6851;
+  background: #171e26;
+  color: #e4d6be;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.home-progress-button {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  min-height: 56px;
+  margin-top: 16px;
+  padding: 12px 18px;
+  border: 1px solid #636563;
+  background: #1b252ddd;
+  color: #d9d2c3;
+  font-size: .9375rem;
+  font-weight: 650;
+  letter-spacing: .08em;
+  cursor: pointer;
+}
+.home-progress-button span {display: block; margin-top: 5px; font-size: .8125rem; font-weight: 400; letter-spacing: normal; color: #aeb9c2;}
+.home-progress-button:hover:not(:disabled) {background: #2a363fee;}
+.home-progress-button:focus-visible {outline: 2px solid #f4c98c; outline-offset: 3px;}
+.home-progress-button:disabled {opacity: .6; cursor: wait;}
+
+.section-placeholder {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--bar-height, 64px) 40px 40px;
+  color: rgba(255, 255, 255, 0.22);
+  font-size: clamp(28px, 5vw, 70px);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.section-loading {min-height: 100vh; display: grid; align-content: center; justify-items: center; gap: 14px; padding: 90px 24px 40px; color: #c3d0d6; font-size: 1rem;}
+.section-loading button {min-height: 44px; padding: 10px 18px; border: 1px solid #718891; background: #27353d; color: #e0e4df; cursor: pointer; font: inherit;}
+
+/* Keep the artwork and its hit areas on the same scale on narrow screens.
+   Scroll only the topbar and remove the unused area before the logo. */
+@media (max-width: 1180px) {
+  .topbar {
+    --art-width: 92rem;
+    --art-offset: calc(var(--art-width) * -420 / 3840);
+    overflow-x: auto;
+    scrollbar-width: none;
+    pointer-events: auto;
+  }
+
+  .topbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topbar-frame {
+    width: calc(var(--art-width) * 2024 / 3840);
+    min-width: 100%;
+  }
+
+  .nav-link {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .home-screen {
+    padding: 0 8px 26px;
+  }
+
+  .mode-picker {
+    --preview-height: 300px;
+    --preview-overlap: 34px;
+    --mode-row-height: 52px;
+    --mode-gap: 6px;
+    --find-game-gap: 16px;
+    width: min(96vw, 540px);
+  }
+
+  .mode-button {
+    padding: 0 16px;
+    font-size: 15px;
+    letter-spacing: 0.09em;
+  }
+
+  .mode-button.is-selected {
+    padding-left: 10px;
+  }
+
+  .topic-option {
+    min-height: 132px;
+    gap: 14px;
+    padding: 0 15px;
+  }
+
+  .topic-art {
+    object-position: 86% center;
+  }
+
+  .topic-check {
+    width: 24px;
+    height: 24px;
+    flex-basis: 24px;
+  }
+
+  .topic-label {
+    font-size: 16px;
+  }
+
+  .find-game-button {
+    min-height: 60px;
+    font-size: 21px;
+  }
+}

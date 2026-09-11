@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.test-build/
+tmp/item-shop-*/
+tmp/item-detail-research/
+.vite/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
