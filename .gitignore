@@ -3,6 +3,7 @@ dist/
 .test-build/
 tmp/item-shop-*/
 tmp/item-detail-research/
+tmp/guidance/
 .vite/
 coverage/
 *.log
