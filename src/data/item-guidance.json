@@ -1,7 +1,5 @@
 {
   "patch": "7.41e",
-  "reviewedAt": "2026-09-11",
-  "verification": "editorial-reviewed",
   "positions": [
     {
       "id": 1,
@@ -24,656 +22,6 @@
       "name": "Полная поддержка"
     }
   ],
-  "sources": {
-    "item-1": {
-      "title": "Valve: Blink Dagger",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1"
-    },
-    "item-116": {
-      "title": "Valve: Black King Bar",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=116"
-    },
-    "item-102": {
-      "title": "Valve: Force Staff",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=102"
-    },
-    "item-254": {
-      "title": "Valve: Glimmer Cape",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=254"
-    },
-    "item-37": {
-      "title": "Valve: Ghost Scepter",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=37"
-    },
-    "item-256": {
-      "title": "Valve: Aeon Disk",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=256"
-    },
-    "item-226": {
-      "title": "Valve: Lotus Orb",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=226"
-    },
-    "item-123": {
-      "title": "Valve: Linken's Sphere",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=123"
-    },
-    "item-90": {
-      "title": "Valve: Pipe of Insight",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=90"
-    },
-    "item-242": {
-      "title": "Valve: Crimson Guard",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=242"
-    },
-    "item-79": {
-      "title": "Valve: Mekansm",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=79"
-    },
-    "item-231": {
-      "title": "Valve: Guardian Greaves",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=231"
-    },
-    "item-180": {
-      "title": "Valve: Arcane Boots",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=180"
-    },
-    "item-214": {
-      "title": "Valve: Tranquil Boots",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=214"
-    },
-    "item-229": {
-      "title": "Valve: Solar Crest",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=229"
-    },
-    "item-267": {
-      "title": "Valve: Spirit Vessel",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=267"
-    },
-    "item-92": {
-      "title": "Valve: Urn of Shadows",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=92"
-    },
-    "item-98": {
-      "title": "Valve: Orchid Malevolence",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=98"
-    },
-    "item-96": {
-      "title": "Valve: Scythe of Vyse",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=96"
-    },
-    "item-100": {
-      "title": "Valve: Eul's Scepter of Divinity",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=100"
-    },
-    "item-206": {
-      "title": "Valve: Rod of Atos",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=206"
-    },
-    "item-210": {
-      "title": "Valve: Heaven's Halberd",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=210"
-    },
-    "item-225": {
-      "title": "Valve: Nullifier",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=225"
-    },
-    "item-135": {
-      "title": "Valve: Monkey King Bar",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=135"
-    },
-    "item-147": {
-      "title": "Valve: Manta Style",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=147"
-    },
-    "item-156": {
-      "title": "Valve: Satanic",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=156"
-    },
-    "item-158": {
-      "title": "Valve: Mjollnir",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=158"
-    },
-    "item-166": {
-      "title": "Valve: Maelstrom",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=166"
-    },
-    "item-145": {
-      "title": "Valve: Battle Fury",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=145"
-    },
-    "item-137": {
-      "title": "Valve: Radiance",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=137"
-    },
-    "item-168": {
-      "title": "Valve: Desolator",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=168"
-    },
-    "item-112": {
-      "title": "Valve: Assault Cuirass",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=112"
-    },
-    "item-119": {
-      "title": "Valve: Shiva's Guard",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=119"
-    },
-    "item-160": {
-      "title": "Valve: Eye of Skadi",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=160"
-    },
-    "item-127": {
-      "title": "Valve: Blade Mail",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=127"
-    },
-    "item-48": {
-      "title": "Valve: Boots of Travel",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=48"
-    },
-    "item-220": {
-      "title": "Valve: Boots of Travel 2",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=220"
-    },
-    "item-108": {
-      "title": "Valve: Aghanim's Scepter",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=108"
-    },
-    "item-271": {
-      "title": "Valve: Aghanim's Blessing",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=271"
-    },
-    "item-609": {
-      "title": "Valve: Aghanim's Shard",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=609"
-    },
-    "item-41": {
-      "title": "Valve: Bottle",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=41"
-    },
-    "item-63": {
-      "title": "Valve: Power Treads",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=63"
-    },
-    "item-50": {
-      "title": "Valve: Phase Boots",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=50"
-    },
-    "item-36": {
-      "title": "Valve: Magic Wand",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=36"
-    },
-    "item-30": {
-      "title": "Valve: Gem of True Sight",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=30"
-    },
-    "item-40": {
-      "title": "Valve: Dust of Appearance",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=40"
-    },
-    "item-42": {
-      "title": "Valve: Observer Ward",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=42"
-    },
-    "item-43": {
-      "title": "Valve: Sentry Ward",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=43"
-    },
-    "item-188": {
-      "title": "Valve: Smoke of Deceit",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=188"
-    },
-    "item-133": {
-      "title": "Valve: Divine Rapier",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=133"
-    },
-    "item-110": {
-      "title": "Valve: Refresher Orb",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=110"
-    },
-    "item-235": {
-      "title": "Valve: Octarine Core",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=235"
-    },
-    "item-232": {
-      "title": "Valve: Aether Lens",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=232"
-    },
-    "patch-7.31": {
-      "title": "Valve: изменения 7.31",
-      "url": "https://www.dota2.com/patches/7.31"
-    },
-    "patch-7.33": {
-      "title": "Valve: изменения 7.33",
-      "url": "https://www.dota2.com/patches/7.33"
-    },
-    "patch-7.36": {
-      "title": "Valve: изменения 7.36",
-      "url": "https://www.dota2.com/patches/7.36"
-    },
-    "patch-7.37": {
-      "title": "Valve: изменения 7.37",
-      "url": "https://www.dota2.com/patches/7.37"
-    },
-    "patch-7.38": {
-      "title": "Valve: изменения 7.38",
-      "url": "https://www.dota2.com/patches/7.38"
-    },
-    "patch-7.41": {
-      "title": "Valve: изменения 7.41",
-      "url": "https://www.dota2.com/patches/7.41"
-    },
-    "catalog": {
-      "title": "Valve: список предметов и компонентов",
-      "url": "https://www.dota2.com/datafeed/itemlist?language=russian"
-    },
-    "layout": {
-      "title": "Компоновка магазина из клиента",
-      "url": "https://github.com/mikilanVt/dota2_reminder/blob/codex/project-foundation/docs/ITEMS-DESIGN.md"
-    },
-    "witch_doctor": {
-      "title": "Valve: Witch Doctor",
-      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=30"
-    },
-    "winter_wyvern": {
-      "title": "Valve: Winter Wyvern",
-      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=112"
-    },
-    "tidehunter": {
-      "title": "Valve: Tidehunter",
-      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=29"
-    },
-    "item-117": {
-      "title": "Valve: Aegis of the Immortal",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=117"
-    },
-    "item-1154": {
-      "title": "Valve: Block of Cheese",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1154"
-    },
-    "item-218": {
-      "title": "Valve: Observer and Sentry Wards",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=218"
-    },
-    "item-44": {
-      "title": "Valve: Tango",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=44"
-    },
-    "item-241": {
-      "title": "Valve: Tango (Shared)",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=241"
-    },
-    "item-1868": {
-      "title": "Valve: Forager's Kit",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1868"
-    },
-    "item-1869": {
-      "title": "Valve: Vital Toadstool",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1869"
-    },
-    "item-1870": {
-      "title": "Valve: Ironwood Nut",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1870"
-    },
-    "item-1871": {
-      "title": "Valve: Tomo'kan Ringcap",
-      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1871"
-    }
-  },
-  "rules": {
-    "shop": {
-      "text": "Покупается в лавке на базе.",
-      "sources": [
-        "layout",
-        "catalog"
-      ]
-    },
-    "secret": {
-      "text": "Покупается в потайной лавке.",
-      "sources": [
-        "layout",
-        "catalog"
-      ]
-    },
-    "recipe": {
-      "text": "Свиток рецепта покупается в лавке на базе и объединяется с указанными компонентами.",
-      "sources": [
-        "catalog"
-      ]
-    },
-    "assembled": {
-      "text": "Собирается из компонентов и, если он нужен, свитка рецепта.",
-      "note": "Нажми на компонент в схеме ниже, чтобы открыть его описание.",
-      "sources": [
-        "catalog"
-      ]
-    },
-    "neutral": {
-      "text": "Создаётся за безумруды после {time}, если артефакт есть среди предложенных вариантов.",
-      "note": "Безумруды получают за зачистку нейтральных лагерей. Для нового разряда сначала нужно создать предмет предыдущего; вместе с артефактом выбираются чары.",
-      "sources": [
-        "patch-7.38",
-        "patch-7.41"
-      ]
-    },
-    "enhancement": {
-      "text": "Выбираются при создании нейтрального предмета вместе с артефактом. Доступность зависит от разряда и основного атрибута героя.",
-      "sources": [
-        "patch-7.38",
-        "patch-7.41"
-      ]
-    }
-  },
-  "acquisition": {
-    "aghanims_shard": {
-      "text": "Покупается в лавке на базе с 15:00. Улучшение также можно получить за убийство Терзателя.",
-      "note": "Награда Терзателя не гарантирована именно твоему герою: он выбирает получателя среди подходящих союзников.",
-      "sources": [
-        "patch-7.31",
-        "patch-7.33",
-        "patch-7.41"
-      ]
-    },
-    "aegis": {
-      "text": "Подбирается после убийства Рошана. В лавках не продаётся.",
-      "sources": [
-        "item-117",
-        "patch-7.37"
-      ]
-    },
-    "cheese": {
-      "text": "Дополнительная добыча Рошана с третьей смерти, если он погиб днём. В лавках не продаётся.",
-      "sources": [
-        "patch-7.37",
-        "patch-7.38"
-      ]
-    },
-    "refresher_shard": {
-      "text": "Дополнительная добыча Рошана с третьей смерти. Выпадает независимо от времени суток.",
-      "sources": [
-        "patch-7.37",
-        "patch-7.38"
-      ]
-    },
-    "roshans_banner": {
-      "text": "Рошан оставляет знамя при второй смерти. В лавках не продаётся.",
-      "sources": [
-        "patch-7.37"
-      ]
-    },
-    "ultimate_scepter_roshan": {
-      "text": "Старая награда Рошана: он больше не роняет Aghanim’s Blessing с обновления 7.38.",
-      "unavailable": true,
-      "note": "Покупаемое улучшение Aghanim’s Blessing — отдельная запись.",
-      "related": [
-        "ultimate_scepter_2"
-      ],
-      "sources": [
-        "patch-7.38"
-      ]
-    },
-    "aghanims_shard_roshan": {
-      "text": "Старая награда Рошана: выпадение Aghanim’s Shard из него убрано в 7.33.",
-      "unavailable": true,
-      "note": "Актуальное улучшение ищи в записи Aghanim’s Shard.",
-      "related": [
-        "aghanims_shard"
-      ],
-      "sources": [
-        "patch-7.33"
-      ]
-    },
-    "black_grimoire": {
-      "text": "Предмет прежнего аспекта Warlock. В 7.41 аспекты удалены, поэтому прежний способ получения больше не действует.",
-      "unavailable": true,
-      "sources": [
-        "patch-7.36",
-        "patch-7.41"
-      ]
-    },
-    "famango": {
-      "text": "Собирается в пруду лотосов. Для подбора стой в его области со свободным местом в инвентаре.",
-      "note": "При появлении врага в области отсчёт подбора откатывается.",
-      "sources": [
-        "patch-7.33",
-        "patch-7.38",
-        "patch-7.41"
-      ]
-    },
-    "great_famango": {
-      "text": "Объединяется из трёх Healing Lotus. С 35:00 такие лотосы также появляются в прудах.",
-      "related": [
-        "famango"
-      ],
-      "sources": [
-        "catalog",
-        "patch-7.38",
-        "patch-7.41"
-      ]
-    },
-    "greater_famango": {
-      "text": "Объединяется из двух Great Healing Lotus. С 60:00 такие лотосы также появляются в прудах.",
-      "related": [
-        "great_famango"
-      ],
-      "sources": [
-        "catalog",
-        "patch-7.38",
-        "patch-7.41"
-      ]
-    },
-    "royale_with_cheese": {
-      "text": "Особый предмет. Точный способ получения для этого патча пока не подтверждён источниками каталога.",
-      "verification": "needs-review",
-      "note": "У Valve есть описание эффекта, но нет обычного рецепта сборки. Не используем эту запись для учебных вопросов.",
-      "sources": [
-        "item-1154",
-        "patch-7.38"
-      ]
-    },
-    "ward_dispenser": {
-      "text": "Observer Ward и Sentry Ward объединяются в одну ячейку инвентаря. Отдельная покупка этой записи не нужна.",
-      "related": [
-        "ward_observer",
-        "ward_sentry"
-      ],
-      "sources": [
-        "catalog",
-        "item-218"
-      ]
-    },
-    "tango_single": {
-      "text": "Появляется, когда союзник делится зарядом Tango.",
-      "related": [
-        "tango"
-      ],
-      "sources": [
-        "item-44",
-        "item-241"
-      ]
-    },
-    "grisgris": {
-      "text": "Witch Doctor получает предмет от врождённой способности Gris-Gris. В лавке не продаётся.",
-      "note": "Использование расходует предмет навсегда.",
-      "sources": [
-        "witch_doctor"
-      ]
-    },
-    "eldwurms_edda": {
-      "text": "Winter Wyvern получает предмет от врождённой способности Eldwurm’s Edda. В лавке не продаётся.",
-      "note": "В начале игры предмет находится на перезарядке.",
-      "sources": [
-        "winter_wyvern"
-      ]
-    },
-    "foragers_health": {
-      "text": "Находится при сборе урожая с отмеченных деревьев с помощью Forager’s Kit.",
-      "related": [
-        "foragers_kit"
-      ],
-      "sources": [
-        "item-1868",
-        "item-1869"
-      ]
-    },
-    "foragers_stats": {
-      "text": "Находится при сборе урожая с отмеченных деревьев с помощью Forager’s Kit.",
-      "related": [
-        "foragers_kit"
-      ],
-      "sources": [
-        "item-1868",
-        "item-1870"
-      ]
-    },
-    "foragers_mana": {
-      "text": "Находится при сборе урожая с отмеченных деревьев с помощью Forager’s Kit.",
-      "related": [
-        "foragers_kit"
-      ],
-      "sources": [
-        "item-1868",
-        "item-1871"
-      ]
-    },
-    "tidehunter_fish": {
-      "text": "Рыбка от Leviathan’s Catch у Tidehunter. Её оставляет вражеский герой, которого убил владелец способности или который погиб под действием его отрицательных эффектов.",
-      "sources": [
-        "tidehunter"
-      ]
-    },
-    "enhancement_brawny": {
-      "text": "1–4 разряды: герои силы и ловкости.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_tough": {
-      "text": "1–4 разряды: герои силы и интеллекта.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_alert": {
-      "text": "1–4 разряды: герои ловкости и универсальные герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_mystical": {
-      "text": "1–4 разряды: герои интеллекта и универсальные герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_quickened": {
-      "text": "1–4 разряды: все герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_vital": {
-      "text": "1-й разряд: все герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_crude": {
-      "text": "2–4 разряды: герои силы.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_nimble": {
-      "text": "2–4 разряды: герои ловкости.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_keen_eyed": {
-      "text": "2–4 разряды: герои интеллекта.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_titanic": {
-      "text": "2–4 разряды: универсальные герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_greedy": {
-      "text": "2-й и 3-й разряды: все герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_timeless": {
-      "text": "4-й и 5-й разряды: все герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_hulking": {
-      "text": "5-й разряд: герои силы.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_audacious": {
-      "text": "5-й разряд: герои ловкости.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_feverish": {
-      "text": "5-й разряд: герои интеллекта.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_manic": {
-      "text": "5-й разряд: универсальные герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_evolved": {
-      "text": "5-й разряд: все герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_fleetfooted": {
-      "text": "5-й разряд: все герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    },
-    "enhancement_vampiric": {
-      "text": "5-й разряд: все герои.",
-      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
-      "sources": [
-        "patch-7.41"
-      ]
-    }
-  },
   "advice": {
     "blink": {
       "purpose": "Помогает начать бой с нужной дистанции или быстро занять позицию.",
@@ -694,8 +42,13 @@
         }
       ],
       "caution": "Полученный урон может временно заблокировать прыжок. Продумай подход к драке.",
-      "sources": [
-        "item-1"
+      "tips": [
+        "Заранее выбери цель и точку приземления. После прыжка сразу используй контроль, пока враг не успел отреагировать.",
+        "Если противник поддерживает по тебе постоянный урон, начни заход из тумана войны или дождись паузы."
+      ],
+      "alternatives": [
+        "force_staff",
+        "invis_sword"
       ]
     },
     "black_king_bar": {
@@ -716,8 +69,13 @@
         }
       ],
       "caution": "Не защищает от всего контроля: проверяй, проходит ли конкретная способность сквозь невосприимчивость к эффектам.",
-      "sources": [
-        "item-116"
+      "tips": [
+        "Подготовь применение до опасного контроля. Если уже не можешь нажимать предметы, само наличие BKB не спасёт.",
+        "Старайся провести защищённое время в атаках или прокасте, а не потратить его целиком на сближение."
+      ],
+      "alternatives": [
+        "sphere",
+        "lotus_orb"
       ]
     },
     "force_staff": {
@@ -739,8 +97,13 @@
         }
       ],
       "caution": "Толчок идёт по направлению взгляда цели. Не спасает от всех способностей — исключения перечислены в описании.",
-      "sources": [
-        "item-102"
+      "tips": [
+        "Перед нажатием проверь направление взгляда цели: от него зависит, куда её вытолкнет.",
+        "Держи дистанцию до союзного керри, чтобы успеть использовать спасение, не попав под тот же контроль."
+      ],
+      "alternatives": [
+        "glimmer_cape",
+        "hurricane_pike"
       ]
     },
     "glimmer_cape": {
@@ -755,8 +118,13 @@
         }
       ],
       "caution": "У невидимости есть задержка; раскрытие невидимости мешает скрыться. Магический барьер не поглощает физический урон.",
-      "sources": [
-        "item-254"
+      "tips": [
+        "Включай перед ожидаемым магическим уроном; применение полезно даже тогда, когда враг умеет раскрывать невидимость.",
+        "Проверь, сможет ли союзник выйти из опасной области за полученное время."
+      ],
+      "alternatives": [
+        "force_staff",
+        "pavise"
       ]
     },
     "ghost": {
@@ -777,8 +145,12 @@
         }
       ],
       "caution": "Во время действия нельзя атаковать; учитывай магический урон и развеивание у противника.",
-      "sources": [
-        "item-37"
+      "tips": [
+        "Сохраняй под момент физического фокуса, а за время защиты меняй позицию или готовь другое спасение."
+      ],
+      "alternatives": [
+        "glimmer_cape",
+        "aeon_disk"
       ]
     },
     "aeon_disk": {
@@ -800,8 +172,12 @@
         }
       ],
       "caution": "Эффект может сработать до решающего момента. Во время защиты ты тоже не наносишь урон.",
-      "sources": [
-        "item-256"
+      "tips": [
+        "Следи за готовностью срабатывания перед выходом вперёд. Противник может специально потратить его небольшим нападением до настоящей драки."
+      ],
+      "alternatives": [
+        "ghost",
+        "sphere"
       ]
     },
     "lotus_orb": {
@@ -822,8 +198,13 @@
         }
       ],
       "caution": "Отражение не блокирует исходное заклинание. Не путай его с защитой Linken’s Sphere.",
-      "sources": [
-        "item-226"
+      "tips": [
+        "Развеивание происходит при применении: для снятия подходящего эффекта сначала дождись его появления.",
+        "Если задача — отражение направленных заклинаний, накладывай заранее на союзника, который войдёт первым."
+      ],
+      "alternatives": [
+        "sphere",
+        "black_king_bar"
       ]
     },
     "sphere": {
@@ -844,8 +225,18 @@
         }
       ],
       "caution": "Недорогое заклинание может сначала снять защиту. Некоторые способности вообще не блокируются.",
-      "sources": [
-        "item-123"
+      "tips": [
+        "Следи за мелкими направленными способностями: ими могут снять блокировку перед главным контролем.",
+        "Не принимай наличие готовой сферы за разрешение в одиночку входить в нескольких врагов."
+      ],
+      "alternatives": [
+        "lotus_orb",
+        "black_king_bar"
+      ],
+      "heroes": [
+        "Lina",
+        "Windranger",
+        "Puck"
       ]
     },
     "pipe": {
@@ -865,8 +256,17 @@
         }
       ],
       "caution": "Эффект требует близости союзников. Перед покупкой договоритесь, кто собирает командную защиту.",
-      "sources": [
-        "item-90"
+      "tips": [
+        "Включай общий барьер перед массовым прокастом, пока союзники находятся в радиусе действия."
+      ],
+      "alternatives": [
+        "crimson_guard",
+        "glimmer_cape"
+      ],
+      "heroes": [
+        "Bounty Hunter",
+        "Underlord",
+        "Undying"
       ]
     },
     "crimson_guard": {
@@ -880,8 +280,12 @@
         }
       ],
       "caution": "Блок атак не заменяет защиту от заклинаний. Оцени, какой урон действительно убивает команду.",
-      "sources": [
-        "item-242"
+      "tips": [
+        "Наиболее выгодный момент — начало серии вражеских атак по нескольким союзникам, а не конец уже проигранного размена."
+      ],
+      "alternatives": [
+        "pipe",
+        "pavise"
       ]
     },
     "mekansm": {
@@ -902,8 +306,12 @@
         }
       ],
       "caution": "Не откладывай применение до смерти союзника. Повторные лечения от Mekansm и Greaves ограничены общим интервалом.",
-      "sources": [
-        "item-79"
+      "tips": [
+        "Старайся лечить несколько пострадавших союзников за одно применение, сохраняя достаточный запас маны."
+      ],
+      "alternatives": [
+        "guardian_greaves",
+        "holy_locket"
       ]
     },
     "guardian_greaves": {
@@ -924,8 +332,17 @@
         }
       ],
       "caution": "Развеивание применяется к владельцу, а не ко всей команде. Несколько таких предметов не дают свободно повторять лечение.",
-      "sources": [
-        "item-231"
+      "tips": [
+        "Выбирай момент, когда команда одновременно потратила здоровье и ману, но ещё может продолжать драку."
+      ],
+      "alternatives": [
+        "boots_of_bearing",
+        "pipe"
+      ],
+      "heroes": [
+        "Undying",
+        "Dazzle",
+        "Snapfire"
       ]
     },
     "arcane_boots": {
@@ -946,8 +363,12 @@
         }
       ],
       "caution": "Для группового восстановления нужно держаться в радиусе союзников.",
-      "sources": [
-        "item-180"
+      "tips": [
+        "Перед общим восстановлением маны подойди к нужным союзникам, если это не подвергает тебя лишнему риску."
+      ],
+      "alternatives": [
+        "tranquil_boots",
+        "power_treads"
       ]
     },
     "tranquil_boots": {
@@ -962,8 +383,12 @@
         }
       ],
       "caution": "Атаки по владельцу и его атаки по героям временно ослабляют предмет. Он не решает недостаток маны.",
-      "sources": [
-        "item-214"
+      "tips": [
+        "Используй паузы между столкновениями для восстановления и перемещения к следующей полезной позиции."
+      ],
+      "alternatives": [
+        "arcane_boots",
+        "boots_of_bearing"
       ]
     },
     "solar_crest": {
@@ -984,8 +409,12 @@
         }
       ],
       "caution": "При применении на себя действует только барьер. Магический урон он не поглощает.",
-      "sources": [
-        "item-229"
+      "tips": [
+        "Накладывай усиление на того, кто сейчас действительно сможет атаковать или выдержать физический фокус."
+      ],
+      "alternatives": [
+        "pavise",
+        "glimmer_cape"
       ]
     },
     "spirit_vessel": {
@@ -1007,8 +436,12 @@
         }
       ],
       "caution": "Нужны заряды и подходящая цель. Договоритесь о покупке, чтобы не конкурировать за заряды.",
-      "sources": [
-        "item-267"
+      "tips": [
+        "Начинай общий фокус с эффекта по лечащейся цели, а не применяй его уже после того, как она восстановила здоровье."
+      ],
+      "alternatives": [
+        "skadi",
+        "crellas_crozier"
       ]
     },
     "urn_of_shadows": {
@@ -1029,8 +462,12 @@
         }
       ],
       "caution": "Без участия в событиях рядом с погибающими врагами будет трудно получать заряды.",
-      "sources": [
-        "item-92"
+      "tips": [
+        "Согласуй покупку с командой: заряды за ближайшее убийство не стоит рассчитывать получить всем владельцам одновременно."
+      ],
+      "alternatives": [
+        "spirit_vessel",
+        "essence_distiller"
       ]
     },
     "orchid": {
@@ -1050,8 +487,13 @@
         }
       ],
       "caution": "Безмолвие не запрещает использование предметов. Учитывай способы снять или переждать эффект.",
-      "sources": [
-        "item-98"
+      "tips": [
+        "Следи за предметами жертвы: после появления развеивания можно сначала вынудить его потратить или сменить цель на уязвимого саппорта.",
+        "Лучшее время покупки определяется окном для убийств, а не неизменным номером предмета в сборке."
+      ],
+      "alternatives": [
+        "sheepstick",
+        "bloodthorn"
       ]
     },
     "sheepstick": {
@@ -1073,8 +515,12 @@
         }
       ],
       "caution": "Нужны подходящая дистанция и мана. Учитывай защиту цели от направленных заклинаний.",
-      "sources": [
-        "item-96"
+      "tips": [
+        "Согласуй очередность с союзным контролем, чтобы не потратить всю длительность одновременно с другим оглушением."
+      ],
+      "alternatives": [
+        "orchid",
+        "rod_of_atos"
       ]
     },
     "cyclone": {
@@ -1096,8 +542,12 @@
         }
       ],
       "caution": "Базовый Eul’s Scepter нельзя применять на союзников; неуязвимую цель нельзя свободно атаковать.",
-      "sources": [
-        "item-100"
+      "tips": [
+        "Для продолжения контроля подготовь заклинание к приземлению цели. Для спасения себя заранее выбери следующее действие после торнадо."
+      ],
+      "alternatives": [
+        "wind_waker",
+        "force_staff"
       ]
     },
     "rod_of_atos": {
@@ -1113,8 +563,12 @@
         }
       ],
       "caution": "Оцепенение не является оглушением: цель может продолжать атаковать и применять доступные способности.",
-      "sources": [
-        "item-206"
+      "tips": [
+        "Оцепенение удобно перед способностью, из области которой враг обычно успевает уйти."
+      ],
+      "alternatives": [
+        "gungir",
+        "sheepstick"
       ]
     },
     "heavens_halberd": {
@@ -1134,8 +588,13 @@
         }
       ],
       "caution": "Бессилие не выключает урон от способностей. Применяй на того, чьи атаки действительно опасны.",
-      "sources": [
-        "item-210"
+      "tips": [
+        "Применяй обезоруживание в момент, когда вражеский герой готов нанести основной урон атаками.",
+        "Заранее проверь его защитные эффекты: важно не просто нажать предмет, а попасть в рабочее окно."
+      ],
+      "alternatives": [
+        "ghost",
+        "sheepstick"
       ]
     },
     "nullifier": {
@@ -1150,8 +609,12 @@
         }
       ],
       "caution": "Не запрещает пользоваться предметами и не снимает абсолютно все эффекты. Проверяй конкретный способ защиты врага.",
-      "sources": [
-        "item-225"
+      "tips": [
+        "Синхронизируй применение с фокусом команды, чтобы противник не переждал эффект вне вашей досягаемости."
+      ],
+      "alternatives": [
+        "sheepstick",
+        "silver_edge"
       ]
     },
     "monkey_king_bar": {
@@ -1166,8 +629,12 @@
         }
       ],
       "caution": "Прохождение сквозь уклонение срабатывает с вероятностью; предмет не делает каждую атаку безусловно точной.",
-      "sources": [
-        "item-135"
+      "tips": [
+        "Покупай под реально важное уклонение у цели, которую обязан убивать. Против команды без такой угрозы сравни отдачу других предметов на урон."
+      ],
+      "alternatives": [
+        "greater_crit",
+        "bloodthorn"
       ]
     },
     "manta": {
@@ -1187,8 +654,13 @@
         }
       ],
       "caution": "Иллюзии не копируют все свойства героя и предметов. Оцени пользу иллюзий именно для своего героя.",
-      "sources": [
-        "item-147"
+      "tips": [
+        "Если предмет нужен прежде всего для развеивания, не трать его бездумно на фарм перед возможной дракой.",
+        "Иллюзиями можно отдельно толкать линию или проверять опасное направление."
+      ],
+      "alternatives": [
+        "sange_and_yasha",
+        "black_king_bar"
       ]
     },
     "satanic": {
@@ -1203,8 +675,17 @@
         }
       ],
       "caution": "Если тебя удерживают или не дают атаковать, активный вампиризм трудно реализовать.",
-      "sources": [
-        "item-156"
+      "tips": [
+        "Используй сильный вампиризм тогда, когда действительно можешь наносить атаки; заранее выбери доступную цель."
+      ],
+      "alternatives": [
+        "heart",
+        "skadi"
+      ],
+      "heroes": [
+        "Shadow Fiend",
+        "Luna",
+        "Nature's Prophet"
       ]
     },
     "mjollnir": {
@@ -1224,8 +705,12 @@
         }
       ],
       "caution": "Щит нужно применять отдельно. Его польза выше на существе, которое противник действительно атакует.",
-      "sources": [
-        "item-158"
+      "tips": [
+        "Щит выгоднее накладывать на союзника, которого противник собирается многократно атаковать, а не обязательно на владельца предмета."
+      ],
+      "alternatives": [
+        "bfury",
+        "hydras_breath"
       ]
     },
     "maelstrom": {
@@ -1240,8 +725,12 @@
         }
       ],
       "caution": "Это покупка для атакующего героя. Она не даёт самостоятельного способа пережить контроль.",
-      "sources": [
-        "item-166"
+      "tips": [
+        "Для ускорения фарма выбирай маршруты с группами крипов и продолжай атаковать, чтобы получать срабатывания."
+      ],
+      "alternatives": [
+        "bfury",
+        "specialists_array"
       ]
     },
     "bfury": {
@@ -1255,8 +744,12 @@
         }
       ],
       "caution": "Прорубание работает только в ближнем бою. Покупка для ускорения фарма может отложить нужную защиту или участие в драках.",
-      "sources": [
-        "item-145"
+      "tips": [
+        "Планируй маршрут фарма так, чтобы каждая серия атак задевала несколько крипов и быстрее освобождала следующий лагерь."
+      ],
+      "alternatives": [
+        "maelstrom",
+        "radiance"
       ]
     },
     "radiance": {
@@ -1271,8 +764,12 @@
         }
       ],
       "caution": "Чтобы наносить урон горением, нужно находиться рядом с целями и оставаться в живых.",
-      "sources": [
-        "item-137"
+      "tips": [
+        "Используй постоянный урон для одновременного давления на нескольких врагов или лагеря, но сохраняй возможность пережить их ответ."
+      ],
+      "alternatives": [
+        "bfury",
+        "maelstrom"
       ]
     },
     "desolator": {
@@ -1287,8 +784,12 @@
         }
       ],
       "caution": "Снижение брони помогает физическому урону. Оцени, можешь ли ты безопасно добраться до цели и атаковать.",
-      "sources": [
-        "item-168"
+      "tips": [
+        "Начинай атаку по приоритетной цели до основной серии ударов союзников, чтобы команда использовала снижение брони."
+      ],
+      "alternatives": [
+        "greater_crit",
+        "assault"
       ]
     },
     "assault": {
@@ -1303,8 +804,17 @@
         }
       ],
       "caution": "Аура требует близости к команде и целям. Уточни, не собирает ли её другой союзник.",
-      "sources": [
-        "item-112"
+      "tips": [
+        "Оставайся достаточно близко к атакующим союзникам: предмет раскрывается через общую драку, а не только через личную скорость атаки."
+      ],
+      "alternatives": [
+        "shivas_guard",
+        "butterfly"
+      ],
+      "heroes": [
+        "Lifestealer",
+        "Dawnbreaker",
+        "Night Stalker"
       ]
     },
     "shivas_guard": {
@@ -1319,8 +829,17 @@
         }
       ],
       "caution": "Для ауры нужно находиться рядом с врагами. Волна не заменяет оглушение.",
-      "sources": [
-        "item-119"
+      "tips": [
+        "Используй волну перед продолжением преследования, чтобы замедлить нескольких противников и облегчить попадание следующими способностями."
+      ],
+      "alternatives": [
+        "assault",
+        "crimson_guard"
+      ],
+      "heroes": [
+        "Earth Spirit",
+        "Doom",
+        "Underlord"
       ]
     },
     "skadi": {
@@ -1335,8 +854,17 @@
         }
       ],
       "caution": "Эффект нужно поддерживать атаками по нужному противнику; предмет не действует на всю команду врага сразу.",
-      "sources": [
-        "item-160"
+      "tips": [
+        "Старайся поддерживать атаки по главной цели с лечением, пока команда наносит ей урон."
+      ],
+      "alternatives": [
+        "satanic",
+        "butterfly"
+      ],
+      "heroes": [
+        "Spectre",
+        "Juggernaut",
+        "Slark"
       ]
     },
     "blade_mail": {
@@ -1356,8 +884,12 @@
         }
       ],
       "caution": "Не делает владельца неуязвимым. Если враг перестаёт наносить урон или защищён от отражения, польза уменьшается.",
-      "sources": [
-        "item-127"
+      "tips": [
+        "Нажимай, когда враг уже направил в тебя значимый урон или вынужден продолжать атаковать."
+      ],
+      "alternatives": [
+        "crimson_guard",
+        "black_king_bar"
       ]
     },
     "travel_boots": {
@@ -1378,8 +910,12 @@
         }
       ],
       "caution": "Мобильность по карте не заменяет предмет для выживания в ближайшей драке.",
-      "sources": [
-        "item-48"
+      "tips": [
+        "Используй возможность чаще перемещаться, чтобы совмещать давление на линии с своевременным участием в драках."
+      ],
+      "alternatives": [
+        "travel_boots_2",
+        "power_treads"
       ]
     },
     "travel_boots_2": {
@@ -1395,8 +931,11 @@
         }
       ],
       "caution": "Сначала оцени пользу улучшения относительно покупки, которая непосредственно усиливает драку.",
-      "sources": [
-        "item-220"
+      "tips": [
+        "Перед телепортом к союзнику оцени его положение: появление рядом с уже обречённой целью может привести ко второй смерти."
+      ],
+      "alternatives": [
+        "travel_boots"
       ]
     },
     "ultimate_scepter": {
@@ -1419,8 +958,12 @@
         }
       ],
       "caution": "Польза полностью зависит от улучшения конкретного героя. Прочитай его до покупки.",
-      "sources": [
-        "item-108"
+      "tips": [
+        "Покупка особенно полезна, если улучшение сразу открывает новую задачу: массовый контроль, безопасный фарм или спасение союзника."
+      ],
+      "alternatives": [
+        "aghanims_shard",
+        "ultimate_scepter_2"
       ]
     },
     "ultimate_scepter_2": {
@@ -1443,8 +986,11 @@
         }
       ],
       "caution": "Оцени, нужен ли именно этот дорогой этап улучшения сейчас, и проверь поведение Aghanim’s Scepter у своего героя.",
-      "sources": [
-        "item-271"
+      "tips": [
+        "В поздней игре оцени, какой следующий предмет займёт освобождённое место и действительно ли это усилит героя прямо сейчас."
+      ],
+      "alternatives": [
+        "ultimate_scepter"
       ]
     },
     "aghanims_shard": {
@@ -1467,8 +1013,11 @@
         }
       ],
       "caution": "У разных героев эффект совершенно разный. Сверь описание своего героя; не выбирай только по позиции.",
-      "sources": [
-        "item-609"
+      "tips": [
+        "Сравни конкретное улучшение героя с другими покупками за близкую сумму: полезность Shard сильно зависит от способностей и задачи матча."
+      ],
+      "alternatives": [
+        "ultimate_scepter"
       ]
     },
     "bottle": {
@@ -1482,8 +1031,12 @@
         }
       ],
       "caution": "Нужен способ пополнять заряды. Восстановление прерывается уроном от героев или Рошана.",
-      "sources": [
-        "item-41"
+      "tips": [
+        "Планируй движение к руне заранее, чтобы совместить пополнение ресурсов с контролем карты, не потеряв лишнюю волну."
+      ],
+      "alternatives": [
+        "clarity",
+        "magic_wand"
       ]
     },
     "power_treads": {
@@ -1504,8 +1057,12 @@
         }
       ],
       "caution": "Выбирай атрибут по текущей задаче: запас здоровья, запас маны или польза ловкости. Не оставляй переключение без внимания.",
-      "sources": [
-        "item-63"
+      "tips": [
+        "Переключай атрибут под ближайшее действие: запас ресурсов, нанесение атак или переживание ответного урона."
+      ],
+      "alternatives": [
+        "phase_boots",
+        "arcane_boots"
       ]
     },
     "phase_boots": {
@@ -1526,8 +1083,12 @@
         }
       ],
       "caution": "Активный эффект короткий: используй его, когда действительно нужно пройти или догнать.",
-      "sources": [
-        "item-50"
+      "tips": [
+        "Включай фазовое движение при попытке пройти сквозь толпу крипов или удержать дистанцию до убегающей цели."
+      ],
+      "alternatives": [
+        "power_treads",
+        "travel_boots"
       ]
     },
     "magic_wand": {
@@ -1545,8 +1106,12 @@
         }
       ],
       "caution": "Польза зависит от зарядов. Пустая палочка не заменяет запас расходников.",
-      "sources": [
-        "item-36"
+      "tips": [
+        "Оставляй заряды под момент, когда восстановление позволит и пережить урон, и применить дополнительную способность."
+      ],
+      "alternatives": [
+        "magic_stick",
+        "holy_locket"
       ]
     },
     "gem": {
@@ -1567,8 +1132,12 @@
         }
       ],
       "caution": "Выпадает при смерти. Носитель должен иметь шанс выжить, а союзники — помочь вернуть предмет.",
-      "sources": [
-        "item-30"
+      "tips": [
+        "Очищай обзор вместе с командой; перед опасным проходом используй доступную проверку области."
+      ],
+      "alternatives": [
+        "dust",
+        "ward_sentry"
       ]
     },
     "dust": {
@@ -1586,8 +1155,12 @@
         }
       ],
       "caution": "Применять должен тот, кто находится рядом с целью вовремя. Сам по себе предмет не даёт контроль над передвижением врага.",
-      "sources": [
-        "item-40"
+      "tips": [
+        "Подготовь обнаружение до начала охоты и нажимай, пока скрывающийся противник ещё рядом."
+      ],
+      "alternatives": [
+        "ward_sentry",
+        "gem"
       ]
     },
     "ward_observer": {
@@ -1610,8 +1183,12 @@
         }
       ],
       "caution": "Сам по себе не раскрывает невидимость. Полезное место зависит от того, где команда собирается играть.",
-      "sources": [
-        "item-42"
+      "tips": [
+        "Ставь обзор под ближайшую задачу команды: безопасный фарм, защиту подхода или нападение на цель."
+      ],
+      "alternatives": [
+        "ward_sentry",
+        "ward_dispenser"
       ]
     },
     "ward_sentry": {
@@ -1634,8 +1211,12 @@
         }
       ],
       "caution": "Не даёт обычного наземного обзора: одной установки может быть недостаточно, чтобы увидеть цель.",
-      "sources": [
-        "item-43"
+      "tips": [
+        "Сопоставляй область обнаружения с реальным обзором: раскрытого, но невидимого из-за тумана противника всё равно нужно увидеть."
+      ],
+      "alternatives": [
+        "dust",
+        "gem"
       ]
     },
     "smoke_of_deceit": {
@@ -1657,9 +1238,10 @@
         }
       ],
       "caution": "Эффект снимается при приближении к вражескому герою или башне. Перед применением выбери цель и маршрут.",
-      "sources": [
-        "item-188"
-      ]
+      "tips": [
+        "Перед выходом собери нужных союзников, проверь готовность ключевых способностей и выбери общую цель."
+      ],
+      "alternatives": []
     },
     "rapier": {
       "purpose": "Резко усиливает урон; режим можно выбрать под атаки или заклинания.",
@@ -1673,8 +1255,12 @@
         }
       ],
       "caution": "Выпадает при смерти и может усилить врага. План защиты и возврата предмета важнее одной большой цифры урона.",
-      "sources": [
-        "item-133"
+      "tips": [
+        "Перед покупкой продумай, кто прикроет тебя и сможет подобрать предмет при неудачной драке."
+      ],
+      "alternatives": [
+        "greater_crit",
+        "monkey_king_bar"
       ]
     },
     "refresher": {
@@ -1697,8 +1283,12 @@
         }
       ],
       "caution": "Посчитай ману на сам Refresher и повторную комбинацию. Предмет не создаёт второй запас маны.",
-      "sources": [
-        "item-110"
+      "tips": [
+        "Суммируй расход маны на оба применения главных способностей и сам Refresher до начала драки."
+      ],
+      "alternatives": [
+        "octarine_core",
+        "refresher_shard"
       ]
     },
     "octarine_core": {
@@ -1720,8 +1310,17 @@
         }
       ],
       "caution": "Ускорение перезарядок полезно, если ты успеваешь применять способности повторно и хватает маны.",
-      "sources": [
-        "item-235"
+      "tips": [
+        "Сокращение перезарядок полезно, если у тебя хватает маны и времени прожить до следующего применения."
+      ],
+      "alternatives": [
+        "refresher",
+        "aether_lens"
+      ],
+      "heroes": [
+        "Invoker",
+        "Puck",
+        "Earthshaker"
       ]
     },
     "aether_lens": {
@@ -1742,9 +1341,2186 @@
         }
       ],
       "caution": "Дальность применения не равна радиусу действия способности. Проверь, какой параметр нужен твоему герою.",
-      "sources": [
-        "item-232"
+      "tips": [
+        "Используй дополнительную дальность для позиции вне вражеского контроля, сохраняя доступ к союзнику, которого нужно спасать."
+      ],
+      "alternatives": [
+        "force_staff",
+        "chasm_stone"
       ]
+    },
+    "tpscroll": {
+      "purpose": "Позволяет вернуться на линию или быстро подключиться к защите союзников.",
+      "roles": [],
+      "tips": [
+        "Перед телепортом оцени, кто из врагов может прервать применение, и выбери безопасную точку прибытия."
+      ],
+      "caution": "Если потратить телепорт ради короткого перемещения, можно остаться без ответа на драку на другой линии."
+    },
+    "clarity": {
+      "purpose": "Помогает восстановить ману между разменами и продолжать использовать способности.",
+      "roles": [],
+      "tips": [
+        "Выпей перед безопасным фармом или переходом между линиями, чтобы восстановление шло во время полезного действия."
+      ],
+      "caution": "Под вражескими героями эффект легко потерять; для срочного заклинания удобнее мгновенное восстановление."
+    },
+    "faerie_fire": {
+      "purpose": "Небольшое усиление добивания с запасным мгновенным лечением для размена.",
+      "roles": [],
+      "tips": [
+        "Держи применение на удобной клавише: дополнительное здоровье полезно непосредственно перед последней вражеской атакой."
+      ],
+      "caution": "Слишком позднее нажатие не спасёт от уже смертельного урона; заранее учитывай оставшийся запас здоровья."
+    },
+    "enchanted_mango": {
+      "purpose": "Даёт ману на нужное заклинание прямо во время драки.",
+      "roles": [],
+      "tips": [
+        "Перед атакой на противника посчитай ману на всю комбинацию, включая способность для отхода."
+      ],
+      "caution": "Регулярно восполнять всю ману расходниками дорого: для длительного фарма пригодится постоянное восстановление."
+    },
+    "flask": {
+      "purpose": "Быстро возвращает здоровье после тяжёлого размена на линии.",
+      "roles": [],
+      "tips": [
+        "Сначала отойди из досягаемости противника; восстанавливайся рядом с линией, чтобы не терять опыт."
+      ],
+      "caution": "Попытка лечиться под давлением может потратить предмет без существенной пользы."
+    },
+    "tango": {
+      "purpose": "Поддерживает здоровье на линии без длительного возвращения на базу.",
+      "roles": [],
+      "tips": [
+        "Начинай восстановление до следующего размена. Дерево также можно съесть, чтобы открыть проход или убрать помеху обзору."
+      ],
+      "caution": "Это постепенное восстановление: для спасения от немедленного смертельного урона его недостаточно."
+    },
+    "blood_grenade": {
+      "purpose": "Помогает удержать противника рядом во время ранней совместной атаки.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Бросай после сближения союзника: замедление даст ему время нанести дополнительные атаки или продолжить контроль."
+        }
+      ],
+      "tips": [],
+      "caution": "Без готового союзника и достаточного урона замедление само по себе не обеспечит убийство."
+    },
+    "infused_raindrop": {
+      "purpose": "Временная защита от отдельных магических попаданий в начале игры.",
+      "roles": [],
+      "tips": [
+        "Особенно полезен, когда противник регулярно тратит заклинание для размена, а тебе нужно оставаться на линии."
+      ],
+      "caution": "Заряды конечны; против непрерывного урона и атак такой запас защиты быстро теряет ценность."
+    },
+    "branches": {
+      "purpose": "Дешёво усиливает сразу все атрибуты и помогает выиграть ранние размены.",
+      "roles": [],
+      "tips": [
+        "Дерево можно совместить с Tango для более долгого восстановления или использовать как небольшую преграду."
+      ],
+      "caution": "Не заполняй все свободные места мелкими предметами: оставь место для расходников и ближайшей сборки."
+    },
+    "gauntlets": {
+      "purpose": "Добавляет запас здоровья через силу в начале игры.",
+      "roles": [],
+      "tips": [
+        "Полезность выше, если герой получает от силы и урон; заранее подумай, будешь ли продолжать сборку."
+      ],
+      "caution": "Против длительного давления одного увеличения максимального здоровья недостаточно без восстановления."
+    },
+    "slippers": {
+      "purpose": "Немного усиливает броню и скорость атаки через ловкость.",
+      "roles": [],
+      "tips": [
+        "У героя с основной ловкостью помогает также с добиванием; на линии оцени одновременно защиту и урон."
+      ],
+      "caution": "Не заменяет запас здоровья, когда противник угрожает комбинацией заклинаний."
+    },
+    "mantle": {
+      "purpose": "Небольшой запас интеллекта помогает с маной и ранними атаками героя интеллекта.",
+      "roles": [],
+      "tips": [
+        "Пригодится, если тебе не хватает маны на полную комбинацию заклинаний."
+      ],
+      "caution": "Увеличение запаса маны не даёт мгновенного восстановления всей потраченной маны."
+    },
+    "circlet": {
+      "purpose": "Компактно усиливает все атрибуты на линии.",
+      "roles": [],
+      "tips": [
+        "Удобен, когда одновременно нужны здоровье, мана и немного силы атаки, а дальнейшая сборка уже выбрана."
+      ],
+      "caution": "За те же деньги расходники иногда помогают пережить конкретную линию лучше дополнительных атрибутов."
+    },
+    "belt_of_strength": {
+      "purpose": "Увеличивает запас здоровья и усиливает героя силы.",
+      "roles": [],
+      "tips": [
+        "Бери раньше других компонентов, если тебе прежде всего нужно пережить вражескую комбинацию."
+      ],
+      "caution": "Не защищает от контроля и не помогает добраться до цели сам по себе."
+    },
+    "boots_of_elves": {
+      "purpose": "Усиливает физический размен за счёт ловкости.",
+      "roles": [],
+      "tips": [
+        "Подходит для постепенного усиления атаки с дальнейшим переходом к готовому предмету."
+      ],
+      "caution": "Если причина смерти — магический урон, сравни с компонентом на здоровье."
+    },
+    "robe": {
+      "purpose": "Добавляет ману и интеллект для героя, который часто применяет способности.",
+      "roles": [],
+      "tips": [
+        "Перед покупкой проверь, нужен ли больший запас на комбинацию или именно восстановление между применениями."
+      ],
+      "caution": "Запас маны и скорость её восстановления решают разные задачи."
+    },
+    "crown": {
+      "purpose": "Даёт несколько полезных атрибутов в одном месте инвентаря.",
+      "roles": [],
+      "tips": [
+        "Хорош как промежуточное усиление, если входящий в план предмет действительно нужен в ближайших драках."
+      ],
+      "caution": "Не задерживай ключевую способность готового предмета ради лишних промежуточных покупок."
+    },
+    "ogre_axe": {
+      "purpose": "Компонент на силу помогает пережить начало драки.",
+      "roles": [],
+      "tips": [
+        "Если собираешь защитный предмет, дополнительное здоровье полезно ещё до завершения покупки."
+      ],
+      "caution": "Сам по себе не даёт невосприимчивости к эффектам или другого активного спасения."
+    },
+    "blade_of_alacrity": {
+      "purpose": "Компонент на ловкость для усиления атак и брони.",
+      "roles": [],
+      "tips": [
+        "Покупай раньше других частей, когда можешь безопасно атаковать и наращивать физический урон."
+      ],
+      "caution": "Если враги не дают наносить атаки, мобильность или защита важнее ещё одной прибавки ловкости."
+    },
+    "staff_of_wizardry": {
+      "purpose": "Увеличивает запас маны и интеллект перед завершением магического предмета.",
+      "roles": [],
+      "tips": [
+        "Позволяет удобнее укладывать несколько способностей в одну комбинацию."
+      ],
+      "caution": "Не путай бонус к интеллекту с прямым усилением любого магического урона."
+    },
+    "diadem": {
+      "purpose": "Даёт сбалансированный прирост атрибутов в одном слоте.",
+      "roles": [],
+      "tips": [
+        "Выбирай, когда важны сразу запас здоровья, мана и атаки, а не единственный параметр."
+      ],
+      "caution": "Покупка полезнее как часть нужного готового предмета, чем как случайный набор характеристик."
+    },
+    "quelling_blade": {
+      "purpose": "Упрощает добивание крипов и расчистку пути через деревья.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Используй рубку деревьев для выхода из неудобного прохода или изменения маршрута фарма."
+        }
+      ],
+      "tips": [],
+      "caution": "Дополнительный урон по крипам не увеличивает урон по героям; для размена нужны другие преимущества."
+    },
+    "ring_of_protection": {
+      "purpose": "Недорогая броня помогает выдерживать частые атаки на линии.",
+      "roles": [],
+      "tips": [
+        "Особенно полезна, когда большая часть входящего урона приходит от правых кликов."
+      ],
+      "caution": "Не уменьшает магический урон: сначала разберись, чем именно тебя выгоняют с линии."
+    },
+    "blades_of_attack": {
+      "purpose": "Прямой урон облегчает добивание и усиливает короткие размены.",
+      "roles": [],
+      "tips": [
+        "Выбирай, когда уже можешь подойти к крипу или герою и нанести нужную атаку."
+      ],
+      "caution": "Дополнительный урон бесполезен, если не хватает здоровья, чтобы подойти к цели."
+    },
+    "orb_of_frost": {
+      "purpose": "Усиливает преследование атаками и мешает противнику восстанавливать здоровье.",
+      "roles": [],
+      "tips": [
+        "Старайся обновлять эффект, пока союзник наносит основной урон."
+      ],
+      "caution": "Замедление зависит от типа атаки жертвы; не переноси на него правила из старых патчей."
+    },
+    "gloves": {
+      "purpose": "Увеличивает частоту атак и помогает быстрее фармить.",
+      "roles": [],
+      "tips": [
+        "Наиболее заметен, если у героя уже достаточно урона за одну атаку или есть полезные эффекты попаданий."
+      ],
+      "caution": "Для добивания одного крипа под давлением прямой урон может быть удобнее скорости атаки."
+    },
+    "chainmail": {
+      "purpose": "Броня повышает выживаемость против атак.",
+      "roles": [],
+      "tips": [
+        "Можно взять до остальных частей сборки, если линия проигрывается именно из-за физического урона."
+      ],
+      "caution": "Не заменяет магическое сопротивление или защиту от контроля."
+    },
+    "broadsword": {
+      "purpose": "Увеличивает урон каждой атаки перед завершением большого предмета.",
+      "roles": [],
+      "tips": [
+        "Помогает и с добиванием, и с уроном по цели, до которой герой уже способен добраться."
+      ],
+      "caution": "Промежуточный урон не даёт активных возможностей будущего улучшения."
+    },
+    "blight_stone": {
+      "purpose": "Снижение брони усиливает физический урон по отмеченной цели.",
+      "roles": [],
+      "tips": [
+        "Атакуй приоритетную цель перед совместным разменом, чтобы союзники тоже использовали ослабленную броню."
+      ],
+      "caution": "Не стоит ожидать такой же пользы для команды, которая наносит преимущественно магический урон."
+    },
+    "blitz_knuckles": {
+      "purpose": "Компонент для более частых атак и срабатываний эффектов попадания.",
+      "roles": [],
+      "tips": [
+        "Хорош, если дальнейшая сборка усиливает именно длительную стрельбу или серию ударов."
+      ],
+      "caution": "Скорость атаки не решает проблему промахов и недостаточной дальности."
+    },
+    "splintmail": {
+      "purpose": "Большая прибавка брони помогает выдержать физическое давление.",
+      "roles": [],
+      "tips": [
+        "Полезен ранним компонентом, когда противник уже собрал урон с атак."
+      ],
+      "caution": "Против чистого и магического урона сама броня не поможет."
+    },
+    "claymore": {
+      "purpose": "Усиливает отдельные атаки и служит промежуточной покупкой для урона.",
+      "roles": [],
+      "tips": [
+        "Старайся завершать сборку к драке, в которой понадобится способность готового предмета."
+      ],
+      "caution": "Не даёт защиты: не трать последние деньги на урон, если погибаешь до первой атаки."
+    },
+    "orb_of_venom": {
+      "purpose": "Добавляет периодический урон к атакам во время размена.",
+      "roles": [],
+      "tips": [
+        "Постоянно обновляй яд по цели, которую команда действительно собирается преследовать."
+      ],
+      "caution": "В текущем описании яд наносит урон; рассчитывать на прежнее замедление этого предмета не стоит."
+    },
+    "javelin": {
+      "purpose": "Даёт шанс дополнительного урона и попадания через уклонение.",
+      "roles": [],
+      "tips": [
+        "Полезен как промежуточная часть сборки у героя, который часто атакует."
+      ],
+      "caution": "Случайное срабатывание не гарантирует попадание каждой атакой и не заменяет надёжный ответ на уклонение."
+    },
+    "helm_of_iron_will": {
+      "purpose": "Одновременно даёт броню и постоянное восстановление здоровья.",
+      "roles": [],
+      "tips": [
+        "Хорош против многократных физических разменов, между которыми есть время восстановиться."
+      ],
+      "caution": "Не спасает от большого мгновенного магического урона при маленьком запасе здоровья."
+    },
+    "mithril_hammer": {
+      "purpose": "Прибавка урона помогает фармить до готового боевого предмета.",
+      "roles": [],
+      "tips": [
+        "Планируй покупку вокруг нужного улучшения, а не только красивого числа урона."
+      ],
+      "caution": "Если следующая драка требует защиты, дополнительный урон не заменит её."
+    },
+    "ring_of_regen": {
+      "purpose": "Поддерживает здоровье между короткими разменами.",
+      "roles": [],
+      "tips": [
+        "Пригодится на линии, где можно постепенно восстановиться, продолжая получать опыт."
+      ],
+      "caution": "Восстановление слишком медленное для спасения от вражеской комбинации."
+    },
+    "sobi_mask": {
+      "purpose": "Помогает чаще использовать способности при постоянном расходе маны.",
+      "roles": [],
+      "tips": [
+        "Сравни восстановление с реальной частотой применения: предмет полезен, пока мана регулярно тратится."
+      ],
+      "caution": "Не восполнит мгновенно запас, необходимый для неожиданной драки."
+    },
+    "wind_lace": {
+      "purpose": "Небольшая прибавка скорости помогает держать дистанцию.",
+      "roles": [],
+      "tips": [
+        "Полезен и для преследования, и для ухода из радиуса вражеских атак."
+      ],
+      "caution": "Несколько экземпляров не складывают бонус скорости."
+    },
+    "magic_stick": {
+      "purpose": "Возвращает здоровье и ману в линии с частыми вражескими заклинаниями.",
+      "roles": [],
+      "tips": [
+        "Старайся участвовать в размене там, где видишь кастующих противников, и используй заряды до смертельного удара."
+      ],
+      "caution": "Не все применения вне обзора или далеко от владельца дают заряды."
+    },
+    "fluffy_hat": {
+      "purpose": "Дешёвый запас здоровья помогает пережить ранний прокаст.",
+      "roles": [],
+      "tips": [
+        "Выбирай, если небольшая прибавка здоровья позволит остаться в живых и нажать своё спасение."
+      ],
+      "caution": "После размена потерянное здоровье всё равно нужно восстановить."
+    },
+    "wizard_hat": {
+      "purpose": "Увеличивает запас маны для нескольких заклинаний подряд.",
+      "roles": [],
+      "tips": [
+        "Сначала проверь стоимость полной комбинации, чтобы понять, решает ли предмет нехватку маны."
+      ],
+      "caution": "Не заменяет постоянное восстановление при долгом фарме способностями."
+    },
+    "boots": {
+      "purpose": "Скорость позволяет выбирать дистанцию и быстрее перемещаться по карте.",
+      "roles": [],
+      "tips": [
+        "Ранняя покупка особенно полезна против противника, который выигрывает размен только при сближении."
+      ],
+      "caution": "Бонусы скорости от нескольких пар ботинок не складываются."
+    },
+    "voodoo_mask": {
+      "purpose": "Возвращает часть здоровья за нанесённый заклинаниями урон.",
+      "roles": [],
+      "tips": [
+        "Полезен герою, который регулярно наносит значимый урон способностями нескольким целям."
+      ],
+      "caution": "Если урон не наносится, лечение не появляется; против снижения лечения польза падает."
+    },
+    "shawl": {
+      "purpose": "Недорогая защита от магического урона.",
+      "roles": [],
+      "tips": [
+        "Можно использовать как временный ответ на опасное заклинание на линии."
+      ],
+      "caution": "Сопротивление магии не снимает оглушение и не защищает от обычных атак."
+    },
+    "shadow_amulet": {
+      "purpose": "Короткая невидимость помогает переждать опасность на себе или союзнике.",
+      "roles": [],
+      "tips": [
+        "Применяй заранее, учитывая задержку перехода в невидимость и замедление цели."
+      ],
+      "caution": "Обнаружение невидимости лишает этот приём основной защиты; длительность не бесконечна."
+    },
+    "lifesteal": {
+      "purpose": "Позволяет восстанавливать здоровье, продолжая атаковать.",
+      "roles": [],
+      "tips": [
+        "Для фарма выбирай цель, которую можешь бить непрерывно, не теряя больше здоровья, чем возвращаешь."
+      ],
+      "caution": "Под запретом атак или без подходящей цели вампиризм не спасает."
+    },
+    "cloak": {
+      "purpose": "Уменьшает магический урон и помогает переживать повторные заклинания.",
+      "roles": [],
+      "tips": [
+        "Полезный промежуточный ответ, когда до готового защитного предмета ещё далеко."
+      ],
+      "caution": "Магическое сопротивление не заменяет защиту от контроля."
+    },
+    "chasm_stone": {
+      "purpose": "Увеличивает область действия подходящих способностей.",
+      "roles": [],
+      "tips": [
+        "Особенно полезен для попадания по нескольким близко стоящим врагам."
+      ],
+      "caution": "Радиус области и дальность применения — разные параметры; бонус не обязательно позволит кастовать дальше."
+    },
+    "ring_of_health": {
+      "purpose": "Постоянное восстановление помогает оставаться на линии под давлением.",
+      "roles": [],
+      "tips": [
+        "Оцени пользу до большого предмета: сможет ли регенерация сохранить тебе несколько волн крипов."
+      ],
+      "caution": "Против мгновенного убийства важнее запас здоровья и сопротивления."
+    },
+    "void_stone": {
+      "purpose": "Повышает устойчивость длительного фарма и частых применений способностей.",
+      "roles": [],
+      "tips": [
+        "Хорош, если мана расходуется регулярно, а не только в редкой короткой драке."
+      ],
+      "caution": "Предмет не даёт активного мгновенного восстановления."
+    },
+    "talisman_of_evasion": {
+      "purpose": "Снижает часть урона от атак за счёт уклонения.",
+      "roles": [],
+      "tips": [
+        "Пригодится против частых обычных атак, если дальнейшее улучшение тоже подходит герою."
+      ],
+      "caution": "Источники точности и магический урон уменьшают его защитную ценность."
+    },
+    "platemail": {
+      "purpose": "Сильная прибавка брони помогает против физического урона.",
+      "roles": [],
+      "tips": [
+        "Полезен первым дорогим компонентом, если именно атаки противника не дают стоять впереди."
+      ],
+      "caution": "Не исправит уязвимость к магии или контролю."
+    },
+    "ring_of_tarrasque": {
+      "purpose": "Помогает восстанавливаться между драками и при затяжном давлении.",
+      "roles": [],
+      "tips": [
+        "Выбирай, когда можешь конвертировать постоянное здоровье в присутствие на карте."
+      ],
+      "caution": "Эффекты снижения лечения уменьшают пользу; сама регенерация не создаёт угрозы врагу."
+    },
+    "tiara_of_selemene": {
+      "purpose": "Даёт большое постоянное восстановление маны.",
+      "roles": [],
+      "tips": [
+        "Пригодится для героя, который вынужден непрерывно расходовать ману на волны и драки."
+      ],
+      "caution": "Если мана обычно полная, деньги будут работать слабее, чем в контроле или защите."
+    },
+    "hyperstone": {
+      "purpose": "Значительно ускоряет атаки в длительном бою.",
+      "roles": [],
+      "tips": [
+        "Полезен с высоким уроном за удар или важными эффектами попадания."
+      ],
+      "caution": "Не решает проблему доступа к цели: иногда сначала нужна мобильность."
+    },
+    "demon_edge": {
+      "purpose": "Сильный компонент на урон с несколькими вариантами продолжения.",
+      "roles": [],
+      "tips": [
+        "Пока копишь на следующий предмет, следи за защитными покупками противника и выбирай подходящее завершение."
+      ],
+      "caution": "Прямой урон не даёт точности, контроля или выживаемости сам по себе."
+    },
+    "vitality_booster": {
+      "purpose": "Увеличивает здоровье перед готовым защитным предметом.",
+      "roles": [],
+      "tips": [
+        "Выбирай, если дополнительного запаса хватит пережить комбинацию и применить способности."
+      ],
+      "caution": "Для затяжного физического урона сравни пользу с бронёй."
+    },
+    "energy_booster": {
+      "purpose": "Увеличивает запас маны для более длинной комбинации.",
+      "roles": [],
+      "tips": [
+        "Полезен, когда стоимость нужных заклинаний превышает доступный запас."
+      ],
+      "caution": "Не даёт отдельной активной способности будущего предмета до завершения сборки."
+    },
+    "point_booster": {
+      "purpose": "Добавляет и здоровье, и ману одним компонентом.",
+      "roles": [],
+      "tips": [
+        "Подходит герою, которому нужно пережить драку и сохранить ресурс на несколько заклинаний."
+      ],
+      "caution": "Промежуточные характеристики не заменяют ключевого улучшения способности."
+    },
+    "relic": {
+      "purpose": "Даёт много урона за один слот.",
+      "roles": [],
+      "tips": [
+        "Старайся заранее определить, какую задачу решит готовый предмет и когда он будет завершён."
+      ],
+      "caution": "Дорогая промежуточная покупка может надолго отложить защиту или мобильность."
+    },
+    "reaver": {
+      "purpose": "Большая прибавка силы увеличивает здоровье и усиливает соответствующие атаки.",
+      "roles": [],
+      "tips": [
+        "Приоритетен, если основная проблема — пережить взрывной урон до ответа."
+      ],
+      "caution": "Много здоровья не мешает противнику игнорировать тебя или держать под контролем."
+    },
+    "eagle": {
+      "purpose": "Большая прибавка ловкости усиливает атаки и броню.",
+      "roles": [],
+      "tips": [
+        "Полезен герою, которому выгодны сразу несколько свойств ловкости."
+      ],
+      "caution": "Против сильного магического урона может понадобиться другой защитный компонент."
+    },
+    "mystic_staff": {
+      "purpose": "Большая прибавка интеллекта помогает с маной и подходящими масштабируемыми способностями.",
+      "roles": [],
+      "tips": [
+        "Особенно ценен, если интеллект участвует в расчёте урона твоей способности или предмета."
+      ],
+      "caution": "Интеллект сам по себе не усиливает на процент любое заклинание."
+    },
+    "ultimate_orb": {
+      "purpose": "Даёт крупную прибавку ко всем атрибутам в одном месте.",
+      "roles": [],
+      "tips": [
+        "Помогает сохранить баланс здоровья, маны и атак до завершения большого предмета."
+      ],
+      "caution": "Если срочно нужно развеивание или иной активный эффект, одних атрибутов пока недостаточно."
+    },
+    "bracer": {
+      "purpose": "Помогает переживать ранние размены благодаря здоровью, силе и восстановлению.",
+      "roles": [],
+      "tips": [
+        "Особенно полезен, когда дополнительное здоровье позволяет не уходить с линии после каждой попытки нападения."
+      ],
+      "caution": "Несколько мелких предметов могут отложить нужную мобильность или ключевой активный предмет."
+    },
+    "wraith_band": {
+      "purpose": "Усиливает ранние атаки и защиту от физического урона.",
+      "roles": [],
+      "tips": [
+        "Броня и скорость атаки полезны для линии, на которой можно часто обмениваться ударами."
+      ],
+      "caution": "Против убийства заклинаниями может быть важнее здоровье или магическое сопротивление."
+    },
+    "null_talisman": {
+      "purpose": "Помогает с запасом маны и её восстановлением в начале игры.",
+      "roles": [],
+      "tips": [
+        "Пригодится, если герой фармит или давит линию частыми заклинаниями."
+      ],
+      "caution": "Не покупай дополнительные экземпляры автоматически: оцени, сколько они задержат следующий предмет."
+    },
+    "soul_ring": {
+      "purpose": "Позволяет тратить здоровье ради маны на очередное заклинание.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Используй непосредственно перед способностью; особенно удобно при наличии собственного лечения или регенерации."
+        }
+      ],
+      "tips": [],
+      "caution": "Если после оплаты здоровья ты становишься лёгкой целью, применение может навредить больше, чем помочь."
+    },
+    "orb_of_corrosion": {
+      "purpose": "Усиливает давление атаками: ослабляет броню, замедляет и мешает восстановлению здоровья.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Хорош, когда можно долго держаться возле цели и постоянно обновлять эффект."
+        }
+      ],
+      "tips": [],
+      "caution": "Бонус полезен только при контакте с целью; покупка не заменяет способ сближения."
+    },
+    "falcon_blade": {
+      "purpose": "Объединяет ранний урон, здоровье и ману для героя, который и атакует, и применяет способности.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Полезен, если позволяет фармить без постоянных возвращений на базу и одновременно увереннее стоять на линии."
+        }
+      ],
+      "tips": [],
+      "caution": "Промежуточный предмет отодвигает более крупную покупку; оцени, окупится ли удобство фарма до следующей важной драки."
+    },
+    "pers": {
+      "purpose": "Стабилизирует здоровье и ману при длительном присутствии на карте.",
+      "roles": [],
+      "tips": [
+        "Полезен как часть запланированной сборки, когда оба ресурса регулярно заканчиваются."
+      ],
+      "caution": "Если не хватает только одного ресурса, более дешёвый профильный компонент может оказаться достаточным."
+    },
+    "mask_of_madness": {
+      "purpose": "Ускоряет непрерывные атаки и помогает восстанавливать здоровье во время фарма.",
+      "roles": [
+        {
+          "positions": [
+            1
+          ],
+          "reason": "В драке сначала используй нужные способности, затем включай усиление в момент, когда можешь безопасно атаковать."
+        }
+      ],
+      "tips": [],
+      "caution": "Во время действия нельзя применять способности, а броня снижается. Без свободного окна для атак предмет опасен."
+    },
+    "oblivion_staff": {
+      "purpose": "Совмещает скорость атаки, интеллект и восстановление маны.",
+      "roles": [],
+      "tips": [
+        "Полезен как переход к предмету для героя, который чередует заклинания и атаки."
+      ],
+      "caution": "Не заменяет активный контроль готового улучшения."
+    },
+    "hand_of_midas": {
+      "purpose": "Экономическая покупка для игры, в которой есть время превратить дополнительные ресурсы в преимущество.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Используй перезарядку регулярно и продолжай обычный фарм: предмет не должен становиться причиной бездействия."
+        }
+      ],
+      "tips": [],
+      "caution": "Если команда срочно нуждается в защите или уроне, задержка боевого предмета может стоить больше будущего дохода."
+    },
+    "moon_shard": {
+      "purpose": "Сильно ускоряет атаки при наличии достаточного урона и доступа к цели.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "В поздней игре поглощение освобождает слот под другую покупку."
+        }
+      ],
+      "tips": [],
+      "caution": "После поглощения прибавка скорости атаки меньше, чем у предмета в инвентаре; не спеши, пока свободные слоты ещё есть."
+    },
+    "soul_booster": {
+      "purpose": "Даёт большой запас здоровья и маны одним промежуточным предметом.",
+      "roles": [],
+      "tips": [
+        "Полезен герою, которому нужно долго оставаться в бою и многократно применять способности."
+      ],
+      "caution": "Запас ресурсов не обеспечивает ни восстановления, ни защиты от контроля сам по себе."
+    },
+    "ring_of_basilius": {
+      "purpose": "Поддерживает ману сразу нескольким союзникам на линии.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4,
+            5
+          ],
+          "reason": "Держись рядом с союзником, который часто тратит ману: аура полезнее, когда её используют оба героя."
+        }
+      ],
+      "tips": [],
+      "caution": "Дополнительное постоянное восстановление не заменяет срочную ману для неожиданной драки."
+    },
+    "headdress": {
+      "purpose": "Помогает союзникам восстанавливать здоровье между разменами.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4,
+            5
+          ],
+          "reason": "Полезен на линии, где противник постепенно изматывает обоих героев, а не убивает одной комбинацией."
+        }
+      ],
+      "tips": [],
+      "caution": "Радиус ауры ограничен; постоянное нахождение вдали от союзника уменьшает командную пользу."
+    },
+    "essence_distiller": {
+      "purpose": "Совмещает лечение вне боя с ловушкой, которая обнаруживает противника и даёт его обзор.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4,
+            5
+          ],
+          "reason": "Размести эффект на вероятном пути отхода или подхода к драке, чтобы цель сама вошла в область."
+        }
+      ],
+      "tips": [],
+      "caution": "Заряды нужно пополнять участием в убийствах, а лечение прекращается под уроном героев или Рошана."
+    },
+    "ancient_janggo": {
+      "purpose": "Помогает всей группе догнать противника, отойти или быстрее реализовать урон.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4,
+            5
+          ],
+          "reason": "Включай, когда союзники уже рядом и готовы двигаться или атаковать, чтобы не тратить длительность на сбор команды."
+        }
+      ],
+      "tips": [],
+      "caution": "Ускорение не заменяет жёсткий контроль: цель со способностью ухода может всё равно разорвать дистанцию."
+    },
+    "pavise": {
+      "purpose": "Недорогой барьер для союзника, которого фокусируют физическим уроном.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Накладывай до прилёта ожидаемых атак, а не после того, как весь урон уже получен."
+        }
+      ],
+      "tips": [],
+      "caution": "Барьер не поглощает магический урон; против прокаста нужны другие инструменты."
+    },
+    "boots_of_bearing": {
+      "purpose": "Ускоряет команду и помогает пройти через замедления во время входа в драку.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4,
+            5
+          ],
+          "reason": "Согласуй нажатие с началом общего наступления или отступления, пока союзники находятся рядом."
+        }
+      ],
+      "tips": [],
+      "caution": "Короткая защита от замедлений не даёт общей невосприимчивости к оглушениям.",
+      "heroes": [
+        "Bounty Hunter",
+        "Enigma",
+        "Visage"
+      ]
+    },
+    "holy_locket": {
+      "purpose": "Усиливает лечение героя и даёт отдельное восстановление союзнику за заряды.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Применяй перед большим лечащим заклинанием по цели, чтобы использовать усиление получаемого лечения."
+        }
+      ],
+      "tips": [],
+      "caution": "Слабая покупка, если герой почти не лечит; против запрета атак нужен другой способ спасения."
+    },
+    "veil_of_discord": {
+      "purpose": "Помогает команде усилить урон заклинаниями по нескольким противникам.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3,
+            4
+          ],
+          "reason": "Ослабь врагов до основного прокаста союзников; вампиризм от заклинаний полезен и самому владельцу."
+        }
+      ],
+      "tips": [],
+      "caution": "Эффект ослабления не складывается с аурой Bloodstone, поэтому согласуй такие покупки."
+    },
+    "phylactery": {
+      "purpose": "Усиливает отдельное направленное заклинание дополнительным уроном и замедлением.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3,
+            4
+          ],
+          "reason": "Выбирай героя, который регулярно применяет на врага подходящую способность и может продолжить атаку после попадания."
+        }
+      ],
+      "tips": [],
+      "caution": "Для способностей, которые не выбирают вражескую цель, ожидаемого срабатывания может не быть."
+    },
+    "bloodstone": {
+      "purpose": "Помогает выдержать драку за счёт большого урона заклинаниями и лечения от него.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Включай усиленный вампиризм на момент основного урона, особенно если можешь задеть нескольких противников."
+        }
+      ],
+      "tips": [],
+      "caution": "Без урона не будет лечения; контроль и снижение восстановления могут резко ослабить предмет.",
+      "heroes": [
+        "Leshrac",
+        "Queen of Pain"
+      ]
+    },
+    "gungir": {
+      "purpose": "Даёт массовое оцепенение для удержания врагов в зоне союзных способностей.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3,
+            4
+          ],
+          "reason": "Начинай комбинацию по сгруппированным целям или продлевай уже действующий контроль."
+        }
+      ],
+      "tips": [],
+      "caution": "Оцепенение ограничивает перемещение, но само по себе не запрещает все атаки и заклинания.",
+      "heroes": [
+        "Hoodwink",
+        "Ringmaster",
+        "Timbersaw"
+      ]
+    },
+    "wind_waker": {
+      "purpose": "Позволяет спасать союзников и менять позицию во время применения на себя.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "reason": "Используй защитное окно, чтобы переждать опасный эффект и выбрать место приземления."
+        }
+      ],
+      "tips": [],
+      "caution": "После приземления противники могут продолжить контроль; заранее подготовь следующий шаг отхода.",
+      "heroes": [
+        "Bounty Hunter",
+        "Tinker",
+        "Hoodwink"
+      ]
+    },
+    "angels_demise": {
+      "purpose": "Усиливает направленное заклинание и отключает пассивные способности жертвы.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Выбирай цель, чья выживаемость или урон действительно зависят от пассивки, и синхронизируй эффект с фокусом команды."
+        }
+      ],
+      "tips": [],
+      "caution": "Замедление и истощение имеют разные правила развеивания; не считай исчезновение одного окончанием другого."
+    },
+    "meteor_hammer": {
+      "purpose": "Добавляет урон по области и постройкам при возможности спокойно завершить применение.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Начинай после надёжного контроля или вне досягаемости прерывания, учитывая задержку падения."
+        }
+      ],
+      "tips": [],
+      "caution": "Пока идёт применение, владелец уязвим для прерывания; случайный каст в начале драки легко потерять."
+    },
+    "dagon": {
+      "purpose": "Даёт немедленный магический урон для завершения комбинации.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            4
+          ],
+          "reason": "Используй по цели, которую команда действительно может добить, а не просто по ближайшему врагу."
+        }
+      ],
+      "tips": [],
+      "caution": "Дорогой урон без дополнительного контроля не гарантирует убийство; магическая защита противника снижает пользу."
+    },
+    "crellas_crozier": {
+      "purpose": "Мешает восстановлению здоровья врагов рядом и помогает владельцу пережить физический фокус.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Наиболее полезен, когда можешь находиться возле нескольких лечащихся противников в момент активного эффекта."
+        }
+      ],
+      "tips": [],
+      "caution": "В бесплотном облике нельзя атаковать; предмет не стоит выбирать только ради атаки с руки."
+    },
+    "ethereal_blade": {
+      "purpose": "Позволяет защитить цель от физического урона или подготовить магическую комбинацию по врагу.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            4
+          ],
+          "reason": "Перед применением на противника проверь, что союзный керри не собирается в этот момент бить его обычными атаками."
+        }
+      ],
+      "tips": [],
+      "caution": "Бесплотность может спасти врага от физического фокуса твоей команды."
+    },
+    "bloodthorn": {
+      "purpose": "Позволяет сосредоточить атаки команды на цели под безмолвием.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Выгоднее применять после того, как жертва потратила доступное развеивание или защиту."
+        }
+      ],
+      "tips": [],
+      "caution": "Если эффект быстро снимут, вложение в нападение может не дать ожидаемого результата."
+    },
+    "buckler": {
+      "purpose": "Добавляет броню союзным существам вокруг владельца.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4,
+            5
+          ],
+          "reason": "Полезен при совместном физическом размене и для героев с подконтрольными существами."
+        }
+      ],
+      "tips": [],
+      "caution": "Аура не закрывает потребность команды в защите от магических заклинаний."
+    },
+    "vanguard": {
+      "purpose": "Уменьшает урон от множества обычных атак и помогает стоять на передней линии.",
+      "roles": [
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Особенно удобен против частых небольших ударов, пока ты собираешь более крупный командный предмет."
+        }
+      ],
+      "tips": [],
+      "caution": "Блок урона не решает проблему магического прокаста; несколько таких эффектов не нужно считать складывающимися."
+    },
+    "helm_of_the_dominator": {
+      "purpose": "Даёт дополнительного управляемого крипа для давления и применения его способностей.",
+      "roles": [
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Выбирай крипа по задаче: контроль, полезная аура или урон; управляй им отдельно от героя."
+        }
+      ],
+      "tips": [],
+      "caution": "Покупка требует внимания к крипу. Потеряв его без пользы, ты лишишься значительной части силы предмета."
+    },
+    "vladmir": {
+      "purpose": "Усиливает группу, которая много атакует физическим уроном.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Хорош рядом с несколькими атакующими союзниками или подконтрольными существами, участвующими в общей драке."
+        }
+      ],
+      "tips": [],
+      "caution": "Не приносит столько же пользы составу, чей основной урон идёт от заклинаний."
+    },
+    "armlet": {
+      "purpose": "Даёт сильное боевое усиление герою, способному поддерживать здоровье.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Включай перед разменом; сочетай с лечением и учись переключению сначала в безопасных условиях."
+        }
+      ],
+      "tips": [],
+      "caution": "Постоянная потеря здоровья и периодический вражеский урон делают рискованные переключения ненадёжными."
+    },
+    "helm_of_the_overlord": {
+      "purpose": "Усиливает игру через мощного подконтрольного крипа и постоянное давление.",
+      "roles": [
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Используй способности существа осознанно и береги его при передвижении через опасные участки."
+        }
+      ],
+      "tips": [],
+      "caution": "Без управления дополнительным существом значительная часть стоимости предмета не работает."
+    },
+    "consecrated_wraps": {
+      "purpose": "Помогает пережить начало нападения за счёт накопленного барьера.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3,
+            4
+          ],
+          "reason": "Перед входом в драку дай зарядам восстановиться; предмет полезен для повторных коротких выходов вперёд."
+        }
+      ],
+      "tips": [],
+      "caution": "Непрерывный урон мешает накоплению, поэтому в затяжном фокусе защита не обновляется без паузы."
+    },
+    "heart": {
+      "purpose": "Увеличивает запас здоровья и помогает дольше выдерживать давление.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Полезен, когда дополнительное время жизни действительно даёт урон, контроль или более крепкие иллюзии."
+        }
+      ],
+      "tips": [],
+      "caution": "Если враг может просто игнорировать героя, одно увеличение здоровья не решает задачу. Сравни с аурой, контролем или атакующим защитным предметом.",
+      "alternatives": [
+        "satanic",
+        "skadi"
+      ],
+      "heroes": [
+        "Phantom Lancer",
+        "Timbersaw",
+        "Io"
+      ]
+    },
+    "lesser_crit": {
+      "purpose": "Усиливает физические атаки критическими попаданиями.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Хорош, когда уже достаточно скорости атаки и герой может непрерывно наносить удары."
+        }
+      ],
+      "tips": [],
+      "caution": "Критический урон случаен: для гарантированного завершения короткой комбинации он ненадёжен."
+    },
+    "mage_slayer": {
+      "purpose": "Уменьшает урон заклинаниями у врага, которого ты атакуешь.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Старайся поддерживать эффект именно на опасном заклинателе, а не на случайной передней цели."
+        }
+      ],
+      "tips": [],
+      "caution": "Если до нужного противника нельзя добраться, защитная часть предмета для команды не реализуется."
+    },
+    "revenants_brooch": {
+      "purpose": "Добавляет к атакам шанс дополнительного магического урона.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Может пригодиться, когда цель собрала много брони, а герой продолжает регулярно атаковать."
+        }
+      ],
+      "tips": [],
+      "caution": "Текущая версия работает как пассивное срабатывание; не рассчитывай на прежний переключаемый режим предмета."
+    },
+    "basher": {
+      "purpose": "Добавляет шанс остановить противника во время серии атак.",
+      "roles": [
+        {
+          "positions": [
+            1
+          ],
+          "reason": "Полезен герою ближнего боя, который уже умеет догонять цель и часто попадать по ней."
+        }
+      ],
+      "tips": [],
+      "caution": "Не гарантирует оглушение с первого удара; у ряда героев с собственным оглушением от атак пассивка не работает."
+    },
+    "invis_sword": {
+      "purpose": "Даёт скрытый подход к цели и дополнительный урон первой атаки.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Используй для смены угла нападения, обхода обзора и выхода на заднюю линию."
+        }
+      ],
+      "tips": [],
+      "caution": "Невидимость не равна безопасности: Sentry, Dust и Gem могут раскрыть подход или отход."
+    },
+    "greater_crit": {
+      "purpose": "Сильно увеличивает физический урон героя, который уже способен наносить атаки.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Хорош после решения проблем с доступом к цели, скоростью атаки и выживаемостью."
+        }
+      ],
+      "tips": [],
+      "caution": "Не даёт точности против уклонения и не помогает пережить контроль."
+    },
+    "abyssal_blade": {
+      "purpose": "Даёт направленное оглушение для удержания опасного противника вблизи.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Сохраняй активное применение под важную цель или её защитное окно, когда обычный контроль не подходит."
+        }
+      ],
+      "tips": [],
+      "caution": "Небольшая дальность требует отдельного сближения; не рассчитывай, что предмет сам перенесёт героя к цели."
+    },
+    "silver_edge": {
+      "purpose": "Позволяет начать атаку с отключения важных пассивных способностей врага.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Из невидимости сначала атакуй нужную цель, затем продолжай комбинацию, пока команда использует истощение."
+        }
+      ],
+      "tips": [],
+      "caution": "Если потратить невидимость другой способностью или ударить не ту цель, ключевой эффект будет потерян."
+    },
+    "butterfly": {
+      "purpose": "Сочетает сильное усиление атак героя ловкости с защитой от обычных попаданий.",
+      "roles": [
+        {
+          "positions": [
+            1
+          ],
+          "reason": "Особенно полезна, когда герой уже выдерживает прокаст и может сразу навязать драку до ответной покупки врага."
+        }
+      ],
+      "tips": [],
+      "caution": "Точность уменьшает ценность уклонения. Против магического фокуса сначала проверь запас здоровья и защиту.",
+      "alternatives": [
+        "satanic",
+        "greater_crit"
+      ],
+      "heroes": [
+        "Shadow Fiend",
+        "Nature's Prophet",
+        "Terrorblade"
+      ]
+    },
+    "sange": {
+      "purpose": "Помогает герою, которому важны сила и стойкость в размене.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Выбирай вариант дальнейшего сочетания под способ нанесения урона и нехватку ресурсов."
+        }
+      ],
+      "tips": [],
+      "caution": "Набор пассивных бонусов не даёт активного развеивания."
+    },
+    "yasha": {
+      "purpose": "Ускоряет передвижение и усиливает атаки за счёт ловкости.",
+      "roles": [
+        {
+          "positions": [
+            1
+          ],
+          "reason": "Полезна для перемещений между лагерями и поддержания дистанции в бою."
+        }
+      ],
+      "tips": [],
+      "caution": "Бонусы скорости нескольких предметов на её основе не складываются."
+    },
+    "kaya": {
+      "purpose": "Усиливает игру через частые наносящие урон заклинания.",
+      "roles": [
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Приоритетна, когда мана и эффективность прокаста уже важнее обычных атак."
+        }
+      ],
+      "tips": [],
+      "caution": "Для выживания под контролем одного усиления заклинаний недостаточно."
+    },
+    "dragon_lance": {
+      "purpose": "Позволяет герою дальнего боя атаковать с более безопасной дистанции.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Используй новую дальность для выбора позиции за союзной передней линией."
+        }
+      ],
+      "tips": [],
+      "caution": "Большая дальность не отменяет необходимость обзора; одинаковые бонусы нескольких улучшений не складываются."
+    },
+    "kaya_and_sange": {
+      "purpose": "Совмещает усиление заклинаний с более уверенным присутствием в затяжной драке.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Подходит герою, которому важно дольше стоять в бою и продолжать наносить урон способностями."
+        }
+      ],
+      "tips": [],
+      "caution": "Не заменяет BKB или развеивание, если враги полностью выключают героя контролем."
+    },
+    "sange_and_yasha": {
+      "purpose": "Усиливает мобильного героя, который хочет продолжать физический размен.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Полезен, когда важнее постоянные характеристики и движение, а не отдельная активная способность."
+        }
+      ],
+      "tips": [],
+      "caution": "Если главная проблема — снимаемое безмолвие или другой дебафф, сравни с Manta Style."
+    },
+    "yasha_and_kaya": {
+      "purpose": "Поддерживает мобильную игру через заклинания и интеллект.",
+      "roles": [
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Пригодится герою, который часто меняет позицию между применениями способностей."
+        }
+      ],
+      "tips": [],
+      "caution": "Не даёт отдельного спасения от уже начавшегося контроля."
+    },
+    "hurricane_pike": {
+      "purpose": "Помогает герою дальнего боя сохранить дистанцию и отбиться от подошедшего врага.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Для атаки используй отталкивание по противнику; для ухода или спасения союзника — по союзной цели."
+        }
+      ],
+      "tips": [],
+      "caution": "Не каждый опасный эффект позволяет принудительно переместить цель; учитывай ограничения в свойствах предмета."
+    },
+    "echo_sabre": {
+      "purpose": "Усиливает короткую серию атак героя ближнего боя и помогает удержать цель.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Начинай размен в момент готовности двойного удара, а затем используй замедление для следующего действия."
+        }
+      ],
+      "tips": [],
+      "caution": "Двойная атака не работает у владельца дальнего боя."
+    },
+    "diffusal_blade": {
+      "purpose": "Помогает преследовать противника и лишать его маны обычными атаками.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Полезен герою с частыми собственными атаками, особенно против цели, сильно зависящей от запаса маны."
+        }
+      ],
+      "tips": [],
+      "caution": "В текущей версии иллюзии не сжигают ману; не выбирай предмет только ради старого взаимодействия с ними."
+    },
+    "witch_blade": {
+      "purpose": "Усиливает отдельную атаку героя с высоким интеллектом.",
+      "roles": [
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Встрой атаку со срабатыванием в комбинацию заклинаний и используй замедление для продолжения преследования."
+        }
+      ],
+      "tips": [],
+      "caution": "Если герой почти не атакует, важный эффект предмета будет оставаться невостребованным."
+    },
+    "specialists_array": {
+      "purpose": "Помогает герою дальнего боя задевать несколько целей атаками.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Разворачивайся так, чтобы враги или крипы попадали в конус дополнительных выстрелов."
+        }
+      ],
+      "tips": [],
+      "caution": "Обычные эффекты атаки не переносятся на дополнительные цели."
+    },
+    "harpoon": {
+      "purpose": "Помогает герою ближнего боя сократить расстояние и продолжить серию ударов.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "После притягивания используй двойную атаку и собственный контроль, чтобы цель не ушла снова."
+        }
+      ],
+      "tips": [],
+      "caution": "Само притягивание не гарантирует длительного удержания; оцени способности ухода противника."
+    },
+    "disperser": {
+      "purpose": "Добавляет к сжиганию маны развеивание и инструмент для управления дистанцией.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Применяй на союзника для ускорения и очищения либо на врага для замедления перед атакой."
+        }
+      ],
+      "tips": [],
+      "caution": "Развеивание обычное: оно не снимает любой контроль. Иллюзии не получают сжигание маны."
+    },
+    "devastator": {
+      "purpose": "Сочетает урон от интеллекта с уменьшением магического сопротивления атакованной цели.",
+      "roles": [
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Сначала нанеси атаку, затем продолжай магическую комбинацию, чтобы использовать ослабление."
+        }
+      ],
+      "tips": [],
+      "caution": "Без возможности безопасно атаковать цель часть стоимости предмета не реализуется.",
+      "heroes": [
+        "Storm Spirit",
+        "Outworld Destroyer",
+        "Lina"
+      ]
+    },
+    "hydras_breath": {
+      "purpose": "Усиливает дальние атаки по нескольким противникам и добавляет яд от максимального здоровья.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Выбирай позицию, из которой несколько врагов находятся в конусе дополнительных выстрелов."
+        }
+      ],
+      "tips": [],
+      "caution": "На дополнительные цели переносится яд этого предмета, но не любые другие эффекты атаки."
+    },
+    "overwhelming_blink": {
+      "purpose": "Добавляет к врыву героя силы урон по области и замедление.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Приземляйся так, чтобы задеть несколько врагов, и сразу продолжай собственным контролем."
+        }
+      ],
+      "tips": [],
+      "caution": "Урон по владельцу блокирует применение так же, как у обычного Blink; улучшение не делает выход из фокуса гарантированным.",
+      "heroes": [
+        "Doom",
+        "Dragon Knight",
+        "Centaur Warrunner"
+      ]
+    },
+    "swift_blink": {
+      "purpose": "Усиливает короткое окно атак после перемещения.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Используй для резкого сближения с нужной целью или смены позиции перед серией ударов."
+        }
+      ],
+      "tips": [],
+      "caution": "Временное усиление теряется, пока герой стоит в контроле или не может атаковать.",
+      "heroes": [
+        "Luna",
+        "Sven",
+        "Juggernaut"
+      ]
+    },
+    "arcane_blink": {
+      "purpose": "Даёт дальнее перемещение с восстановлением здоровья и маны.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Подходит для повторных выходов в бой, если герой способен разорвать контакт и снова использовать предмет."
+        }
+      ],
+      "tips": [],
+      "caution": "Не позволяет свободно уходить под постоянным уроном: ограничение после получения урона сохраняется."
+    },
+    "occult_bracelet": {
+      "purpose": "Помогает с маной герою, который получает много обычных атак.",
+      "roles": [],
+      "tips": [
+        "Особенно полезен на передней линии, где накопленные эффекты позволяют чаще отвечать способностями."
+      ],
+      "caution": "Если тебя почти не атакуют, восстановление от пассивки не раскрывается."
+    },
+    "kobold_cup": {
+      "purpose": "Ускоряет сразу несколько союзников для совместного движения.",
+      "roles": [],
+      "tips": [
+        "Нажимай перед началом преследования или отступления, пока команда находится рядом."
+      ],
+      "caution": "Не заменяет защиту от оглушений и другой жёсткий контроль."
+    },
+    "chipped_vest": {
+      "purpose": "Наказывает противника за частые атаки по владельцу.",
+      "roles": [],
+      "tips": [
+        "Полезен герою, который всё равно принимает атаки во время фарма или размена."
+      ],
+      "caution": "Возвращённый урон не лечит владельца через вампиризм и не делает полученный урон безопасным."
+    },
+    "polliwog_charm": {
+      "purpose": "Помогает союзнику восстановиться после размена.",
+      "roles": [],
+      "tips": [
+        "Дополнительную скорость в воде можно использовать для драки или отхода в реке."
+      ],
+      "caution": "Постепенное восстановление не заменяет мгновенного спасения от прокаста."
+    },
+    "dormant_curio": {
+      "purpose": "Позволяет пожертвовать немедленной силой ради усиления следующего нейтрального артефакта.",
+      "roles": [],
+      "tips": [
+        "Выбирай, если можешь уверенно играть сейчас и ожидаешь полезное следующее создание предмета."
+      ],
+      "caution": "Не усиливает перезарядку, расход маны или дальность применения следующего артефакта."
+    },
+    "duelist_gloves": {
+      "purpose": "Ускоряет атаки, когда рядом есть противник.",
+      "roles": [],
+      "tips": [
+        "Хорош для ранних разменов и давления на героя, которого можно постоянно атаковать."
+      ],
+      "caution": "В безопасном лесу без вражеских героев рядом бонус не действует."
+    },
+    "weighted_dice": {
+      "purpose": "Помогает с добиванием и повышает отдачу от регулярных атак по крипам.",
+      "roles": [],
+      "tips": [
+        "Польза накапливается, когда герой действительно много добивает, а не только стоит рядом с волной."
+      ],
+      "caution": "Для спасения или контроля предмет ничего не добавляет."
+    },
+    "ash_legion_shield": {
+      "purpose": "Прикрывает союзных существ от физического урона.",
+      "roles": [],
+      "tips": [
+        "Особенно полезен рядом с несколькими союзниками или призванными существами перед вражескими атаками."
+      ],
+      "caution": "Владелец временно замедляется; учти это, если предмет нужен во время собственного отхода."
+    },
+    "dagger_of_ristul": {
+      "purpose": "Усиливает короткое окно атак ценой здоровья владельца.",
+      "roles": [],
+      "tips": [
+        "Применяй, когда можешь свободно бить цель и не становишься лёгкой добычей после оплаты здоровьем."
+      ],
+      "caution": "Под вражеским фокусом потеря здоровья может оказаться опаснее прибавки урона."
+    },
+    "stonefeather_satchel": {
+      "purpose": "Позволяет выбрать между подвижностью и бронёй.",
+      "roles": [],
+      "tips": [
+        "Перья удобны для перемещения, камни — для приёма физического урона; учитывай изменение силы перемещающих эффектов."
+      ],
+      "caution": "Ослабление перемещения может мешать и полезному союзному спасению, если оставить неподходящий режим."
+    },
+    "possessed_mask": {
+      "purpose": "Поддерживает здоровье героя, который постоянно атакует.",
+      "roles": [],
+      "tips": [
+        "Удобен для фарма: чаще наносимые атаки дают более регулярное восстановление."
+      ],
+      "caution": "Если не можешь атаковать, лечения от этого эффекта не будет."
+    },
+    "foragers_kit": {
+      "purpose": "Даёт дополнительный ресурс во время перемещений рядом с деревьями.",
+      "roles": [],
+      "tips": [
+        "Подбирай находки по пути между полезными действиями на карте."
+      ],
+      "caution": "Не теряй целую волну или участие в драке ради отдельной находки."
+    },
+    "essence_ring": {
+      "purpose": "Временно увеличивает запас здоровья перед опасным уроном.",
+      "roles": [],
+      "tips": [
+        "Нажимай перед ожидаемым прокастом, чтобы получить время для следующего защитного действия."
+      ],
+      "caution": "Усиление закончится: планируй позицию к окончанию эффекта и не считай здоровье постоянным."
+    },
+    "mana_draught": {
+      "purpose": "Восстанавливает ману владельцу или союзнику между столкновениями.",
+      "roles": [],
+      "tips": [
+        "Используй во время безопасного перехода; нахождение в воде ускоряет возвращение готовности предмета."
+      ],
+      "caution": "Вражеский герой или Рошан может прервать восстановление уроном."
+    },
+    "poor_mans_shield": {
+      "purpose": "Уменьшает урон частых обычных атак.",
+      "roles": [],
+      "tips": [
+        "Особенно полезен против множества небольших попаданий на линии."
+      ],
+      "caution": "Блок урона не защищает от заклинаний; с другими способностями блока он не складывается."
+    },
+    "searing_signet": {
+      "purpose": "Добавляет постепенный урон к достаточно сильным магическим попаданиям.",
+      "roles": [],
+      "tips": [
+        "Подходит герою, который регулярно задевает противников заклинаниями и поддерживает давление."
+      ],
+      "caution": "Слишком маленькое попадание не запускает эффект; урон по крипам снижен."
+    },
+    "pogo_stick": {
+      "purpose": "Помогает быстро пересечь небольшой промежуток или препятствие.",
+      "roles": [],
+      "tips": [
+        "Используй до того, как начнёшь получать урон: для выбора позиции или захода с неожиданной стороны."
+      ],
+      "caution": "Под постоянным вражеским уроном предмет блокируется и ненадёжен как экстренное спасение."
+    },
+    "defiant_shell": {
+      "purpose": "Возвращает часть давления собственными ответными атаками.",
+      "roles": [],
+      "tips": [
+        "Полезен, когда владелец сам наносит сильные атаки и противник находится достаточно близко."
+      ],
+      "caution": "За пределами радиуса атаки ответного удара не будет."
+    },
+    "crippling_crossbow": {
+      "purpose": "Помогает догнать цель и ослабить её лечение.",
+      "roles": [],
+      "tips": [
+        "Применяй перед общим фокусом по противнику, который рассчитывает пережить драку за счёт восстановления."
+      ],
+      "caution": "Эффект короткий и не заменяет постоянное удержание цели."
+    },
+    "medallion_of_courage": {
+      "purpose": "Позволяет усилить броню союзника или ослабить броню врага.",
+      "roles": [],
+      "tips": [
+        "Выбирай режим по ситуации: защищай героя под физическим фокусом либо усиливай физический урон команды."
+      ],
+      "caution": "Нельзя использовать на себя; для магического прокаста изменение брони не даст той же пользы."
+    },
+    "seeds_of_serenity": {
+      "purpose": "Восстанавливает здоровье союзникам в общей области.",
+      "roles": [],
+      "tips": [
+        "Клади область там, где команда сможет оставаться некоторое время, например во время безопасного давления."
+      ],
+      "caution": "Если союзникам придётся сразу выбежать, значительная часть восстановления пропадёт."
+    },
+    "serrated_shiv": {
+      "purpose": "Усиливает частые атаки по цели с большим текущим здоровьем.",
+      "roles": [],
+      "tips": [
+        "Лучше раскрывается в начале фокуса по здоровому противнику и при регулярных попаданиях."
+      ],
+      "caution": "С уменьшением текущего здоровья цели уменьшается и дополнительный урон; точность срабатывает случайно."
+    },
+    "gunpowder_gauntlets": {
+      "purpose": "Добавляет урон одной атаке и задевает рядом стоящие цели.",
+      "roles": [],
+      "tips": [
+        "Выбирай цель возле группы врагов или крипов, чтобы использовать область попадания."
+      ],
+      "caution": "Если враги стоят раздельно, урон по области не принесёт дополнительной пользы."
+    },
+    "jidi_pollen_bag": {
+      "purpose": "Мешает восстановлению здоровья сразу нескольких врагов вокруг.",
+      "roles": [],
+      "tips": [
+        "Используй в начале общего фокуса по героям, которые активно лечатся или получают лечение от союзников."
+      ],
+      "caution": "Урон этого эффекта сам по себе не может добить противника."
+    },
+    "psychic_headband": {
+      "purpose": "Помогает оттолкнуть подошедшего врага и сохранить дистанцию.",
+      "roles": [],
+      "tips": [
+        "Используй, когда противник подошёл к позиции, с которой тебе удобно применять способности."
+      ],
+      "caution": "Отталкивание не даёт длительного контроля; подготовь движение или другое спасение следом."
+    },
+    "unrelenting_eye": {
+      "purpose": "Помогает переживать замедления, когда враги ещё далеко.",
+      "roles": [],
+      "tips": [
+        "Полезен для сближения или отхода до окружения владельца."
+      ],
+      "caution": "Чем больше врагов находится в радиусе твоей атаки, тем меньше сопротивление замедлениям."
+    },
+    "cloak_of_flames": {
+      "purpose": "Добавляет постоянный урон вокруг героя и его иллюзий.",
+      "roles": [],
+      "tips": [
+        "Хорош, если владелец долго находится рядом с целями или фармит группы крипов."
+      ],
+      "caution": "Чтобы нанести урон, нужно оставаться близко; для уязвимого дальнего героя это может быть опасно."
+    },
+    "spellslinger": {
+      "purpose": "Возвращает часть потраченной маны после применения способностей.",
+      "roles": [],
+      "tips": [
+        "Полезен в длинной последовательности заклинаний и при фарме, который постоянно расходует ману."
+      ],
+      "caution": "Возврат постепенный: для всей мгновенной комбинации исходной маны всё равно должно хватать."
+    },
+    "stormcrafter": {
+      "purpose": "Добавляет периодический урон и короткие замедления по ближайшим врагам.",
+      "roles": [],
+      "tips": [
+        "Пригодится герою, который долго находится недалеко от нескольких противников."
+      ],
+      "caution": "Выбор целей случаен: нельзя рассчитывать на попадание именно по нужному убегающему герою."
+    },
+    "partisans_brand": {
+      "purpose": "Усиливает урон заклинаний в боях с героями и подконтрольными существами.",
+      "roles": [],
+      "tips": [
+        "Выбирай для героя, чей основной вклад в драку — урон способностями."
+      ],
+      "caution": "Против обычных нейтральных крипов усиление по существам под контролем игроков не работает."
+    },
+    "giant_maul": {
+      "purpose": "Усиливает отдельную атаку и мешает жертве быстро отвечать.",
+      "roles": [],
+      "tips": [
+        "Встрой первое попадание в начало фокуса по опасному противнику."
+      ],
+      "caution": "После срабатывания эффект нужно дождаться снова; это не постоянное замедление всех атак."
+    },
+    "rattlecage": {
+      "purpose": "Добавляет ответное давление, когда владелец получает урон.",
+      "roles": [],
+      "tips": [
+        "Подходит герою, который стоит впереди и выдерживает несколько попаданий подряд."
+      ],
+      "caution": "Для срабатываний приходится принимать урон; вампиризм от отражённых снарядов не работает."
+    },
+    "idol_of_screeauk": {
+      "purpose": "Помогает двигаться через толпу и уменьшает угрозу атак.",
+      "roles": [],
+      "tips": [
+        "Используй при входе в драку или отходе через существ, когда мешают замедления и столкновения."
+      ],
+      "caution": "Уклонение не защищает от любого источника урона, а сопротивление замедлениям не снимает оглушение."
+    },
+    "flayers_bota": {
+      "purpose": "Усиливает окно физических атак и позволяет продолжать удачную драку.",
+      "roles": [],
+      "tips": [
+        "После смерти врага рядом проверь готовность предмета: усиление можно применить снова."
+      ],
+      "caution": "Без возможности атаковать или продолжить преследование сброс перезарядки не даёт преимущества."
+    },
+    "metamorphic_mandible": {
+      "purpose": "Помогает против магического урона и для быстрого перемещения.",
+      "roles": [],
+      "tips": [
+        "Используй, когда основная угроза в ближайшие секунды — магия, а не обычные атаки."
+      ],
+      "caution": "При превращении сильно уменьшается броня: против физического фокуса это опасный обмен."
+    },
+    "dandelion_amulet": {
+      "purpose": "Помогает пережить отдельное сильное магическое попадание.",
+      "roles": [],
+      "tips": [
+        "Особенно удобен против периодически прилетающего прокаста с паузами между атаками."
+      ],
+      "caution": "После срабатывания защита не готова сразу; маленькие попадания ниже порога её не запускают."
+    },
+    "enchanters_bauble": {
+      "purpose": "Повышает отдачу от выбранных нейтральных чар.",
+      "roles": [],
+      "tips": [
+        "Чем лучше сами чары подходят герою, тем полезнее увеличение их бонусов."
+      ],
+      "caution": "Предмет не даёт отдельного контроля или спасения; сила зависит от выбранных чар и повторных созданий."
+    },
+    "prophets_pendulum": {
+      "purpose": "Распределяет часть получаемого урона во времени.",
+      "roles": [],
+      "tips": [
+        "Появившееся окно можно использовать для лечения, защиты или выхода из опасной позиции."
+      ],
+      "caution": "Отложенный урон не исчезает: даже после отхода нужно учитывать продолжающуюся потерю здоровья."
+    },
+    "conjurers_catalyst": {
+      "purpose": "Усиливает частый урон заклинаниями по сгруппированным противникам.",
+      "roles": [],
+      "tips": [
+        "Старайся регулярно задевать одну группу, чтобы накопленный урон вызывал новые срабатывания."
+      ],
+      "caution": "Длинная пауза сбрасывает накопление по цели; разрозненные противники уменьшают пользу области."
+    },
+    "desolator_2": {
+      "purpose": "Сильно ослабляет броню цели для физического фокуса.",
+      "roles": [],
+      "tips": [
+        "Атакуй важную цель перед общей серией ударов; снижение брони действует и на постройки."
+      ],
+      "caution": "Команде с преимущественно магическим уроном этот эффект приносит меньше пользы."
+    },
+    "fallen_sky": {
+      "purpose": "Совмещает перемещение с оглушением и уроном по области.",
+      "roles": [],
+      "tips": [
+        "Учитывай задержку: надёжнее попадать после начального контроля союзника или в ограниченном проходе."
+      ],
+      "caution": "Недавний вражеский урон блокирует применение, поэтому это ненадёжный выход из постоянного фокуса."
+    },
+    "demonicon": {
+      "purpose": "Добавляет подконтрольных существ для давления, атак и полезных способностей.",
+      "roles": [],
+      "tips": [
+        "Управляй лучниками отдельно: их замедление с развеиванием помогает продолжить фокус."
+      ],
+      "caution": "Без управления существами важные способности остаются неиспользованными, а призыв быстро теряется."
+    },
+    "minotaur_horn": {
+      "purpose": "Даёт короткое окно защиты от отрицательных эффектов и часть магической защиты.",
+      "roles": [],
+      "tips": [
+        "Сохраняй под конкретную опасную способность, которую нужно пережить или успеть применить самому."
+      ],
+      "caution": "Окно очень короткое; оно не заменяет длительную защиту на всю драку."
+    },
+    "spider_legs": {
+      "purpose": "Позволяет быстро пройти через препятствия и изменить угол подхода.",
+      "roles": [],
+      "tips": [
+        "Используй для выхода на заднюю линию, преследования через деревья или отхода сложным маршрутом."
+      ],
+      "caution": "Свободное перемещение не означает неуязвимость: вражеский контроль всё ещё опасен."
+    },
+    "riftshadow_prism": {
+      "purpose": "Создаёт дополнительную иллюзию для давления и разведки.",
+      "roles": [],
+      "tips": [
+        "Отправляй иллюзию в отдельную задачу, чтобы не рисковать настоящим героем ради проверки позиции."
+      ],
+      "caution": "Создание тратит здоровье, а иллюзия получает повышенный урон; не считай её полноценной копией всех возможностей героя."
+    },
+    "dezun_bloodrite": {
+      "purpose": "Расширяет область способностей и облегчает попадание по группе.",
+      "roles": [],
+      "tips": [
+        "Особенно полезен герою с важными массовыми заклинаниями, если он выдерживает дополнительный расход здоровья."
+      ],
+      "caution": "Каждое применение теперь тратит и здоровье: при частом дорогом прокасте запас может быстро закончиться."
+    },
+    "divine_regalia": {
+      "purpose": "Сильно усиливает наносимый урон для решающей драки.",
+      "roles": [],
+      "tips": [
+        "Используй преимущество с хорошей позицией и союзной защитой, чтобы успеть реализовать усиление."
+      ],
+      "caution": "Смерть лишает артефакт свойств и уничтожает его чары, поэтому риск особенно велик."
+    },
+    "harmonizer": {
+      "purpose": "Меняет пользу в зависимости от готовности способностей.",
+      "roles": [],
+      "tips": [
+        "После серии заклинаний можно использовать усиленный урон, а с готовыми способностями — уменьшенный расход маны."
+      ],
+      "caution": "Учитываются только видимые способности с перезарядкой; не переносит этот расчёт на все кнопки инвентаря."
+    },
+    "heavy_blade": {
+      "purpose": "Даёт развеивание по области и усиливает атаки против большого запаса маны.",
+      "roles": [],
+      "tips": [
+        "Развеиванием можно одновременно снять подходящие эффекты с союзников и врагов в одной области."
+      ],
+      "caution": "Обычное развеивание снимает не все эффекты; перед применением проверь, что именно мешает команде."
+    },
+    "enhancement_brawny": {
+      "purpose": "Помогает переживать урон за счёт дополнительного здоровья и, на старших разрядах, восстановления.",
+      "roles": [],
+      "tips": [
+        "Полезно для владельца, которому нужно оставаться впереди и выдержать ещё одну способность."
+      ],
+      "caution": "Доступные бонусы зависят от разряда; не рассчитывай на все перечисленные значения сразу."
+    },
+    "enhancement_tough": {
+      "purpose": "Усиливает атаки, а на старших разрядах добавляет физическую защиту.",
+      "roles": [],
+      "tips": [
+        "Подходит для разменов, где герой и наносит, и получает много обычных атак."
+      ],
+      "caution": "Не заменяет защиту от магического урона и оглушений."
+    },
+    "enhancement_alert": {
+      "purpose": "Ускоряет атаки и на старших разрядах помогает с ночным обзором.",
+      "roles": [],
+      "tips": [
+        "Выбирай, если чаще наносимые удары важнее дополнительного запаса здоровья или маны."
+      ],
+      "caution": "Бонус к дальности атаки появляется не на каждом разряде чар."
+    },
+    "enhancement_mystical": {
+      "purpose": "Помогает поддерживать ману, а на старших разрядах — выдерживать магический урон.",
+      "roles": [],
+      "tips": [
+        "Полезно для героя, который регулярно применяет заклинания и не хочет часто возвращаться на базу."
+      ],
+      "caution": "Постоянное восстановление не даёт мгновенной маны на всю комбинацию."
+    },
+    "enhancement_quickened": {
+      "purpose": "Ускоряет перемещения и помогает держать удобную дистанцию.",
+      "roles": [],
+      "tips": [
+        "Выбирай для частых переходов, преследования или игры на границе дальности способностей."
+      ],
+      "caution": "Скорость не спасает от любого контроля; дополнительные свойства зависят от разряда."
+    },
+    "enhancement_vital": {
+      "purpose": "Поддерживает здоровье между разменами на ранней стадии.",
+      "roles": [],
+      "tips": [
+        "Полезно, когда небольшой постоянный реген позволяет продолжать линию без новых расходников."
+      ],
+      "caution": "Не увеличивает максимальное здоровье и не спасает от большого мгновенного урона."
+    },
+    "enhancement_crude": {
+      "purpose": "Усиливает восстановление и ускоряет базовый темп атак ценой интеллекта.",
+      "roles": [],
+      "tips": [
+        "Подходит, если герой в основном атакует и способен реализовать усиленное восстановление."
+      ],
+      "caution": "Уменьшение интеллекта может оставить меньше маны на важную комбинацию."
+    },
+    "enhancement_nimble": {
+      "purpose": "Добавляет мобильность и урон для активного преследования.",
+      "roles": [],
+      "tips": [
+        "Полезно, когда герой выигрывает драку за счёт движения и атак."
+      ],
+      "caution": "Штраф к восстановлению здоровья ухудшает затяжные размены без лечения."
+    },
+    "enhancement_keen_eyed": {
+      "purpose": "Позволяет применять способности с большей дистанции.",
+      "roles": [],
+      "tips": [
+        "Хорошо для героев задней линии, которым опасно подходить к цели."
+      ],
+      "caution": "Уменьшается максимальная мана: проверь, хватает ли оставшегося запаса на весь прокаст."
+    },
+    "enhancement_titanic": {
+      "purpose": "Усиливает базовую часть урона и помогает переносить отрицательные эффекты.",
+      "roles": [],
+      "tips": [
+        "Полезно, если значительная часть атаки героя приходит от базового урона и атрибутов."
+      ],
+      "caution": "Штраф к скорости атаки может быть неприятен герою, которому нужны частые попадания."
+    },
+    "enhancement_greedy": {
+      "purpose": "Даёт дополнительный доход и запас маны ценой урона от атак.",
+      "roles": [],
+      "tips": [
+        "Имеет смысл, если в ближайшее время герой сможет принести пользу преимущественно способностями."
+      ],
+      "caution": "Потеря урона может замедлить фарм и ослабить драку сильнее, чем поможет дополнительное золото."
+    },
+    "enhancement_timeless": {
+      "purpose": "Усиливает урон заклинаний и длительность отрицательных эффектов.",
+      "roles": [],
+      "tips": [
+        "Подходит герою, который контролирует врагов и регулярно наносит урон способностями."
+      ],
+      "caution": "Для героя, чей вклад почти полностью состоит из обычных атак, другие чары могут быть полезнее."
+    },
+    "enhancement_hulking": {
+      "purpose": "Даёт здоровье и сильное постоянное восстановление.",
+      "roles": [],
+      "tips": [
+        "Полезно, если задача героя — выдерживать давление и продолжать применять способности."
+      ],
+      "caution": "Серьёзный штраф к скорости атаки мешает героям, зависящим от частых ударов."
+    },
+    "enhancement_audacious": {
+      "purpose": "Даёт сильное усиление атак для агрессивной игры.",
+      "roles": [],
+      "tips": [
+        "Выбирай, когда уже можешь безопасно атаковать и команда прикрывает тебя от фокуса."
+      ],
+      "caution": "Весь получаемый урон усиливается; ошибка в позиции становится дороже."
+    },
+    "enhancement_feverish": {
+      "purpose": "Ускоряет возвращение готовности способностей.",
+      "roles": [],
+      "tips": [
+        "Полезно герою, который успевает применить важное заклинание несколько раз за драку."
+      ],
+      "caution": "Максимальная мана уменьшается, а более частые применения быстрее расходуют её."
+    },
+    "enhancement_manic": {
+      "purpose": "Ускоряет атаки и применение заклинаний.",
+      "roles": [],
+      "tips": [
+        "Подходит для решающего быстрого действия, если герой уверенно действует под союзным обзором."
+      ],
+      "caution": "Собственный обзор ухудшается: осторожнее подходи к тёмным участкам карты."
+    },
+    "enhancement_evolved": {
+      "purpose": "Даёт большую прибавку к основному атрибуту.",
+      "roles": [],
+      "tips": [
+        "Полезно, когда этот атрибут одновременно усиливает несколько важных сторон героя."
+      ],
+      "caution": "Для универсального героя действуют особые правила атрибутов; ориентируйся на фактические значения в игре."
+    },
+    "enhancement_fleetfooted": {
+      "purpose": "Даёт большую прибавку скорости передвижения.",
+      "roles": [],
+      "tips": [
+        "Помогает менять позицию, преследовать и быстрее заходить с нужной стороны."
+      ],
+      "caution": "Скорость не заменяет защиту от оглушения или мгновенного прокаста."
+    },
+    "enhancement_vampiric": {
+      "purpose": "Помогает восстанавливать здоровье как атаками, так и заклинаниями.",
+      "roles": [],
+      "tips": [
+        "Выбирай, если можешь непрерывно наносить урон в драке, а не только пережидать её под контролем."
+      ],
+      "caution": "Против снижения лечения и без доступной цели отдача от вампиризма падает."
+    },
+    "aegis": {
+      "purpose": "Даёт второй заход в драку после смерти владельца.",
+      "roles": [],
+      "tips": [
+        "Используй для контролируемого давления вместе с командой; союзники должны быть готовы прикрыть место возрождения."
+      ],
+      "caution": "Оставшись далеко от команды, можно потерять обе жизни подряд. Время действия предмета ограничено."
+    },
+    "cheese": {
+      "purpose": "Мгновенно восстанавливает большой запас здоровья и маны.",
+      "roles": [],
+      "tips": [
+        "Держи в доступном для применения месте и используй, пока герой ещё способен нажимать предметы."
+      ],
+      "caution": "Не жди последнего мгновения против сильного контроля: восстановление после смерти уже не поможет."
+    },
+    "refresher_shard": {
+      "purpose": "Позволяет повторно применить важные способности в решающей драке.",
+      "roles": [],
+      "tips": [
+        "Перед использованием проверь, хватит ли маны на вторую комбинацию и есть ли подходящие цели."
+      ],
+      "caution": "Имеет общую перезарядку с Refresher Orb; хранение вне основного инвентаря мешает её восстановлению."
+    },
+    "ultimate_scepter_roshan": {
+      "purpose": "Архивная версия улучшения Aghanim для награды Рошана.",
+      "roles": [],
+      "tips": [
+        "Для планирования нынешней сборки используй карточки Aghanim’s Scepter и Aghanim’s Blessing."
+      ],
+      "caution": "Эта версия награды больше не используется в обычном матче текущего каталога."
+    },
+    "aghanims_shard_roshan": {
+      "purpose": "Архивная версия Aghanim’s Shard из прежней награды Рошана.",
+      "roles": [],
+      "tips": [
+        "Актуальное улучшение способностей смотри в карточке обычного Aghanim’s Shard."
+      ],
+      "caution": "Не включай этот отдельный предмет в план нынешней сборки."
+    },
+    "roshans_banner": {
+      "purpose": "Помогает волне крипов пережить оборону противника и продолжить давление.",
+      "roles": [],
+      "tips": [
+        "Ставь так, чтобы важная волна оставалась в области, а команде было удобно защитить само знамя."
+      ],
+      "caution": "Противник может уничтожить знамя атаками; не рассчитывай на эффект без возможности его защитить."
+    },
+    "famango": {
+      "purpose": "Одновременно восстанавливает здоровье и ману во время размена.",
+      "roles": [],
+      "tips": [
+        "Полезнее применять, когда потрачены оба ресурса и восстановление позволит продолжить полезное действие."
+      ],
+      "caution": "Не откладывай нажатие до смерти в попытке идеально израсходовать оба ресурса."
+    },
+    "great_famango": {
+      "purpose": "Даёт заметное мгновенное восстановление двух ресурсов.",
+      "roles": [],
+      "tips": [
+        "Хорош для продолжения драки или быстрого возвращения к активности без похода на базу."
+      ],
+      "caution": "Если герой не может нажимать предметы под контролем, запас восстановления не спасёт сам по себе."
+    },
+    "greater_famango": {
+      "purpose": "Возвращает большой запас здоровья и маны в позднем столкновении.",
+      "roles": [],
+      "tips": [
+        "Сохраняй доступ к применению перед решающей дракой и следи за обоими ресурсами."
+      ],
+      "caution": "Восстановление не снимает все отрицательные эффекты; иногда сначала нужно отдельное развеивание."
+    },
+    "royale_with_cheese": {
+      "purpose": "Особый расходуемый предмет Block of Cheese.",
+      "roles": [],
+      "tips": [
+        "Для обычного планирования драки опирайся на подтверждённые эффекты остальных предметов, пока подробное действие этого экземпляра не уточнено."
+      ],
+      "caution": "Текущая карточка Valve не раскрывает полный эффект, поэтому точные свойства здесь не предполагаются."
+    },
+    "ward_dispenser": {
+      "purpose": "Позволяет быстро переключаться между обычным и обнаруживающим вардом.",
+      "roles": [],
+      "tips": [
+        "Перед установкой проверь выбранный вид: ошибка может оставить нужную область без обзора или обнаружения."
+      ],
+      "caution": "Sentry раскрывает невидимость, но не заменяет обычный обзор территории."
+    },
+    "tango_single": {
+      "purpose": "Позволяет восстановить здоровье с помощью переданного союзником Tango.",
+      "roles": [],
+      "tips": [
+        "Используй безопасный момент и подходящее дерево, продолжая оставаться возле линии."
+      ],
+      "caution": "Восстановление постепенное, поэтому не рассчитывай пережить мгновенный прокаст только за его счёт."
+    },
+    "black_grimoire": {
+      "purpose": "Архивный предмет Warlock, связанный с прежним вариантом героя.",
+      "roles": [],
+      "tips": [
+        "Сохранён в справочнике для узнавания старого предмета и его описания."
+      ],
+      "caution": "Не рассчитывай получить его эффект при выборе героя в обычном матче текущего патча."
+    },
+    "grisgris": {
+      "purpose": "Позволяет Witch Doctor позже превратить накопленное в предмете золото в покупку.",
+      "roles": [],
+      "tips": [
+        "Выбирай момент расходования под важный готовый предмет, который сразу изменит твою пользу в драке."
+      ],
+      "caution": "После расходования предмет исчезает навсегда; это не повод намеренно погибать ради накопления."
+    },
+    "eldwurms_edda": {
+      "purpose": "Даёт Winter Wyvern дополнительное усиление интеллекта и выбранной базовой способности.",
+      "roles": [],
+      "tips": [
+        "Выбирай способность под задачу матча: полезность дополнительного уровня зависит от того, что нужно команде."
+      ],
+      "caution": "Улучшение не универсально усиливает все способности одновременно; проверь конкретный выбранный вариант."
+    },
+    "foragers_health": {
+      "purpose": "Помогает восстановить здоровье между опасными столкновениями.",
+      "roles": [],
+      "tips": [
+        "Применяй в безопасный момент, когда противник не сможет сразу сбить восстановление."
+      ],
+      "caution": "Урон вражеского героя или Рошана прекращает восстановление."
+    },
+    "foragers_stats": {
+      "purpose": "Позволяет получить небольшой постоянный прирост основного атрибута.",
+      "roles": [],
+      "tips": [
+        "Используй находку, если не требуется временно сохранить её пассивный бонус в инвентаре."
+      ],
+      "caution": "Не теряй важную цель на карте ради одного дополнительного атрибута."
+    },
+    "foragers_mana": {
+      "purpose": "Даёт мгновенную ману владельцу или подходящему союзнику.",
+      "roles": [],
+      "tips": [
+        "Пригодится непосредственно перед нужным заклинанием, если запас маны оказался недостаточен."
+      ],
+      "caution": "Это разовый ресурс; для постоянного расхода маны нужно другое решение."
+    },
+    "tidehunter_fish": {
+      "purpose": "Особый предмет, связанный с Tidehunter.",
+      "roles": [],
+      "tips": [
+        "Его полное применение стоит сверять с механикой самого героя, поскольку описание предмета не содержит подробностей."
+      ],
+      "caution": "У карточки нет подтверждённых числовых эффектов; приписывать ей лечение или другие бонусы нельзя."
     }
   }
 }
