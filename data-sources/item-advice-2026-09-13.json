@@ -1,0 +1,3191 @@
+{
+  "patch": "7.41e",
+  "reviewedAt": "2026-09-13",
+  "verification": "editorial-reviewed",
+  "method": "Редакционные выводы из текущих эффектов Valve; примеры героев сверены с Dota2ProTracker, принципы выбора — с Dotabuff. Наблюдаемая статистика не доказывает эффект покупки.",
+  "sources": {
+    "item-1": {
+      "title": "Valve: Blink Dagger",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1"
+    },
+    "item-116": {
+      "title": "Valve: Black King Bar",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=116"
+    },
+    "item-102": {
+      "title": "Valve: Force Staff",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=102"
+    },
+    "item-254": {
+      "title": "Valve: Glimmer Cape",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=254"
+    },
+    "item-37": {
+      "title": "Valve: Ghost Scepter",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=37"
+    },
+    "item-256": {
+      "title": "Valve: Aeon Disk",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=256"
+    },
+    "item-226": {
+      "title": "Valve: Lotus Orb",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=226"
+    },
+    "item-123": {
+      "title": "Valve: Linken's Sphere",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=123"
+    },
+    "item-90": {
+      "title": "Valve: Pipe of Insight",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=90"
+    },
+    "item-242": {
+      "title": "Valve: Crimson Guard",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=242"
+    },
+    "item-79": {
+      "title": "Valve: Mekansm",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=79"
+    },
+    "item-231": {
+      "title": "Valve: Guardian Greaves",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=231"
+    },
+    "item-180": {
+      "title": "Valve: Arcane Boots",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=180"
+    },
+    "item-214": {
+      "title": "Valve: Tranquil Boots",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=214"
+    },
+    "item-229": {
+      "title": "Valve: Solar Crest",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=229"
+    },
+    "item-267": {
+      "title": "Valve: Spirit Vessel",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=267"
+    },
+    "item-92": {
+      "title": "Valve: Urn of Shadows",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=92"
+    },
+    "item-98": {
+      "title": "Valve: Orchid Malevolence",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=98"
+    },
+    "item-96": {
+      "title": "Valve: Scythe of Vyse",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=96"
+    },
+    "item-100": {
+      "title": "Valve: Eul's Scepter of Divinity",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=100"
+    },
+    "item-206": {
+      "title": "Valve: Rod of Atos",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=206"
+    },
+    "item-210": {
+      "title": "Valve: Heaven's Halberd",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=210"
+    },
+    "item-225": {
+      "title": "Valve: Nullifier",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=225"
+    },
+    "item-135": {
+      "title": "Valve: Monkey King Bar",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=135"
+    },
+    "item-147": {
+      "title": "Valve: Manta Style",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=147"
+    },
+    "item-156": {
+      "title": "Valve: Satanic",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=156"
+    },
+    "item-158": {
+      "title": "Valve: Mjollnir",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=158"
+    },
+    "item-166": {
+      "title": "Valve: Maelstrom",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=166"
+    },
+    "item-145": {
+      "title": "Valve: Battle Fury",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=145"
+    },
+    "item-137": {
+      "title": "Valve: Radiance",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=137"
+    },
+    "item-168": {
+      "title": "Valve: Desolator",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=168"
+    },
+    "item-112": {
+      "title": "Valve: Assault Cuirass",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=112"
+    },
+    "item-119": {
+      "title": "Valve: Shiva's Guard",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=119"
+    },
+    "item-160": {
+      "title": "Valve: Eye of Skadi",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=160"
+    },
+    "item-127": {
+      "title": "Valve: Blade Mail",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=127"
+    },
+    "item-48": {
+      "title": "Valve: Boots of Travel",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=48"
+    },
+    "item-220": {
+      "title": "Valve: Boots of Travel 2",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=220"
+    },
+    "item-108": {
+      "title": "Valve: Aghanim's Scepter",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=108"
+    },
+    "item-271": {
+      "title": "Valve: Aghanim's Blessing",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=271"
+    },
+    "item-609": {
+      "title": "Valve: Aghanim's Shard",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=609"
+    },
+    "item-41": {
+      "title": "Valve: Bottle",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=41"
+    },
+    "item-63": {
+      "title": "Valve: Power Treads",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=63"
+    },
+    "item-50": {
+      "title": "Valve: Phase Boots",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=50"
+    },
+    "item-36": {
+      "title": "Valve: Magic Wand",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=36"
+    },
+    "item-30": {
+      "title": "Valve: Gem of True Sight",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=30"
+    },
+    "item-40": {
+      "title": "Valve: Dust of Appearance",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=40"
+    },
+    "item-42": {
+      "title": "Valve: Observer Ward",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=42"
+    },
+    "item-43": {
+      "title": "Valve: Sentry Ward",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=43"
+    },
+    "item-188": {
+      "title": "Valve: Smoke of Deceit",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=188"
+    },
+    "item-133": {
+      "title": "Valve: Divine Rapier",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=133"
+    },
+    "item-110": {
+      "title": "Valve: Refresher Orb",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=110"
+    },
+    "item-235": {
+      "title": "Valve: Octarine Core",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=235"
+    },
+    "item-232": {
+      "title": "Valve: Aether Lens",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=232"
+    },
+    "patch-7.31": {
+      "title": "Valve: изменения 7.31",
+      "url": "https://www.dota2.com/patches/7.31"
+    },
+    "patch-7.33": {
+      "title": "Valve: изменения 7.33",
+      "url": "https://www.dota2.com/patches/7.33"
+    },
+    "patch-7.36": {
+      "title": "Valve: изменения 7.36",
+      "url": "https://www.dota2.com/patches/7.36"
+    },
+    "patch-7.37": {
+      "title": "Valve: изменения 7.37",
+      "url": "https://www.dota2.com/patches/7.37"
+    },
+    "patch-7.38": {
+      "title": "Valve: изменения 7.38",
+      "url": "https://www.dota2.com/patches/7.38"
+    },
+    "patch-7.41": {
+      "title": "Valve: изменения 7.41",
+      "url": "https://www.dota2.com/patches/7.41"
+    },
+    "catalog": {
+      "title": "Valve: список предметов и компонентов",
+      "url": "https://www.dota2.com/datafeed/itemlist?language=russian"
+    },
+    "layout": {
+      "title": "Компоновка магазина из клиента",
+      "url": "https://github.com/mikilanVt/dota2_reminder/blob/codex/project-foundation/docs/ITEMS-DESIGN.md"
+    },
+    "witch_doctor": {
+      "title": "Valve: Witch Doctor",
+      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=30"
+    },
+    "winter_wyvern": {
+      "title": "Valve: Winter Wyvern",
+      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=112"
+    },
+    "tidehunter": {
+      "title": "Valve: Tidehunter",
+      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=29"
+    },
+    "item-117": {
+      "title": "Valve: Aegis of the Immortal",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=117"
+    },
+    "item-1154": {
+      "title": "Valve: Block of Cheese",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1154"
+    },
+    "item-218": {
+      "title": "Valve: Варды",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=218"
+    },
+    "item-44": {
+      "title": "Valve: Tango",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=44"
+    },
+    "item-241": {
+      "title": "Valve: Tango (не свой)",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=241"
+    },
+    "item-1868": {
+      "title": "Valve: Forager's Kit",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1868"
+    },
+    "item-1869": {
+      "title": "Valve: Vital Toadstool",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1869"
+    },
+    "item-1870": {
+      "title": "Valve: Ironwood Nut",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1870"
+    },
+    "item-1871": {
+      "title": "Valve: Tomo'kan Ringcap",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1871"
+    },
+    "item-46": {
+      "title": "Valve: Town Portal Scroll",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=46"
+    },
+    "item-38": {
+      "title": "Valve: Clarity",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=38"
+    },
+    "item-237": {
+      "title": "Valve: Faerie Fire",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=237"
+    },
+    "item-216": {
+      "title": "Valve: Enchanted Mango",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=216"
+    },
+    "item-39": {
+      "title": "Valve: Healing Salve",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=39"
+    },
+    "item-1123": {
+      "title": "Valve: Blood Grenade",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1123"
+    },
+    "item-265": {
+      "title": "Valve: Infused Raindrops",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=265"
+    },
+    "item-16": {
+      "title": "Valve: Iron Branch",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=16"
+    },
+    "item-13": {
+      "title": "Valve: Gauntlets of Strength",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=13"
+    },
+    "item-14": {
+      "title": "Valve: Slippers of Agility",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=14"
+    },
+    "item-15": {
+      "title": "Valve: Mantle of Intelligence",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=15"
+    },
+    "item-20": {
+      "title": "Valve: Circlet",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=20"
+    },
+    "item-17": {
+      "title": "Valve: Belt of Strength",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=17"
+    },
+    "item-18": {
+      "title": "Valve: Band of Elvenskin",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=18"
+    },
+    "item-19": {
+      "title": "Valve: Robe of the Magi",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=19"
+    },
+    "item-261": {
+      "title": "Valve: Crown",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=261"
+    },
+    "item-21": {
+      "title": "Valve: Ogre Axe",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=21"
+    },
+    "item-22": {
+      "title": "Valve: Blade of Alacrity",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=22"
+    },
+    "item-23": {
+      "title": "Valve: Staff of Wizardry",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=23"
+    },
+    "item-1122": {
+      "title": "Valve: Diadem",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1122"
+    },
+    "item-11": {
+      "title": "Valve: Quelling Blade",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=11"
+    },
+    "item-12": {
+      "title": "Valve: Ring of Protection",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=12"
+    },
+    "item-2": {
+      "title": "Valve: Blades of Attack",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=2"
+    },
+    "item-1575": {
+      "title": "Valve: Orb of Frost",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1575"
+    },
+    "item-25": {
+      "title": "Valve: Gloves of Haste",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=25"
+    },
+    "item-4": {
+      "title": "Valve: Chainmail",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=4"
+    },
+    "item-3": {
+      "title": "Valve: Broadsword",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=3"
+    },
+    "item-240": {
+      "title": "Valve: Orb of Blight",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=240"
+    },
+    "item-485": {
+      "title": "Valve: Blitz Knuckles",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=485"
+    },
+    "item-1847": {
+      "title": "Valve: Splintmail",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1847"
+    },
+    "item-5": {
+      "title": "Valve: Claymore",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=5"
+    },
+    "item-181": {
+      "title": "Valve: Orb of Venom",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=181"
+    },
+    "item-7": {
+      "title": "Valve: Javelin",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=7"
+    },
+    "item-6": {
+      "title": "Valve: Helm of Iron Will",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=6"
+    },
+    "item-8": {
+      "title": "Valve: Mithril Hammer",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=8"
+    },
+    "item-27": {
+      "title": "Valve: Ring of Regen",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=27"
+    },
+    "item-28": {
+      "title": "Valve: Sage's Mask",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=28"
+    },
+    "item-244": {
+      "title": "Valve: Wind Lace",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=244"
+    },
+    "item-34": {
+      "title": "Valve: Magic Stick",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=34"
+    },
+    "item-593": {
+      "title": "Valve: Fluffy Hat",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=593"
+    },
+    "item-1849": {
+      "title": "Valve: Wizard Hat",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1849"
+    },
+    "item-29": {
+      "title": "Valve: Boots of Speed",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=29"
+    },
+    "item-473": {
+      "title": "Valve: Voodoo Mask",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=473"
+    },
+    "item-1848": {
+      "title": "Valve: Shawl",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1848"
+    },
+    "item-215": {
+      "title": "Valve: Shadow Amulet",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=215"
+    },
+    "item-26": {
+      "title": "Valve: Morbid Mask",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=26"
+    },
+    "item-31": {
+      "title": "Valve: Cloak",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=31"
+    },
+    "item-1872": {
+      "title": "Valve: Chasm Stone",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1872"
+    },
+    "item-56": {
+      "title": "Valve: Ring of Health",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=56"
+    },
+    "item-57": {
+      "title": "Valve: Void Stone",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=57"
+    },
+    "item-32": {
+      "title": "Valve: Talisman of Evasion",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=32"
+    },
+    "item-9": {
+      "title": "Valve: Platemail",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=9"
+    },
+    "item-279": {
+      "title": "Valve: Ring of Tarrasque",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=279"
+    },
+    "item-1802": {
+      "title": "Valve: Tiara of Selemene",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1802"
+    },
+    "item-55": {
+      "title": "Valve: Hyperstone",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=55"
+    },
+    "item-51": {
+      "title": "Valve: Demon Edge",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=51"
+    },
+    "item-61": {
+      "title": "Valve: Vitality Booster",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=61"
+    },
+    "item-59": {
+      "title": "Valve: Energy Booster",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=59"
+    },
+    "item-60": {
+      "title": "Valve: Point Booster",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=60"
+    },
+    "item-54": {
+      "title": "Valve: Sacred Relic",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=54"
+    },
+    "item-53": {
+      "title": "Valve: Reaver",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=53"
+    },
+    "item-52": {
+      "title": "Valve: Eaglesong",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=52"
+    },
+    "item-58": {
+      "title": "Valve: Mystic Staff",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=58"
+    },
+    "item-24": {
+      "title": "Valve: Ultimate Orb",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=24"
+    },
+    "item-73": {
+      "title": "Valve: Bracer",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=73"
+    },
+    "item-75": {
+      "title": "Valve: Wraith Band",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=75"
+    },
+    "item-77": {
+      "title": "Valve: Null Talisman",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=77"
+    },
+    "item-178": {
+      "title": "Valve: Soul Ring",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=178"
+    },
+    "item-569": {
+      "title": "Valve: Orb of Corrosion",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=569"
+    },
+    "item-596": {
+      "title": "Valve: Falcon Blade",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=596"
+    },
+    "item-69": {
+      "title": "Valve: Perseverance",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=69"
+    },
+    "item-172": {
+      "title": "Valve: Mask of Madness",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=172"
+    },
+    "item-67": {
+      "title": "Valve: Oblivion Staff",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=67"
+    },
+    "item-65": {
+      "title": "Valve: Hand of Midas",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=65"
+    },
+    "item-247": {
+      "title": "Valve: Moon Shard",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=247"
+    },
+    "item-129": {
+      "title": "Valve: Soul Booster",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=129"
+    },
+    "item-88": {
+      "title": "Valve: Ring of Basilius",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=88"
+    },
+    "item-94": {
+      "title": "Valve: Headdress",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=94"
+    },
+    "item-1852": {
+      "title": "Valve: Essence Distiller",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1852"
+    },
+    "item-185": {
+      "title": "Valve: Drum of Endurance",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=185"
+    },
+    "item-1128": {
+      "title": "Valve: Pavise",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1128"
+    },
+    "item-931": {
+      "title": "Valve: Boots of Bearing",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=931"
+    },
+    "item-269": {
+      "title": "Valve: Holy Locket",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=269"
+    },
+    "item-190": {
+      "title": "Valve: Veil of Discord",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=190"
+    },
+    "item-1107": {
+      "title": "Valve: Phylactery",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1107"
+    },
+    "item-121": {
+      "title": "Valve: Bloodstone",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=121"
+    },
+    "item-1466": {
+      "title": "Valve: Gleipnir",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1466"
+    },
+    "item-610": {
+      "title": "Valve: Wind Waker",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=610"
+    },
+    "item-1808": {
+      "title": "Valve: Khanda",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1808"
+    },
+    "item-223": {
+      "title": "Valve: Meteor Hammer",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=223"
+    },
+    "item-104": {
+      "title": "Valve: Dagon",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=104"
+    },
+    "item-1856": {
+      "title": "Valve: Crella's Crozier",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1856"
+    },
+    "item-176": {
+      "title": "Valve: Ethereal Blade",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=176"
+    },
+    "item-250": {
+      "title": "Valve: Bloodthorn",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=250"
+    },
+    "item-86": {
+      "title": "Valve: Buckler",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=86"
+    },
+    "item-125": {
+      "title": "Valve: Vanguard",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=125"
+    },
+    "item-164": {
+      "title": "Valve: Helm of the Dominator",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=164"
+    },
+    "item-81": {
+      "title": "Valve: Vladmir's Offering",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=81"
+    },
+    "item-151": {
+      "title": "Valve: Armlet of Mordiggian",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=151"
+    },
+    "item-635": {
+      "title": "Valve: Helm of the Overlord",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=635"
+    },
+    "item-1854": {
+      "title": "Valve: Consecrated Wraps",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1854"
+    },
+    "item-114": {
+      "title": "Valve: Heart of Tarrasque",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=114"
+    },
+    "item-149": {
+      "title": "Valve: Crystalys",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=149"
+    },
+    "item-598": {
+      "title": "Valve: Mage Slayer",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=598"
+    },
+    "item-911": {
+      "title": "Valve: Revenant's Brooch",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=911"
+    },
+    "item-143": {
+      "title": "Valve: Skull Basher",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=143"
+    },
+    "item-152": {
+      "title": "Valve: Shadow Blade",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=152"
+    },
+    "item-141": {
+      "title": "Valve: Daedalus",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=141"
+    },
+    "item-208": {
+      "title": "Valve: Abyssal Blade",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=208"
+    },
+    "item-249": {
+      "title": "Valve: Silver Edge",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=249"
+    },
+    "item-139": {
+      "title": "Valve: Butterfly",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=139"
+    },
+    "item-162": {
+      "title": "Valve: Sange",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=162"
+    },
+    "item-170": {
+      "title": "Valve: Yasha",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=170"
+    },
+    "item-259": {
+      "title": "Valve: Kaya",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=259"
+    },
+    "item-236": {
+      "title": "Valve: Dragon Lance",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=236"
+    },
+    "item-273": {
+      "title": "Valve: Kaya and Sange",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=273"
+    },
+    "item-154": {
+      "title": "Valve: Sange and Yasha",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=154"
+    },
+    "item-277": {
+      "title": "Valve: Yasha and Kaya",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=277"
+    },
+    "item-263": {
+      "title": "Valve: Hurricane Pike",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=263"
+    },
+    "item-252": {
+      "title": "Valve: Echo Sabre",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=252"
+    },
+    "item-174": {
+      "title": "Valve: Diffusal Blade",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=174"
+    },
+    "item-534": {
+      "title": "Valve: Witch Blade",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=534"
+    },
+    "item-1076": {
+      "title": "Valve: Specialist's Array",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1076"
+    },
+    "item-939": {
+      "title": "Valve: Harpoon",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=939"
+    },
+    "item-1097": {
+      "title": "Valve: Disperser",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1097"
+    },
+    "item-1806": {
+      "title": "Valve: Parasma",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1806"
+    },
+    "item-1858": {
+      "title": "Valve: Hydra's Breath",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1858"
+    },
+    "item-600": {
+      "title": "Valve: Overwhelming Blink",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=600"
+    },
+    "item-603": {
+      "title": "Valve: Swift Blink",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=603"
+    },
+    "item-604": {
+      "title": "Valve: Arcane Blink",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=604"
+    },
+    "item-947": {
+      "title": "Valve: Occult Bracelet",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=947"
+    },
+    "item-1637": {
+      "title": "Valve: Kobold Cup",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1637"
+    },
+    "item-565": {
+      "title": "Valve: Chipped Vest",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=565"
+    },
+    "item-1606": {
+      "title": "Valve: Pollywog Charm",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1606"
+    },
+    "item-1638": {
+      "title": "Valve: Dormant Curio",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1638"
+    },
+    "item-2097": {
+      "title": "Valve: Duelist Gloves",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=2097"
+    },
+    "item-1716": {
+      "title": "Valve: Weighted Dice",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1716"
+    },
+    "item-1717": {
+      "title": "Valve: Ash Legion Shield",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1717"
+    },
+    "item-1077": {
+      "title": "Valve: Dagger of Ristul",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1077"
+    },
+    "item-1861": {
+      "title": "Valve: Stonefeather Satchel",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1861"
+    },
+    "item-577": {
+      "title": "Valve: Possessed Mask",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=577"
+    },
+    "item-359": {
+      "title": "Valve: Essence Ring",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=359"
+    },
+    "item-1599": {
+      "title": "Valve: Mana Draught",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1599"
+    },
+    "item-71": {
+      "title": "Valve: Poor Man's Shield",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=71"
+    },
+    "item-1604": {
+      "title": "Valve: Searing Signet",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1604"
+    },
+    "item-840": {
+      "title": "Valve: Tumbler's Toy",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=840"
+    },
+    "item-950": {
+      "title": "Valve: Defiant Shell",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=950"
+    },
+    "item-1601": {
+      "title": "Valve: Crippling Crossbow",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1601"
+    },
+    "item-187": {
+      "title": "Valve: Medallion of Courage",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=187"
+    },
+    "item-945": {
+      "title": "Valve: Seeds of Serenity",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=945"
+    },
+    "item-1605": {
+      "title": "Valve: Serrated Shiv",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1605"
+    },
+    "item-1603": {
+      "title": "Valve: Gunpowder Gauntlet",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1603"
+    },
+    "item-1640": {
+      "title": "Valve: Jidi Pollen Bag",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1640"
+    },
+    "item-675": {
+      "title": "Valve: Psychic Headband",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=675"
+    },
+    "item-1598": {
+      "title": "Valve: Unrelenting Eye",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1598"
+    },
+    "item-574": {
+      "title": "Valve: Cloak of Flames",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=574"
+    },
+    "item-1859": {
+      "title": "Valve: Spellslinger",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1859"
+    },
+    "item-585": {
+      "title": "Valve: Stormcrafter",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=585"
+    },
+    "item-1873": {
+      "title": "Valve: Partisan's Brand",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1873"
+    },
+    "item-1643": {
+      "title": "Valve: Giant's Maul",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1643"
+    },
+    "item-1168": {
+      "title": "Valve: Rattlecage",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1168"
+    },
+    "item-1720": {
+      "title": "Valve: Idol of Scree'auk",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1720"
+    },
+    "item-1721": {
+      "title": "Valve: Flayer's Bota",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1721"
+    },
+    "item-1719": {
+      "title": "Valve: Metamorphic Mandible",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1719"
+    },
+    "item-2190": {
+      "title": "Valve: Dandelion Amulet",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=2190"
+    },
+    "item-1862": {
+      "title": "Valve: Enchanter's Bauble",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1862"
+    },
+    "item-1860": {
+      "title": "Valve: Prophet's Pendulum",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1860"
+    },
+    "item-1864": {
+      "title": "Valve: Conjurer's Catalyst",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1864"
+    },
+    "item-292": {
+      "title": "Valve: Stygian Desolator",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=292"
+    },
+    "item-371": {
+      "title": "Valve: Fallen Sky",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=371"
+    },
+    "item-370": {
+      "title": "Valve: Book of the Dead",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=370"
+    },
+    "item-377": {
+      "title": "Valve: Minotaur Horn",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=377"
+    },
+    "item-326": {
+      "title": "Valve: Spider Legs",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=326"
+    },
+    "item-1718": {
+      "title": "Valve: Riftshadow Prism",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1718"
+    },
+    "item-1642": {
+      "title": "Valve: Dezun Bloodrite",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1642"
+    },
+    "item-1644": {
+      "title": "Valve: Divine Regalia",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1644"
+    },
+    "item-1863": {
+      "title": "Valve: Harmonizer",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1863"
+    },
+    "item-837": {
+      "title": "Valve: Witchbane",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=837"
+    },
+    "item-1585": {
+      "title": "Valve: Brawny",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1585"
+    },
+    "item-1586": {
+      "title": "Valve: Tough",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1586"
+    },
+    "item-1584": {
+      "title": "Valve: Alert",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1584"
+    },
+    "item-1583": {
+      "title": "Valve: Mystical",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1583"
+    },
+    "item-1577": {
+      "title": "Valve: Quickened",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1577"
+    },
+    "item-1865": {
+      "title": "Valve: Vital",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1865"
+    },
+    "item-1589": {
+      "title": "Valve: Crude",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1589"
+    },
+    "item-1874": {
+      "title": "Valve: Nimble",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1874"
+    },
+    "item-1595": {
+      "title": "Valve: Keen-eyed",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1595"
+    },
+    "item-1597": {
+      "title": "Valve: Titanic",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1597"
+    },
+    "item-1593": {
+      "title": "Valve: Greedy",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1593"
+    },
+    "item-1592": {
+      "title": "Valve: Timeless",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1592"
+    },
+    "item-1866": {
+      "title": "Valve: Hulking",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1866"
+    },
+    "item-1581": {
+      "title": "Valve: Audacious",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1581"
+    },
+    "item-1587": {
+      "title": "Valve: Feverish",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1587"
+    },
+    "item-1867": {
+      "title": "Valve: Manic",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1867"
+    },
+    "item-1596": {
+      "title": "Valve: Evolved",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1596"
+    },
+    "item-1588": {
+      "title": "Valve: Fleetfooted",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1588"
+    },
+    "item-1594": {
+      "title": "Valve: Vampiric",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1594"
+    },
+    "item-33": {
+      "title": "Valve: Cheese",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=33"
+    },
+    "item-260": {
+      "title": "Valve: Refresher Shard",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=260"
+    },
+    "item-727": {
+      "title": "Valve: Aghanim's Blessing — Рошан",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=727"
+    },
+    "item-725": {
+      "title": "Valve: Aghanim's Shard — Рошан",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=725"
+    },
+    "item-1804": {
+      "title": "Valve: Roshan's Banner",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1804"
+    },
+    "item-4204": {
+      "title": "Valve: Healing Lotus",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=4204"
+    },
+    "item-4205": {
+      "title": "Valve: Great Healing Lotus",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=4205"
+    },
+    "item-4206": {
+      "title": "Valve: Greater Healing Lotus",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=4206"
+    },
+    "item-1440": {
+      "title": "Valve: Black Grimoire\n(Warlock)",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1440"
+    },
+    "item-1441": {
+      "title": "Valve: Gris-Gris",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1441"
+    },
+    "item-1850": {
+      "title": "Valve: Eldwurm's Edda",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1850"
+    },
+    "item-1875": {
+      "title": "Valve: Рыба Левиафана",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1875"
+    },
+    "dpt-items": {
+      "title": "Dota2ProTracker — Items Overview",
+      "url": "https://dota2protracker.com/items"
+    },
+    "dotabuff-items": {
+      "title": "Dotabuff — Items, Most Used, This Month",
+      "url": "https://www.dotabuff.com/items"
+    },
+    "dotabuff-item-choices": {
+      "title": "Dotabuff — Making Correct Item Choices, KawaiiSocks, 7 October 2025",
+      "url": "https://www.dotabuff.com/blog/2025-10-07-making-correct-item-choices"
+    }
+  },
+  "items": {
+    "blink": {
+      "sources": [
+        "item-1"
+      ]
+    },
+    "black_king_bar": {
+      "sources": [
+        "item-116",
+        "dotabuff-items"
+      ]
+    },
+    "force_staff": {
+      "sources": [
+        "item-102",
+        "dotabuff-items"
+      ]
+    },
+    "glimmer_cape": {
+      "sources": [
+        "item-254",
+        "dotabuff-items"
+      ]
+    },
+    "ghost": {
+      "sources": [
+        "item-37"
+      ]
+    },
+    "aeon_disk": {
+      "sources": [
+        "item-256"
+      ]
+    },
+    "lotus_orb": {
+      "sources": [
+        "item-226"
+      ]
+    },
+    "sphere": {
+      "sources": [
+        "item-123",
+        "dpt-items"
+      ]
+    },
+    "pipe": {
+      "sources": [
+        "item-90",
+        "dpt-items"
+      ]
+    },
+    "crimson_guard": {
+      "sources": [
+        "item-242"
+      ]
+    },
+    "mekansm": {
+      "sources": [
+        "item-79"
+      ]
+    },
+    "guardian_greaves": {
+      "sources": [
+        "item-231",
+        "dpt-items"
+      ]
+    },
+    "arcane_boots": {
+      "sources": [
+        "item-180"
+      ]
+    },
+    "tranquil_boots": {
+      "sources": [
+        "item-214"
+      ]
+    },
+    "solar_crest": {
+      "sources": [
+        "item-229"
+      ]
+    },
+    "spirit_vessel": {
+      "sources": [
+        "item-267"
+      ]
+    },
+    "urn_of_shadows": {
+      "sources": [
+        "item-92"
+      ]
+    },
+    "orchid": {
+      "sources": [
+        "item-98",
+        "dotabuff-item-choices"
+      ]
+    },
+    "sheepstick": {
+      "sources": [
+        "item-96"
+      ]
+    },
+    "cyclone": {
+      "sources": [
+        "item-100"
+      ]
+    },
+    "rod_of_atos": {
+      "sources": [
+        "item-206"
+      ]
+    },
+    "heavens_halberd": {
+      "sources": [
+        "item-210"
+      ]
+    },
+    "nullifier": {
+      "sources": [
+        "item-225"
+      ]
+    },
+    "monkey_king_bar": {
+      "sources": [
+        "item-135",
+        "dotabuff-item-choices"
+      ]
+    },
+    "manta": {
+      "sources": [
+        "item-147"
+      ]
+    },
+    "satanic": {
+      "sources": [
+        "item-156",
+        "dpt-items",
+        "dotabuff-items"
+      ]
+    },
+    "mjollnir": {
+      "sources": [
+        "item-158"
+      ]
+    },
+    "maelstrom": {
+      "sources": [
+        "item-166"
+      ]
+    },
+    "bfury": {
+      "sources": [
+        "item-145"
+      ]
+    },
+    "radiance": {
+      "sources": [
+        "item-137"
+      ]
+    },
+    "desolator": {
+      "sources": [
+        "item-168"
+      ]
+    },
+    "assault": {
+      "sources": [
+        "item-112",
+        "dpt-items"
+      ]
+    },
+    "shivas_guard": {
+      "sources": [
+        "item-119",
+        "dpt-items"
+      ]
+    },
+    "skadi": {
+      "sources": [
+        "item-160",
+        "dpt-items"
+      ]
+    },
+    "blade_mail": {
+      "sources": [
+        "item-127"
+      ]
+    },
+    "travel_boots": {
+      "sources": [
+        "item-48"
+      ]
+    },
+    "travel_boots_2": {
+      "sources": [
+        "item-220"
+      ]
+    },
+    "ultimate_scepter": {
+      "sources": [
+        "item-108"
+      ]
+    },
+    "ultimate_scepter_2": {
+      "sources": [
+        "item-271"
+      ]
+    },
+    "aghanims_shard": {
+      "sources": [
+        "item-609"
+      ]
+    },
+    "bottle": {
+      "sources": [
+        "item-41"
+      ]
+    },
+    "power_treads": {
+      "sources": [
+        "item-63"
+      ]
+    },
+    "phase_boots": {
+      "sources": [
+        "item-50"
+      ]
+    },
+    "magic_wand": {
+      "sources": [
+        "item-36",
+        "dotabuff-items"
+      ]
+    },
+    "gem": {
+      "sources": [
+        "item-30",
+        "dotabuff-items"
+      ]
+    },
+    "dust": {
+      "sources": [
+        "item-40"
+      ]
+    },
+    "ward_observer": {
+      "sources": [
+        "item-42"
+      ]
+    },
+    "ward_sentry": {
+      "sources": [
+        "item-43"
+      ]
+    },
+    "smoke_of_deceit": {
+      "sources": [
+        "item-188"
+      ]
+    },
+    "rapier": {
+      "sources": [
+        "item-133"
+      ]
+    },
+    "refresher": {
+      "sources": [
+        "item-110"
+      ]
+    },
+    "octarine_core": {
+      "sources": [
+        "item-235",
+        "dpt-items"
+      ]
+    },
+    "aether_lens": {
+      "sources": [
+        "item-232"
+      ]
+    },
+    "tpscroll": {
+      "sources": [
+        "item-46"
+      ],
+      "basis": "public/assets/item-shop/details/46.json"
+    },
+    "clarity": {
+      "sources": [
+        "item-38"
+      ],
+      "basis": "public/assets/item-shop/details/38.json"
+    },
+    "faerie_fire": {
+      "sources": [
+        "item-237"
+      ],
+      "basis": "public/assets/item-shop/details/237.json"
+    },
+    "enchanted_mango": {
+      "sources": [
+        "item-216"
+      ],
+      "basis": "public/assets/item-shop/details/216.json"
+    },
+    "flask": {
+      "sources": [
+        "item-39"
+      ],
+      "basis": "public/assets/item-shop/details/39.json"
+    },
+    "tango": {
+      "sources": [
+        "item-44"
+      ],
+      "basis": "public/assets/item-shop/details/44.json"
+    },
+    "blood_grenade": {
+      "sources": [
+        "item-1123"
+      ],
+      "basis": "public/assets/item-shop/details/1123.json"
+    },
+    "infused_raindrop": {
+      "sources": [
+        "item-265"
+      ],
+      "basis": "public/assets/item-shop/details/265.json"
+    },
+    "branches": {
+      "sources": [
+        "item-16"
+      ],
+      "basis": "public/assets/item-shop/details/16.json"
+    },
+    "gauntlets": {
+      "sources": [
+        "item-13"
+      ],
+      "basis": "public/assets/item-shop/details/13.json"
+    },
+    "slippers": {
+      "sources": [
+        "item-14"
+      ],
+      "basis": "public/assets/item-shop/details/14.json"
+    },
+    "mantle": {
+      "sources": [
+        "item-15"
+      ],
+      "basis": "public/assets/item-shop/details/15.json"
+    },
+    "circlet": {
+      "sources": [
+        "item-20"
+      ],
+      "basis": "public/assets/item-shop/details/20.json"
+    },
+    "belt_of_strength": {
+      "sources": [
+        "item-17"
+      ],
+      "basis": "public/assets/item-shop/details/17.json"
+    },
+    "boots_of_elves": {
+      "sources": [
+        "item-18"
+      ],
+      "basis": "public/assets/item-shop/details/18.json"
+    },
+    "robe": {
+      "sources": [
+        "item-19"
+      ],
+      "basis": "public/assets/item-shop/details/19.json"
+    },
+    "crown": {
+      "sources": [
+        "item-261"
+      ],
+      "basis": "public/assets/item-shop/details/261.json"
+    },
+    "ogre_axe": {
+      "sources": [
+        "item-21"
+      ],
+      "basis": "public/assets/item-shop/details/21.json"
+    },
+    "blade_of_alacrity": {
+      "sources": [
+        "item-22"
+      ],
+      "basis": "public/assets/item-shop/details/22.json"
+    },
+    "staff_of_wizardry": {
+      "sources": [
+        "item-23"
+      ],
+      "basis": "public/assets/item-shop/details/23.json"
+    },
+    "diadem": {
+      "sources": [
+        "item-1122"
+      ],
+      "basis": "public/assets/item-shop/details/1122.json"
+    },
+    "quelling_blade": {
+      "sources": [
+        "item-11"
+      ],
+      "basis": "public/assets/item-shop/details/11.json"
+    },
+    "ring_of_protection": {
+      "sources": [
+        "item-12"
+      ],
+      "basis": "public/assets/item-shop/details/12.json"
+    },
+    "blades_of_attack": {
+      "sources": [
+        "item-2"
+      ],
+      "basis": "public/assets/item-shop/details/2.json"
+    },
+    "orb_of_frost": {
+      "sources": [
+        "item-1575"
+      ],
+      "basis": "public/assets/item-shop/details/1575.json"
+    },
+    "gloves": {
+      "sources": [
+        "item-25"
+      ],
+      "basis": "public/assets/item-shop/details/25.json"
+    },
+    "chainmail": {
+      "sources": [
+        "item-4"
+      ],
+      "basis": "public/assets/item-shop/details/4.json"
+    },
+    "broadsword": {
+      "sources": [
+        "item-3"
+      ],
+      "basis": "public/assets/item-shop/details/3.json"
+    },
+    "blight_stone": {
+      "sources": [
+        "item-240"
+      ],
+      "basis": "public/assets/item-shop/details/240.json"
+    },
+    "blitz_knuckles": {
+      "sources": [
+        "item-485"
+      ],
+      "basis": "public/assets/item-shop/details/485.json"
+    },
+    "splintmail": {
+      "sources": [
+        "item-1847"
+      ],
+      "basis": "public/assets/item-shop/details/1847.json"
+    },
+    "claymore": {
+      "sources": [
+        "item-5"
+      ],
+      "basis": "public/assets/item-shop/details/5.json"
+    },
+    "orb_of_venom": {
+      "sources": [
+        "item-181"
+      ],
+      "basis": "public/assets/item-shop/details/181.json"
+    },
+    "javelin": {
+      "sources": [
+        "item-7"
+      ],
+      "basis": "public/assets/item-shop/details/7.json"
+    },
+    "helm_of_iron_will": {
+      "sources": [
+        "item-6"
+      ],
+      "basis": "public/assets/item-shop/details/6.json"
+    },
+    "mithril_hammer": {
+      "sources": [
+        "item-8"
+      ],
+      "basis": "public/assets/item-shop/details/8.json"
+    },
+    "ring_of_regen": {
+      "sources": [
+        "item-27"
+      ],
+      "basis": "public/assets/item-shop/details/27.json"
+    },
+    "sobi_mask": {
+      "sources": [
+        "item-28"
+      ],
+      "basis": "public/assets/item-shop/details/28.json"
+    },
+    "wind_lace": {
+      "sources": [
+        "item-244"
+      ],
+      "basis": "public/assets/item-shop/details/244.json"
+    },
+    "magic_stick": {
+      "sources": [
+        "item-34"
+      ],
+      "basis": "public/assets/item-shop/details/34.json"
+    },
+    "fluffy_hat": {
+      "sources": [
+        "item-593"
+      ],
+      "basis": "public/assets/item-shop/details/593.json"
+    },
+    "wizard_hat": {
+      "sources": [
+        "item-1849"
+      ],
+      "basis": "public/assets/item-shop/details/1849.json"
+    },
+    "boots": {
+      "sources": [
+        "item-29"
+      ],
+      "basis": "public/assets/item-shop/details/29.json"
+    },
+    "voodoo_mask": {
+      "sources": [
+        "item-473"
+      ],
+      "basis": "public/assets/item-shop/details/473.json"
+    },
+    "shawl": {
+      "sources": [
+        "item-1848"
+      ],
+      "basis": "public/assets/item-shop/details/1848.json"
+    },
+    "shadow_amulet": {
+      "sources": [
+        "item-215"
+      ],
+      "basis": "public/assets/item-shop/details/215.json"
+    },
+    "lifesteal": {
+      "sources": [
+        "item-26"
+      ],
+      "basis": "public/assets/item-shop/details/26.json"
+    },
+    "cloak": {
+      "sources": [
+        "item-31"
+      ],
+      "basis": "public/assets/item-shop/details/31.json"
+    },
+    "chasm_stone": {
+      "sources": [
+        "item-1872"
+      ],
+      "basis": "public/assets/item-shop/details/1872.json"
+    },
+    "ring_of_health": {
+      "sources": [
+        "item-56"
+      ],
+      "basis": "public/assets/item-shop/details/56.json"
+    },
+    "void_stone": {
+      "sources": [
+        "item-57"
+      ],
+      "basis": "public/assets/item-shop/details/57.json"
+    },
+    "talisman_of_evasion": {
+      "sources": [
+        "item-32"
+      ],
+      "basis": "public/assets/item-shop/details/32.json"
+    },
+    "platemail": {
+      "sources": [
+        "item-9"
+      ],
+      "basis": "public/assets/item-shop/details/9.json"
+    },
+    "ring_of_tarrasque": {
+      "sources": [
+        "item-279"
+      ],
+      "basis": "public/assets/item-shop/details/279.json"
+    },
+    "tiara_of_selemene": {
+      "sources": [
+        "item-1802"
+      ],
+      "basis": "public/assets/item-shop/details/1802.json"
+    },
+    "hyperstone": {
+      "sources": [
+        "item-55"
+      ],
+      "basis": "public/assets/item-shop/details/55.json"
+    },
+    "demon_edge": {
+      "sources": [
+        "item-51"
+      ],
+      "basis": "public/assets/item-shop/details/51.json"
+    },
+    "vitality_booster": {
+      "sources": [
+        "item-61"
+      ],
+      "basis": "public/assets/item-shop/details/61.json"
+    },
+    "energy_booster": {
+      "sources": [
+        "item-59"
+      ],
+      "basis": "public/assets/item-shop/details/59.json"
+    },
+    "point_booster": {
+      "sources": [
+        "item-60"
+      ],
+      "basis": "public/assets/item-shop/details/60.json"
+    },
+    "relic": {
+      "sources": [
+        "item-54"
+      ],
+      "basis": "public/assets/item-shop/details/54.json"
+    },
+    "reaver": {
+      "sources": [
+        "item-53"
+      ],
+      "basis": "public/assets/item-shop/details/53.json"
+    },
+    "eagle": {
+      "sources": [
+        "item-52"
+      ],
+      "basis": "public/assets/item-shop/details/52.json"
+    },
+    "mystic_staff": {
+      "sources": [
+        "item-58"
+      ],
+      "basis": "public/assets/item-shop/details/58.json"
+    },
+    "ultimate_orb": {
+      "sources": [
+        "item-24"
+      ],
+      "basis": "public/assets/item-shop/details/24.json"
+    },
+    "bracer": {
+      "sources": [
+        "item-73"
+      ],
+      "basis": "public/assets/item-shop/details/73.json"
+    },
+    "wraith_band": {
+      "sources": [
+        "item-75"
+      ],
+      "basis": "public/assets/item-shop/details/75.json"
+    },
+    "null_talisman": {
+      "sources": [
+        "item-77"
+      ],
+      "basis": "public/assets/item-shop/details/77.json"
+    },
+    "soul_ring": {
+      "sources": [
+        "item-178"
+      ],
+      "basis": "public/assets/item-shop/details/178.json"
+    },
+    "orb_of_corrosion": {
+      "sources": [
+        "item-569"
+      ],
+      "basis": "public/assets/item-shop/details/569.json"
+    },
+    "falcon_blade": {
+      "sources": [
+        "item-596"
+      ],
+      "basis": "public/assets/item-shop/details/596.json"
+    },
+    "pers": {
+      "sources": [
+        "item-69"
+      ],
+      "basis": "public/assets/item-shop/details/69.json"
+    },
+    "mask_of_madness": {
+      "sources": [
+        "item-172"
+      ],
+      "basis": "public/assets/item-shop/details/172.json"
+    },
+    "oblivion_staff": {
+      "sources": [
+        "item-67"
+      ],
+      "basis": "public/assets/item-shop/details/67.json"
+    },
+    "hand_of_midas": {
+      "sources": [
+        "item-65"
+      ],
+      "basis": "public/assets/item-shop/details/65.json"
+    },
+    "moon_shard": {
+      "sources": [
+        "item-247"
+      ],
+      "basis": "public/assets/item-shop/details/247.json"
+    },
+    "soul_booster": {
+      "sources": [
+        "item-129"
+      ],
+      "basis": "public/assets/item-shop/details/129.json"
+    },
+    "ring_of_basilius": {
+      "sources": [
+        "item-88"
+      ],
+      "basis": "public/assets/item-shop/details/88.json"
+    },
+    "headdress": {
+      "sources": [
+        "item-94"
+      ],
+      "basis": "public/assets/item-shop/details/94.json"
+    },
+    "essence_distiller": {
+      "sources": [
+        "item-1852"
+      ],
+      "basis": "public/assets/item-shop/details/1852.json"
+    },
+    "ancient_janggo": {
+      "sources": [
+        "item-185"
+      ],
+      "basis": "public/assets/item-shop/details/185.json"
+    },
+    "pavise": {
+      "sources": [
+        "item-1128"
+      ],
+      "basis": "public/assets/item-shop/details/1128.json"
+    },
+    "boots_of_bearing": {
+      "sources": [
+        "item-931",
+        "dpt-items"
+      ],
+      "basis": "public/assets/item-shop/details/931.json"
+    },
+    "holy_locket": {
+      "sources": [
+        "item-269"
+      ],
+      "basis": "public/assets/item-shop/details/269.json"
+    },
+    "veil_of_discord": {
+      "sources": [
+        "item-190"
+      ],
+      "basis": "public/assets/item-shop/details/190.json"
+    },
+    "phylactery": {
+      "sources": [
+        "item-1107"
+      ],
+      "basis": "public/assets/item-shop/details/1107.json"
+    },
+    "bloodstone": {
+      "sources": [
+        "item-121",
+        "dpt-items"
+      ],
+      "basis": "public/assets/item-shop/details/121.json"
+    },
+    "gungir": {
+      "sources": [
+        "item-1466",
+        "dpt-items"
+      ],
+      "basis": "public/assets/item-shop/details/1466.json"
+    },
+    "wind_waker": {
+      "sources": [
+        "item-610",
+        "dpt-items"
+      ],
+      "basis": "public/assets/item-shop/details/610.json"
+    },
+    "angels_demise": {
+      "sources": [
+        "item-1808"
+      ],
+      "basis": "public/assets/item-shop/details/1808.json"
+    },
+    "meteor_hammer": {
+      "sources": [
+        "item-223"
+      ],
+      "basis": "public/assets/item-shop/details/223.json"
+    },
+    "dagon": {
+      "sources": [
+        "item-104"
+      ],
+      "basis": "public/assets/item-shop/details/104.json"
+    },
+    "crellas_crozier": {
+      "sources": [
+        "item-1856"
+      ],
+      "basis": "public/assets/item-shop/details/1856.json"
+    },
+    "ethereal_blade": {
+      "sources": [
+        "item-176"
+      ],
+      "basis": "public/assets/item-shop/details/176.json"
+    },
+    "bloodthorn": {
+      "sources": [
+        "item-250"
+      ],
+      "basis": "public/assets/item-shop/details/250.json"
+    },
+    "buckler": {
+      "sources": [
+        "item-86"
+      ],
+      "basis": "public/assets/item-shop/details/86.json"
+    },
+    "vanguard": {
+      "sources": [
+        "item-125"
+      ],
+      "basis": "public/assets/item-shop/details/125.json"
+    },
+    "helm_of_the_dominator": {
+      "sources": [
+        "item-164"
+      ],
+      "basis": "public/assets/item-shop/details/164.json"
+    },
+    "vladmir": {
+      "sources": [
+        "item-81"
+      ],
+      "basis": "public/assets/item-shop/details/81.json"
+    },
+    "armlet": {
+      "sources": [
+        "item-151"
+      ],
+      "basis": "public/assets/item-shop/details/151.json"
+    },
+    "helm_of_the_overlord": {
+      "sources": [
+        "item-635"
+      ],
+      "basis": "public/assets/item-shop/details/635.json"
+    },
+    "consecrated_wraps": {
+      "sources": [
+        "item-1854"
+      ],
+      "basis": "public/assets/item-shop/details/1854.json"
+    },
+    "heart": {
+      "sources": [
+        "item-114",
+        "dpt-items",
+        "dotabuff-item-choices",
+        "dotabuff-items"
+      ],
+      "basis": "public/assets/item-shop/details/114.json"
+    },
+    "lesser_crit": {
+      "sources": [
+        "item-149"
+      ],
+      "basis": "public/assets/item-shop/details/149.json"
+    },
+    "mage_slayer": {
+      "sources": [
+        "item-598"
+      ],
+      "basis": "public/assets/item-shop/details/598.json"
+    },
+    "revenants_brooch": {
+      "sources": [
+        "item-911"
+      ],
+      "basis": "public/assets/item-shop/details/911.json"
+    },
+    "basher": {
+      "sources": [
+        "item-143"
+      ],
+      "basis": "public/assets/item-shop/details/143.json"
+    },
+    "invis_sword": {
+      "sources": [
+        "item-152"
+      ],
+      "basis": "public/assets/item-shop/details/152.json"
+    },
+    "greater_crit": {
+      "sources": [
+        "item-141"
+      ],
+      "basis": "public/assets/item-shop/details/141.json"
+    },
+    "abyssal_blade": {
+      "sources": [
+        "item-208"
+      ],
+      "basis": "public/assets/item-shop/details/208.json"
+    },
+    "silver_edge": {
+      "sources": [
+        "item-249"
+      ],
+      "basis": "public/assets/item-shop/details/249.json"
+    },
+    "butterfly": {
+      "sources": [
+        "item-139",
+        "dpt-items",
+        "dotabuff-item-choices"
+      ],
+      "basis": "public/assets/item-shop/details/139.json"
+    },
+    "sange": {
+      "sources": [
+        "item-162"
+      ],
+      "basis": "public/assets/item-shop/details/162.json"
+    },
+    "yasha": {
+      "sources": [
+        "item-170"
+      ],
+      "basis": "public/assets/item-shop/details/170.json"
+    },
+    "kaya": {
+      "sources": [
+        "item-259"
+      ],
+      "basis": "public/assets/item-shop/details/259.json"
+    },
+    "dragon_lance": {
+      "sources": [
+        "item-236"
+      ],
+      "basis": "public/assets/item-shop/details/236.json"
+    },
+    "kaya_and_sange": {
+      "sources": [
+        "item-273"
+      ],
+      "basis": "public/assets/item-shop/details/273.json"
+    },
+    "sange_and_yasha": {
+      "sources": [
+        "item-154"
+      ],
+      "basis": "public/assets/item-shop/details/154.json"
+    },
+    "yasha_and_kaya": {
+      "sources": [
+        "item-277"
+      ],
+      "basis": "public/assets/item-shop/details/277.json"
+    },
+    "hurricane_pike": {
+      "sources": [
+        "item-263"
+      ],
+      "basis": "public/assets/item-shop/details/263.json"
+    },
+    "echo_sabre": {
+      "sources": [
+        "item-252"
+      ],
+      "basis": "public/assets/item-shop/details/252.json"
+    },
+    "diffusal_blade": {
+      "sources": [
+        "item-174"
+      ],
+      "basis": "public/assets/item-shop/details/174.json"
+    },
+    "witch_blade": {
+      "sources": [
+        "item-534"
+      ],
+      "basis": "public/assets/item-shop/details/534.json"
+    },
+    "specialists_array": {
+      "sources": [
+        "item-1076"
+      ],
+      "basis": "public/assets/item-shop/details/1076.json"
+    },
+    "harpoon": {
+      "sources": [
+        "item-939"
+      ],
+      "basis": "public/assets/item-shop/details/939.json"
+    },
+    "disperser": {
+      "sources": [
+        "item-1097"
+      ],
+      "basis": "public/assets/item-shop/details/1097.json"
+    },
+    "devastator": {
+      "sources": [
+        "item-1806",
+        "dpt-items"
+      ],
+      "basis": "public/assets/item-shop/details/1806.json"
+    },
+    "hydras_breath": {
+      "sources": [
+        "item-1858"
+      ],
+      "basis": "public/assets/item-shop/details/1858.json"
+    },
+    "overwhelming_blink": {
+      "sources": [
+        "item-600",
+        "dpt-items"
+      ],
+      "basis": "public/assets/item-shop/details/600.json"
+    },
+    "swift_blink": {
+      "sources": [
+        "item-603",
+        "dpt-items"
+      ],
+      "basis": "public/assets/item-shop/details/603.json"
+    },
+    "arcane_blink": {
+      "sources": [
+        "item-604"
+      ],
+      "basis": "public/assets/item-shop/details/604.json"
+    },
+    "occult_bracelet": {
+      "sources": [
+        "item-947"
+      ],
+      "basis": "public/assets/item-shop/details/947.json"
+    },
+    "kobold_cup": {
+      "sources": [
+        "item-1637"
+      ],
+      "basis": "public/assets/item-shop/details/1637.json"
+    },
+    "chipped_vest": {
+      "sources": [
+        "item-565"
+      ],
+      "basis": "public/assets/item-shop/details/565.json"
+    },
+    "polliwog_charm": {
+      "sources": [
+        "item-1606"
+      ],
+      "basis": "public/assets/item-shop/details/1606.json"
+    },
+    "dormant_curio": {
+      "sources": [
+        "item-1638"
+      ],
+      "basis": "public/assets/item-shop/details/1638.json"
+    },
+    "duelist_gloves": {
+      "sources": [
+        "item-2097"
+      ],
+      "basis": "public/assets/item-shop/details/2097.json"
+    },
+    "weighted_dice": {
+      "sources": [
+        "item-1716"
+      ],
+      "basis": "public/assets/item-shop/details/1716.json"
+    },
+    "ash_legion_shield": {
+      "sources": [
+        "item-1717"
+      ],
+      "basis": "public/assets/item-shop/details/1717.json"
+    },
+    "dagger_of_ristul": {
+      "sources": [
+        "item-1077"
+      ],
+      "basis": "public/assets/item-shop/details/1077.json"
+    },
+    "stonefeather_satchel": {
+      "sources": [
+        "item-1861"
+      ],
+      "basis": "public/assets/item-shop/details/1861.json"
+    },
+    "possessed_mask": {
+      "sources": [
+        "item-577"
+      ],
+      "basis": "public/assets/item-shop/details/577.json"
+    },
+    "foragers_kit": {
+      "sources": [
+        "item-1868"
+      ],
+      "basis": "public/assets/item-shop/details/1868.json"
+    },
+    "essence_ring": {
+      "sources": [
+        "item-359"
+      ],
+      "basis": "public/assets/item-shop/details/359.json"
+    },
+    "mana_draught": {
+      "sources": [
+        "item-1599"
+      ],
+      "basis": "public/assets/item-shop/details/1599.json"
+    },
+    "poor_mans_shield": {
+      "sources": [
+        "item-71"
+      ],
+      "basis": "public/assets/item-shop/details/71.json"
+    },
+    "searing_signet": {
+      "sources": [
+        "item-1604"
+      ],
+      "basis": "public/assets/item-shop/details/1604.json"
+    },
+    "pogo_stick": {
+      "sources": [
+        "item-840"
+      ],
+      "basis": "public/assets/item-shop/details/840.json"
+    },
+    "defiant_shell": {
+      "sources": [
+        "item-950"
+      ],
+      "basis": "public/assets/item-shop/details/950.json"
+    },
+    "crippling_crossbow": {
+      "sources": [
+        "item-1601"
+      ],
+      "basis": "public/assets/item-shop/details/1601.json"
+    },
+    "medallion_of_courage": {
+      "sources": [
+        "item-187"
+      ],
+      "basis": "public/assets/item-shop/details/187.json"
+    },
+    "seeds_of_serenity": {
+      "sources": [
+        "item-945"
+      ],
+      "basis": "public/assets/item-shop/details/945.json"
+    },
+    "serrated_shiv": {
+      "sources": [
+        "item-1605"
+      ],
+      "basis": "public/assets/item-shop/details/1605.json"
+    },
+    "gunpowder_gauntlets": {
+      "sources": [
+        "item-1603"
+      ],
+      "basis": "public/assets/item-shop/details/1603.json"
+    },
+    "jidi_pollen_bag": {
+      "sources": [
+        "item-1640"
+      ],
+      "basis": "public/assets/item-shop/details/1640.json"
+    },
+    "psychic_headband": {
+      "sources": [
+        "item-675"
+      ],
+      "basis": "public/assets/item-shop/details/675.json"
+    },
+    "unrelenting_eye": {
+      "sources": [
+        "item-1598"
+      ],
+      "basis": "public/assets/item-shop/details/1598.json"
+    },
+    "cloak_of_flames": {
+      "sources": [
+        "item-574"
+      ],
+      "basis": "public/assets/item-shop/details/574.json"
+    },
+    "spellslinger": {
+      "sources": [
+        "item-1859"
+      ],
+      "basis": "public/assets/item-shop/details/1859.json"
+    },
+    "stormcrafter": {
+      "sources": [
+        "item-585"
+      ],
+      "basis": "public/assets/item-shop/details/585.json"
+    },
+    "partisans_brand": {
+      "sources": [
+        "item-1873"
+      ],
+      "basis": "public/assets/item-shop/details/1873.json"
+    },
+    "giant_maul": {
+      "sources": [
+        "item-1643"
+      ],
+      "basis": "public/assets/item-shop/details/1643.json"
+    },
+    "rattlecage": {
+      "sources": [
+        "item-1168"
+      ],
+      "basis": "public/assets/item-shop/details/1168.json"
+    },
+    "idol_of_screeauk": {
+      "sources": [
+        "item-1720"
+      ],
+      "basis": "public/assets/item-shop/details/1720.json"
+    },
+    "flayers_bota": {
+      "sources": [
+        "item-1721"
+      ],
+      "basis": "public/assets/item-shop/details/1721.json"
+    },
+    "metamorphic_mandible": {
+      "sources": [
+        "item-1719"
+      ],
+      "basis": "public/assets/item-shop/details/1719.json"
+    },
+    "dandelion_amulet": {
+      "sources": [
+        "item-2190"
+      ],
+      "basis": "public/assets/item-shop/details/2190.json"
+    },
+    "enchanters_bauble": {
+      "sources": [
+        "item-1862"
+      ],
+      "basis": "public/assets/item-shop/details/1862.json"
+    },
+    "prophets_pendulum": {
+      "sources": [
+        "item-1860"
+      ],
+      "basis": "public/assets/item-shop/details/1860.json"
+    },
+    "conjurers_catalyst": {
+      "sources": [
+        "item-1864"
+      ],
+      "basis": "public/assets/item-shop/details/1864.json"
+    },
+    "desolator_2": {
+      "sources": [
+        "item-292"
+      ],
+      "basis": "public/assets/item-shop/details/292.json"
+    },
+    "fallen_sky": {
+      "sources": [
+        "item-371"
+      ],
+      "basis": "public/assets/item-shop/details/371.json"
+    },
+    "demonicon": {
+      "sources": [
+        "item-370"
+      ],
+      "basis": "public/assets/item-shop/details/370.json"
+    },
+    "minotaur_horn": {
+      "sources": [
+        "item-377"
+      ],
+      "basis": "public/assets/item-shop/details/377.json"
+    },
+    "spider_legs": {
+      "sources": [
+        "item-326"
+      ],
+      "basis": "public/assets/item-shop/details/326.json"
+    },
+    "riftshadow_prism": {
+      "sources": [
+        "item-1718"
+      ],
+      "basis": "public/assets/item-shop/details/1718.json"
+    },
+    "dezun_bloodrite": {
+      "sources": [
+        "item-1642"
+      ],
+      "basis": "public/assets/item-shop/details/1642.json"
+    },
+    "divine_regalia": {
+      "sources": [
+        "item-1644"
+      ],
+      "basis": "public/assets/item-shop/details/1644.json"
+    },
+    "harmonizer": {
+      "sources": [
+        "item-1863"
+      ],
+      "basis": "public/assets/item-shop/details/1863.json"
+    },
+    "heavy_blade": {
+      "sources": [
+        "item-837"
+      ],
+      "basis": "public/assets/item-shop/details/837.json"
+    },
+    "enhancement_brawny": {
+      "sources": [
+        "item-1585"
+      ],
+      "basis": "public/assets/item-shop/details/1585.json"
+    },
+    "enhancement_tough": {
+      "sources": [
+        "item-1586"
+      ],
+      "basis": "public/assets/item-shop/details/1586.json"
+    },
+    "enhancement_alert": {
+      "sources": [
+        "item-1584"
+      ],
+      "basis": "public/assets/item-shop/details/1584.json"
+    },
+    "enhancement_mystical": {
+      "sources": [
+        "item-1583"
+      ],
+      "basis": "public/assets/item-shop/details/1583.json"
+    },
+    "enhancement_quickened": {
+      "sources": [
+        "item-1577"
+      ],
+      "basis": "public/assets/item-shop/details/1577.json"
+    },
+    "enhancement_vital": {
+      "sources": [
+        "item-1865"
+      ],
+      "basis": "public/assets/item-shop/details/1865.json"
+    },
+    "enhancement_crude": {
+      "sources": [
+        "item-1589"
+      ],
+      "basis": "public/assets/item-shop/details/1589.json"
+    },
+    "enhancement_nimble": {
+      "sources": [
+        "item-1874"
+      ],
+      "basis": "public/assets/item-shop/details/1874.json"
+    },
+    "enhancement_keen_eyed": {
+      "sources": [
+        "item-1595"
+      ],
+      "basis": "public/assets/item-shop/details/1595.json"
+    },
+    "enhancement_titanic": {
+      "sources": [
+        "item-1597"
+      ],
+      "basis": "public/assets/item-shop/details/1597.json"
+    },
+    "enhancement_greedy": {
+      "sources": [
+        "item-1593"
+      ],
+      "basis": "public/assets/item-shop/details/1593.json"
+    },
+    "enhancement_timeless": {
+      "sources": [
+        "item-1592"
+      ],
+      "basis": "public/assets/item-shop/details/1592.json"
+    },
+    "enhancement_hulking": {
+      "sources": [
+        "item-1866"
+      ],
+      "basis": "public/assets/item-shop/details/1866.json"
+    },
+    "enhancement_audacious": {
+      "sources": [
+        "item-1581"
+      ],
+      "basis": "public/assets/item-shop/details/1581.json"
+    },
+    "enhancement_feverish": {
+      "sources": [
+        "item-1587"
+      ],
+      "basis": "public/assets/item-shop/details/1587.json"
+    },
+    "enhancement_manic": {
+      "sources": [
+        "item-1867"
+      ],
+      "basis": "public/assets/item-shop/details/1867.json"
+    },
+    "enhancement_evolved": {
+      "sources": [
+        "item-1596"
+      ],
+      "basis": "public/assets/item-shop/details/1596.json"
+    },
+    "enhancement_fleetfooted": {
+      "sources": [
+        "item-1588"
+      ],
+      "basis": "public/assets/item-shop/details/1588.json"
+    },
+    "enhancement_vampiric": {
+      "sources": [
+        "item-1594"
+      ],
+      "basis": "public/assets/item-shop/details/1594.json"
+    },
+    "aegis": {
+      "sources": [
+        "item-117",
+        "dotabuff-items"
+      ],
+      "basis": "public/assets/item-shop/details/117.json"
+    },
+    "cheese": {
+      "sources": [
+        "item-33"
+      ],
+      "basis": "public/assets/item-shop/details/33.json"
+    },
+    "refresher_shard": {
+      "sources": [
+        "item-260"
+      ],
+      "basis": "public/assets/item-shop/details/260.json"
+    },
+    "ultimate_scepter_roshan": {
+      "sources": [
+        "item-727"
+      ],
+      "basis": "public/assets/item-shop/details/727.json"
+    },
+    "aghanims_shard_roshan": {
+      "sources": [
+        "item-725"
+      ],
+      "basis": "public/assets/item-shop/details/725.json"
+    },
+    "roshans_banner": {
+      "sources": [
+        "item-1804"
+      ],
+      "basis": "public/assets/item-shop/details/1804.json"
+    },
+    "famango": {
+      "sources": [
+        "item-4204"
+      ],
+      "basis": "public/assets/item-shop/details/4204.json"
+    },
+    "great_famango": {
+      "sources": [
+        "item-4205"
+      ],
+      "basis": "public/assets/item-shop/details/4205.json"
+    },
+    "greater_famango": {
+      "sources": [
+        "item-4206"
+      ],
+      "basis": "public/assets/item-shop/details/4206.json"
+    },
+    "royale_with_cheese": {
+      "sources": [
+        "item-1154"
+      ],
+      "basis": "public/assets/item-shop/details/1154.json"
+    },
+    "ward_dispenser": {
+      "sources": [
+        "item-218"
+      ],
+      "basis": "public/assets/item-shop/details/218.json"
+    },
+    "tango_single": {
+      "sources": [
+        "item-241"
+      ],
+      "basis": "public/assets/item-shop/details/241.json"
+    },
+    "black_grimoire": {
+      "sources": [
+        "item-1440"
+      ],
+      "basis": "public/assets/item-shop/details/1440.json"
+    },
+    "grisgris": {
+      "sources": [
+        "item-1441"
+      ],
+      "basis": "public/assets/item-shop/details/1441.json"
+    },
+    "eldwurms_edda": {
+      "sources": [
+        "item-1850"
+      ],
+      "basis": "public/assets/item-shop/details/1850.json"
+    },
+    "foragers_health": {
+      "sources": [
+        "item-1869"
+      ],
+      "basis": "public/assets/item-shop/details/1869.json"
+    },
+    "foragers_stats": {
+      "sources": [
+        "item-1870"
+      ],
+      "basis": "public/assets/item-shop/details/1870.json"
+    },
+    "foragers_mana": {
+      "sources": [
+        "item-1871"
+      ],
+      "basis": "public/assets/item-shop/details/1871.json"
+    },
+    "tidehunter_fish": {
+      "sources": [
+        "item-1875"
+      ],
+      "basis": "public/assets/item-shop/details/1875.json"
+    }
+  },
+  "community": {
+    "retrievedAt": "2026-09-13",
+    "sources": {
+      "dpt-items": {
+        "title": "Dota2ProTracker — Items Overview",
+        "url": "https://dota2protracker.com/items"
+      },
+      "dotabuff-items": {
+        "title": "Dotabuff — Items, Most Used, This Month",
+        "url": "https://www.dotabuff.com/items"
+      },
+      "dotabuff-item-choices": {
+        "title": "Dotabuff — Making Correct Item Choices, KawaiiSocks, 7 October 2025",
+        "url": "https://www.dotabuff.com/blog/2025-10-07-making-correct-item-choices"
+      }
+    },
+    "dptScope": {
+      "patch": null,
+      "minimumMMR": 7000,
+      "minimumMatchMinutes": 30,
+      "windowDays": 8,
+      "purchaseBeforeMatchEndMinutes": 7,
+      "table": "Item Lift Overview, All roles",
+      "selection": "Примеры взяты из показанных у предмета Top 10 Heroes by Lift. Из них выбраны герои с более крупными выборками. Это не топ всех героев по частоте покупки и не доказательство преимущества предмета.",
+      "heroMinimumMatches": 200
+    },
+    "dptItems": [
+      {
+        "key": "assault",
+        "matches": 16892,
+        "purchaseRate": 10.7,
+        "heroes": [
+          {
+            "name": "Lifestealer",
+            "matches": 2964
+          },
+          {
+            "name": "Dawnbreaker",
+            "matches": 2480
+          },
+          {
+            "name": "Night Stalker",
+            "matches": 1268
+          }
+        ]
+      },
+      {
+        "key": "heart",
+        "matches": 19442,
+        "purchaseRate": 11.7,
+        "heroes": [
+          {
+            "name": "Phantom Lancer",
+            "matches": 3174
+          },
+          {
+            "name": "Timbersaw",
+            "matches": 974
+          },
+          {
+            "name": "Io",
+            "matches": 812
+          }
+        ]
+      },
+      {
+        "key": "skadi",
+        "matches": 25004,
+        "purchaseRate": 15.6,
+        "heroes": [
+          {
+            "name": "Spectre",
+            "matches": 3268
+          },
+          {
+            "name": "Juggernaut",
+            "matches": 1030
+          },
+          {
+            "name": "Slark",
+            "matches": 954
+          }
+        ]
+      },
+      {
+        "key": "bloodstone",
+        "matches": 5096,
+        "purchaseRate": 3.2,
+        "heroes": [
+          {
+            "name": "Leshrac",
+            "matches": 688
+          },
+          {
+            "name": "Queen of Pain",
+            "matches": 570
+          }
+        ]
+      },
+      {
+        "key": "overwhelming_blink",
+        "matches": 6988,
+        "purchaseRate": 4.2,
+        "heroes": [
+          {
+            "name": "Doom",
+            "matches": 770
+          },
+          {
+            "name": "Dragon Knight",
+            "matches": 546
+          },
+          {
+            "name": "Centaur Warrunner",
+            "matches": 376
+          }
+        ]
+      },
+      {
+        "key": "devastator",
+        "matches": 7980,
+        "purchaseRate": 5.1,
+        "heroes": [
+          {
+            "name": "Storm Spirit",
+            "matches": 2526
+          },
+          {
+            "name": "Outworld Destroyer",
+            "matches": 1110
+          },
+          {
+            "name": "Lina",
+            "matches": 392
+          }
+        ]
+      },
+      {
+        "key": "octarine_core",
+        "matches": 36176,
+        "purchaseRate": 20.1,
+        "heroes": [
+          {
+            "name": "Invoker",
+            "matches": 6568
+          },
+          {
+            "name": "Puck",
+            "matches": 1950
+          },
+          {
+            "name": "Earthshaker",
+            "matches": 1860
+          }
+        ]
+      },
+      {
+        "key": "sphere",
+        "matches": 18940,
+        "purchaseRate": 10.2,
+        "heroes": [
+          {
+            "name": "Lina",
+            "matches": 1520
+          },
+          {
+            "name": "Windranger",
+            "matches": 1054
+          },
+          {
+            "name": "Puck",
+            "matches": 978
+          }
+        ]
+      },
+      {
+        "key": "pipe",
+        "matches": 11974,
+        "purchaseRate": 7.6,
+        "heroes": [
+          {
+            "name": "Bounty Hunter",
+            "matches": 2118
+          },
+          {
+            "name": "Underlord",
+            "matches": 1344
+          },
+          {
+            "name": "Undying",
+            "matches": 778
+          }
+        ]
+      },
+      {
+        "key": "swift_blink",
+        "matches": 14492,
+        "purchaseRate": 9.1,
+        "heroes": [
+          {
+            "name": "Luna",
+            "matches": 3254
+          },
+          {
+            "name": "Sven",
+            "matches": 2544
+          },
+          {
+            "name": "Juggernaut",
+            "matches": 1450
+          }
+        ]
+      },
+      {
+        "key": "boots_of_bearing",
+        "matches": 8958,
+        "purchaseRate": 5.7,
+        "heroes": [
+          {
+            "name": "Bounty Hunter",
+            "matches": 3174
+          },
+          {
+            "name": "Enigma",
+            "matches": 1106
+          },
+          {
+            "name": "Visage",
+            "matches": 624
+          }
+        ]
+      },
+      {
+        "key": "satanic",
+        "matches": 23678,
+        "purchaseRate": 14.5,
+        "heroes": [
+          {
+            "name": "Shadow Fiend",
+            "matches": 4424
+          },
+          {
+            "name": "Luna",
+            "matches": 3520
+          },
+          {
+            "name": "Nature's Prophet",
+            "matches": 2664
+          }
+        ]
+      },
+      {
+        "key": "shivas_guard",
+        "matches": 59938,
+        "purchaseRate": 32.5,
+        "heroes": [
+          {
+            "name": "Earth Spirit",
+            "matches": 5104
+          },
+          {
+            "name": "Doom",
+            "matches": 4672
+          },
+          {
+            "name": "Underlord",
+            "matches": 4464
+          }
+        ]
+      },
+      {
+        "key": "butterfly",
+        "matches": 28624,
+        "purchaseRate": 18.1,
+        "heroes": [
+          {
+            "name": "Shadow Fiend",
+            "matches": 2434
+          },
+          {
+            "name": "Nature's Prophet",
+            "matches": 2198
+          },
+          {
+            "name": "Terrorblade",
+            "matches": 1808
+          }
+        ]
+      },
+      {
+        "key": "guardian_greaves",
+        "matches": 14748,
+        "purchaseRate": 9.3,
+        "heroes": [
+          {
+            "name": "Undying",
+            "matches": 2258
+          },
+          {
+            "name": "Dazzle",
+            "matches": 812
+          },
+          {
+            "name": "Snapfire",
+            "matches": 530
+          }
+        ]
+      },
+      {
+        "key": "gungir",
+        "matches": 7078,
+        "purchaseRate": 4.4,
+        "heroes": [
+          {
+            "name": "Hoodwink",
+            "matches": 1718
+          },
+          {
+            "name": "Ringmaster",
+            "matches": 274
+          },
+          {
+            "name": "Timbersaw",
+            "matches": 220
+          }
+        ]
+      },
+      {
+        "key": "wind_waker",
+        "matches": 11130,
+        "purchaseRate": 6.4,
+        "heroes": [
+          {
+            "name": "Bounty Hunter",
+            "matches": 1446
+          },
+          {
+            "name": "Tinker",
+            "matches": 684
+          },
+          {
+            "name": "Hoodwink",
+            "matches": 574
+          }
+        ]
+      }
+    ],
+    "dotabuffScope": {
+      "patch": null,
+      "window": "This Month",
+      "tableColumns": [
+        "Times Used",
+        "Use Rate",
+        "Win Rate"
+      ],
+      "interpretation": "Общая месячная статистика использования. Не смешивается с выборкой Dota2ProTracker. Высокий win rate дорогого или выпадающего предмета не доказывает, что его покупка улучшает шанс победы."
+    },
+    "dotabuffObservations": [
+      {
+        "key": "black_king_bar",
+        "timesUsed": 49520897,
+        "useRate": 17.39,
+        "winRate": 53.71
+      },
+      {
+        "key": "magic_wand",
+        "timesUsed": 64047539,
+        "useRate": 22.49,
+        "winRate": 45.82
+      },
+      {
+        "key": "glimmer_cape",
+        "timesUsed": 19321584,
+        "useRate": 6.79,
+        "winRate": 51.37
+      },
+      {
+        "key": "force_staff",
+        "timesUsed": 11565516,
+        "useRate": 4.06,
+        "winRate": 50.22
+      },
+      {
+        "key": "satanic",
+        "timesUsed": 7442534,
+        "useRate": 2.61,
+        "winRate": 66.71
+      },
+      {
+        "key": "heart",
+        "timesUsed": 9124336,
+        "useRate": 3.2,
+        "winRate": 66.84
+      },
+      {
+        "key": "gem",
+        "timesUsed": 2432758,
+        "useRate": 0.85,
+        "winRate": 84.21
+      },
+      {
+        "key": "aegis",
+        "timesUsed": 2100783,
+        "useRate": 0.74,
+        "winRate": 99.16
+      }
+    ],
+    "dotabuffCrossChecks": [
+      "black_king_bar",
+      "magic_wand",
+      "glimmer_cape",
+      "force_staff",
+      "satanic",
+      "heart",
+      "gem",
+      "aegis"
+    ],
+    "dotabuffPrinciples": [
+      "heart",
+      "butterfly",
+      "orchid",
+      "monkey_king_bar"
+    ],
+    "guideUse": {
+      "publishedAt": "2025-10-07",
+      "scope": "Только общие принципы выбора; числовые параметры, старые рецепты и оценка силы в старой мете не перенесены.",
+      "inferences": [
+        "Дополнительная живучесть полезна, когда герой успевает превратить её в действия.",
+        "Защиту от атак нужно выбирать вместе с достаточным запасом здоровья.",
+        "Ценность безмолвия меняется с появлением ответных предметов у жертвы.",
+        "Точность стоит выбирать под значимое уклонение у приоритетной цели."
+      ]
+    },
+    "presentation": "На сайте остаются собственные краткие объяснения и примеры героев. Ссылки, даты и статистические таблицы не включены в карточку. Снимки используются при редакционной проверке, не обновляются фоновыми запросами и не называются живой статистикой."
+  },
+  "previousAcquisition": {
+    "file": "data-sources/item-guidance-2026-09-11.json",
+    "note": "Условия получения и ссылки удалены из интерфейса по запросу владельца. Старые источники остаются в истории git."
+  }
+}

@@ -76,7 +76,6 @@ export function ItemInformation({item, onSelect, onBack, onClose}: {item: ShopIt
         {data.unresolved && <p className="item-description-notice">Часть параметров пока не расшифрована. Они отмечены многоточием.</p>}
         <ItemGuidanceLoader item={item} onSelect={onSelect} />
         {data.lore && <p className="item-lore">{data.lore}</p>}
-        <footer className="item-source"><a href={data.source} target="_blank" rel="noreferrer">Данные Valve</a><span>{data.retrievedAt.split('-').reverse().join('.')}</span></footer>
       </>}
     </div>
     <RecipeDiagram item={item} onSelect={onSelect} onBack={onBack} />

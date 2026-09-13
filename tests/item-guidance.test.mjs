@@ -1,81 +1,78 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {readFileSync} from 'node:fs';
-import {acquisitionFor, adviceFor, guidance, itemByKey} from '../.test-build/features/items/guidance.js';
+import {adviceFor, guidance, itemByKey} from '../.test-build/features/items/guidance.js';
 
 const json = path => JSON.parse(readFileSync(new URL(`../${path}`, import.meta.url)));
 const catalog = json('src/data/item-shop-catalog.json');
-const evidence = json('data-sources/item-guidance-2026-09-11.json');
+const evidence = json('data-sources/item-advice-2026-09-13.json');
+const previousEvidence = json('data-sources/item-guidance-2026-09-11.json');
+const visibleItems = catalog.groups.flatMap(group => group.items);
 
-test('editorial advice is patch-bound, has valid positions and points to the matching item source', () => {
+test('every catalog item has patch-bound advice with matching provenance and valid position examples', () => {
   assert.equal(guidance.patch, catalog.patch);
-  assert.equal(evidence.patchContext, guidance.patch);
-  assert.equal(evidence.patchList.latest, guidance.patch);
-  assert.equal(Object.keys(guidance.advice).length, 53);
-  for (const [key, advice] of Object.entries(guidance.advice)) {
-    const item = itemByKey.get(key);
-    assert.ok(item, key);
+  assert.equal(evidence.patch, guidance.patch);
+  assert.deepEqual(new Set(Object.keys(guidance.advice)), new Set(visibleItems.map(item => item.key)));
+  for (const item of visibleItems) {
+    const advice = adviceFor(item);
+    assert.ok(advice, item.key);
+    assert.ok(advice.purpose.length > 25 && advice.caution.length > 25, item.key);
+    assert.ok(advice.roles.length || advice.tips.length, item.key);
+    assert.ok(advice.tips.every(tip => tip.length > 25), item.key);
+    assert.ok(advice.roles.every(role => role.reason.length > 25 && role.positions.length > 0), item.key);
     const positions = advice.roles.flatMap(role => role.positions);
-    assert.equal(new Set(positions).size, positions.length, key);
-    assert.ok(positions.length > 0 && positions.every(position => [1, 2, 3, 4, 5].includes(position)), key);
-    assert.ok(advice.roles.every(role => role.reason.length > 25), key);
-    assert.ok(advice.purpose && advice.caution, key);
-    assert.equal(new URL(guidance.sources[advice.sources[0]].url).searchParams.get('item_id'), String(item.id));
+    assert.equal(new Set(positions).size, positions.length, item.key);
+    assert.ok(positions.every(position => [1, 2, 3, 4, 5].includes(position)), item.key);
+    const refs = evidence.items[item.key].sources;
+    assert.equal(new URL(evidence.sources[refs[0]].url).searchParams.get('item_id'), String(item.id));
+    for (const id of refs) assert.ok(evidence.sources[id]?.url.startsWith('https://'), id);
     assert.equal(adviceFor(item, 'different-patch'), undefined);
-    assert.ok(!acquisitionFor(item).unavailable, key);
+  }
+  assert.equal(adviceFor({...visibleItems[0], key: 'missing-item'}), undefined);
+});
+
+test('comparison links resolve to real distinct items and preserve a bounded choice', () => {
+  for (const [key, advice] of Object.entries(guidance.advice)) {
+    const links = advice.alternatives ?? [];
+    assert.equal(links.length, new Set(links).size, key);
+    assert.ok(links.length <= 3, key);
+    for (const related of links) {
+      assert.notEqual(related, key);
+      assert.ok(itemByKey.has(related), `${key} -> ${related}`);
+      assert.ok(adviceFor(itemByKey.get(related)), related);
+    }
   }
 });
 
-test('shop locations distinguish direct purchases, secret components and special acquisition', () => {
-  const acquisition = key => acquisitionFor(itemByKey.get(key));
-  assert.match(acquisition('blink').text, /лавке на базе/);
-  assert.match(acquisition('hyperstone').text, /потайной лавке/);
-  assert.match(acquisition('mjollnir').note, /потайной лавке/);
-  assert.doesNotMatch(acquisition('magic_wand').note, /потайной/);
-  assert.match(acquisition('ultimate_scepter_2').text, /компонентов/);
-  assert.match(acquisition('great_famango').text, /35:00/);
-  assert.match(acquisition('greater_famango').text, /60:00/);
-  assert.match(acquisition('ward_dispenser').text, /объединяются/);
-  for (const group of catalog.groups) for (const item of group.items) {
-    const data = acquisitionFor(item);
-    assert.ok(data.text.length > 10, item.key);
-    assert.doesNotMatch(data.text, /\{\w+\}/, item.key);
-    for (const key of data.related ?? []) assert.ok(itemByKey.has(key), `${item.key} -> ${key}`);
-    for (const id of data.sources) assert.ok(guidance.sources[id]?.url.startsWith('https://'), id);
-    if (group.id === 'special' || group.id === 'enhancements') assert.ok(guidance.acquisition[item.key], item.key);
+test('hero examples match the recorded ProTracker sample without treating rates as universal recommendations', () => {
+  const research = evidence.community;
+  assert.equal(research.dptScope.windowDays, 8);
+  assert.equal(research.dptScope.purchaseBeforeMatchEndMinutes, 7);
+  assert.equal(research.dptScope.patch, null);
+  assert.equal(research.dotabuffScope.window, 'This Month');
+  const examples = Object.keys(guidance.advice).filter(key => guidance.advice[key].heroes?.length);
+  assert.deepEqual(new Set(examples), new Set(research.dptItems.map(row => row.key)));
+  for (const row of research.dptItems) {
+    assert.ok(row.matches > 0 && row.purchaseRate > 0 && row.purchaseRate <= 100, row.key);
+    assert.ok(row.heroes.every(hero => hero.matches >= research.dptScope.heroMinimumMatches && hero.matches <= row.matches), row.key);
+    assert.deepEqual(guidance.advice[row.key].heroes, row.heroes.map(hero => hero.name));
+    assert.ok(evidence.items[row.key].sources.includes('dpt-items'));
+  }
+  for (const row of research.dotabuffObservations) {
+    assert.ok(row.timesUsed > 0 && row.useRate >= 0 && row.useRate <= 100 && row.winRate >= 0 && row.winRate <= 100, row.key);
+    assert.ok(evidence.items[row.key].sources.includes('dotabuff-items'));
   }
 });
 
-test('neutral times and attribute-based enchantments use the reviewed Valve patch', () => {
-  for (const group of catalog.groups.filter(group => group.tier)) {
-    for (const item of group.items) assert.ok(acquisitionFor(item).text.includes(group.unlockTime));
-  }
-  const patch = evidence.evidence.find(source => source.id === 'patch-7.41');
-  const sourceText = JSON.stringify(patch.neutralSystem);
-  assert.match(sourceText, /с 5:00 на 0:00/);
-  assert.match(sourceText, /Ассортимент чар больше не выбирается случайным образом/);
-  const normalizeName = name => name.toLowerCase().replace(/[^a-z]/g, '');
-  for (const item of catalog.groups.find(group => group.id === 'enhancements').items) {
-    assert.ok(normalizeName(sourceText).includes(normalizeName(item.englishName)), item.key);
-    assert.deepEqual(guidance.acquisition[item.key].sources, ['patch-7.41']);
-  }
-  assert.match(guidance.acquisition.enhancement_brawny.text, /силы и ловкости/);
-  assert.match(guidance.acquisition.enhancement_mystical.text, /интеллекта и универсальные/);
-  assert.match(guidance.acquisition.enhancement_greedy.text, /2-й и 3-й/);
-  assert.match(guidance.acquisition.enhancement_feverish.text, /5-й.*интеллекта/);
-});
-
-test('retired rewards and unverified acquisition are not presented as available shop purchases', () => {
+test('retired rewards and unknown effects remain explicit instead of receiving invented current builds', () => {
   for (const key of ['ultimate_scepter_roshan', 'aghanims_shard_roshan', 'black_grimoire']) {
-    assert.equal(acquisitionFor(itemByKey.get(key)).unavailable, true);
-    assert.equal(adviceFor(itemByKey.get(key)), undefined);
+    const advice = adviceFor(itemByKey.get(key));
+    assert.match(advice.purpose, /Архивн/);
+    assert.deepEqual(advice.roles, []);
+    assert.equal(advice.heroes, undefined);
   }
-  assert.match(JSON.stringify(evidence.evidence.find(source => source.id === 'patch-7.38').generalNotes), /больше не роняет Aghanim's Blessing/);
-  assert.match(JSON.stringify(evidence.evidence.find(source => source.id === 'patch-7.33').generalNotes), /больше не роняет Aghanim's Shard/);
-  const shard = evidence.evidence.find(source => source.id === 'patch-7.31').shard;
-  assert.match(JSON.stringify(shard), /после 15:00/);
-  const cheese = guidance.acquisition.royale_with_cheese;
-  assert.equal(cheese.verification, 'needs-review');
-  assert.match(cheese.text, /не подтверждён/);
+  assert.match(JSON.stringify(previousEvidence.evidence.find(source => source.id === 'patch-7.38').generalNotes), /больше не роняет Aghanim's Blessing/);
+  assert.match(JSON.stringify(previousEvidence.evidence.find(source => source.id === 'patch-7.33').generalNotes), /больше не роняет Aghanim's Shard/);
+  assert.match(guidance.advice.royale_with_cheese.caution, /не раскрывает полный эффект/);
   assert.equal(itemByKey.get('royale_with_cheese').recipe, undefined);
 });
