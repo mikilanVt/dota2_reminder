@@ -1,5 +1,5 @@
 import {useEffect, useRef, useState} from 'react';
-import {asset, groups, itemById, snapshotDate} from './itemShop';
+import {asset, groups, itemById} from './itemShop';
 import {EmptyInformation, ItemInformation} from './ItemInformation';
 import type {ShopItem} from './types';
 import './items.css';
@@ -56,7 +56,7 @@ export function ItemsScreen() {
   return <main className="items-screen">
     <div className="item-shop-toolbar">
       <label className="item-search"><span>Поиск предмета</span><input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Название предмета…" autoComplete="off" /></label>
-      <p className="item-shop-version">{search ? `Найдено: ${found}` : `Каталог от ${snapshotDate.split('-').reverse().join('.')}`}</p>
+      {search && <p className="item-shop-version">Найдено: {found}</p>}
     </div>
     <div className="item-shop-grid">
       {columns.map(column => <section key={column.id} className={`item-shop-column item-column-${column.id}`} aria-labelledby={`item-column-title-${column.id}`}>
