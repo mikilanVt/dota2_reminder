@@ -1,0 +1,1750 @@
+{
+  "patch": "7.41e",
+  "reviewedAt": "2026-09-11",
+  "verification": "editorial-reviewed",
+  "positions": [
+    {
+      "id": 1,
+      "name": "Керри"
+    },
+    {
+      "id": 2,
+      "name": "Мидер"
+    },
+    {
+      "id": 3,
+      "name": "Офлейнер"
+    },
+    {
+      "id": 4,
+      "name": "Поддержка"
+    },
+    {
+      "id": 5,
+      "name": "Полная поддержка"
+    }
+  ],
+  "sources": {
+    "item-1": {
+      "title": "Valve: Blink Dagger",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1"
+    },
+    "item-116": {
+      "title": "Valve: Black King Bar",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=116"
+    },
+    "item-102": {
+      "title": "Valve: Force Staff",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=102"
+    },
+    "item-254": {
+      "title": "Valve: Glimmer Cape",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=254"
+    },
+    "item-37": {
+      "title": "Valve: Ghost Scepter",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=37"
+    },
+    "item-256": {
+      "title": "Valve: Aeon Disk",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=256"
+    },
+    "item-226": {
+      "title": "Valve: Lotus Orb",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=226"
+    },
+    "item-123": {
+      "title": "Valve: Linken's Sphere",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=123"
+    },
+    "item-90": {
+      "title": "Valve: Pipe of Insight",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=90"
+    },
+    "item-242": {
+      "title": "Valve: Crimson Guard",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=242"
+    },
+    "item-79": {
+      "title": "Valve: Mekansm",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=79"
+    },
+    "item-231": {
+      "title": "Valve: Guardian Greaves",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=231"
+    },
+    "item-180": {
+      "title": "Valve: Arcane Boots",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=180"
+    },
+    "item-214": {
+      "title": "Valve: Tranquil Boots",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=214"
+    },
+    "item-229": {
+      "title": "Valve: Solar Crest",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=229"
+    },
+    "item-267": {
+      "title": "Valve: Spirit Vessel",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=267"
+    },
+    "item-92": {
+      "title": "Valve: Urn of Shadows",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=92"
+    },
+    "item-98": {
+      "title": "Valve: Orchid Malevolence",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=98"
+    },
+    "item-96": {
+      "title": "Valve: Scythe of Vyse",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=96"
+    },
+    "item-100": {
+      "title": "Valve: Eul's Scepter of Divinity",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=100"
+    },
+    "item-206": {
+      "title": "Valve: Rod of Atos",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=206"
+    },
+    "item-210": {
+      "title": "Valve: Heaven's Halberd",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=210"
+    },
+    "item-225": {
+      "title": "Valve: Nullifier",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=225"
+    },
+    "item-135": {
+      "title": "Valve: Monkey King Bar",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=135"
+    },
+    "item-147": {
+      "title": "Valve: Manta Style",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=147"
+    },
+    "item-156": {
+      "title": "Valve: Satanic",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=156"
+    },
+    "item-158": {
+      "title": "Valve: Mjollnir",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=158"
+    },
+    "item-166": {
+      "title": "Valve: Maelstrom",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=166"
+    },
+    "item-145": {
+      "title": "Valve: Battle Fury",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=145"
+    },
+    "item-137": {
+      "title": "Valve: Radiance",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=137"
+    },
+    "item-168": {
+      "title": "Valve: Desolator",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=168"
+    },
+    "item-112": {
+      "title": "Valve: Assault Cuirass",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=112"
+    },
+    "item-119": {
+      "title": "Valve: Shiva's Guard",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=119"
+    },
+    "item-160": {
+      "title": "Valve: Eye of Skadi",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=160"
+    },
+    "item-127": {
+      "title": "Valve: Blade Mail",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=127"
+    },
+    "item-48": {
+      "title": "Valve: Boots of Travel",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=48"
+    },
+    "item-220": {
+      "title": "Valve: Boots of Travel 2",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=220"
+    },
+    "item-108": {
+      "title": "Valve: Aghanim's Scepter",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=108"
+    },
+    "item-271": {
+      "title": "Valve: Aghanim's Blessing",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=271"
+    },
+    "item-609": {
+      "title": "Valve: Aghanim's Shard",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=609"
+    },
+    "item-41": {
+      "title": "Valve: Bottle",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=41"
+    },
+    "item-63": {
+      "title": "Valve: Power Treads",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=63"
+    },
+    "item-50": {
+      "title": "Valve: Phase Boots",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=50"
+    },
+    "item-36": {
+      "title": "Valve: Magic Wand",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=36"
+    },
+    "item-30": {
+      "title": "Valve: Gem of True Sight",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=30"
+    },
+    "item-40": {
+      "title": "Valve: Dust of Appearance",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=40"
+    },
+    "item-42": {
+      "title": "Valve: Observer Ward",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=42"
+    },
+    "item-43": {
+      "title": "Valve: Sentry Ward",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=43"
+    },
+    "item-188": {
+      "title": "Valve: Smoke of Deceit",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=188"
+    },
+    "item-133": {
+      "title": "Valve: Divine Rapier",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=133"
+    },
+    "item-110": {
+      "title": "Valve: Refresher Orb",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=110"
+    },
+    "item-235": {
+      "title": "Valve: Octarine Core",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=235"
+    },
+    "item-232": {
+      "title": "Valve: Aether Lens",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=232"
+    },
+    "patch-7.31": {
+      "title": "Valve: изменения 7.31",
+      "url": "https://www.dota2.com/patches/7.31"
+    },
+    "patch-7.33": {
+      "title": "Valve: изменения 7.33",
+      "url": "https://www.dota2.com/patches/7.33"
+    },
+    "patch-7.36": {
+      "title": "Valve: изменения 7.36",
+      "url": "https://www.dota2.com/patches/7.36"
+    },
+    "patch-7.37": {
+      "title": "Valve: изменения 7.37",
+      "url": "https://www.dota2.com/patches/7.37"
+    },
+    "patch-7.38": {
+      "title": "Valve: изменения 7.38",
+      "url": "https://www.dota2.com/patches/7.38"
+    },
+    "patch-7.41": {
+      "title": "Valve: изменения 7.41",
+      "url": "https://www.dota2.com/patches/7.41"
+    },
+    "catalog": {
+      "title": "Valve: список предметов и компонентов",
+      "url": "https://www.dota2.com/datafeed/itemlist?language=russian"
+    },
+    "layout": {
+      "title": "Компоновка магазина из клиента",
+      "url": "https://github.com/mikilanVt/dota2_reminder/blob/codex/project-foundation/docs/ITEMS-DESIGN.md"
+    },
+    "witch_doctor": {
+      "title": "Valve: Witch Doctor",
+      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=30"
+    },
+    "winter_wyvern": {
+      "title": "Valve: Winter Wyvern",
+      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=112"
+    },
+    "tidehunter": {
+      "title": "Valve: Tidehunter",
+      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=29"
+    },
+    "item-117": {
+      "title": "Valve: Aegis of the Immortal",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=117"
+    },
+    "item-1154": {
+      "title": "Valve: Block of Cheese",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1154"
+    },
+    "item-218": {
+      "title": "Valve: Observer and Sentry Wards",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=218"
+    },
+    "item-44": {
+      "title": "Valve: Tango",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=44"
+    },
+    "item-241": {
+      "title": "Valve: Tango (Shared)",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=241"
+    },
+    "item-1868": {
+      "title": "Valve: Forager's Kit",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1868"
+    },
+    "item-1869": {
+      "title": "Valve: Vital Toadstool",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1869"
+    },
+    "item-1870": {
+      "title": "Valve: Ironwood Nut",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1870"
+    },
+    "item-1871": {
+      "title": "Valve: Tomo'kan Ringcap",
+      "url": "https://www.dota2.com/datafeed/itemdata?language=russian&item_id=1871"
+    }
+  },
+  "rules": {
+    "shop": {
+      "text": "Покупается в лавке на базе.",
+      "sources": [
+        "layout",
+        "catalog"
+      ]
+    },
+    "secret": {
+      "text": "Покупается в потайной лавке.",
+      "sources": [
+        "layout",
+        "catalog"
+      ]
+    },
+    "recipe": {
+      "text": "Свиток рецепта покупается в лавке на базе и объединяется с указанными компонентами.",
+      "sources": [
+        "catalog"
+      ]
+    },
+    "assembled": {
+      "text": "Собирается из компонентов и, если он нужен, свитка рецепта.",
+      "note": "Нажми на компонент в схеме ниже, чтобы открыть его описание.",
+      "sources": [
+        "catalog"
+      ]
+    },
+    "neutral": {
+      "text": "Создаётся за безумруды после {time}, если артефакт есть среди предложенных вариантов.",
+      "note": "Безумруды получают за зачистку нейтральных лагерей. Для нового разряда сначала нужно создать предмет предыдущего; вместе с артефактом выбираются чары.",
+      "sources": [
+        "patch-7.38",
+        "patch-7.41"
+      ]
+    },
+    "enhancement": {
+      "text": "Выбираются при создании нейтрального предмета вместе с артефактом. Доступность зависит от разряда и основного атрибута героя.",
+      "sources": [
+        "patch-7.38",
+        "patch-7.41"
+      ]
+    }
+  },
+  "acquisition": {
+    "aghanims_shard": {
+      "text": "Покупается в лавке на базе с 15:00. Улучшение также можно получить за убийство Терзателя.",
+      "note": "Награда Терзателя не гарантирована именно твоему герою: он выбирает получателя среди подходящих союзников.",
+      "sources": [
+        "patch-7.31",
+        "patch-7.33",
+        "patch-7.41"
+      ]
+    },
+    "aegis": {
+      "text": "Подбирается после убийства Рошана. В лавках не продаётся.",
+      "sources": [
+        "item-117",
+        "patch-7.37"
+      ]
+    },
+    "cheese": {
+      "text": "Дополнительная добыча Рошана с третьей смерти, если он погиб днём. В лавках не продаётся.",
+      "sources": [
+        "patch-7.37",
+        "patch-7.38"
+      ]
+    },
+    "refresher_shard": {
+      "text": "Дополнительная добыча Рошана с третьей смерти. Выпадает независимо от времени суток.",
+      "sources": [
+        "patch-7.37",
+        "patch-7.38"
+      ]
+    },
+    "roshans_banner": {
+      "text": "Рошан оставляет знамя при второй смерти. В лавках не продаётся.",
+      "sources": [
+        "patch-7.37"
+      ]
+    },
+    "ultimate_scepter_roshan": {
+      "text": "Старая награда Рошана: он больше не роняет Aghanim’s Blessing с обновления 7.38.",
+      "unavailable": true,
+      "note": "Покупаемое улучшение Aghanim’s Blessing — отдельная запись.",
+      "related": [
+        "ultimate_scepter_2"
+      ],
+      "sources": [
+        "patch-7.38"
+      ]
+    },
+    "aghanims_shard_roshan": {
+      "text": "Старая награда Рошана: выпадение Aghanim’s Shard из него убрано в 7.33.",
+      "unavailable": true,
+      "note": "Актуальное улучшение ищи в записи Aghanim’s Shard.",
+      "related": [
+        "aghanims_shard"
+      ],
+      "sources": [
+        "patch-7.33"
+      ]
+    },
+    "black_grimoire": {
+      "text": "Предмет прежнего аспекта Warlock. В 7.41 аспекты удалены, поэтому прежний способ получения больше не действует.",
+      "unavailable": true,
+      "sources": [
+        "patch-7.36",
+        "patch-7.41"
+      ]
+    },
+    "famango": {
+      "text": "Собирается в пруду лотосов. Для подбора стой в его области со свободным местом в инвентаре.",
+      "note": "При появлении врага в области отсчёт подбора откатывается.",
+      "sources": [
+        "patch-7.33",
+        "patch-7.38",
+        "patch-7.41"
+      ]
+    },
+    "great_famango": {
+      "text": "Объединяется из трёх Healing Lotus. С 35:00 такие лотосы также появляются в прудах.",
+      "related": [
+        "famango"
+      ],
+      "sources": [
+        "catalog",
+        "patch-7.38",
+        "patch-7.41"
+      ]
+    },
+    "greater_famango": {
+      "text": "Объединяется из двух Great Healing Lotus. С 60:00 такие лотосы также появляются в прудах.",
+      "related": [
+        "great_famango"
+      ],
+      "sources": [
+        "catalog",
+        "patch-7.38",
+        "patch-7.41"
+      ]
+    },
+    "royale_with_cheese": {
+      "text": "Особый предмет. Точный способ получения для этого патча пока не подтверждён источниками каталога.",
+      "verification": "needs-review",
+      "note": "У Valve есть описание эффекта, но нет обычного рецепта сборки. Не используем эту запись для учебных вопросов.",
+      "sources": [
+        "item-1154",
+        "patch-7.38"
+      ]
+    },
+    "ward_dispenser": {
+      "text": "Observer Ward и Sentry Ward объединяются в одну ячейку инвентаря. Отдельная покупка этой записи не нужна.",
+      "related": [
+        "ward_observer",
+        "ward_sentry"
+      ],
+      "sources": [
+        "catalog",
+        "item-218"
+      ]
+    },
+    "tango_single": {
+      "text": "Появляется, когда союзник делится зарядом Tango.",
+      "related": [
+        "tango"
+      ],
+      "sources": [
+        "item-44",
+        "item-241"
+      ]
+    },
+    "grisgris": {
+      "text": "Witch Doctor получает предмет от врождённой способности Gris-Gris. В лавке не продаётся.",
+      "note": "Использование расходует предмет навсегда.",
+      "sources": [
+        "witch_doctor"
+      ]
+    },
+    "eldwurms_edda": {
+      "text": "Winter Wyvern получает предмет от врождённой способности Eldwurm’s Edda. В лавке не продаётся.",
+      "note": "В начале игры предмет находится на перезарядке.",
+      "sources": [
+        "winter_wyvern"
+      ]
+    },
+    "foragers_health": {
+      "text": "Находится при сборе урожая с отмеченных деревьев с помощью Forager’s Kit.",
+      "related": [
+        "foragers_kit"
+      ],
+      "sources": [
+        "item-1868",
+        "item-1869"
+      ]
+    },
+    "foragers_stats": {
+      "text": "Находится при сборе урожая с отмеченных деревьев с помощью Forager’s Kit.",
+      "related": [
+        "foragers_kit"
+      ],
+      "sources": [
+        "item-1868",
+        "item-1870"
+      ]
+    },
+    "foragers_mana": {
+      "text": "Находится при сборе урожая с отмеченных деревьев с помощью Forager’s Kit.",
+      "related": [
+        "foragers_kit"
+      ],
+      "sources": [
+        "item-1868",
+        "item-1871"
+      ]
+    },
+    "tidehunter_fish": {
+      "text": "Рыбка от Leviathan’s Catch у Tidehunter. Её оставляет вражеский герой, которого убил владелец способности или который погиб под действием его отрицательных эффектов.",
+      "sources": [
+        "tidehunter"
+      ]
+    },
+    "enhancement_brawny": {
+      "text": "1–4 разряды: герои силы и ловкости.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_tough": {
+      "text": "1–4 разряды: герои силы и интеллекта.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_alert": {
+      "text": "1–4 разряды: герои ловкости и универсальные герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_mystical": {
+      "text": "1–4 разряды: герои интеллекта и универсальные герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_quickened": {
+      "text": "1–4 разряды: все герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_vital": {
+      "text": "1-й разряд: все герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_crude": {
+      "text": "2–4 разряды: герои силы.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_nimble": {
+      "text": "2–4 разряды: герои ловкости.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_keen_eyed": {
+      "text": "2–4 разряды: герои интеллекта.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_titanic": {
+      "text": "2–4 разряды: универсальные герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_greedy": {
+      "text": "2-й и 3-й разряды: все герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_timeless": {
+      "text": "4-й и 5-й разряды: все герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_hulking": {
+      "text": "5-й разряд: герои силы.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_audacious": {
+      "text": "5-й разряд: герои ловкости.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_feverish": {
+      "text": "5-й разряд: герои интеллекта.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_manic": {
+      "text": "5-й разряд: универсальные герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_evolved": {
+      "text": "5-й разряд: все герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_fleetfooted": {
+      "text": "5-й разряд: все герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    },
+    "enhancement_vampiric": {
+      "text": "5-й разряд: все герои.",
+      "note": "Чары выбираются вместе с артефактом при создании нейтрального предмета за безумруды.",
+      "sources": [
+        "patch-7.41"
+      ]
+    }
+  },
+  "advice": {
+    "blink": {
+      "purpose": "Помогает начать бой с нужной дистанции или быстро занять позицию.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Рассмотри для героя, которому нужно быстро сблизиться и применить контроль."
+        },
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Полезен, если точное применение твоей способности меняет исход драки; сначала оцени, хватает ли выживаемости."
+        }
+      ],
+      "caution": "Полученный урон может временно заблокировать прыжок. Продумай подход к драке.",
+      "sources": [
+        "item-1"
+      ]
+    },
+    "black_king_bar": {
+      "purpose": "Даёт время действовать в бою, когда тебе мешают отрицательные эффекты и магический урон.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри, если без защиты не успеваешь наносить урон или применять ключевые способности."
+        },
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Полезен, когда после начала драки нужно продолжать действовать в центре боя."
+        }
+      ],
+      "caution": "Не защищает от всего контроля: проверяй, проходит ли конкретная способность сквозь невосприимчивость к эффектам.",
+      "sources": [
+        "item-116"
+      ]
+    },
+    "force_staff": {
+      "purpose": "Меняет положение героя: помогает выйти из опасной области, догнать цель или оттолкнуть союзника.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри как способ помочь союзнику, который не может сам разорвать дистанцию."
+        },
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Полезен, если герою не хватает перемещения для драки и отхода."
+        }
+      ],
+      "caution": "Толчок идёт по направлению взгляда цели. Не спасает от всех способностей — исключения перечислены в описании.",
+      "sources": [
+        "item-102"
+      ]
+    },
+    "glimmer_cape": {
+      "purpose": "Помогает пережить магический урон и скрыть себя или союзника.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри для спасения союзника или защиты себя во время применения способностей."
+        }
+      ],
+      "caution": "У невидимости есть задержка; раскрытие невидимости мешает скрыться. Магический барьер не поглощает физический урон.",
+      "sources": [
+        "item-254"
+      ]
+    },
+    "ghost": {
+      "purpose": "Помогает пережить физический урон, переходя в бесплотную форму.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри, когда тебя быстро убивают атаками, а твоя польза в драке зависит от заклинаний."
+        },
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Вариант для героя, который наносит урон способностями и нуждается в паузе от физических атак."
+        }
+      ],
+      "caution": "Во время действия нельзя атаковать; учитывай магический урон и развеивание у противника.",
+      "sources": [
+        "item-37"
+      ]
+    },
+    "aeon_disk": {
+      "purpose": "Помогает пережить резкое падение здоровья и получить шанс применить способности.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри, если погибаешь в начале драки, не успевая дать важный контроль или спасение."
+        },
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Ситуационный выбор для героя, которому важнее успеть применить способность, чем непрерывно атаковать."
+        }
+      ],
+      "caution": "Эффект может сработать до решающего момента. Во время защиты ты тоже не наносишь урон.",
+      "sources": [
+        "item-256"
+      ]
+    },
+    "lotus_orb": {
+      "purpose": "Снимает развеиваемые отрицательные эффекты и отражает большинство направленных заклинаний.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Рассмотри, если команде нужно снимать отрицательные эффекты и защищать героя, которого часто выбирают целью."
+        },
+        {
+          "positions": [
+            5
+          ],
+          "reason": "Полезен при наличии ресурсов, если именно развеивание решает проблему союзника."
+        }
+      ],
+      "caution": "Отражение не блокирует исходное заклинание. Не путай его с защитой Linken’s Sphere.",
+      "sources": [
+        "item-226"
+      ]
+    },
+    "sphere": {
+      "purpose": "Помогает защитить героя от одного направленного заклинания; защиту можно передать союзнику.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри, если одно направленное заклинание регулярно приводит к твоей смерти."
+        },
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Полезен, когда блокирование первой способности позволяет начать бой."
+        }
+      ],
+      "caution": "Недорогое заклинание может сначала снять защиту. Некоторые способности вообще не блокируются.",
+      "sources": [
+        "item-123"
+      ]
+    },
+    "pipe": {
+      "purpose": "Даёт команде сопротивление магии и общий барьер от магического урона.",
+      "roles": [
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Рассмотри против большого количества магического урона по команде."
+        },
+        {
+          "positions": [
+            4
+          ],
+          "reason": "Вариант при достаточном доходе, если команде нужен барьер и другой игрок его не собирает."
+        }
+      ],
+      "caution": "Эффект требует близости союзников. Перед покупкой договоритесь, кто собирает командную защиту.",
+      "sources": [
+        "item-90"
+      ]
+    },
+    "crimson_guard": {
+      "purpose": "Помогает союзникам и постройкам выдерживать множество физических атак.",
+      "roles": [
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Рассмотри против частых атак нескольких существ, если можешь держаться рядом с союзниками."
+        }
+      ],
+      "caution": "Блок атак не заменяет защиту от заклинаний. Оцени, какой урон действительно убивает команду.",
+      "sources": [
+        "item-242"
+      ]
+    },
+    "mekansm": {
+      "purpose": "Восстанавливает здоровье группе союзников и поддерживает команду в затяжных столкновениях.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Рассмотри, если команда рано собирается вместе и может регулярно получать групповое лечение."
+        },
+        {
+          "positions": [
+            5
+          ],
+          "reason": "Полезен при достаточном доходе, когда лечение важнее личного защитного предмета."
+        }
+      ],
+      "caution": "Не откладывай применение до смерти союзника. Повторные лечения от Mekansm и Greaves ограничены общим интервалом.",
+      "sources": [
+        "item-79"
+      ]
+    },
+    "guardian_greaves": {
+      "purpose": "Объединяет командное восстановление здоровья и маны с развеиванием на владельце.",
+      "roles": [
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Рассмотри для героя, который держится в центре команды и помогает ей долго сражаться."
+        },
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Дорогое продолжение командной поддержки, если базовые задачи спасения и обзора уже обеспечены."
+        }
+      ],
+      "caution": "Развеивание применяется к владельцу, а не ко всей команде. Несколько таких предметов не дают свободно повторять лечение.",
+      "sources": [
+        "item-231"
+      ]
+    },
+    "arcane_boots": {
+      "purpose": "Поддерживает запас маны героя и союзников рядом.",
+      "roles": [
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Рассмотри, если часто используешь способности и играешь рядом с командой."
+        },
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Полезны для регулярных применений заклинаний и поддержки маны союзника на линии."
+        }
+      ],
+      "caution": "Для группового восстановления нужно держаться в радиусе союзников.",
+      "sources": [
+        "item-180"
+      ]
+    },
+    "tranquil_boots": {
+      "purpose": "Помогают восстанавливать здоровье между столкновениями и перемещаться по карте.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри для перемещений между линиями и восстановления здоровья без возвращения на базу."
+        }
+      ],
+      "caution": "Атаки по владельцу и его атаки по героям временно ослабляют предмет. Он не решает недостаток маны.",
+      "sources": [
+        "item-214"
+      ]
+    },
+    "solar_crest": {
+      "purpose": "Даёт союзнику физический барьер и помогает ему активнее атаковать и перемещаться.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри для усиления союзника, который наносит основной урон атаками."
+        },
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Вариант командного усиления, если у тебя есть время применять предмет на нужного союзника."
+        }
+      ],
+      "caution": "При применении на себя действует только барьер. Магический урон он не поглощает.",
+      "sources": [
+        "item-229"
+      ]
+    },
+    "spirit_vessel": {
+      "purpose": "Мешает противнику пополнять здоровье; заряды также можно использовать для лечения союзника.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3,
+            4
+          ],
+          "reason": "Рассмотри, если активно участвуешь в убийствах, а противник сильно зависит от лечения или восстановления."
+        },
+        {
+          "positions": [
+            5
+          ],
+          "reason": "Полезен при достаточном доходе и возможности регулярно получать заряды."
+        }
+      ],
+      "caution": "Нужны заряды и подходящая цель. Договоритесь о покупке, чтобы не конкурировать за заряды.",
+      "sources": [
+        "item-267"
+      ]
+    },
+    "urn_of_shadows": {
+      "purpose": "Даёт дополнительное лечение между столкновениями или постепенный урон по противнику.",
+      "roles": [
+        {
+          "positions": [
+            4
+          ],
+          "reason": "Рассмотри для активных перемещений и помощи на разных линиях."
+        },
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Подходит, если герой рано ищет убийства и может использовать каждый заряд."
+        }
+      ],
+      "caution": "Без участия в событиях рядом с погибающими врагами будет трудно получать заряды.",
+      "sources": [
+        "item-92"
+      ]
+    },
+    "orchid": {
+      "purpose": "Мешает цели использовать способности и помогает добить её за время безмолвия.",
+      "roles": [
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Рассмотри для поиска одиночных целей, которым нужны способности для побега."
+        },
+        {
+          "positions": [
+            1
+          ],
+          "reason": "Ситуационный выбор, если герой может быстро атаковать и реализовать окно безмолвия."
+        }
+      ],
+      "caution": "Безмолвие не запрещает использование предметов. Учитывай способы снять или переждать эффект.",
+      "sources": [
+        "item-98"
+      ]
+    },
+    "sheepstick": {
+      "purpose": "Даёт направленный контроль, который мешает атаковать, применять способности и предметы.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Рассмотри, когда команде нужен дополнительный контроль конкретного героя."
+        },
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Позднее усиление контроля при достаточном доходе."
+        }
+      ],
+      "caution": "Нужны подходящая дистанция и мана. Учитывай защиту цели от направленных заклинаний.",
+      "sources": [
+        "item-96"
+      ]
+    },
+    "cyclone": {
+      "purpose": "Позволяет выиграть время для себя или подготовить применение способности по врагу.",
+      "roles": [
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Рассмотри для подготовки комбинации заклинаний или снятия развеиваемого эффекта с себя."
+        },
+        {
+          "positions": [
+            3,
+            4,
+            5
+          ],
+          "reason": "Полезен как личная защита и возможность временно убрать противника из драки."
+        }
+      ],
+      "caution": "Базовый Eul’s Scepter нельзя применять на союзников; неуязвимую цель нельзя свободно атаковать.",
+      "sources": [
+        "item-100"
+      ]
+    },
+    "rod_of_atos": {
+      "purpose": "Удерживает цель на месте, помогая попасть последующими способностями.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3,
+            4
+          ],
+          "reason": "Рассмотри, если твоей комбинации не хватает удержания цели на месте."
+        }
+      ],
+      "caution": "Оцепенение не является оглушением: цель может продолжать атаковать и применять доступные способности.",
+      "sources": [
+        "item-206"
+      ]
+    },
+    "heavens_halberd": {
+      "purpose": "Лишает противника возможности атаковать на время действия.",
+      "roles": [
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Рассмотри против героя, который наносит основную часть урона атаками."
+        },
+        {
+          "positions": [
+            4
+          ],
+          "reason": "Вариант при достаточном доходе, если команде нужна защита от конкретного атакующего героя."
+        }
+      ],
+      "caution": "Бессилие не выключает урон от способностей. Применяй на того, чьи атаки действительно опасны.",
+      "sources": [
+        "item-210"
+      ]
+    },
+    "nullifier": {
+      "purpose": "Непрерывно снимает развеиваемые положительные эффекты с выбранного противника.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри, когда цель переживает твой урон за счёт положительных эффектов, которые можно развеять."
+        }
+      ],
+      "caution": "Не запрещает пользоваться предметами и не снимает абсолютно все эффекты. Проверяй конкретный способ защиты врага.",
+      "sources": [
+        "item-225"
+      ]
+    },
+    "monkey_king_bar": {
+      "purpose": "Помогает наносить урон атаками по целям с уклонением.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри для героя с сильными атаками, если промахи заметно мешают убивать цель."
+        }
+      ],
+      "caution": "Прохождение сквозь уклонение срабатывает с вероятностью; предмет не делает каждую атаку безусловно точной.",
+      "sources": [
+        "item-135"
+      ]
+    },
+    "manta": {
+      "purpose": "Даёт иллюзии и нормальное развеивание при применении.",
+      "roles": [
+        {
+          "positions": [
+            1
+          ],
+          "reason": "Рассмотри для героя, который использует иллюзии в атаке и давлении на линии, либо нуждается в развеивании."
+        },
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Ситуационный вариант для героя с полезными иллюзиями и потребностью снимать отрицательные эффекты."
+        }
+      ],
+      "caution": "Иллюзии не копируют все свойства героя и предметов. Оцени пользу иллюзий именно для своего героя.",
+      "sources": [
+        "item-147"
+      ]
+    },
+    "satanic": {
+      "purpose": "Позволяет восстанавливать здоровье физическим уроном от своих атак.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри, когда можешь продолжать бить в драке, но не хватает восстановления здоровья."
+        }
+      ],
+      "caution": "Если тебя удерживают или не дают атаковать, активный вампиризм трудно реализовать.",
+      "sources": [
+        "item-156"
+      ]
+    },
+    "mjollnir": {
+      "purpose": "Усиливает частые атаки и урон цепными молниями; активный щит наказывает атаки по выбранному союзнику.",
+      "roles": [
+        {
+          "positions": [
+            1
+          ],
+          "reason": "Рассмотри для героя с частыми атаками и потребностью наносить урон нескольким целям."
+        },
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Подходит атакующему герою, если молнии и скорость атаки хорошо сочетаются с его возможностями."
+        }
+      ],
+      "caution": "Щит нужно применять отдельно. Его польза выше на существе, которое противник действительно атакует.",
+      "sources": [
+        "item-158"
+      ]
+    },
+    "maelstrom": {
+      "purpose": "Добавляет цепные молнии к атакам и помогает зачищать группы существ.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри, если герою нужна зачистка крипов и он регулярно атакует, вызывая молнии."
+        }
+      ],
+      "caution": "Это покупка для атакующего героя. Она не даёт самостоятельного способа пережить контроль.",
+      "sources": [
+        "item-166"
+      ]
+    },
+    "bfury": {
+      "purpose": "Даёт герою ближнего боя прорубающий урон для зачистки нескольких целей атаками.",
+      "roles": [
+        {
+          "positions": [
+            1
+          ],
+          "reason": "Рассмотри, если твоему герою ближнего боя не хватает зачистки крипов и есть пространство для фарма."
+        }
+      ],
+      "caution": "Прорубание работает только в ближнем бою. Покупка для ускорения фарма может отложить нужную защиту или участие в драках.",
+      "sources": [
+        "item-145"
+      ]
+    },
+    "radiance": {
+      "purpose": "Наносит постоянный магический урон вокруг владельца.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Рассмотри для героя, который может долго держаться рядом с несколькими противниками."
+        }
+      ],
+      "caution": "Чтобы наносить урон горением, нужно находиться рядом с целями и оставаться в живых.",
+      "sources": [
+        "item-137"
+      ]
+    },
+    "desolator": {
+      "purpose": "Снижает броню атакуемой цели и усиливает физическое давление, в том числе на постройки.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри для героя с сильными физическими атаками, который хочет быстрее убивать цели или ломать постройки."
+        }
+      ],
+      "caution": "Снижение брони помогает физическому урону. Оцени, можешь ли ты безопасно добраться до цели и атаковать.",
+      "sources": [
+        "item-168"
+      ]
+    },
+    "assault": {
+      "purpose": "Усиливает броню и скорость атаки союзников рядом, одновременно снижая броню врагов.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Рассмотри для совместной игры с несколькими источниками физического урона и давления на здания."
+        }
+      ],
+      "caution": "Аура требует близости к команде и целям. Уточни, не собирает ли её другой союзник.",
+      "sources": [
+        "item-112"
+      ]
+    },
+    "shivas_guard": {
+      "purpose": "Даёт броню, замедляет атаки противников вокруг и позволяет замедлить их морозной волной.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Рассмотри, если можешь держаться рядом с противниками и тебе мешают их физические атаки или передвижение."
+        }
+      ],
+      "caution": "Для ауры нужно находиться рядом с врагами. Волна не заменяет оглушение.",
+      "sources": [
+        "item-119"
+      ]
+    },
+    "skadi": {
+      "purpose": "Добавляет к атакам замедление и уменьшение пополнения здоровья цели.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри для атакующего героя против сильного восстановления здоровья или цели, от которой трудно не отстать."
+        }
+      ],
+      "caution": "Эффект нужно поддерживать атаками по нужному противнику; предмет не действует на всю команду врага сразу.",
+      "sources": [
+        "item-160"
+      ]
+    },
+    "blade_mail": {
+      "purpose": "Возвращает урон атакующему и позволяет наказать противника за фокус на владельце.",
+      "roles": [
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Рассмотри для героя, которого враги вынуждены атаковать и который способен пережить их урон."
+        },
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Ситуационный вариант против урона, который противнику трудно вовремя прекратить."
+        }
+      ],
+      "caution": "Не делает владельца неуязвимым. Если враг перестаёт наносить урон или защищён от отражения, польза уменьшается.",
+      "sources": [
+        "item-127"
+      ]
+    },
+    "travel_boots": {
+      "purpose": "Улучшает телепортацию и помогает чаще перемещаться между линиями.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри, когда герой уже умеет быстро зачищать линии и может использовать частые перемещения."
+        },
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Полезен для присоединения к команде после давления на отдалённой линии."
+        }
+      ],
+      "caution": "Мобильность по карте не заменяет предмет для выживания в ближайшей драке.",
+      "sources": [
+        "item-48"
+      ]
+    },
+    "travel_boots_2": {
+      "purpose": "Добавляет возможность телепортироваться к героям и сокращает время применения телепорта.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Рассмотри в поздней игре, когда важно присоединяться именно к союзному герою."
+        }
+      ],
+      "caution": "Сначала оцени пользу улучшения относительно покупки, которая непосредственно усиливает драку.",
+      "sources": [
+        "item-220"
+      ]
+    },
+    "ultimate_scepter": {
+      "purpose": "Усиливает определённые способности владельца.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Рассмотри, если улучшение усиливает основную задачу героя: урон, контроль или выживание."
+        },
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри, если улучшенная способность помогает команде больше, чем доступный защитный предмет."
+        }
+      ],
+      "caution": "Польза полностью зависит от улучшения конкретного героя. Прочитай его до покупки.",
+      "sources": [
+        "item-108"
+      ]
+    },
+    "ultimate_scepter_2": {
+      "purpose": "Позволяет получить улучшение от Aghanim’s Scepter в расходуемой форме.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Рассмотри в поздней игре, когда уже используешь улучшение Scepter и ценишь свободное место в инвентаре."
+        },
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Поздняя покупка при избытке ресурсов, если улучшение важно для командных способностей."
+        }
+      ],
+      "caution": "Оцени, нужен ли именно этот дорогой этап улучшения сейчас, и проверь поведение Aghanim’s Scepter у своего героя.",
+      "sources": [
+        "item-271"
+      ]
+    },
+    "aghanims_shard": {
+      "purpose": "Улучшает способность героя или добавляет новую.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Рассмотри, если улучшение помогает выполнять твою основную задачу в текущем матче."
+        },
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри, если улучшение даёт нужное команде спасение, контроль или другую полезную возможность."
+        }
+      ],
+      "caution": "У разных героев эффект совершенно разный. Сверь описание своего героя; не выбирай только по позиции.",
+      "sources": [
+        "item-609"
+      ]
+    },
+    "bottle": {
+      "purpose": "Помогает восстанавливать здоровье и ману, а также сохранять руну для дальнейшего использования.",
+      "roles": [
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Рассмотри, если можешь регулярно контролировать руны и расходуешь здоровье и ману на линии."
+        }
+      ],
+      "caution": "Нужен способ пополнять заряды. Восстановление прерывается уроном от героев или Рошана.",
+      "sources": [
+        "item-41"
+      ]
+    },
+    "power_treads": {
+      "purpose": "Даёт скорость атаки и позволяет переключать бонус между силой, ловкостью и интеллектом.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Рассмотри для героя, которому полезны скорость атаки и гибкий бонус к атрибуту."
+        },
+        {
+          "positions": [
+            3
+          ],
+          "reason": "Вариант для героя, который много атакует и использует переключение атрибута."
+        }
+      ],
+      "caution": "Выбирай атрибут по текущей задаче: запас здоровья, запас маны или польза ловкости. Не оставляй переключение без внимания.",
+      "sources": [
+        "item-63"
+      ]
+    },
+    "phase_boots": {
+      "purpose": "Помогает сближаться и проходить сквозь существ, даёт урон и броню.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            3
+          ],
+          "reason": "Рассмотри для героя, которому мешают блокирование пути и недостаток скорости при сближении."
+        },
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Ситуационный выбор для героя, активно использующего атаки и перемещение на линии."
+        }
+      ],
+      "caution": "Активный эффект короткий: используй его, когда действительно нужно пройти или догнать.",
+      "sources": [
+        "item-50"
+      ]
+    },
+    "magic_wand": {
+      "purpose": "Накапливает заряды рядом с применяющими заклинания врагами и быстро восстанавливает здоровье и ману.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "reason": "Рассмотри на линии или в драках с частыми вражескими заклинаниями; оставляй место для экстренного применения."
+        }
+      ],
+      "caution": "Польза зависит от зарядов. Пустая палочка не заменяет запас расходников.",
+      "sources": [
+        "item-36"
+      ]
+    },
+    "gem": {
+      "purpose": "Помогает находить невидимых существ и вражеские варды.",
+      "roles": [
+        {
+          "positions": [
+            3,
+            4
+          ],
+          "reason": "Рассмотри для устойчивого носителя, который перемещается вместе с командой и контролирует обзор."
+        },
+        {
+          "positions": [
+            5
+          ],
+          "reason": "Покупку можно организовать для союзного носителя; оцени риск потери при собственных смертях."
+        }
+      ],
+      "caution": "Выпадает при смерти. Носитель должен иметь шанс выжить, а союзники — помочь вернуть предмет.",
+      "sources": [
+        "item-30"
+      ]
+    },
+    "dust": {
+      "purpose": "Раскрывает невидимых героев в области применения.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "reason": "Бери с собой, если участвуешь в попытке убить невидимого героя и рядом может не оказаться другого источника раскрытия."
+        }
+      ],
+      "caution": "Применять должен тот, кто находится рядом с целью вовремя. Сам по себе предмет не даёт контроль над передвижением врага.",
+      "sources": [
+        "item-40"
+      ]
+    },
+    "ward_observer": {
+      "purpose": "Даёт обзор области и помогает заранее заметить перемещение противника.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри установку перед захватом области карты или ожидаемой дракой."
+        },
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Можно поставить самостоятельно, если именно тебе нужен обзор для безопасной линии или подхода."
+        }
+      ],
+      "caution": "Сам по себе не раскрывает невидимость. Полезное место зависит от того, где команда собирается играть.",
+      "sources": [
+        "item-42"
+      ]
+    },
+    "ward_sentry": {
+      "purpose": "Позволяет раскрывать невидимость существ и вардов в области с имеющимся обзором.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Используй для проверки важных мест на варды и подготовки зоны драки."
+        },
+        {
+          "positions": [
+            1,
+            2,
+            3
+          ],
+          "reason": "Полезен для контроля невидимости на своей линии, если помощника рядом нет."
+        }
+      ],
+      "caution": "Не даёт обычного наземного обзора: одной установки может быть недостаточно, чтобы увидеть цель.",
+      "sources": [
+        "item-43"
+      ]
+    },
+    "smoke_of_deceit": {
+      "purpose": "Позволяет группе переместиться скрытно и неожиданно приблизиться к противнику.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри для организации совместного выхода команды и установки обзора."
+        },
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Используй с союзниками, когда твой герой готов начать выгодную драку."
+        }
+      ],
+      "caution": "Эффект снимается при приближении к вражескому герою или башне. Перед применением выбери цель и маршрут.",
+      "sources": [
+        "item-188"
+      ]
+    },
+    "rapier": {
+      "purpose": "Резко усиливает урон; режим можно выбрать под атаки или заклинания.",
+      "roles": [
+        {
+          "positions": [
+            1,
+            2
+          ],
+          "reason": "Крайне рискованный вариант, если урон решает исход матча и команда может защищать носителя."
+        }
+      ],
+      "caution": "Выпадает при смерти и может усилить врага. План защиты и возврата предмета важнее одной большой цифры урона.",
+      "sources": [
+        "item-133"
+      ]
+    },
+    "refresher": {
+      "purpose": "Позволяет повторно использовать способности, сбрасывая их перезарядку.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Рассмотри, если повтор сильной способности способен изменить исход драки."
+        },
+        {
+          "positions": [
+            1,
+            4,
+            5
+          ],
+          "reason": "Ситуационный поздний вариант для героя, которому особенно полезна повторная комбинация."
+        }
+      ],
+      "caution": "Посчитай ману на сам Refresher и повторную комбинацию. Предмет не создаёт второй запас маны.",
+      "sources": [
+        "item-110"
+      ]
+    },
+    "octarine_core": {
+      "purpose": "Сокращает перезарядки и даёт дополнительный запас здоровья и маны.",
+      "roles": [
+        {
+          "positions": [
+            2,
+            3
+          ],
+          "reason": "Рассмотри для героя, чья польза растёт от частых применений способностей."
+        },
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Поздний вариант, если нужные команде способности приходится долго ждать."
+        }
+      ],
+      "caution": "Ускорение перезарядок полезно, если ты успеваешь применять способности повторно и хватает маны.",
+      "sources": [
+        "item-235"
+      ]
+    },
+    "aether_lens": {
+      "purpose": "Увеличивает дальность применения и поддерживает запас маны.",
+      "roles": [
+        {
+          "positions": [
+            4,
+            5
+          ],
+          "reason": "Рассмотри, если для помощи союзнику или контроля врага приходится подходить слишком близко."
+        },
+        {
+          "positions": [
+            2
+          ],
+          "reason": "Полезен для героя, которому важны дистанция применения и запас маны."
+        }
+      ],
+      "caution": "Дальность применения не равна радиусу действия способности. Проверь, какой параметр нужен твоему герою.",
+      "sources": [
+        "item-232"
+      ]
+    }
+  }
+}

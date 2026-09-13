@@ -1,6 +1,7 @@
 import {useEffect, useRef, useState, type CSSProperties} from 'react';
 import {asset, groups} from './itemShop';
 import {RecipeDiagram} from './RecipeDiagram';
+import {ItemGuidanceLoader} from './ItemGuidanceLoader';
 import type {ItemDescription, ShopItem} from './types';
 
 const cache = new Map<number, ItemDescription>();
@@ -51,7 +52,7 @@ export function ItemInformation({item, onSelect, onBack, onClose}: {item: ShopIt
         <h2 id="item-info-title">{item.name}</h2>
         {group?.tier ? <p className="item-neutral-label">Нейтральный предмет <span className={`neutral-tier-${group.tier}`}>{group.tier} разряда</span></p>
           : group?.id === 'enhancements' ? <p className="item-neutral-label">Нейтральные чары</p>
-          : data && data.cost > 0 ? <p className="item-cost"><span aria-hidden="true">●</span> {data.cost.toLocaleString('ru-RU')}</p> : null}
+          : item.group !== 'special' && data && data.cost > 0 ? <p className="item-cost"><span aria-hidden="true">●</span> {data.cost.toLocaleString('ru-RU')}</p> : null}
       </div>
       {onClose && <button type="button" className="item-info-close" onClick={onClose} aria-label="Закрыть информацию">×</button>}
     </header>
@@ -73,6 +74,7 @@ export function ItemInformation({item, onSelect, onBack, onClose}: {item: ShopIt
         </section>)}
         {data.notes.length > 0 && <div className="item-notes">{data.notes.map((note, index) => <p key={index}><GameText text={note} /></p>)}</div>}
         {data.unresolved && <p className="item-description-notice">Часть параметров пока не расшифрована. Они отмечены многоточием.</p>}
+        <ItemGuidanceLoader item={item} onSelect={onSelect} />
         {data.lore && <p className="item-lore">{data.lore}</p>}
         <footer className="item-source"><a href={data.source} target="_blank" rel="noreferrer">Данные Valve</a><span>{data.retrievedAt.split('-').reverse().join('.')}</span></footer>
       </>}

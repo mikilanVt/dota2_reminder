@@ -1,0 +1,667 @@
+{
+  "reviewedAt": "2026-09-11",
+  "patchContext": "7.41e",
+  "method": "Acquisition rules use the supplied client layout, official recipe list and reviewed Valve patch/hero data. Role suggestions are DotaReminder editorial inferences from item effects, not Valve recommendations or win-rate claims.",
+  "itemSnapshot": "valve-item-shop-2026-09-10.json.gz",
+  "recipeSnapshot": "valve-item-list-2026-09-09.json.gz",
+  "patchList": {
+    "source": "https://www.dota2.com/datafeed/patchnoteslist",
+    "sha256": "439e946eb309e8f1d51a324eedeae90e7aaaa7588386af1e4ce38d4aee0ccf64",
+    "latest": "7.41e"
+  },
+  "reviewedPatches": [
+    "7.35",
+    "7.35b",
+    "7.35c",
+    "7.35d",
+    "7.36",
+    "7.36a",
+    "7.36b",
+    "7.36c",
+    "7.37",
+    "7.37b",
+    "7.37c",
+    "7.37d",
+    "7.37e",
+    "7.38",
+    "7.38b",
+    "7.38c",
+    "7.39",
+    "7.39b",
+    "7.39c",
+    "7.39d",
+    "7.39e",
+    "7.40",
+    "7.40b",
+    "7.40c",
+    "7.41",
+    "7.41a",
+    "7.41b",
+    "7.41c",
+    "7.41d",
+    "7.41e"
+  ],
+  "limits": [
+    {
+      "key": "royale_with_cheese",
+      "reason": "Official itemdata describes the effect but does not expose an ordinary recipe. No guessed acquisition or recipe is published."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "patch-7.31",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.31&language=russian",
+      "retrievedAt": "2026-09-10",
+      "sha256": "99370a5dc9f980fb174faf344d4de171752d2818ecd141ebf7d3cf0f97c91a71",
+      "patch": "7.31",
+      "generalNotes": [],
+      "neutralSystem": [],
+      "shard": {
+        "ability_id": 609,
+        "postfix_lines": 1,
+        "ability_notes": [
+          {
+            "indent_level": 1,
+            "note": "Теперь предмет продаётся после 15:00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "patch-7.33",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.33&language=russian",
+      "retrievedAt": "2026-09-10",
+      "sha256": "2c9c91de3787ed2f57654e8ef8698b2b969783d9850637b00b1b835b7e49e3e0",
+      "patch": "7.33",
+      "generalNotes": [
+        {
+          "generic": [
+            {
+              "indent_level": 1,
+              "note": "Рошан больше не роняет Aghanim's Shard после второй смерти",
+              "aghanims": "shard"
+            },
+            {
+              "indent_level": 1,
+              "note": "Теперь после второй смерти Рошан роняет сыр"
+            },
+            {
+              "indent_level": 1,
+              "note": "Теперь после третьей и последующих смертей Рошан роняет Aghanim's Scepter, если его убили на стороне Света, или Refresher Shard, если его убили на стороне Тьмы",
+              "aghanims": "scepter"
+            },
+            {
+              "indent_level": 1,
+              "note": "Если уничтожить Терзателя, один из союзников получит Aghanim's Shard. Выбор происходит случайно между двумя героями с наименьшей общей ценностью, не имеющих Aghanim's Shard.",
+              "aghanims": "shard"
+            },
+            {
+              "indent_level": 1,
+              "note": "Если Aghanim's Shard есть у всех, то каждый герой получает по 280 золота и 280 опыта",
+              "aghanims": "shard"
+            },
+            {
+              "indent_level": 1,
+              "note": "Добавлены два пруда лотосов у краёв карты возле реки. Каждые 3 минуты в обоих прудах появляется по одному целительному лотосу, пока их число не достигнет шести. Подойдя к пруду и нажав на него правой кнопкой мыши, вы начнёте собирать по одному лотосу в секунду. Каждый лотос можно съесть, чтобы восстановить 125 здоровья и маны. Перезарядка поедания лотоса — 5 секунд."
+            },
+            {
+              "indent_level": 1,
+              "note": "3 лотоса автоматически объединяются в лотос побольше, восстанавливающий 400 здоровья и маны, а 2 лотоса побольше объединяются в один огромный, восстанавливающий 900 здоровья и маны"
+            },
+            {
+              "indent_level": 2,
+              "note": "Воин земли у Brewmaster, Clockwerk с талантом, Dawnbreaker с Aghanim's Shard, Elder Titan с Aghanim's Scepter, Huskar под действием Life Break, Legion Commander с талантом, Lion с Aghanim's Shard, Marci с талантом и Pangolier под действием Rolling Thunder или Roll Up получают +50% к сопротивлению магии"
+            }
+          ]
+        }
+      ],
+      "neutralSystem": []
+    },
+    {
+      "id": "patch-7.36",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.36&language=russian",
+      "retrievedAt": "2026-09-10",
+      "sha256": "6258c153c6f4de72c4815d8179951b160346afc552f749378a64f2812bd042fa",
+      "patch": "7.36",
+      "generalNotes": [
+        {
+          "generic": [
+            {
+              "indent_level": 1,
+              "note": "Теперь рядом с теми значениями способностей, которые улучшаются с помощью Aghanim's Shard, Aghanim's Scepter, талантов или аспектов, отображаются соответствующие иконки",
+              "aghanims": "shard"
+            }
+          ]
+        }
+      ],
+      "neutralSystem": [],
+      "warlock": {
+        "hero_id": 37,
+        "subsections": [
+          {
+            "title": "Black Grimoire",
+            "style": "hero_facet",
+            "facet": "warlock_grimoire"
+          }
+        ]
+      }
+    },
+    {
+      "id": "patch-7.37",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.37&language=russian",
+      "retrievedAt": "2026-09-10",
+      "sha256": "00c4bec451934faf20b7337dc48d9f976d36c6aa97e2020c40da53c4c1630156",
+      "patch": "7.37",
+      "generalNotes": [
+        {
+          "generic": [
+            {
+              "indent_level": 1,
+              "note": "Теперь после второй смерти из Рошана всегда выпадает Roshan's Banner"
+            },
+            {
+              "indent_level": 1,
+              "note": "Теперь после третьей смерти из Рошана выпадают либо Refresher Shard и сыр (днём), либо Refresher Shard и Aghanim's Blessing (ночью)"
+            },
+            {
+              "indent_level": 2,
+              "note": "Ember Spirit — способность Immolation (горение копий героя от Aghanim's Shard не отключается)",
+              "aghanims": "shard"
+            },
+            {
+              "indent_level": 2,
+              "note": "Troll Warlord — способность Fervor (истощение не даёт получать новые эффекты, но больше не отключает существующие; также отключает шанс срабатывания от Aghanim's Shard)",
+              "aghanims": "shard"
+            },
+            {
+              "indent_level": 2,
+              "note": "Bane — способность Brain Sap с Aghanim's Shard",
+              "aghanims": "shard"
+            },
+            {
+              "indent_level": 2,
+              "note": "Vengeful Spirit — способность Magic Missile с Aghanim's Shard",
+              "aghanims": "shard"
+            },
+            {
+              "indent_level": 2,
+              "note": "Zeus — способность Arc Lightning (молнии от атак с Aghanim's Shard не блокируются и не отражаются)",
+              "aghanims": "shard"
+            }
+          ]
+        }
+      ],
+      "neutralSystem": []
+    },
+    {
+      "id": "patch-7.38",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.38&language=russian",
+      "retrievedAt": "2026-09-10",
+      "sha256": "5867e2fca97d1a61b2c54c1f81b972526bc7f837e2d36ed4a8e87154653a6891",
+      "patch": "7.38",
+      "generalNotes": [
+        {
+          "title": "Основные механики",
+          "generic": [
+            {
+              "indent_level": 2,
+              "note": "Улучшения от Aghanim's Shard и Aghanim's Scepter",
+              "aghanims": "scepter"
+            }
+          ]
+        },
+        {
+          "title": "Цели на карте",
+          "generic": [
+            {
+              "indent_level": 1,
+              "note": "Рошан больше не роняет Aghanim's Blessing при смерти"
+            },
+            {
+              "indent_level": 1,
+              "hide_dot": true,
+              "note": "<span class=\"Subtitle\">Пруды лотосов</span>"
+            },
+            {
+              "indent_level": 1,
+              "note": "Теперь, когда становятся доступны нейтральные предметы 4-го разряда, в пруду начинают появляться лотосы побольше (Great Healing Lotus) ",
+              "info": "Остававшиеся в пруду лотосы объединяются в соответствии с тем, сколько лотосов побольше из них могло получиться, с округлением в бóльшую сторону"
+            },
+            {
+              "indent_level": 1,
+              "note": "Теперь, когда становятся доступны нейтральные предметы 5-го разряда, в пруду начинают появляться огромные лотосы (Greater Lotus) ",
+              "info": "Остававшиеся в пруду лотосы объединяются в соответствии с тем, сколько огромных лотосов из них могло получиться, с округлением в бóльшую сторону"
+            },
+            {
+              "indent_level": 1,
+              "note": "Как и в случае с прудами лотосов, отсчёт приостанавливается, если в этот радиус входит вражеский герой, и продолжается, когда враг выходит из него или умирает"
+            }
+          ]
+        }
+      ],
+      "neutralSystem": [
+        {
+          "ability_id": -1,
+          "postfix_lines": 1,
+          "title": "Создание нейтральных предметов",
+          "is_general_note": true,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Из нейтральных крипов больше не выпадают жетоны"
+            },
+            {
+              "indent_level": 1,
+              "note": "Общий тайник нейтральных предметов упразднён"
+            },
+            {
+              "indent_level": 1,
+              "note": "Нейтральные предметы больше нельзя выкладывать или перемещать в рюкзак"
+            },
+            {
+              "indent_level": 1,
+              "note": "Убив всех нейтральных крипов в одном лагере, игрок получит безумруды (если они доступны)"
+            },
+            {
+              "indent_level": 1,
+              "note": "Собрав достаточно безумрудов, игрок может выбрать один артефакт и одни чары, чтобы таким образом создать себе нейтральный предмет"
+            }
+          ]
+        },
+        {
+          "ability_id": -1,
+          "postfix_lines": 1,
+          "title": "Разряды предметов",
+          "is_general_note": true,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Нейтральные предметы теперь собираются из двух частей: артефактов и чар"
+            },
+            {
+              "indent_level": 2,
+              "note": "Артефакт отвечает за заклинание, которое будет у вашего предмета"
+            },
+            {
+              "indent_level": 2,
+              "note": "Чары отвечают за пассивные бонусы к характеристикам"
+            },
+            {
+              "indent_level": 1,
+              "note": "Как и раньше, нейтральные предметы делятся на разряды"
+            },
+            {
+              "indent_level": 2,
+              "note": "Каждый разряд становится доступным в определённое время ",
+              "info": "Точное время указано ниже"
+            },
+            {
+              "indent_level": 2,
+              "note": "Каждый артефакт относится только к одному разряду"
+            },
+            {
+              "indent_level": 2,
+              "note": "Чары же имеют несколько уровней бонусов и доступны на нескольких разрядах"
+            }
+          ]
+        },
+        {
+          "ability_id": -1,
+          "postfix_lines": 1,
+          "title": "Процесс создания",
+          "is_general_note": true,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "При создании предмета игрок должен будет выбрать один артефакт из четырёх и одни чары из четырёх"
+            },
+            {
+              "indent_level": 2,
+              "note": "У артефактов выбор состоит из текущего артефакта и трёх предметов нового разряда ",
+              "info": "За исключением первого разряда, где все четыре артефакта будут новыми, так как у игрока ещё нет нейтрального предмета"
+            },
+            {
+              "indent_level": 2,
+              "note": "У чар выбор всегда состоит из четырёх новых вариантов — чары текущего предмета оставить нельзя",
+              "info": "Вы можете найти такие же чары, если они есть на новом разряде, но это не гарантировано"
+            },
+            {
+              "indent_level": 1,
+              "note": "Создав новый нейтральный предмет, вы замените им старый"
+            },
+            {
+              "indent_level": 1,
+              "note": "Предметы создаются по очереди: игрок должен сперва создать нейтральный предмет первого разряда, чтобы перейти ко второму ",
+              "info": "Это же относится и к разрядам далее"
+            },
+            {
+              "indent_level": 1,
+              "note": "Для создания предмета 1-го разряда нужно 5 безумрудов"
+            },
+            {
+              "indent_level": 1,
+              "note": "Для создания предметов остальных разрядов нужно по 10 безумрудов"
+            },
+            {
+              "indent_level": 2,
+              "note": "Нейтральный предмет 5-го разряда можно заменить новым, но цена создания каждый раз будет расти на 10 безумрудов ",
+              "info": "Первая замена обойдётся в 20 безумрудов, вторая — в 30 и так далее"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patch-7.41",
+      "url": "https://www.dota2.com/datafeed/patchnotes?version=7.41&language=russian",
+      "retrievedAt": "2026-09-10",
+      "sha256": "53f4f9c1c084caaf12c99e9c9e66c184bcdc169e6b05f86580140b29fe1d6c5a",
+      "patch": "7.41",
+      "generalNotes": [
+        {
+          "title": "Глобальные изменения",
+          "generic": [
+            {
+              "indent_level": 1,
+              "note": "Аспекты удалены из игры"
+            }
+          ]
+        },
+        {
+          "title": "Цели на карте",
+          "generic": [
+            {
+              "indent_level": 1,
+              "note": "Игрок, получивший Aghanim's Shard, больше не получает 175 золота ",
+              "info": "Суммарное золото, получаемое командой, уменьшено с 875 до 700 (общий прирост ценности, с учётом Aghanim's Shard, уменьшен с 2275 до 2100 золота).",
+              "aghanims": "shard"
+            },
+            {
+              "indent_level": 1,
+              "note": "Награда при наличии у всех игроков команды Aghanim's Shard уменьшена с 455 до 415 золота",
+              "aghanims": "shard"
+            },
+            {
+              "indent_level": 1,
+              "note": "Теперь, если в области действия алтаря мудрости или пруда лотосов оказываются игроки разных команд, то отсчёт не приостанавливается, а откатывается"
+            }
+          ]
+        },
+        {
+          "title": "Изменения ландшафта",
+          "generic": [
+            {
+              "indent_level": 1,
+              "note": "Разломы Терзателя перемещены ближе к прудам лотосов"
+            },
+            {
+              "indent_level": 1,
+              "note": "Пруды лотосов немного смещены в сторону башен на сложной линии"
+            },
+            {
+              "indent_level": 3,
+              "note": "Терзатель находится в низине, с которой ведут три лестницы: одна наверх к пруду лотосов, вторая — на линию, а третья — на возвышенность с Парным порталом"
+            }
+          ]
+        }
+      ],
+      "neutralSystem": [
+        {
+          "ability_id": -1,
+          "postfix_lines": 3,
+          "title": "Общие изменения",
+          "is_general_note": true,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "Время доступа к предметам первого разряда изменено с 5:00 на 0:00"
+            },
+            {
+              "indent_level": 1,
+              "note": "Число безумрудов, нужных для создания предмета первого разряда, увеличено с 5 до 6"
+            }
+          ]
+        },
+        {
+          "ability_id": -1,
+          "postfix_lines": 7,
+          "title": "Изменения чар",
+          "is_general_note": true,
+          "ability_notes": [
+            {
+              "indent_level": 1,
+              "note": "В разрядах со 2-го по 5-й число чар на выбор увеличено с 4 до 5"
+            },
+            {
+              "indent_level": 1,
+              "note": "Ассортимент чар больше не выбирается случайным образом"
+            },
+            {
+              "indent_level": 1,
+              "note": "Теперь чары зависят от основного атрибута героя (некоторые чары доступны всем)"
+            },
+            {
+              "indent_level": 1,
+              "note": "1-й разряд"
+            },
+            {
+              "indent_level": 2,
+              "note": "Все герои: Quickened, Vital"
+            },
+            {
+              "indent_level": 2,
+              "note": "Герои силы: Brawny, Tough"
+            },
+            {
+              "indent_level": 2,
+              "note": "Герои ловкости: Alert, Brawny"
+            },
+            {
+              "indent_level": 2,
+              "note": "Герои интеллекта: Mystical, Tough"
+            },
+            {
+              "indent_level": 2,
+              "note": "Универсальные герои: Alert, Mystical"
+            },
+            {
+              "indent_level": 1,
+              "note": "2-й и 3-й разряды"
+            },
+            {
+              "indent_level": 2,
+              "note": "Все герои: Quickened, Greedy"
+            },
+            {
+              "indent_level": 2,
+              "note": "Герои силы: Brawny, Tough, Crude"
+            },
+            {
+              "indent_level": 2,
+              "note": "Герои ловкости: Alert, Brawny, Nimble"
+            },
+            {
+              "indent_level": 2,
+              "note": "Герои интеллекта: Mystical, Tough, Keen-Eyed"
+            },
+            {
+              "indent_level": 2,
+              "note": "Универсальные герои: Alert, Mystical, Titanic"
+            },
+            {
+              "indent_level": 1,
+              "note": "4-й разряд"
+            },
+            {
+              "indent_level": 2,
+              "note": "Все герои: Quickened, Timeless"
+            },
+            {
+              "indent_level": 2,
+              "note": "Чары от основного атрибута такие же, как в прошлых двух разрядах"
+            },
+            {
+              "indent_level": 1,
+              "note": "5-й разряд"
+            },
+            {
+              "indent_level": 2,
+              "note": "Все герои: Evolved, Fleetfooted, Timeless, Vampiric"
+            },
+            {
+              "indent_level": 2,
+              "note": "Герои силы: Hulking"
+            },
+            {
+              "indent_level": 2,
+              "note": "Герои ловкости: Audacious"
+            },
+            {
+              "indent_level": 2,
+              "note": "Герои интеллекта: Feverish"
+            },
+            {
+              "indent_level": 2,
+              "note": "Универсальные герои: Manic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "witch_doctor",
+      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=30",
+      "retrievedAt": "2026-09-10",
+      "sha256": "7b9116555946e23303c2ca6887a569e03f4224bd11be43ba8eb0a8c212847208",
+      "abilities": [
+        {
+          "id": 1257,
+          "name": "witch_doctor_gris_gris",
+          "desc_loc": "Герой получает Gris-Gris — предмет, который нельзя выложить или поместить в ранец. Когда владелец погибает, %death_gold_lost_reduction_pct_tooltip%%% от потерянного из-за смерти золота также добавляется к ценности предмета. Кроме того, она повышается на 1 каждые %gold_tick_interval_tooltip% сек. Применив предмет, герой навсегда лишится его и получит всё накопленное золото. <br><br> Чтобы применить предмет, нажмите на него правой кнопкой мыши и выберите «Использовать».",
+          "special_values": [
+            {
+              "name": "death_gold_lost_reduction_pct_tooltip",
+              "values_float": [
+                100
+              ]
+            },
+            {
+              "name": "gold_tick_interval_tooltip",
+              "values_float": [
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "winter_wyvern",
+      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=112",
+      "retrievedAt": "2026-09-10",
+      "sha256": "099b73cecc5ed31876b972d1bce343b4b24ef88c70ffa99d4050133aaafa8734",
+      "abilities": [
+        {
+          "id": 1779,
+          "name": "winter_wyvern_eldwurms_edda",
+          "desc_loc": "Дарует владельцу расходуемый предмет Eldwurm's Edda. Его можно применить, чтобы увеличить текущий и максимальный уровень выбранной базовой способности на 1, а базовый интеллект владельца — на %tooltip_int_pct%%% от значения в момент применения.",
+          "special_values": [
+            {
+              "name": "tooltip_seconds",
+              "values_float": [
+                420
+              ]
+            },
+            {
+              "name": "tooltip_int_pct",
+              "values_float": [
+                25
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tidehunter",
+      "url": "https://www.dota2.com/datafeed/herodata?language=russian&hero_id=29",
+      "retrievedAt": "2026-09-10",
+      "sha256": "822d6ff1ccd19782c4050bc381088caf1b1671822685887e1cac8c68795228be",
+      "abilities": [
+        {
+          "id": 1746,
+          "name": "tidehunter_leviathans_catch",
+          "desc_loc": "Вражеские герои, убитые владельцем этой способности или погибшие под действием его отрицательных эффектов, оставляют за собой рыбку. Съев её, владелец способности получит +%fish_health_bonus% к здоровью, +%fish_attack_range% к дальности атаки и +%fish_damage_block% к дополнительному блоку урона.<br><br>С каждым чётным уровнем также съедается одна рыбка.",
+          "special_values": [
+            {
+              "name": "fish_duration",
+              "values_float": [
+                30
+              ]
+            },
+            {
+              "name": "fish_attack_range",
+              "values_float": [
+                2
+              ]
+            },
+            {
+              "name": "fish_damage_block",
+              "values_float": [
+                1
+              ]
+            },
+            {
+              "name": "fish_health_bonus",
+              "values_float": [
+                3
+              ]
+            },
+            {
+              "name": "fish_model_scale",
+              "values_float": [
+                1.1
+              ]
+            },
+            {
+              "name": "max_fish_spawn_distance",
+              "values_float": [
+                200
+              ]
+            },
+            {
+              "name": "health_bar_offset_base",
+              "values_float": [
+                160
+              ]
+            },
+            {
+              "name": "health_bar_offset_per_level",
+              "values_float": [
+                5
+              ]
+            },
+            {
+              "name": "permanent_health_gain",
+              "values_float": [
+                0
+              ]
+            },
+            {
+              "name": "permanent_attack_range_gain",
+              "values_float": [
+                0
+              ]
+            },
+            {
+              "name": "permanent_damage_block_gain",
+              "values_float": [
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
