@@ -98,7 +98,6 @@ export function TrainingScreen({session, repeatingMistakes, notice, onAction, on
             <h1 ref={heading} tabIndex={-1}>{question.prompt}</h1>
             <p className="training-conditions" id="question-conditions">
               {question.fact.conditions}
-              {['здоровья', 'маны'].includes(question.fact.unit) && ' Недостающего ресурса хватает для полного эффекта.'}
             </p>
 
             <form onSubmit={checkAnswer}>
