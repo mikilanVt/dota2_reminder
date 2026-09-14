@@ -1,6 +1,7 @@
-import {useEffect, useRef, type FormEvent} from 'react';
-import {starterItems} from '../../data/starter-items';
+import {useEffect, useRef, useState, type FormEvent} from 'react';
+import {itemBank} from '../../data/item-bank';
 import {formatValue, missedQuestionIds, type TrainingAction, type TrainingSession} from './engine';
+import {QuestionImage} from './QuestionImage';
 import './training.css';
 
 export interface TrainingScreenProps {
@@ -21,6 +22,8 @@ export function TrainingScreen({session, repeatingMistakes, notice, onAction, on
   const question = session.questions[session.index];
   const mistakes = missedQuestionIds(session);
   const correctCount = session.answers.filter(answer => answer.correct).length;
+  const [readyImage, setReadyImage] = useState<string | null>(null);
+  const imagePending = question?.recognition && readyImage !== question.id;
 
   useEffect(() => {
     if (session.phase === 'reviewing') feedback.current?.focus();
@@ -32,7 +35,7 @@ export function TrainingScreen({session, repeatingMistakes, notice, onAction, on
 
   function checkAnswer(event: FormEvent) {
     event.preventDefault();
-    onAction({type: 'check'});
+    if (!imagePending) onAction({type: 'check'});
   }
 
   return (
@@ -41,7 +44,7 @@ export function TrainingScreen({session, repeatingMistakes, notice, onAction, on
         <header className="training-header">
           <div>
             <p className="training-eyebrow">{repeatingMistakes ? 'ПОВТОР ОШИБОК' : 'ТЕСТЫ'} / ПРЕДМЕТЫ</p>
-            <p className="training-patch">Патч {starterItems.patch}</p>
+            <p className="training-patch">Патч {itemBank.patch} · {itemBank.questions.length} вопросов в базе</p>
           </div>
           <div className="training-header-buttons">
             <button className="training-back" type="button" onClick={onProgress}>Мой прогресс</button>
@@ -67,7 +70,8 @@ export function TrainingScreen({session, repeatingMistakes, notice, onAction, on
                       const chosen = failed.options.find(option => option.id === answer.optionId)!;
                       return (
                         <details key={failed.id}>
-                          <summary>{failed.prompt}</summary>
+                          <summary>{failed.recognition ? `Узнать ${failed.entityName} по картинке` : failed.prompt}</summary>
+                          <QuestionImage question={failed} reveal />
                           <p>Твой ответ: {chosen.label}</p>
                           <p className="training-correct">Правильный ответ: {formatValue(failed.fact)}</p>
                           <p>{failed.fact.explanation}</p>
@@ -90,7 +94,7 @@ export function TrainingScreen({session, repeatingMistakes, notice, onAction, on
               <span>{correctCount} верно</span>
             </div>
             <progress className="training-progress" value={session.answers.length} max={session.questions.length} aria-label="Завершённые вопросы" />
-            <p className="training-entity">{question.entityName}</p>
+            <QuestionImage key={question.id} question={question} reveal={reviewing} onReady={ready => setReadyImage(ready ? question.id : null)} />
             <h1 ref={heading} tabIndex={-1}>{question.prompt}</h1>
             <p className="training-conditions" id="question-conditions">
               {question.fact.conditions}
@@ -98,7 +102,7 @@ export function TrainingScreen({session, repeatingMistakes, notice, onAction, on
             </p>
 
             <form onSubmit={checkAnswer}>
-              <fieldset className="training-options" disabled={reviewing} aria-describedby="question-conditions">
+              <fieldset className="training-options" disabled={reviewing || imagePending} aria-describedby="question-conditions">
                 <legend className="training-sr-only">Выбери один ответ</legend>
                 {question.options.map((option, index) => {
                   const selected = option.id === session.selectedOptionId;
@@ -116,7 +120,7 @@ export function TrainingScreen({session, repeatingMistakes, notice, onAction, on
                   );
                 })}
               </fieldset>
-              {!reviewing && <button className="training-primary" type="submit" disabled={session.selectedOptionId === null}>Проверить</button>}
+              {!reviewing && <button className="training-primary" type="submit" disabled={session.selectedOptionId === null || imagePending}>Проверить</button>}
             </form>
 
             {reviewing && (
@@ -128,7 +132,7 @@ export function TrainingScreen({session, repeatingMistakes, notice, onAction, on
                   <details className="training-source">
                     <summary>Источник и дата проверки</summary>
                     <p><a href={question.fact.source.url} target="_blank" rel="noreferrer">{question.fact.source.title}</a></p>
-                    <p>Проверено {question.fact.verification.checkedAt} для патча <a href={`https://www.dota2.com/patches/${starterItems.patch}`} target="_blank" rel="noreferrer">{starterItems.patch}</a>.</p>
+                    <p>Проверено {question.fact.verification.checkedAt} для патча <a href={`https://www.dota2.com/patches/${itemBank.patch}`} target="_blank" rel="noreferrer">{itemBank.patch}</a>.</p>
                   </details>
                 </div>
                 <button className="training-primary" type="button" onClick={() => onAction({type: 'next'})}>

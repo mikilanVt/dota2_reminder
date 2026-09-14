@@ -1,6 +1,7 @@
 import {useEffect, useRef, useState, type ChangeEvent} from 'react';
-import {starterItems} from '../../data/starter-items';
+import {itemBank} from '../../data/item-bank';
 import {formatValue} from '../training/engine';
+import {QuestionImage} from '../training/QuestionImage';
 import {correctCount, MAX_FILE_BYTES, MAX_HISTORY, mistakeIds, restoreRound, type ProgressData, type SavedRound} from './model';
 import '../training/training.css';
 import './progress.css';
@@ -17,11 +18,11 @@ interface ProgressScreenProps {
 }
 
 const dateFormat = new Intl.DateTimeFormat('ru-RU', {dateStyle: 'medium', timeStyle: 'short'});
-const currentBank = (round: SavedRound) => round.bankId === starterItems.id && round.patch === starterItems.patch;
+const currentBank = (round: SavedRound) => round.bankId === itemBank.id && round.patch === itemBank.patch;
 
 function HistoryRow({round, onRetry, hasDraft}: {round: SavedRound; onRetry: (ids: readonly string[]) => void; hasDraft: boolean}) {
   const [open, setOpen] = useState(false);
-  const session = open ? restoreRound(round, starterItems) : null;
+  const session = open ? restoreRound(round, itemBank) : null;
   const mistakes = mistakeIds(round);
   return (
     <details className="progress-history-row" onToggle={event => setOpen(event.currentTarget.open)}>
@@ -36,6 +37,7 @@ function HistoryRow({round, onRetry, hasDraft}: {round: SavedRound; onRetry: (id
               const question = session.questions.find(entry => entry.id === answer.questionId)!;
               const chosen = question.options.find(option => option.id === answer.optionId)!;
               return <div className="progress-mistake" key={question.id}>
+                <QuestionImage question={question} reveal />
                 <p><strong>{question.prompt}</strong></p>
                 <p>Твой ответ: {chosen.label}</p>
                 <p className="training-correct">Верный ответ: {formatValue(question.fact)}</p>
@@ -63,7 +65,7 @@ export function ProgressScreen({progress, notice, onResume, onStart, onImport, o
   const answerCount = current.reduce((sum, round) => sum + round.answers.length, 0);
   const correct = current.reduce((sum, round) => sum + correctCount(round), 0);
   const draft = progress.draft;
-  const canResume = draft && restoreRound(draft, starterItems) !== null;
+  const canResume = draft && restoreRound(draft, itemBank) !== null;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -113,7 +115,7 @@ export function ProgressScreen({progress, notice, onResume, onStart, onImport, o
     <main className="training-screen">
       <section className="training-panel progress-panel" aria-label="Локальный прогресс">
         <header className="training-header">
-          <div><p className="training-eyebrow">ТВОИ ТРЕНИРОВКИ</p><p className="training-patch">Предметы · патч {starterItems.patch}</p></div>
+          <div><p className="training-eyebrow">ТВОИ ТРЕНИРОВКИ</p><p className="training-patch">Предметы · патч {itemBank.patch}</p></div>
           <button className="training-back" type="button" onClick={onExit}>В меню</button>
         </header>
         <h1 ref={heading} tabIndex={-1}>Мой прогресс</h1>
