@@ -63,8 +63,8 @@ function parseRound(value: unknown): SavedRound {
   if (!Array.isArray(value.questions) || value.questions.length < 1 || value.questions.length > MAX_QUESTIONS) return invalid();
   const questions = value.questions.map(question => {
     if (!object(question) || !id(question.id) || !Array.isArray(question.optionIds)
-      || question.optionIds.length !== 4 || !question.optionIds.every(id)
-      || new Set(question.optionIds).size !== 4) return invalid();
+      || question.optionIds.length < 2 || question.optionIds.length > 4 || !question.optionIds.every(id)
+      || new Set(question.optionIds).size !== question.optionIds.length) return invalid();
     return {id: question.id, optionIds: question.optionIds as string[]};
   });
   if (new Set(questions.map(question => question.id)).size !== questions.length
@@ -105,7 +105,7 @@ export function parseProgress(text: string): ProgressData {
 
 export function restoreRound(round: SavedRound, bank: QuestionBank): TrainingSession | null {
   if (round.bankId !== bank.id || round.patch !== bank.patch) return null;
-  const eligible = createSession(bank, round.topics, {limit: bank.questions.length || 1, random: () => .99});
+  const eligible = createSession(bank, round.topics, {questionIds: round.questions.map(question => question.id), limit: MAX_QUESTIONS, random: () => .99});
   const questions = round.questions.map(saved => {
     const question = eligible.questions.find(entry => entry.id === saved.id);
     if (!question || saved.optionIds.length !== question.options.length

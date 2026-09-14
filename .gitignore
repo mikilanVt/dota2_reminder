@@ -4,6 +4,7 @@ dist/
 tmp/item-shop-*/
 tmp/item-detail-research/
 tmp/guidance/
+tmp/quiz/
 .vite/
 coverage/
 *.log

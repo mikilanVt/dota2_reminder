@@ -1,4 +1,6 @@
 export type TopicId = 'items' | 'heroes' | 'map';
+export type AnswerValue = number | string;
+export type QuestionCategory = 'recognition' | 'price' | 'stats' | 'mana' | 'cooldown' | 'effect' | 'damage' | 'dispel' | 'tier' | 'timing';
 
 export interface SourceReference {
   title: string;
@@ -17,6 +19,7 @@ export interface GameEntity {
   topic: TopicId;
   valveId?: number;
   name: string;
+  image?: string;
   aliases: readonly string[];
   values: Readonly<Record<string, number>>;
   source: SourceReference;
@@ -27,7 +30,7 @@ export interface GameFact {
   id: string;
   entityId: string;
   topic: TopicId;
-  value: number;
+  value: AnswerValue;
   unit: string;
   conditions: string;
   explanation: string;
@@ -40,7 +43,8 @@ export interface ChoiceQuestion {
   id: string;
   factId: string;
   prompt: string;
-  distractors: readonly number[];
+  distractors: readonly AnswerValue[];
+  category?: QuestionCategory;
 }
 
 export interface QuestionBank {

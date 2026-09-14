@@ -1,6 +1,6 @@
 import {useEffect, useRef, useState} from 'react';
 import type {TopicId} from '../../data/types';
-import {starterItems} from '../../data/starter-items';
+import {itemBank} from '../../data/item-bank';
 import {ProgressScreen} from '../progress/ProgressScreen';
 import {emptyProgress, mergeProgress, parseProgress, reconcileProgress, recordRound, restoreRound, saveRound, type ProgressData, type SavedRound} from '../progress/model';
 import {getProgressStore} from '../progress/storage';
@@ -15,10 +15,10 @@ export interface TrainingHubProps {
 
 type ActiveRound = {saved: SavedRound; session: TrainingSession};
 function newRound(topics: readonly TopicId[], questionIds?: readonly string[]): ActiveRound {
-  const session = createSession(starterItems, topics, {questionIds});
+  const session = createSession(itemBank, topics, {questionIds});
   const now = new Date().toISOString();
   const saved = saveRound(session, {
-    id: crypto.randomUUID(), bankId: starterItems.id, patch: starterItems.patch,
+    id: crypto.randomUUID(), bankId: itemBank.id, patch: itemBank.patch,
     topics, kind: questionIds ? 'mistakes' : 'test', startedAt: now
   }, now);
   return {saved, session};
@@ -28,7 +28,7 @@ export function TrainingHub({topics, entry, onExit}: TrainingHubProps) {
   const store = getProgressStore();
   const [initial] = useState(() => {
     const loaded = store.read();
-    const data = reconcileProgress(loaded.data, starterItems);
+    const data = reconcileProgress(loaded.data, itemBank);
     const corrected = JSON.stringify(data) !== JSON.stringify(loaded.data);
     return {
       data, notice: loaded.notice || (corrected ? 'Сохранение сверено с текущими вопросами. Недоступные записи исключены, оценки пересчитаны.' : ''),
@@ -75,7 +75,7 @@ export function TrainingHub({topics, entry, onExit}: TrainingHubProps) {
 
   function resume() {
     const saved = progressRef.current.draft;
-    const session = saved && restoreRound(saved, starterItems);
+    const session = saved && restoreRound(saved, itemBank);
     if (saved && session) openRound({saved, session});
     else setNotice('Данные теста изменились. Начни новый тест по проверенным вопросам.');
   }
@@ -85,7 +85,7 @@ export function TrainingHub({topics, entry, onExit}: TrainingHubProps) {
   }
 
   function importFile(text: string) {
-    const imported = reconcileProgress(parseProgress(text), starterItems);
+    const imported = reconcileProgress(parseProgress(text), itemBank);
     const current = progressRef.current;
     const keptDraft = current.draft && imported.draft && current.draft.id !== imported.draft.id;
     const warning = persist(mergeProgress(current, imported));

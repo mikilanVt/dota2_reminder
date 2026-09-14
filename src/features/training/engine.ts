@@ -1,10 +1,12 @@
-import type {GameFact, QuestionBank, TopicId} from '../../data/types.js';
+import type {AnswerValue, GameFact, QuestionBank, TopicId} from '../../data/types.js';
 
-export interface AnswerOption {id: string; value: number; label: string}
+export interface AnswerOption {id: string; value: AnswerValue; label: string}
 export interface SessionQuestion {
   id: string;
   prompt: string;
   entityName: string;
+  image?: string;
+  recognition: boolean;
   fact: GameFact;
   options: readonly AnswerOption[];
   correctOptionId: string;
@@ -19,27 +21,31 @@ export interface TrainingSession {
 }
 export type TrainingAction = {type: 'select'; optionId: string} | {type: 'check'} | {type: 'next'};
 
-const numberFormat = new Intl.NumberFormat('ru-RU', {maximumFractionDigits: 2});
-export const formatValue = (fact: GameFact, value = fact.value) => `${numberFormat.format(value)} ${fact.unit}`;
+const numberFormat = new Intl.NumberFormat('ru-RU', {maximumFractionDigits: 3});
+export const formatValue = (fact: GameFact, value = fact.value) => typeof value === 'string' ? value : `${numberFormat.format(value)} ${fact.unit}`.trim();
+const validValue = (value: AnswerValue) => typeof value === 'number' ? Number.isFinite(value) : typeof value === 'string' && value.trim().length > 0;
 
 export function validateBank(bank: QuestionBank): void {
+  const entities = new Map(bank.entities.map(entity => [entity.id, entity]));
+  const facts = new Map(bank.facts.map(fact => [fact.id, fact]));
   for (const records of [bank.entities, bank.facts, bank.questions]) {
     if (new Set(records.map(record => record.id)).size !== records.length)
       throw new Error('Duplicate IDs in the question bank.');
   }
   for (const fact of bank.facts) {
-    if (!bank.entities.some(entity => entity.id === fact.entityId && entity.topic === fact.topic))
+    if (entities.get(fact.entityId)?.topic !== fact.topic)
       throw new Error(`Unknown entity: ${fact.entityId}`);
-    if (!Number.isFinite(fact.value) || !fact.conditions || !fact.explanation || !fact.evidence.length)
+    if (!validValue(fact.value) || !fact.conditions || !fact.explanation || !fact.evidence.length)
       throw new Error(`Incomplete fact: ${fact.id}`);
     if (!fact.source.url.startsWith('https://') || !fact.verification.checkedAt || !fact.verification.patch)
       throw new Error(`Missing provenance: ${fact.id}`);
   }
   for (const question of bank.questions) {
-    const fact = bank.facts.find(record => record.id === question.factId);
+    const fact = facts.get(question.factId);
     if (!fact) throw new Error(`Unknown fact: ${question.factId}`);
     const values = [fact.value, ...question.distractors];
-    if (!question.prompt || values.length !== 4 || values.some(value => !Number.isFinite(value)) || new Set(values).size !== 4)
+    if (!question.prompt || values.length < 2 || values.length > 4 || values.some(value => !validValue(value) || typeof value !== typeof fact.value)
+      || new Set(values.map(value => formatValue(fact, value))).size !== values.length)
       throw new Error(`Invalid answer options: ${question.id}`);
   }
 }
@@ -62,22 +68,40 @@ export function createSession(
   const limit = options.limit ?? 10;
   if (!Number.isInteger(limit) || limit < 1) throw new Error('Invalid question limit.');
   const random = options.random ?? Math.random;
+  const facts = new Map(bank.facts.map(fact => [fact.id, fact]));
+  const entities = new Map(bank.entities.map(entity => [entity.id, entity]));
+  const wanted = options.questionIds ? new Set(options.questionIds) : null;
   const candidates = bank.questions.filter(question => {
-    const fact = bank.facts.find(record => record.id === question.factId)!;
-    const entity = bank.entities.find(record => record.id === fact.entityId)!;
+    const fact = facts.get(question.factId)!;
+    const entity = entities.get(fact.entityId)!;
     return topics.includes(fact.topic)
       && fact.verification.status === 'verified' && fact.verification.patch === bank.patch
       && entity.verification.status === 'verified' && entity.verification.patch === bank.patch
-      && (!options.questionIds || options.questionIds.includes(question.id));
+      && (!wanted || wanted.has(question.id));
   });
-  const questions = shuffle(candidates, random).slice(0, limit).map(question => {
-    const fact = bank.facts.find(record => record.id === question.factId)!;
-    const entityName = bank.entities.find(entity => entity.id === fact.entityId)!.name;
+  const randomized = shuffle(candidates, random);
+  // A normal round spans different subjects and items; a mistake retry preserves
+  // the requested set. New questions stay reachable in the remainder pool.
+  const selected: typeof randomized = [];
+  const usedItems = new Set<string>();
+  if (!wanted && bank.questions.some(question => question.category)) {
+    for (const category of ['recognition', 'price', 'stats', 'mana', 'cooldown', 'effect', 'damage', 'dispel', 'tier', 'timing']) {
+      const question = randomized.find(q => q.category === category && !usedItems.has(facts.get(q.factId)!.entityId));
+      if (question && selected.length < limit) {
+        selected.push(question);
+        usedItems.add(facts.get(question.factId)!.entityId);
+      }
+    }
+  }
+  for (const question of randomized) if (selected.length < limit && !selected.includes(question)) selected.push(question);
+  const questions = shuffle(selected, random).map(question => {
+    const fact = facts.get(question.factId)!;
+    const entity = entities.get(fact.entityId)!;
     const answerOptions = [fact.value, ...question.distractors].map((value, index) => ({
       id: `${question.id}:${index}`, value, label: formatValue(fact, value)
     }));
     return {
-      id: question.id, prompt: question.prompt, entityName, fact,
+      id: question.id, prompt: question.prompt, entityName: entity.name, image: entity.image, recognition: question.category === 'recognition', fact,
       options: shuffle(answerOptions, random), correctOptionId: answerOptions[0].id
     };
   });
