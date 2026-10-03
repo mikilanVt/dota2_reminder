@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: prepare-heroes
@@ -18,6 +18,7 @@ concurrency:
 
 jobs:
   prepare:
+    if: github.ref == 'refs/heads/codex/hero-library'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -34,6 +35,13 @@ jobs:
         run: node scripts/import-heroes.mjs --patch=7.41f
       - name: Optimize static artwork
         run: python scripts/prepare-hero-images.py
+      - name: Save generated assets to the feature branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data-sources/valve-heroes-*.json.gz data-sources/hero-images.json src/data/hero-catalog.json public/assets/heroes
+          git diff --cached --quiet || git commit -m "Import hero snapshot and optimized static assets"
+          git push origin HEAD:codex/hero-library
       - uses: actions/upload-artifact@v4
         if: always()
         with:

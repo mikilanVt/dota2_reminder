@@ -20,8 +20,8 @@ RENDER = 'https://cdn.steamstatic.com/apps/dota2/videos/dota_react/heroes/render
 tasks = {}
 for hero in heroes:
     key = hero['name'].removeprefix('npc_dota_hero_')
-    tasks[f'portraits/{key}.webp'] = (IMAGE + f'heroes/crops/{key}.png', (128, 192), 76, True)
-    tasks[f'art/{key}.webp'] = (RENDER + key + '.png', (800, 800), 78, False)
+    tasks[f'portraits/{key}.webp'] = (IMAGE + f'heroes/crops/{key}.png', (96, 144), 70, True)
+    tasks[f'art/{key}.webp'] = (RENDER + key + '.png', (720, 720), 76, False)
     for ability in hero['abilities']:
         tasks[f'abilities/{ability["name"]}.webp'] = (IMAGE + f'abilities/{ability["name"]}.png', (80, 80), 78, False)
 for attribute in ['strength', 'agility', 'intelligence', 'universal']:
