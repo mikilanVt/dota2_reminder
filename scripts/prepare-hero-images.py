@@ -4,6 +4,7 @@ from hashlib import sha256
 from io import BytesIO
 from pathlib import Path
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError
 import gzip
 import json
 import time
@@ -47,6 +48,12 @@ def prepare(task):
                 raise ValueError('Image exceeds individual budget: ' + name)
             return {'path': name, 'source': url, 'sourceSize': dimensions, 'bytes': path.stat().st_size,
                     'sourceSha256': sha256(raw).hexdigest(), 'sha256': sha256(path.read_bytes()).hexdigest()}
+        except HTTPError as problem:
+            if problem.code == 404:
+                # Some new innate abilities have no official icon yet. Record
+                # the absence; the UI will use a labelled CSS fallback.
+                return {'path': name, 'source': url, 'missing': True, 'bytes': 0}
+            error = problem
         except Exception as problem:
             error = problem
             if attempt < 2:
@@ -59,3 +66,4 @@ with ThreadPoolExecutor(max_workers=4) as pool:
     'retrievedAt': snapshot['assembledAt'], 'assets': manifest
 }, ensure_ascii=False, separators=(',', ':')))
 print(f'Prepared {len(manifest)} WebP images, {sum(a["bytes"] for a in manifest):,} bytes total.')
+print('Missing official artwork:', ', '.join(a['path'] for a in manifest if a.get('missing')))
