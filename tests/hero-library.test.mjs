@@ -53,6 +53,18 @@ test('talent values come from the matching bonus; ambiguous or absent values sta
   assert.equal(talentText(talent, []).unresolved, true);
 });
 
+test('talent cooldown bonuses do not use the passive talent zero cooldown', () => {
+  for (const [key, expected] of [
+    ['special_bonus_unique_juggernaut_5', '–12 сек. перезарядки Healing Ward'],
+    ['special_bonus_unique_juggernaut_omnislash_cooldown', '–15 сек. перезарядки Omnislash']
+  ]) {
+    const talent = juggernaut.talents.find(talent => talent.name === key);
+    assert.deepEqual(talent.cooldowns, [0]);
+    assert.deepEqual(talentText(talent, juggernaut.abilities), {text: expected, unresolved: false});
+    assert.equal(talentText(talent, []).unresolved, true);
+  }
+});
+
 test('guide references existing abilities, talents and local item images', async () => {
   const guide = JSON.parse(await readFile(new URL('public/assets/heroes/guides/8.json', root)));
   assert.equal(guide.patch, snapshot.patchContext);
