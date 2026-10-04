@@ -12,7 +12,10 @@ function abilityValues(ability) {
 }
 
 export function talentText(talent, abilities) {
-  const own = abilityValues(talent);
+  // A talent's generic cooldown/mana fields describe the passive talent itself
+  // (usually zero), not its bonus to a hero ability. Only explicit special
+  // values may override a matching named bonus on that ability.
+  const own = new Map(talent.special_values.map(value => [value.name.toLowerCase(), value.values_float]));
   let unresolved = false;
   const text = talent.name_loc.replace(/\{s:([^}]+)\}/g, (_, token) => {
     const key = token.replace(/^bonus_/, '').toLowerCase();

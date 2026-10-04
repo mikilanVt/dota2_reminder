@@ -1,5 +1,10 @@
 [
   {
+    "hero": "tinker",
+    "talent": "special_bonus_unique_tinker_5",
+    "text": "–… сек. применения Keen Conveyance"
+  },
+  {
     "hero": "lone_druid",
     "ability": "lone_druid_spirit_bear",
     "unresolved": true,
