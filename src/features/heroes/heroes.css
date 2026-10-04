@@ -1,0 +1,184 @@
+.heroes-screen {
+  --hero-line: #8da3b02e;
+  --hero-muted: #9aafb9;
+  padding: max(86px, 5.8vw) clamp(16px, 4.4vw, 92px) 48px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #09151e44, #050b13d9);
+}
+.heroes-screen button, .heroes-screen select {cursor: pointer;}
+.heroes-screen button:focus-visible, .heroes-screen a:focus-visible, .heroes-screen input:focus-visible, .heroes-screen select:focus-visible {
+  outline: 2px solid #d8bd7b; outline-offset: 4px;
+}
+.hero-library-toolbar {display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:32px;}
+.hero-library-toolbar h1 {font-size:21px; font-weight:600; letter-spacing:4px; margin:0; white-space:nowrap;}
+.hero-library-toolbar h1 span {font-size:13px; color:var(--hero-muted); letter-spacing:0; margin-left:10px;}
+.hero-filters {display:flex; gap:12px; align-items:end; flex-wrap:wrap;}
+.hero-filters label {display:grid; gap:5px; font-size:10px; letter-spacing:1.5px; text-transform:uppercase; color:var(--hero-muted);}
+.hero-filters input, .hero-filters select {min-height:38px; color:#d5e0e4; background:#0b171fda; border:1px solid #657b875c; border-radius:0; padding:7px 12px; font-size:13px;}
+.hero-filters input {width:240px;}
+.hero-reset {background:none; border:0; font-size:12px; color:#c5d7df; padding:10px 4px;}
+.hero-attribute-groups {display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(20px,2vw,42px);}
+.hero-group h2 {display:flex; align-items:center; gap:9px; margin:0 0 18px; font-size:clamp(13px,1.15vw,20px); letter-spacing:2px; color:#a9bac6; font-weight:600; text-transform:uppercase; white-space:nowrap;}
+.hero-group h2 img {flex:none; object-fit:contain;}
+.hero-portraits {display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:9px 8px;}
+.hero-portrait {position:relative; aspect-ratio:2/3; padding:0; min-width:0; border:1px solid #52636d55; background:linear-gradient(145deg,#1c2836,#0b1019); box-shadow:0 3px 8px #0006; transition:transform .13s,border-color .13s;}
+.hero-portrait img {width:100%; height:100%; display:block; object-fit:cover;}
+.hero-portrait span {position:absolute; z-index:1; bottom:0; left:50%; min-width:100%; width:max-content; max-width:150px; transform:translate(-50%,100%); background:#091117; border:1px solid #9db6c37a; padding:5px 7px; font-size:11px; line-height:1.2; opacity:0; pointer-events:none;}
+.hero-portrait:hover, .hero-portrait:focus-visible {transform:scale(1.12); z-index:3; border-color:#c6d8dc;}
+.hero-portrait:hover span, .hero-portrait:focus-visible span {opacity:1;}
+.hero-back {padding:0; margin:0 0 14px; color:#b1c1cb; font-size:12px; letter-spacing:2px; background:none; border:0;}
+.hero-load {padding:70px 0; color:var(--hero-muted); text-align:center;}
+.hero-load button, .hero-guide-empty button {background:#203641; border:1px solid #637984; padding:10px 18px;}
+.hero-detail-screen {padding-inline:clamp(18px,3.2vw,70px); padding-top:max(83px,5vw);}
+.hero-detail-grid {display:grid; grid-template-columns:minmax(0,1fr) minmax(330px,27%); gap:24px 32px; align-items:start;}
+.hero-overview {position:relative; min-height:555px; isolation:isolate; padding:18px 0 0;}
+.hero-large-art {position:absolute; z-index:-1; top:-22px; right:-40px; width:min(73%,690px); height:calc(100% + 25px); object-fit:contain; object-position:center bottom; filter:drop-shadow(0 14px 20px #0005);}
+.hero-overview::after {content:''; position:absolute; z-index:-1; inset:0; background:linear-gradient(90deg,#0b172c99,transparent 55%); pointer-events:none;}
+.hero-identity {position:relative; max-width:85%; pointer-events:none; text-shadow:0 3px 12px #061322;}
+.hero-attribute-label {display:flex; align-items:center; gap:8px; color:#b6c7cc; text-transform:uppercase; letter-spacing:2px; font-size:12px;}
+.hero-identity h1 {font-family:Georgia,'Times New Roman',serif; font-size:clamp(38px,4.1vw,78px); line-height:1.05; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin:10px 0; overflow-wrap:anywhere; outline:none;}
+.hero-tagline {max-width:430px; color:#c3d1d9; margin:0 0 20px; font-size:14px;}
+.hero-meta {display:flex; align-items:center; gap:24px; font-size:11px; letter-spacing:1px; color:#b9c7cf;}
+.hero-meta i {font-style:normal; font-size:22px; color:#384c60; margin-right:3px;}
+.hero-meta i.filled {color:#d6e0e7;}
+.hero-base-stats {max-width:440px; margin-top:38px; padding:20px 12px 18px 0; background:linear-gradient(90deg,#081420b8,#0814204d,transparent); border-block:1px solid var(--hero-line);}
+.hero-level-label {color:#9aafb9; font-size:9px; letter-spacing:1.6px;}
+.hero-stat-layout {display:grid; grid-template-columns:130px 1fr; gap:18px; margin-top:13px;}
+.hero-attributes {border-right:1px solid var(--hero-line); margin:0; padding-right:16px;}
+.hero-attributes div+div {margin-top:12px;}
+.hero-attributes dt {text-transform:uppercase; font-size:10px; letter-spacing:1px; color:var(--hero-muted); margin-bottom:3px;}
+.hero-attributes dd {margin:0; display:flex; gap:6px; align-items:center; font-size:20px; font-weight:700; white-space:nowrap;}
+.hero-attributes dd span {font-size:16px; color:#c8d2d7;}
+.hero-combat-stats dl {display:grid; grid-template-columns:repeat(3,1fr); gap:10px 8px; margin:0 0 13px;}
+.hero-combat-stats dt {font-size:9px; color:#b1c1cb; white-space:nowrap;}
+.hero-combat-stats dd {font-size:14px; font-weight:600; margin:3px 0 0;}
+.hero-vital {height:29px; display:flex; align-items:center; gap:10px; padding:0 8px; margin-top:5px; box-shadow:inset 0 1px #ffffff35;}
+.hero-vital.health {background:linear-gradient(#578c57,#315e3c);}
+.hero-vital.mana {background:linear-gradient(#367d97,#244c78);}
+.hero-vital>span {font-size:9px; letter-spacing:.6px; opacity:.85;}
+.hero-vital b {margin-left:auto; font-size:17px;}
+.hero-vital small {font-size:12px; color:#d7e5ec;}
+.hero-spell-strip {display:flex; flex-wrap:wrap; gap:7px; padding:24px 0 8px; max-width:510px;}
+.hero-spell-strip button {position:relative; padding:0; width:clamp(42px,3.6vw,62px); aspect-ratio:1; border:1px solid #8a9da352; background:#101d26; box-shadow:0 3px 8px #0009;}
+.hero-spell-strip button[aria-pressed=true] {border-color:#d2b176; box-shadow:0 0 0 1px #d2b176,0 2px 10px #000;}
+.hero-spell-strip img, .guide-skills img {width:100%; height:100%; display:block;}
+.hero-spell-strip button.is-innate {border-radius:50%; overflow:hidden; margin-right:5px;}
+.hero-spell-strip small {position:absolute; right:0; bottom:0; background:#193e5e; font-size:10px; padding:1px 4px;}
+.ability-icon-fallback {display:grid; place-items:center; width:100%; height:100%; background:radial-gradient(ellipse at top,#48525f,#182430); color:#b9c7ce; font-family:Georgia,serif; font-size:20px;}
+.hero-reference {grid-column:1; min-width:0; border:1px solid var(--hero-line); background:#111d25ed;}
+.hero-detail-tabs {display:flex; border-bottom:1px solid var(--hero-line); background:#13222c;}
+.hero-detail-tabs button, .hero-guide-tabs button {padding:14px 18px; background:none; border:0; border-bottom:2px solid transparent; font-size:11px; letter-spacing:1.2px; color:#9fb3bd;}
+.hero-detail-tabs button[aria-pressed=true], .hero-guide-tabs button[aria-pressed=true] {color:#edddbb; border-bottom-color:#c5a061; background:#c7ad7e09;}
+.hero-detail-tabs>span {margin-left:auto; padding:15px; font-size:10px; color:#7f96a5;}
+.hero-ability-info, .hero-story {padding:24px; color:#bacbd5; font-size:14px; line-height:1.65;}
+.hero-ability-info header {display:flex; align-items:center; gap:16px; padding-bottom:16px; border-bottom:1px solid var(--hero-line);}
+.hero-ability-info header>img,.hero-ability-info header>.ability-icon-fallback {width:54px; height:54px; border:1px solid #91a3ac52;}
+.hero-ability-info header span {color:#98aebd; font-size:9px; letter-spacing:2px;}
+.hero-ability-info h3 {margin:0; color:#e2e8eb; font-size:23px; font-family:Georgia,serif;}
+.hero-ability-info p, .hero-story p {white-space:pre-line;}
+.hero-ability-properties {margin-top:16px; font-size:10px; color:#7893a7; line-height:1.9;}
+.hero-ability-properties span {color:#aebdcc;}
+.hero-ability-values {margin:18px 0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 24px;}
+.hero-ability-values dt {font-size:10px; color:#91aab6;}
+.hero-ability-values dd {margin:1px 0 0; font-size:13px; color:#e0e9ee; font-weight:600;}
+.hero-ability-costs {display:flex; gap:18px; flex-wrap:wrap; border-block:1px solid var(--hero-line); padding:13px 0; color:#8da6b4; font-size:9px;}
+.hero-ability-costs span {display:flex; align-items:center; gap:6px;}
+.hero-ability-costs b {font-size:12px; color:#d2dee5;}
+.hero-ability-costs i {width:12px; height:14px; border-radius:2px; border:1px solid #0007;}
+.hero-ability-costs .mana-square {background:linear-gradient(#08b4d7,#076786);}
+.hero-ability-costs .cooldown-square {background:linear-gradient(45deg,#4c5660,#d2d8dc);}
+.hero-upgrade {background:#203a4a80; border-left:2px solid #4e94b5; padding:12px 16px; margin-top:18px; font-size:13px;}
+.hero-upgrade h4 {margin:0; color:#b8dbea;}
+.hero-upgrade p {margin:7px 0 0;}
+.hero-data-note {font-size:12px; color:#c2aa7d;}
+.hero-notes {margin-top:16px; font-size:12px; color:#9eb1bc;}
+.hero-notes summary {cursor:pointer; color:#c9d4db;}
+.hero-talent-tree {padding:25px 18px; background:radial-gradient(ellipse,#8f724013,transparent);}
+.hero-talent-row {display:grid; grid-template-columns:1fr 42px 1fr; align-items:stretch; gap:10px; margin-bottom:10px;}
+.hero-talent-row p {margin:0; padding:14px; background:#19272f; border:1px solid #5e77873b; font-size:12px; line-height:1.5;}
+.hero-talent-row p:first-child {text-align:right;}
+.hero-talent-row b {align-self:center; color:#d0ab67; text-align:center; font-family:Georgia,serif; font-size:24px;}
+.hero-guide-panel {grid-column:2; grid-row:1 / span 2; position:sticky; top:max(84px,5.2vw); max-height:calc(100dvh - max(105px,6.5vw)); display:flex; flex-direction:column; min-width:0; background:#101b23ef; border:1px solid #849daa40; box-shadow:0 10px 30px #0003;}
+.hero-guide-heading {display:flex; align-items:center; justify-content:space-between; padding:19px 20px; background:linear-gradient(110deg,#283b44,#17252e); border-bottom:1px solid var(--hero-line); font-size:13px; letter-spacing:2px; gap:10px;}
+.hero-guide-heading b {font-size:9px; letter-spacing:1px; color:#d0b583;}
+.hero-guide-tabs {display:flex; border-bottom:1px solid var(--hero-line);}
+.hero-guide-tabs button {flex:1;}
+.hero-guide-content, .hero-guide-empty {padding:20px; overflow:auto; overscroll-behavior:contain; scrollbar-width:thin; scrollbar-color:#526e7e #162630;}
+.hero-guide-content h2,.hero-guide-empty h2 {font-size:20px; font-family:Georgia,serif; margin:0 0 9px; color:#e5e6df; font-weight:500;}
+.guide-summary, .hero-guide-empty p {font-size:12px; line-height:1.65; color:#9eb1bf; margin:0 0 20px;}
+.hero-guide-content h3 {font-size:10px; font-weight:500; letter-spacing:1.3px; color:#9fb4bf; margin:20px 0 9px;}
+.guide-item-group>div {display:flex; flex-wrap:wrap; gap:7px;}
+.guide-item-group button {border:1px solid #536b795e; padding:0; width:calc((100% - 35px)/6); min-width:42px; max-width:70px; position:relative; background:#0c141a;}
+.guide-item-group button[aria-pressed=true] {border-color:#d2ae68; box-shadow:0 0 0 1px #d2ae68;}
+.guide-item-group img {width:100%; height:auto; display:block;}
+.guide-item-group button>span {font-size:9px; display:block; padding:4px 0; color:#b7c7cc; white-space:nowrap;}
+.guide-item-explanation {background:#23343e; border-left:2px solid #b39154; padding:12px; margin-top:15px; font-size:12px;}
+.guide-item-explanation>b {color:#e1d2ae; font-size:13px;}
+.guide-item-explanation p {margin:5px 0 0; line-height:1.55; color:#bfd0d9;}
+.guide-timing-note {color:#839baa; font-size:10px; line-height:1.5;}
+.guide-skills>div {display:grid; grid-template-columns:repeat(10,minmax(0,1fr)); gap:4px;}
+.guide-skills button {padding:0; border:0; background:#1b2d38; min-width:0;}
+.guide-skills button span {font-size:10px; display:block; padding:3px 0; color:#cdbf9f;}
+.guide-talents p {display:flex; align-items:center; gap:12px; border-bottom:1px solid var(--hero-line); padding:8px 0; margin:0; font-size:11px; line-height:1.5; color:#b0c2ce;}
+.guide-talents b {color:#dbbb77; font-size:15px; min-width:23px;}
+.guide-chapter p {font-size:13px; line-height:1.7; color:#b1c5d1;}
+.guide-provenance {margin-top:25px; border-top:1px solid var(--hero-line); padding-top:16px; font-size:10px; color:#849caa; line-height:1.6;}
+.guide-provenance a, .hero-guide-empty a {color:#b9cdd8; text-underline-offset:3px;}
+.hero-guide-empty a {display:block; margin:12px 0; font-size:13px;}
+@media (min-width:1700px) {.hero-overview{min-height:650px;} .hero-base-stats{margin-top:68px;} .hero-spell-strip{padding-top:30px;}}
+@media (max-width:1200px) {
+  .hero-attribute-groups {grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;}
+  .hero-portraits {grid-template-columns:repeat(8,minmax(0,1fr));}
+  .hero-detail-grid {grid-template-columns:minmax(0,1fr) 315px;gap:22px;}
+  .hero-large-art {opacity:.8;right:-25px;width:80%;}
+  .hero-identity {max-width:100%;}
+  .hero-base-stats {background:linear-gradient(90deg,#081420ee,#08142077);}
+  .hero-guide-heading {padding-inline:14px; font-size:11px;}
+  .hero-guide-content {padding:15px;}
+  .hero-library-toolbar {align-items:start;}
+}
+@media (max-width:960px) {
+  .hero-portraits {grid-template-columns:repeat(6,minmax(0,1fr));}
+  .hero-library-toolbar {display:block;}
+  .hero-filters {margin-top:20px;}
+  .hero-detail-grid {grid-template-columns:minmax(0,1fr);}
+  .hero-overview {min-height:540px;}
+  .hero-large-art {width:68%;right:0;opacity:1;}
+  .hero-guide-panel {grid-column:1;grid-row:3;position:static;max-height:none;}
+  .hero-reference {grid-row:2;}
+  .hero-guide-content,.hero-guide-empty {overflow:visible;padding:22px;}
+  .guide-item-group button {max-width:70px;}
+  .guide-skills>div {max-width:500px;}
+}
+@media (max-width:600px) {
+  .heroes-screen {padding-inline:16px;padding-top:78px;}
+  .hero-filters {gap:10px;width:100%;}
+  .hero-filters .hero-search {width:100%;}
+  .hero-filters input {width:100%;}
+  .hero-filters label:not(.hero-search) {flex:1;}
+  .hero-filters select {width:100%;min-width:0;}
+  .hero-attribute-groups {grid-template-columns:1fr;gap:26px;}
+  .hero-group h2 {font-size:15px;margin-bottom:12px;}
+  .hero-portraits {grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;}
+  .hero-library-toolbar {margin-bottom:26px;}
+  .hero-portrait span {font-size:10px;max-width:100px;}
+  .hero-overview {padding-top:8px;min-height:0;padding-bottom:0;}
+  .hero-identity {max-width:100%;}
+  .hero-identity h1 {font-size:37px;}
+  .hero-tagline {font-size:12px;max-width:90%;}
+  .hero-large-art {position:absolute;z-index:-1;width:100%;height:320px;max-width:100%;right:0;top:150px;object-position:center top;opacity:1;}
+  .hero-base-stats {margin-top:330px;max-width:none;padding:18px 0;background:none;}
+  .hero-stat-layout {grid-template-columns:110px 1fr;gap:13px;}
+  .hero-attributes dd {font-size:18px;gap:4px;}
+  .hero-attributes dd span {font-size:14px;}
+  .hero-spell-strip {padding:20px 0 0;}
+  .hero-spell-strip button {width:44px;}
+  .hero-detail-tabs button {padding:13px 10px;font-size:9px;letter-spacing:.8px;}
+  .hero-detail-tabs>span {padding:13px 9px;font-size:9px;}
+  .hero-ability-info,.hero-story {padding:18px;font-size:13px;}
+  .hero-ability-values {grid-template-columns:1fr;}
+  .hero-talent-tree {padding:16px 10px;}
+  .hero-talent-row {gap:5px;grid-template-columns:1fr 32px 1fr;}
+  .hero-talent-row p {font-size:11px;padding:10px;}
+}
+@media (prefers-reduced-motion:reduce) {.hero-portrait {transition:none;}}

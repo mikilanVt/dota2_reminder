@@ -1,0 +1,24 @@
+name: Verify hero library
+on:
+  push:
+    branches: [codex/hero-library]
+    paths-ignore:
+      - .github/workflows/prepare-heroes.yml
+      - scripts/prepare-hero-images.py
+  pull_request:
+    branches: [codex/project-foundation]
+permissions:
+  contents: read
+concurrency:
+  group: verify-heroes-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm run verify

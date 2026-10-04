@@ -1,0 +1,13 @@
+[
+  {
+    "hero": "lone_druid",
+    "ability": "lone_druid_spirit_bear",
+    "unresolved": true,
+    "upgrades": []
+  },
+  {
+    "hero": "naga_siren",
+    "talent": "special_bonus_unique_naga_siren_reel_in_speed",
+    "text": "+… к скорости притягивания у Reel In"
+  }
+]
