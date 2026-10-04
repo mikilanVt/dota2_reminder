@@ -5,6 +5,8 @@ tmp/item-shop-*/
 tmp/item-detail-research/
 tmp/guidance/
 tmp/quiz/
+tmp/heroes*/
+scripts/__pycache__/
 .vite/
 coverage/
 *.log

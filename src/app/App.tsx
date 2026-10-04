@@ -1,4 +1,4 @@
-import {useRef, useState, type ComponentType, type CSSProperties} from 'react';
+import {useEffect, useRef, useState, type ComponentType, type CSSProperties} from 'react';
 import type {TopicId} from '../data/types';
 import type {TrainingHubProps} from '../features/training/TrainingHub';
 
@@ -39,18 +39,38 @@ const topbarBySection: Record<SectionId, string> = {
   updates: asset('topbar_updates.webp')
 };
 
+function sectionFromUrl(): SectionId {
+  const section = window.location.hash.slice(1).split('/')[0];
+  return Object.hasOwn(topbarBySection, section) ? section as SectionId : 'home';
+}
+
 export function App() {
-  const [activeSection, setActiveSection] = useState<SectionId>('home');
+  const [activeSection, setActiveSection] = useState<SectionId>(sectionFromUrl);
   const [selectedMode, setSelectedMode] = useState<ModeId | null>(null);
   const [selectedTopics, setSelectedTopics] = useState<TopicId[]>([]);
   const [TrainingHub, setTrainingHub] = useState<ComponentType<TrainingHubProps> | null>(null);
   const [ItemsScreen, setItemsScreen] = useState<ComponentType | null>(null);
+  const [HeroesScreen, setHeroesScreen] = useState<ComponentType | null>(null);
+  const [heroesFailed, setHeroesFailed] = useState(false);
   const [itemsFailed, setItemsFailed] = useState(false);
   const [trainingEntry, setTrainingEntry] = useState<TrainingHubProps['entry']>('play');
   const [trainingOpen, setTrainingOpen] = useState(false);
   const [loadingTraining, setLoadingTraining] = useState(false);
   const [startNotice, setStartNotice] = useState('');
   const launchVersion = useRef(0);
+
+  useEffect(() => {
+    const restore = () => {
+      launchVersion.current++;
+      setLoadingTraining(false);
+      setStartNotice('');
+      setActiveSection(sectionFromUrl());
+      setTrainingOpen(false);
+    };
+    window.addEventListener('hashchange', restore);
+    return () => window.removeEventListener('hashchange', restore);
+  }, []);
+  useEffect(() => {void loadSection(activeSection);}, [activeSection]);
 
   function clearLaunch() {
     launchVersion.current++;
@@ -62,13 +82,25 @@ export function App() {
     clearLaunch();
     setTrainingOpen(false);
     setActiveSection(section);
+    window.location.hash = section;
     window.scrollTo(0, 0);
+    await loadSection(section);
+  }
+
+  async function loadSection(section: SectionId) {
     if (section === 'items' && !ItemsScreen) {
       setItemsFailed(false);
       try {
         const module = await import('../features/items/ItemsScreen');
         setItemsScreen(() => module.ItemsScreen);
       } catch {setItemsFailed(true);}
+    }
+    if (section === 'heroes' && !HeroesScreen) {
+      setHeroesFailed(false);
+      try {
+        const module = await import('../features/heroes/HeroesScreen');
+        setHeroesScreen(() => module.HeroesScreen);
+      } catch {setHeroesFailed(true);}
     }
   }
 
@@ -244,6 +276,11 @@ export function App() {
         <main className="section-loading" role="status">
           <p>{itemsFailed ? 'Не удалось открыть предметы. Проверь соединение и попробуй снова.' : 'Открываем магазин…'}</p>
           {itemsFailed && <button type="button" onClick={() => navigate('items')}>Попробовать снова</button>}
+        </main>
+      ) : activeSection === 'heroes' ? HeroesScreen ? <HeroesScreen /> : (
+        <main className="section-loading" role="status">
+          <p>{heroesFailed ? 'Не удалось открыть героев. Проверь соединение и попробуй снова.' : 'Открываем героев…'}</p>
+          {heroesFailed && <button type="button" onClick={() => loadSection('heroes')}>Попробовать снова</button>}
         </main>
       ) : (
         <main className="section-placeholder">
