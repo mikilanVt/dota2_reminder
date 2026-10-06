@@ -8,7 +8,9 @@ export const levels = (values: number[]) => [...new Set(values)].map(number).joi
 const cards = new Map<number, HeroDetail>();
 let catalog: HeroCatalog | undefined;
 async function read<T>(path: string, signal: AbortSignal): Promise<T> {
-  const response = await fetch(heroAsset(path), {signal});
+  // Revalidate JSON after a deployment; the browser's HTTP cache must not keep
+  // old patch numbers. Repeated selections still use the bounded memory cache.
+  const response = await fetch(heroAsset(path), {signal, cache: 'no-cache'});
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   return response.json() as Promise<T>;
 }
