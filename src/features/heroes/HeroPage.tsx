@@ -67,7 +67,7 @@ export function HeroPage({hero, titleRef}: {hero: HeroDetail; titleRef: RefObjec
         onClick={() => {setAbilityId(a.id); setTab('abilities');}}><AbilityIcon ability={a} />
         {a.grantedBy && <small>{a.grantedBy === 'scepter' ? 'S' : '✦'}</small>}</button>)}</div>
     </section>
-    <HeroGuidePanel hero={hero} onAbility={id => {setAbilityId(id); setTab('abilities');}} />
+    <HeroGuidePanel hero={hero} onAbility={id => {setAbilityId(id); setTab('abilities');}} onTalent={() => setTab('talents')} />
     <div className="hero-reference">
       <div className="hero-detail-tabs" aria-label="Информация о герое">
         {([['abilities', 'СПОСОБНОСТИ'], ['talents', 'ТАЛАНТЫ'], ['story', 'О ГЕРОЕ']] as const).map(([id, label]) =>
@@ -77,8 +77,8 @@ export function HeroPage({hero, titleRef}: {hero: HeroDetail; titleRef: RefObjec
       {tab === 'abilities' ? <AbilityInformation ability={ability} /> : tab === 'talents' ?
         <section className="hero-talent-tree" aria-label="Древо талантов">
           {[25, 20, 15, 10].map(level => <div className="hero-talent-row" key={level}>
-            <p>{hero.talents.find(t => t.level === level)?.text ?? 'Уточняется'}</p><b>{level}</b>
-            <p>{hero.talents.filter(t => t.level === level)[1]?.text ?? 'Уточняется'}</p>
+            <p>{hero.talents.filter(t => t.level === level)[1]?.text ?? 'Уточняется'}</p><b>{level}</b>
+            <p>{hero.talents.find(t => t.level === level)?.text ?? 'Уточняется'}</p>
           </div>)}
         </section> : <section className="hero-story"><p>{hero.introduction}</p><p>{hero.biography}</p></section>}
     </div>

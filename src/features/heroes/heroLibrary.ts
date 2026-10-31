@@ -26,4 +26,8 @@ export async function loadHero(id: number, signal: AbortSignal) {
   if (cards.size > 8) cards.delete(cards.keys().next().value!);
   return card;
 }
-export const loadGuide = (id: number, signal: AbortSignal) => read<HeroGuide>(`guides/${id}.json`, signal);
+export async function loadGuide(id: number, signal: AbortSignal) {
+  const guide = await read<HeroGuide>(`guides/${id}.json`, signal);
+  if (guide.heroId !== id) throw new Error('Unexpected hero guide');
+  return guide;
+}
