@@ -25,7 +25,9 @@ export interface HeroGuide {
   heroId: number; patch: string; checkedAt: string; role: string; title: string;
   summary: string; source: string; sourceLabel: string; sample: string;
   skillOrder: string[]; talentChoices: string[];
-  itemGroups: {title: string; items: {key: string; name: string; timing?: string; reason: string}[]}[];
+  skillSample: string; talentPickRates: Record<string, number>;
+  talentLabels?: Record<string, string>;
+  itemGroups: {title: string; note?: string; items: {key: string; icon?: string; name: string; quantity?: number; charges?: number; timing?: string; purchaseRate?: number; reason: string}[]}[];
   chapters: {title: string; text: string}[];
   replay: {label: string; url: string; note: string};
 }

@@ -111,6 +111,7 @@
 .guide-item-group button {border:1px solid #536b795e; padding:0; width:calc((100% - 35px)/6); min-width:42px; max-width:70px; position:relative; background:#0c141a;}
 .guide-item-group button[aria-pressed=true] {border-color:#d2ae68; box-shadow:0 0 0 1px #d2ae68;}
 .guide-item-group img {width:100%; height:auto; display:block;}
+.guide-item-quantity {position:absolute; right:2px; top:2px; padding:1px 3px; background:#081017df; color:#e9d1a1; font-size:10px;}
 .guide-item-group button>span {font-size:9px; display:block; padding:4px 0; color:#b7c7cc; white-space:nowrap;}
 .guide-item-explanation {background:#23343e; border-left:2px solid #b39154; padding:12px; margin-top:15px; font-size:12px;}
 .guide-item-explanation>b {color:#e1d2ae; font-size:13px;}
@@ -119,11 +120,14 @@
 .guide-skills>div {display:grid; grid-template-columns:repeat(10,minmax(0,1fr)); gap:4px;}
 .guide-skills button {padding:0; border:0; background:#1b2d38; min-width:0;}
 .guide-skills button span {font-size:10px; display:block; padding:3px 0; color:#cdbf9f;}
+.guide-skill-bonus {display:grid; place-items:center; aspect-ratio:1; color:#d8b979; background:radial-gradient(#3b4033,#17232b); font-size:20px;}
 .guide-talents p {display:flex; align-items:center; gap:12px; border-bottom:1px solid var(--hero-line); padding:8px 0; margin:0; font-size:11px; line-height:1.5; color:#b0c2ce;}
 .guide-talents b {color:#dbbb77; font-size:15px; min-width:23px;}
+.guide-talents small {margin-left:auto; color:#829ca9; white-space:nowrap;}
 .guide-chapter p {font-size:13px; line-height:1.7; color:#b1c5d1;}
 .guide-provenance {margin-top:25px; border-top:1px solid var(--hero-line); padding-top:16px; font-size:10px; color:#849caa; line-height:1.6;}
 .guide-provenance a, .hero-guide-empty a {color:#b9cdd8; text-underline-offset:3px;}
+.guide-provenance summary {cursor:pointer; margin-bottom:12px;}
 .hero-guide-empty a {display:block; margin:12px 0; font-size:13px;}
 @media (min-width:1700px) {.hero-overview{min-height:650px;} .hero-base-stats{margin-top:68px;} .hero-spell-strip{padding-top:30px;}}
 @media (max-width:1200px) {
