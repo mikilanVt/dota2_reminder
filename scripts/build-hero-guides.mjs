@@ -2,7 +2,7 @@ import {readFile, writeFile, mkdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
 import {gunzipSync} from 'node:zlib';
-import {notes, itemNotes, situationalPriority} from '../data-sources/hero-guide-notes.mjs';
+import {notes, itemNotes, situationalPriority, reviewedRoles} from '../data-sources/hero-guide-notes.mjs';
 
 const root = new URL('../', import.meta.url);
 const readJson = async path => {
@@ -27,6 +27,50 @@ const stats = text => {
 const matchCount = count => `${count.toLocaleString('ru-RU')} ${{one: 'матч', few: 'матча', many: 'матчей', other: 'матча'}[new Intl.PluralRules('ru-RU').select(count)]}`;
 const sampleText = sample => `${matchCount(sample.matches)}, ${sample.winRate.toLocaleString('ru-RU')}% побед`;
 
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const dayMs = 86400000;
+const isoDate = date => date.toISOString().slice(0, 10);
+const russianDate = iso => iso.split('-').reverse().join('.');
+const calendarDate = (year, month, day) => {
+  const date = new Date(Date.UTC(year, month, day));
+  if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month || date.getUTCDate() !== day)
+    throw new Error('Invalid source calendar date');
+  return date;
+};
+// The provider omits years, and sometimes repeats the month only once. Anchor
+// each date to the next known date so December/January windows remain correct.
+export function parseSourceWindow(window, capturedAt) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(capturedAt)) throw new Error('Invalid source capture date');
+  const [year, month, day] = capturedAt.split('-').map(Number);
+  const captured = calendarDate(year, month - 1, day);
+  const match = window?.match(/^Uses matches from ([A-Za-z]{3}) (\d{1,2})[–-](?:([A-Za-z]{3}) )?(\d{1,2}) \((\d+) days\)\. Updated ([A-Za-z]{3}) (\d{1,2})\.$/);
+  if (!match) throw new Error(`Unrecognized source window: ${window}`);
+  const [, fromMonth, fromDay, toMonth, toDay, period, updateMonth, updateDay] = match;
+  const before = (monthName, dayNumber, anchor) => {
+    const index = months.indexOf(monthName);
+    if (index < 0) throw new Error('Invalid source month');
+    let date = calendarDate(anchor.getUTCFullYear(), index, Number(dayNumber));
+    if (date > anchor) date = calendarDate(anchor.getUTCFullYear() - 1, index, Number(dayNumber));
+    return date;
+  };
+  const updated = before(updateMonth, updateDay, captured);
+  const to = before(toMonth ?? fromMonth, toDay, updated);
+  const from = before(fromMonth, fromDay, to);
+  const days = Number(period);
+  if (days < 1 || days > 31 || (to - from) / dayMs !== days || (updated - to) / dayMs > days || (captured - updated) / dayMs > 31)
+    throw new Error('Invalid or stale source window');
+  return {from: isoDate(from), to: isoDate(to), updatedAt: isoDate(updated), checkedAt: capturedAt, days};
+}
+
+export function validateCoverage(catalog, snapshot) {
+  const expected = catalog.heroes.map(hero => hero.englishName.toUpperCase()).sort();
+  const sameRoster = names => names?.length === expected.length && names.map(name => name.toUpperCase()).sort().every((name, index) => name === expected[index]);
+  if (!sameRoster(snapshot.heroes.map(hero => hero.name)) || snapshot.heroes.some(hero => hero.capturedAt !== snapshot.capturedAt))
+    throw new Error('Incomplete, duplicated or inconsistently dated hero source snapshot');
+  if (!sameRoster(snapshot.roster?.heroes?.map(hero => hero.name)) || snapshot.roster.capturedAt !== snapshot.capturedAt)
+    throw new Error('Official hero roster differs from the guide catalog');
+}
+
 function itemReason(key, hero, advice) {
   if (itemNotes[hero.key]?.[key]) return itemNotes[hero.key][key];
   if (key === 'ultimate_scepter' || key === 'aghanims_shard') {
@@ -42,10 +86,12 @@ function itemReason(key, hero, advice) {
 }
 
 export function buildGuide(hero, source, advice, editorial = notes[hero.key]) {
-  if (source.name !== hero.englishName || source.patch !== hero.patch) throw new Error(`Wrong source for ${hero.key}`);
+  if (!source || source.name !== hero.englishName || source.patch !== hero.patch) throw new Error(`Wrong source for ${hero.key}`);
   if (!editorial || editorial.length !== 5) throw new Error(`Missing editorial: ${hero.key}`);
   const role = source.role?.split('\n')[1];
   if (!roleNames[role]) throw new Error(`Unknown role: ${role}`);
+  if (reviewedRoles[hero.key] !== role) throw new Error(`Review editorial for changed role: ${hero.key}/${role}`);
+  const period = parseSourceWindow(source.window, source.capturedAt);
   if (source.skills.length !== 10 || source.talents.length !== 4) throw new Error(`Incomplete build: ${hero.key}`);
   const buildSample = stats(source.builds[0].replaceAll('\n', ' '));
   const skillSample = stats(source.skillSample);
@@ -107,7 +153,11 @@ export function buildGuide(hero, source, advice, editorial = notes[hero.key]) {
   }
   // Intermediate Dagon upgrades stay collapsed to the base item. Repeated Shard
   // rows in the provider UI do not mean buying multiple Shards.
-  const core = unique(source.core.filter(i => /CORE/.test(i.timing) && !/^dagon_\d/.test(i.key))).map(makeItem);
+  const sequence = unique(source.core.filter(i => !/^dagon_\d/.test(i.key)));
+  const markedCore = sequence.filter(i => /CORE/.test(i.timing));
+  // Some observed builds (Nyx) have a purchase sequence but no CORE badges.
+  // Keep that actual sequence without presenting every purchase as mandatory.
+  const core = (markedCore.length ? markedCore : sequence).map(makeItem);
   const used = new Set([...starting, ...core].map(i => i.key));
   const priorities = situationalPriority[hero.key] ?? [];
   const priority = key => priorities.includes(itemKey(key)) ? priorities.indexOf(itemKey(key)) : priorities.length;
@@ -117,14 +167,14 @@ export function buildGuide(hero, source, advice, editorial = notes[hero.key]) {
   if (!starting.length || !core.length || !options.length) throw new Error(`Empty item group: ${hero.key}`);
   const groups = [
     {title: 'СТАРТОВЫЙ ЗАКУП', note: `Частый вариант: ${matchCount(startingSample.matches)}. Количество зарядов расходников показано в описании.`, items: starting},
-    {title: 'ОСНОВА · ПО ПОРЯДКУ ПОКУПКИ', note: 'Частые покупки выбранной сборки. Компонент и его улучшение показаны последовательно, это не отдельные финальные слоты.', items: core},
+    {title: markedCore.length ? 'ОСНОВА · ПО ПОРЯДКУ ПОКУПКИ' : 'ВАРИАНТ ПОРЯДКА ПОКУПОК', note: `${markedCore.length ? 'Частые покупки выбранной сборки.' : 'Один вариант развития сборки; выбирай покупки под конкретный матч.'} Компонент и его улучшение показаны последовательно, это не отдельные финальные слоты.`, items: core},
     {title: 'ПО СИТУАЦИИ', items: options}
   ];
   if (hero.key === 'lone_druid') groups[1].note += ' У героя и медведя отдельные инвентари; эта сводка не распределяет покупки между ними.';
   return {
     heroId: hero.id, patch: source.patch, checkedAt: source.capturedAt, role: roleNames[role], title: editorial[0],
     summary: editorial[1].split('. ')[0] + '.', source: source.url, sourceLabel: 'Сборка на Dota2ProTracker',
-    sample: `Проверено 31.10.2026. ${source.window.replace('Uses matches from ', 'Матчи: ').replace(' (14 days). Updated 31 окт..', ' 2026 (14 дней).')} Сборка: ${sampleText(buildSample)}. Выбрана основная позиция и первый, самый массовый вариант сборки. Популярность не гарантирует результат; советы по игре написаны отдельно.`,
+    sample: `Проверено ${russianDate(period.checkedAt)}. Матчи: ${russianDate(period.from)}–${russianDate(period.to)} (${period.days} дней). Обновлено источником ${russianDate(period.updatedAt)}. Сборка: ${sampleText(buildSample)}. Выбрана основная позиция и первый, самый массовый вариант сборки. Популярность не гарантирует результат; советы по игре написаны отдельно.`,
     skillOrder, skillSample: `Частая последовательность: ${sampleText(skillSample)}. На линии порядок можно менять под соперника.`,
     talentChoices, talentPickRates, ...(Object.keys(talentLabels).length ? {talentLabels} : {}), itemGroups: groups,
     chapters: editorial.slice(1).map((text, index) => ({title: chapterTitles[index], text})),
@@ -136,10 +186,9 @@ export function buildGuide(hero, source, advice, editorial = notes[hero.key]) {
 
 export async function compileGuides() {
   const [catalog, snapshot, guidance] = await Promise.all([
-    readJson('public/assets/heroes/catalog.json'), readJson('data-sources/hero-builds-2026-10-31.json.gz'), readJson('src/data/item-guidance.json')
+    readJson('public/assets/heroes/catalog.json'), readJson('data-sources/hero-builds.json.gz'), readJson('src/data/item-guidance.json')
   ]);
-  if (snapshot.heroes.length !== catalog.heroes.length || new Set(snapshot.heroes.map(h => h.name)).size !== catalog.heroes.length)
-    throw new Error('Incomplete or duplicated hero source snapshot');
+  validateCoverage(catalog, snapshot);
   return Promise.all(catalog.heroes.map(async hero => {
     const card = await readJson(`public/assets/heroes/details/${hero.id}.json`);
     const source = snapshot.heroes.find(h => h.name === hero.englishName);
